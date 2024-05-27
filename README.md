@@ -1,13 +1,10 @@
-## Getting Started With Docker
+## Using Docker
 
-Make sure Docker is running, then run these two commands:
-```bash
-# Run this command first:
-docker build -t nextjs_docker:dev .
+1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
+1. Build your container: `docker build -t nextjs-docker .`
+1. Run your container: `docker run -p 3000:3000 nextjs-docker`
 
-# Then add it to docker by running:
-docker run --publish 3000:3000 nextjs_docker:dev
-```
+You can view your images created with `docker images`.
 
 ## Getting Started
 
