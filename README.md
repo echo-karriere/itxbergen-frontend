@@ -1,8 +1,7 @@
 ## Using Docker
 
-1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
-1. Build your container: `docker build -t nextjs_docker:dev .`
-1. Run your container: `docker run --publish 3000:3000 nextjs_docker:dev`
+1. [Install Docker](https://docs.docker.com/get-docker/) on your machine, and make sure Docker is running.
+1. Run this command: `docker-compose up`
 
 You can view your images created with `docker images`.
 
