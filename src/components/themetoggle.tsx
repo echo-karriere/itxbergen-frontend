@@ -22,7 +22,7 @@ export default function ThemeToggle() {
             aria-label="Toggle Theme"
         >
             {theme === 'light' ? (
-                <MoonIcon className="w-5 h-5 text-white dark:text-white" />
+                <MoonIcon className="w-5 h-5 text-white" />
             ) : (
                 <SunIcon className="w-5 h-5 text-white" />
             )}
