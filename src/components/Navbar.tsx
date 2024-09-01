@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./logo";
 import LanguagePicker from "./language-picker";
+import ThemeToggle from "./themetoggle";
 
 export default function Navbar() {
     return (
@@ -32,9 +33,10 @@ export default function Navbar() {
                                 </li>
                             </ul>
                         </div>
-                        {/* Language Button Container */}
-                        <div className="absolute right-4">
+                        {/* Right Side Buttons */}
+                        <div className="absolute right-4 flex gap-4">
                             <LanguagePicker />
+                            <ThemeToggle />
                         </div>
                     </div>
                 </div>
