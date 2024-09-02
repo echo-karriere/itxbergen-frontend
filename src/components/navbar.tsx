@@ -27,7 +27,7 @@ export default function Navbar() {
                     <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
                       <UserIcon className="w-5 h-5" />
                       For studenter
-                      <ChevronDownIcon className="w-4 h-4 ml-2" />
+                      <ChevronDownIcon className="w-4 h-4 ml-0" />
                     </p>
                   </Link>
                 </li>
@@ -36,7 +36,7 @@ export default function Navbar() {
                     <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
                       <BriefcaseIcon className="w-5 h-5" />
                       For bedrifter
-                      <ChevronDownIcon className="w-4 h-4 ml-2" />
+                      <ChevronDownIcon className="w-4 h-4 ml-0" />
                     </p>
                   </Link>
                 </li>
@@ -45,7 +45,7 @@ export default function Navbar() {
                     <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
                       <InfoIcon className="w-5 h-5" />
                       Om oss
-                      <ChevronDownIcon className="w-4 h-4 ml-2" />
+                      <ChevronDownIcon className="w-4 h-4 ml-0" />
                     </p>
                   </Link>
                 </li>
