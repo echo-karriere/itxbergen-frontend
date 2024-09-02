@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center h-full">
             {/* Logo Container */}
-            <div className="absolute left-0 pl-4">
+            <div className="absolute left-0 pl-6">
               <Logo />
             </div>
             {/* Spacer */}
