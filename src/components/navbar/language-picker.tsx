@@ -31,11 +31,13 @@ export default function LanguagePicker() {
         {/* Enhanced Visual Separator */}
         <DropdownMenuSeparator className="border-t-2 border-gray-300 dark:border-gray-600 my-2" />
 
-        <DropdownMenuCheckboxItem className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
+        <DropdownMenuCheckboxItem
+          className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
           Norwegian
         </DropdownMenuCheckboxItem>
 
-        <DropdownMenuCheckboxItem className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
+        <DropdownMenuCheckboxItem
+          className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
           English
         </DropdownMenuCheckboxItem>
 
