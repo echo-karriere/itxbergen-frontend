@@ -8,6 +8,9 @@ import {
   InfoIcon,
   ChevronDownIcon
 } from "lucide-react";
+import StudentDropdown from "./dropdowns/student-dropdown";
+import CompanyDropdown from "./dropdowns/company-dropdown";
+import AboutDropdown from "./dropdowns/about-dropdown";
 
 export default function Navbar() {
   return (
@@ -23,31 +26,13 @@ export default function Navbar() {
             <div className="flex-grow flex justify-center">
               <ul className="hidden md:flex gap-x-12 text-white items-center">
                 <li>
-                  <Link href="/studenter">
-                    <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
-                      <UserIcon className="w-5 h-5" />
-                      For studenter
-                      <ChevronDownIcon className="w-4 h-4 ml-0" />
-                    </p>
-                  </Link>
+                  <StudentDropdown />
                 </li>
                 <li>
-                  <Link href="/bedrift">
-                    <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
-                      <BriefcaseIcon className="w-5 h-5" />
-                      For bedrifter
-                      <ChevronDownIcon className="w-4 h-4 ml-0" />
-                    </p>
-                  </Link>
+                  <CompanyDropdown />
                 </li>
                 <li>
-                  <Link href="/about">
-                    <p className="px-4 py-2 rounded-lg hover:bg-IXBRed-dark transition-colors flex items-center gap-2">
-                      <InfoIcon className="w-5 h-5" />
-                      Om oss
-                      <ChevronDownIcon className="w-4 h-4 ml-0" />
-                    </p>
-                  </Link>
+                  <AboutDropdown />
                 </li>
               </ul>
             </div>
