@@ -1,13 +1,6 @@
-import Link from "next/link";
 import Logo from "./logo";
 import LanguagePicker from "./language-picker";
 import ThemeToggle from "./themetoggle";
-import {
-  UserIcon,
-  BriefcaseIcon,
-  InfoIcon,
-  ChevronDownIcon
-} from "lucide-react";
 import StudentDropdown from "./dropdowns/student-dropdown";
 import CompanyDropdown from "./dropdowns/company-dropdown";
 import AboutDropdown from "./dropdowns/about-dropdown";
