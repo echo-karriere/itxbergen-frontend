@@ -1,7 +1,14 @@
-import Image from "next/image";
+import { getPrivacy } from "@/lib/sanity.queries";
+import { privacyType } from "@/lib/sanity.types";
 
-export default function Home() {
+export default async function Home() {
+  const data: privacyType[] = await getPrivacy();
+
   return (
-    <p>hello new website!</p>
+    <>
+    <h1>{data[0].title}</h1>
+    
+
+    </>
   );
 }
