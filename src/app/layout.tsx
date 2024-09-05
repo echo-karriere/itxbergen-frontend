@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";
+import NextTopLoader from 'nextjs-toploader';
 
 import "./globals.css";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
+          <NextTopLoader showSpinner={false} />
           <Navbar />
           {children}
         </Providers>
