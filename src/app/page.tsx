@@ -6,8 +6,7 @@ export default async function Home() {
 
   return (
     <>
-    <h1>{data[0].title}</h1>
-
+      <h1>{data[0].title}</h1>
     </>
   );
 }
