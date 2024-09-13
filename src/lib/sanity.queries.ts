@@ -1,12 +1,12 @@
 import { groq } from "next-sanity";
-import { client } from "./sanity.client";
+import { sanityFetch } from "@/lib/sanity.client"; // Adjust import path as needed
 
 export async function getPrivacy() {
-  return client.fetch(
-    groq`*[_type == "privacy"]{
+  return sanityFetch({
+    query: groq`*[_type == "privacy"]{
       _id,
       title,
       content,
-    }`
-  );
+    }`,
+  });
 }
