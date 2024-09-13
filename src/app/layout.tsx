@@ -25,7 +25,7 @@ export default function RootLayout({
         <Providers>
           <NextTopLoader showSpinner={false} />
           <Navbar />
-          {children}
+          <main>{children}</main>
         </Providers>
       </body>
     </html>

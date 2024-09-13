@@ -35,6 +35,18 @@
     --radius: 0.5rem;
   }
 
+  .singleton-container {
+    @apply max-w-[800px] w-11/12 mx-auto text-left mt-8;
+  }
+
+  .singleton-header {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  .singleton-date {
+    @apply text-sm text-slate-500 mb-4;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -73,5 +85,22 @@
 
   body {
     @apply bg-background text-foreground;
+    
   }
+
+a {
+
+  &[href^="http"]:after,
+  &[href^="https"]:after,
+  &[href^="mailto"]:after,
+  &[href^="tel"]:after
+
+   {
+    content: " ↗";
+  }
+
+
+
+
+}
 }
