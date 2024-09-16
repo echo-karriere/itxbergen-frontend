@@ -10,7 +10,7 @@ export default async function Privacy() {
       <div className="singleton-container">
         <h1 className="singleton-header">{data[0].title}</h1>
         <p className="singleton-date">
-          Sist oppdatert:{" "}
+          Sist oppdatert: {" "}
           {new Date(data[0]._updatedAt).toLocaleDateString("nb")}
         </p>
         <div className="prose dark:prose-invert mb-12">
