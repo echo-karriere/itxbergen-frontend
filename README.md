@@ -1,4 +1,4 @@
-> This is the new ITxBergen homepage currently under development
+> This is the new ITxBergen homepage currently under development. Current version [ixb-web](https://github.com/echo-karriere/ixb-web)
 
 ## Using Docker
 
