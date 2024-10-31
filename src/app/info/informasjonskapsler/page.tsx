@@ -1,9 +1,9 @@
-import { getPrivacy } from "@/lib/sanity/queries/sanityPrivacy";
-import { privacyType } from "@/lib/sanity/types/sanityPrivacy";
+import { getCookies } from "@/lib/sanity/queries/sanityCookies";
+import { cookiesType } from "@/lib/sanity/types/sanityCookies";
 import { PortableText } from "next-sanity";
 
-export default async function Privacy() {
-  const data: privacyType[] = await getPrivacy();
+export default async function Cookies() {
+  const data: cookiesType[] = await getCookies();
 
   return (
     <>
