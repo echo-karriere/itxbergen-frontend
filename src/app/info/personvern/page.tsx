@@ -1,5 +1,5 @@
-import { getPrivacy } from "@/lib/sanity.queries";
-import { privacyType } from "@/lib/sanity.types";
+import { getPrivacy } from "@/lib/queries/sanityPrivacy";
+import { privacyType } from "@/lib/sanity/sanity.types";
 import { PortableText } from "next-sanity";
 
 export default async function Privacy() {
