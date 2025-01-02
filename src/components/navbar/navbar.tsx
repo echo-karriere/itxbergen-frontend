@@ -1,14 +1,11 @@
 import Logo from "./logo";
 import LanguagePicker from "./language-picker";
 import ThemeToggle from "./themetoggle";
-import StudentDropdown from "./dropdowns/student-dropdown";
-import CompanyDropdown from "./dropdowns/company-dropdown";
-import AboutDropdown from "./dropdowns/about-dropdown";
 
 export default function Navbar() {
   return (
     <>
-      <div className="w-full h-16 bg-IXBRed sticky top-0 flex items-center rounded-b-lg">
+      <div className="w-full h-20 bg-IXBbg sticky top-0 flex items-center">
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center h-full">
             {/* Logo Container */}
@@ -17,16 +14,12 @@ export default function Navbar() {
             </div>
             {/* Spacer */}
             <div className="flex-grow flex justify-center">
-              <ul className="hidden md:flex gap-x-12 text-white items-center">
-                <li>
-                  <StudentDropdown />
-                </li>
-                <li>
-                  <CompanyDropdown />
-                </li>
-                <li>
-                  <AboutDropdown />
-                </li>
+              <ul className="hidden md:flex gap-x-20 text-white items-center text-sm">
+                <li>Karrieredag </li>
+                <li>Nettverking </li>
+                <li>Stillingsannonser </li>
+                <li>Om ITxBergen </li>
+                <li>Kontakt oss</li>
               </ul>
             </div>
             {/* Right Side Buttons */}
