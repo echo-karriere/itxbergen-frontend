@@ -22,6 +22,8 @@ const config = {
         IXBRed: "#5c0418",
         IXBRed2: "#480413",
         IXBGold: "#d0b46c",
+        IXBbg: "#000E1E",
+        IXBfg: "#9CEDE9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
