@@ -23,9 +23,8 @@ export default function Navbar() {
               </ul>
             </div>
             {/* Right Side Buttons */}
-            <div className="absolute right-4 flex gap-4">
+            <div className="absolute right-10">
               <LanguagePicker />
-              <ThemeToggle />
             </div>
           </div>
         </div>
