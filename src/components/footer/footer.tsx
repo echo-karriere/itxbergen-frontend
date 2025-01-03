@@ -1,4 +1,5 @@
 import Logo from "./logo";
+import Partners from "./partners";
 
 export default function Footer() {
   return (
@@ -46,8 +47,15 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Line */}
+        {/* Horizontal Line */}
         <div className="absolute bottom-[25%] left-1/2 -translate-x-1/2 w-[75%] border-t border-white" />
+
+        {/* Parters */}
+
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+          <Partners />
+        </div>
+
       </footer>
     </>
   );
