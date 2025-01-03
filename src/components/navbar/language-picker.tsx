@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 enum Language {
   NO = "NO",
@@ -8,10 +8,19 @@ enum Language {
 };
 
 export default function LanguagePicker() {
-  const [language, setLangauge] = useState<Language>(Language.NO);
+  const [language, setLanguage] = useState<Language>(Language.NO);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language") as Language;
+    if (savedLanguage) {
+      setLanguage(savedLanguage as Language);
+    }
+  }, []);
 
   const toggleLanguage = () => {
-    setLangauge((prev) => (prev === Language.NO ? Language.EN : Language.NO));
+    const newLanguage = language === Language.NO ? Language.EN : Language.NO;
+    setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);  // Save language to localStorage
   };
 
   return (
