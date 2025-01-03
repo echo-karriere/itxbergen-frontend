@@ -5,13 +5,14 @@ import React from "react";
 export default function Logo() {
   return (
     <Link href="/">
-      <div className="flex items-center">
+      <div className="flex items-center h-14">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="Logo"
           width={160}
           height={60}
-          className="w-45 h-16" />
+          className="h-full w-auto"
+        />
       </div>
     </Link>
   );
