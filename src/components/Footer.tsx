@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="flex flex-col min-h-screen">
       {/* Main content area */}
       <main className="flex-grow">{/* Content goes here*/}</main>
-      <footer className="bg-IXBRed text-white py-10 rounded-t-lg">
+      <footer className="bg-IXBbg text-white py-10 rounded-t-lg">
         <div className="flex justify-center">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 max-w-6xl">
             {/* Informasjon */}
