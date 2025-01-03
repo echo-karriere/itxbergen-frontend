@@ -1,6 +1,5 @@
 import Logo from "./logo";
 import LanguagePicker from "./language-picker";
-import ThemeToggle from "./themetoggle";
 
 export default function Navbar() {
   return (
@@ -23,7 +22,7 @@ export default function Navbar() {
               </ul>
             </div>
             {/* Right Side Buttons */}
-            <div className="absolute right-10">
+            <div className="absolute right-16">
               <LanguagePicker />
             </div>
           </div>
