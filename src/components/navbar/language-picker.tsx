@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState } from "react";
 
 enum Language {
   NO = "NO",
@@ -8,11 +8,11 @@ enum Language {
 };
 
 export default function LanguagePicker() {
-  const [language, setLangauge] = useState<Language>(Language.NO);;
+  const [language, setLangauge] = useState<Language>(Language.NO);
 
   const toggleLanguage = () => {
     setLangauge((prev) => (prev === Language.NO ? Language.EN : Language.NO));
-  }
+  };
 
   return (
     <div onClick={toggleLanguage} className="cursor-pointer inline-flex gap-2">
