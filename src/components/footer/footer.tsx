@@ -1,9 +1,16 @@
+import Logo from "./logo";
+
 export default function Footer() {
   return (
     <>
       <footer className="relative w-full h-96 bg-IXBbg flex items-center justify-center">
         <div className="absolute inset-0">
           {/* SVG pattern will go here */}
+        </div>
+
+        {/* Logo */}
+        <div className="absolute top-6 left-6">
+          <Logo />
         </div>
 
         <div className="w-[75%] grid grid-cols-4 gap-8 text-white text-sm text-left mb-16">
