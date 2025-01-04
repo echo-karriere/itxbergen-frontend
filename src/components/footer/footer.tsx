@@ -12,7 +12,7 @@ export default function Footer() {
 
       <footer className="relative w-full h-96 bg-IXBbg flex items-center justify-center">
         {/* Logo */}
-        <div className="absolute top-6 left-6">
+        <div className="absolute top-2 left-8">
           <Logo />
         </div>
 
