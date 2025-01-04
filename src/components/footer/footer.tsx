@@ -14,6 +14,7 @@ export default function Footer() {
           <Logo />
         </div>
 
+        {/* Links */}
         <div className="w-[75%] grid grid-cols-4 gap-8 text-white text-sm text-left mb-16">
           <div>
             <h3 className="font-semibold mb-4">Informasjon</h3>
@@ -51,11 +52,9 @@ export default function Footer() {
         <div className="absolute bottom-[25%] left-1/2 -translate-x-1/2 w-[75%] border-t border-white" />
 
         {/* Parters */}
-
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
           <Partners />
         </div>
-
       </footer>
     </>
   );
