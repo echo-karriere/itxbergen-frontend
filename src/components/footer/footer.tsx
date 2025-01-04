@@ -19,6 +19,7 @@ export default function Footer() {
         {/* Links */}
         <div className="w-[75%] grid grid-cols-4 gap-8 text-white text-sm text-left mb-16">
           <div>
+            {/* Links */}
             <h3 className="font-semibold mb-4">Informasjon</h3>
             <p className="mb-4">Karrieredag</p>
             <p className="mb-4">Arrangementer</p>
@@ -26,6 +27,7 @@ export default function Footer() {
             <p className="mb-4">Om ItxBergen</p>
           </div>
 
+          {/* Kontakt oss */}
           <div>
             <h3 className="font-semibold mb-4">Kontakt oss</h3>
             <p className="mb-4">Kontakt oss</p>
@@ -33,6 +35,7 @@ export default function Footer() {
             <p className="mb-4">Opplevd noe ugreit?</p>
           </div>
 
+          {/* Om nettstedet */}
           <div>
             <h3 className="font-semibold mb-4">Om nettstedet</h3>
             <p className="mb-4">Personvernserklæring</p>
@@ -41,6 +44,7 @@ export default function Footer() {
             <p className="mb-4">Informasjonskapsler</p>
           </div>
 
+          {/* Sosiale medier */}
           <div>
             <h3 className="font-semibold mb-4">Sosiale medier</h3>
             <p className="mb-4">Linkedin</p>
