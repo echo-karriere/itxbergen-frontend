@@ -1,14 +1,16 @@
 import Logo from "./logo";
 import Partners from "./partners";
+import WavePattern from "./wave-pattern";
 
 export default function Footer() {
   return (
     <>
-      <footer className="relative w-full h-96 bg-IXBbg flex items-center justify-center">
-        <div className="absolute inset-0">
-          {/* SVG pattern will go here */}
-        </div>
+      {/* SVG wave pattern*/}
+      <div className="relative w-full -mb-[30px]">
+        <WavePattern />
+      </div>
 
+      <footer className="relative w-full h-96 bg-IXBbg flex items-center justify-center">
         {/* Logo */}
         <div className="absolute top-6 left-6">
           <Logo />
