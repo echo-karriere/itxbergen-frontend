@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       {/* SVG wave pattern*/}
-      <div className="relative w-full -mb-[30px]">
+      <div className="relative w-full -mb-[80px]">
         <WavePattern />
       </div>
 
