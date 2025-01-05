@@ -4,7 +4,7 @@ import LanguagePicker from "./language-picker";
 export default function Navbar() {
   return (
     <>
-      <div className="w-full h-20 bg-IXBbg sticky top-0 flex items-center">
+      <div className="w-full h-20 bg-IXBbg top-0 flex items-center">
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center h-full">
             {/* Logo Container */}
