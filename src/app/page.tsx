@@ -18,13 +18,13 @@ export default function Home() {
         <ButtonIXB
           label="Primary"
           onClick={handleButtonClick}
-          variant="primary"
+          variant="secondary"
         />
 
         <ButtonIXB
           label="Secondary"
           onClick={handleButtonClick}
-          variant="secondary"
+          variant="primary"
         />
       </div>
     </div>
