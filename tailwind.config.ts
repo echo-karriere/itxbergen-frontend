@@ -27,6 +27,7 @@ const config = {
         IXBbg1: "#EEEFFF",
         IXBbg2: "#E4EFFF",
         IXBfg: "#9CEDE9",
+        IXBPurple: "#7E57C2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
