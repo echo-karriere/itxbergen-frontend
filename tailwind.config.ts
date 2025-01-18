@@ -24,6 +24,8 @@ const config = {
         IXBGold: "#d0b46c",
         GrayText: "#D3D3D3",
         IXBbg: "#000E1E",
+        IXBbg1: "#EEEFFF",
+        IXBbg2: "#E4EFFF",
         IXBfg: "#9CEDE9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
