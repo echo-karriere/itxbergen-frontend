@@ -31,7 +31,7 @@ export default function ButtonIXB({
         borderTopRightRadius: '5px',
         borderBottomLeftRadius: '5px',
         padding: '32px 64px',
-        fontSize: '18px',
+        fontSize: '16px',
       }}>
       {label}
     </Button>
