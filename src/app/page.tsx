@@ -3,7 +3,10 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
 import ButtonIXB from "@/components/utils/button-ixb";
+import EventCard from "@/components/utils/event-card";
+import NewsCard from "@/components/utils/news-card";
 
 export default function Home() {
   const router = useRouter();
@@ -117,7 +120,50 @@ export default function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-IXBbg1 text-white h-[90vh] flex justify-center items-center relative">
+      <div className="bg-IXBbg1 text-black h-[95vh] flex flex-col justify-center items-center relative p-8 space-y-20">
+        {/* Event Section */}
+        <div className="w-full">
+          <h2 className="text-2xl font-bold text-start mb-6 ml-32">Kommende arrangementer</h2>
+          <div className="flex justify-start space-x-4 ml-32">
+            <EventCard
+              title="F*ck-Up Night"
+              date="6. november 2024 17:00"
+              address="Jonsvollsgaten 2"
+            />
+            <EventCard
+              title="F*ck-Up Night"
+              date="6. november 2024 17:00"
+              address="Jonsvollsgaten 2"
+            />
+            <EventCard
+              title="Event 3"
+              date="March 10, 2025"
+              address="789 Different Ave, Villagetown"
+            />
+          </div>
+        </div>
+
+        {/* News Section */}
+        <div className="w-full">
+          <h2 className="text-2xl font-bold text-start mb-6 ml-32">Nyheter</h2>
+          <div className="flex justify-start space-x-6 ml-32">
+            <NewsCard
+              image="/fuckup.png"
+              title="News Article 1"
+              date="January 5, 2025"
+            />
+            <NewsCard
+              image="/fuckup.png"
+              title="News Article 2"
+              date="February 10, 2025"
+            />
+            <NewsCard
+              image="/fuckup.png"
+              title="News Article 3"
+              date="March 15, 2025"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
