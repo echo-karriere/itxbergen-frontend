@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-white h-[90vh] flex items-center relative">
+      <div className="bg-IXBbg2 text-white h-[70vh] flex flex-col md:flex-row items-center relative">
         {/* Left Side Content */}
-        <div className="flex flex-col justify-center items-start pl-40 space-y-16 w-[60%] mb-80">
+        <div className="flex flex-col justify-center items-start pl-40 space-y-16 w-[60%] mb-32">
           {/* Large Text */}
-          <h1 className="text-black text-5xl font-bold">
+          <h1 className="text-black text-3xl md:text-5xl font-bold">
             <span className="text-IXBPurple">Karrieredag</span> og
             <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
           </h1>
@@ -32,14 +32,14 @@ export default function Home() {
           />
 
           {/* Subtext */}
-          <p className="text-black text-xl">
+          <p className="text-black text-base md:text-xl">
             Ikke karrieredag enda? <br />
             Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
           </p>
         </div>
 
         {/* Right Side Image */}
-        <div className="absolute right-0 flex justify-center items-center mb-60 pr-10 w-[40%]">
+        <div className="absolute right-0 flex justify-center items-center mb-12 pr-10 w-[40%]">
           <Image
             src="/tech-company-amico.png"
             alt="ItxBergen"
@@ -49,9 +49,12 @@ export default function Home() {
             draggable="false"
           />
         </div>
+      </div>
 
-        {/* Wave separator 1 */}
-        <div className="absolute bottom-0 w-full" style={{ marginBottom: '-10vh' }}>
+      {/* Section 2 */}
+      <div className="bg-IXBbg text-white h-[40vh] flex justify-center items-center relative">
+        {/* Wave separator at the top */}
+        <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
           <Image
             src="/wave_top.png"
             alt="Wave"
@@ -64,13 +67,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Section 2 */}
-      <div className="bg-IXBbg text-white h-[25vh] flex justify-center items-center">
-      </div>
-
       {/* Section 3 */}
-      <div className="bg-IXBbg1 text-white h-[120vh] flex justify-center items-center relative">
-        {/* Wave separator at the top */}
+      <div className="bg-IXBbg1 text-white h-[90vh] flex justify-center items-center relative">
+        {/* Wave separator at the bottom */}
         <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
           <Image
             src="/wave_bottom.png"
