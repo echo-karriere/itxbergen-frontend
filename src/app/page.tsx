@@ -69,7 +69,7 @@ export default function Home() {
         {/* Content Section */}
         <div className="w-full flex justify-between items-center px-10" style={{ zIndex: '20' }}>
           {/* Text */}
-          <div className="w-1/2 flex flex-col space-y-16 ml-24 mb-10">
+          <div className="w-1/2 flex flex-col space-y-14 ml-24 mb-10">
             <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
             <p className="text-lg md:text-xl">
               ITxBergen arrangerer karrieredager for IT-studenter i
@@ -90,8 +90,15 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="w-1/2" style={{ zIndex: '20' }}>
-
+          <div className="w-1/2">
+            <Image
+              src="/Logopakke/PNG/submark_darkBG.png"
+              alt="ITxBergen"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-contain"
+              draggable="false"
+            />
           </div>
         </div>
 

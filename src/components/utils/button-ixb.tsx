@@ -17,8 +17,8 @@ export default function ButtonIXB({
   className,
 }: buttonProps) {
   const variantStyle = variant === "primary"
-    ? 'bg-IXBbg text-white'
-    : 'bg-IXBfg text-white';
+    ? 'bg-IXBbg text-white bold'
+    : 'bg-IXBfg text-white bold';
 
   return (
     <Button
@@ -31,7 +31,7 @@ export default function ButtonIXB({
         borderTopRightRadius: '5px',
         borderBottomLeftRadius: '5px',
         padding: '32px 64px',
-        fontSize: '15px',
+        fontSize: '16px',
       }}>
       {label}
     </Button>
