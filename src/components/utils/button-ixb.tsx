@@ -25,7 +25,14 @@ export default function ButtonIXB({
       onClick={onClick}
       className={`${variantStyle} ${className}`}
       disabled={disabled}
-    >
+      style={{
+        borderTopLeftRadius: '25px',
+        borderBottomRightRadius: '25px',
+        borderTopRightRadius: '5px',
+        borderBottomLeftRadius: '5px',
+        padding: '32px 64px',
+        fontSize: '15px',
+      }}>
       {label}
     </Button>
   );
