@@ -1,30 +1,47 @@
 "use client";
 
 import React from "react";
-import ButtonIXB from "@/components/utils/button-ixb";
-import { useRouter } from "next/navigation";
+import EventCard from "@/components/utils/event-card";
+import NewsCard from "@/components/utils/news-card";
 
 export default function Home() {
-  const router = useRouter();
-
-  const handleButtonClick = () => {
-    router.push("/");
-  };
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-1">
-      <div className="flex space-x-4">
-        {/* Primary button */}
-        <ButtonIXB
-          label="Primary"
-          onClick={handleButtonClick}
-          variant="primary"
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 space-y-8">
+      {/* Event Cards Section */}
+      <div className="flex flex-col space-y-4">
+        <EventCard
+          title="Event 1"
+          date="January 20, 2025"
+          address="123 Example Street, Cityville"
         />
+        <EventCard
+          title="Event 2"
+          date="February 15, 2025"
+          address="456 Another Road, Townland"
+        />
+        <EventCard
+          title="Event 3"
+          date="March 10, 2025"
+          address="789 Different Ave, Villagetown"
+        />
+      </div>
 
-        <ButtonIXB
-          label="Secondary"
-          onClick={handleButtonClick}
-          variant="secondary"
+      {/* News Cards Section */}
+      <div className="flex space-x-4">
+        <NewsCard
+          image="/fuckup.png"
+          title="News Article 1"
+          date="January 5, 2025"
+        />
+        <NewsCard
+          image="/fuckup.png"
+          title="News Article 2"
+          date="February 10, 2025"
+        />
+        <NewsCard
+          image="/fuckup.png"
+          title="News Article 3"
+          date="March 15, 2025"
         />
       </div>
     </div>

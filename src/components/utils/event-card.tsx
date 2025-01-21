@@ -1,8 +1,8 @@
-const Card = ({ title, date, address, width = "240px", height = "100px" }) => {
+const EventCard = ({ title, date, address, width = "240px", height = "100px" }) => {
   return (
     <div
       style={{ width: width, height: height }}
-      className="bg-white w-60 h-[100px] bg-white border border-gray-200 rounded-[5px] hover:shadow-md hover:bg-[#EEEFFF]"
+      className="w-60 h-[100px] bg-white border border-gray-200 rounded-[5px] hover:shadow-md hover:bg-[#EEEFFF]"
     >
       {/* Purple bar */}
       <div className="h-[3px] w-full bg-[#9747FF] rounded-t-lg"></div>
@@ -25,4 +25,4 @@ const Card = ({ title, date, address, width = "240px", height = "100px" }) => {
   );
 };
 
-export default Card;
+export default EventCard;

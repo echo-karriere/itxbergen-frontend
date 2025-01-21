@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Card = ({ image, title, date, width = "265px", height = "290px" }) => {
+const NewsCard = ({ image, title, date, width = "265px", height = "290px" }) => {
   return (
     <div
       style={{ width: width, height: height }}
@@ -29,4 +29,4 @@ const Card = ({ image, title, date, width = "265px", height = "290px" }) => {
   );
 };
 
-export default Card;
+export default NewsCard;
