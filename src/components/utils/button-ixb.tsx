@@ -17,8 +17,8 @@ export default function ButtonIXB({
   className,
 }: buttonProps) {
   const variantStyle = variant === "primary"
-    ? 'bg-IXBbg text-white'
-    : 'bg-IXBfg text-white';
+    ? 'bg-IXBbg text-white bold'
+    : 'bg-IXBfg text-white bold';
 
   return (
     <Button
