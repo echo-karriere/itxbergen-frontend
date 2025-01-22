@@ -26,11 +26,11 @@ export default function ButtonIXB({
       className={`${variantStyle} ${className}`}
       disabled={disabled}
       style={{
-        borderTopLeftRadius: '25px',
-        borderBottomRightRadius: '25px',
+        borderTopLeftRadius: '20px',
+        borderBottomRightRadius: '20px',
         borderTopRightRadius: '5px',
         borderBottomLeftRadius: '5px',
-        padding: '32px 64px',
+        padding: '30px 60px',
         fontSize: '16px',
       }}>
       {label}
