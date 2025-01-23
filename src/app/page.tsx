@@ -20,7 +20,7 @@ export default function Home() {
       {/* Section 1 */}
       <div className="bg-IXBbg2 text-black md:h-[70vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20">
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
             <h1 className="text-3xl md:text-4xl font-bold">
@@ -45,7 +45,7 @@ export default function Home() {
               alt="ItxBergen"
               height={500}
               width={500}
-              className="object-contain md:transform md:scale-125"
+              className="object-contain md:transform md:scale-110"
               draggable="false"
             />
           </div>
