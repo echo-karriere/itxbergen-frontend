@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[70vh] h-[110vh] flex items-center justify-center relative pt-0 md:pt-0">
+      <div className="bg-IXBbg2 text-black md:h-[70vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
@@ -51,8 +51,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white h-[70vh] flex flex-col justify-center items-center relative">
+      <div className="bg-IXBbg text-white md:h-[70vh] h-[130vh] flex flex-col justify-center items-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
           <Image
@@ -66,31 +67,31 @@ export default function Home() {
           />
         </div>
 
-        {/* Content Section */}
-        <div className="w-full flex justify-between items-center px-10" style={{ zIndex: '20' }}>
-          {/* Text */}
-          <div className="w-1/2 flex flex-col space-y-14 ml-24 mb-10">
+        {/* Content Wrapper */}
+        <div className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-40 md:space-x-20" style={{ zIndex: '20' }}>
+          {/* Text Content */}
+          <div className="w-full md:w-full flex flex-col space-y-14 mb-10 md:ml-24 text-center md:text-left">
             <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
             <p className="text-lg md:text-xl">
               ITxBergen arrangerer karrieredager for IT-studenter i
               bergensområdet, og er tidligere kjent som echo karriere.
               Arrangementet ble holdt for første gang i 2019, noe som ble en
-              stor suksess med stort oppmøte fra  IT-studenter fra hele Bergen.
+              stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
               Enkelte ganger holder vi også andre karrierefremmende
               arrangementer.
               <br /> <br />
-              Vi er en frivillig  studentorganisasjon som
-              samarbeider med andre linjeforeninger innenfor  IT i Bergen, for
+              Vi er en frivillig studentorganisasjon som
+              samarbeider med andre linjeforeninger innenfor IT i Bergen, for
               å skape en felles årlig karrieredag. Vi når ut til
               linjeforeningene ved Universitetet i Bergen, Høgskulen på
-              Vestlandet og  Høyskolen Kristiania. Samtidig skaper vi et
+              Vestlandet og Høyskolen Kristiania. Samtidig skaper vi et
               arrangement som er åpent for alle IT-studenter i Bergen, og alle
               som er interesserte.
             </p>
           </div>
 
           {/* Image */}
-          <div className="w-1/2">
+          <div className="w-full md:w-full flex justify-center items-center">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
