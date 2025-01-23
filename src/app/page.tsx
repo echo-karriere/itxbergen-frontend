@@ -53,7 +53,7 @@ export default function Home() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white md:h-[70vh] h-[130vh] flex flex-col justify-center items-center relative">
+      <div className="bg-IXBbg text-white md:h-[70vh] h-[130vh] flex items-center justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
           <Image
@@ -68,9 +68,9 @@ export default function Home() {
         </div>
 
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-40 md:space-x-20" style={{ zIndex: '20' }}>
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20" style={{ zIndex: '20' }}>
           {/* Text Content */}
-          <div className="w-full md:w-full flex flex-col space-y-14 mb-10 md:ml-24 text-center md:text-left">
+          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left">
             <h1 className="text-IXBfg text-3xl font-bold font-montSerrat">Hva er ITxBergen?</h1>
             <p className="text-lg font-montSerrat">
               ITxBergen arrangerer karrieredager for IT-studenter i
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-full flex justify-center items-center">
+          <div className="w-full md:w-2/5 flex justify-center items-center">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
