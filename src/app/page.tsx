@@ -18,42 +18,39 @@ export default function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black h-[70vh] flex flex-col md:flex-row items-center relative">
-        {/* Left Side Content */}
-        <div className="flex flex-col justify-center items-start pl-40 space-y-16 w-[60%] mb-32">
-          {/* Large Text */}
-          <h1 className="text-3xl md:text-5xl font-bold">
-            <span className="text-IXBPurple">Karrieredag</span> og
-            <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
-          </h1>
+      <div className="bg-IXBbg2 text-black md:h-[70vh] h-[110vh] flex items-center justify-center relative pt-0 md:pt-0">
+        {/* Content Wrapper */}
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
+            <h1 className="text-3xl md:text-5xl font-bold">
+              <span className="text-IXBPurple">Karrieredag</span> og
+              <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
+            </h1>
+            <ButtonIXB
+              label="Sjekk ut karrieredagen vår"
+              onClick={handleButtonClick}
+              variant="primary"
+            />
+            <p className="text-base md:text-xl">
+              Ikke karrieredag enda? <br />
+              Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
+            </p>
+          </div>
 
-          {/* IXBButton */}
-          <ButtonIXB
-            label="Sjekk ut karrieredagen vår"
-            onClick={handleButtonClick}
-            variant="primary"
-          />
-
-          {/* Subtext */}
-          <p className="text-base md:text-xl">
-            Ikke karrieredag enda? <br />
-            Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
-          </p>
-        </div>
-
-        {/* Right Side Image */}
-        <div className="absolute right-0 flex justify-center items-center mb-12 pr-10 w-[40%]">
-          <Image
-            src="/tech-company-amico.png"
-            alt="ItxBergen"
-            height={500}
-            width={500}
-            className="object-contain"
-            draggable="false"
-          />
+          {/* Image */}
+          <div className="flex justify-center items-center w-full md:w-2/5">
+            <Image
+              src="/tech-company-amico.png"
+              alt="ItxBergen"
+              height={500}
+              width={500}
+              className="object-contain"
+              draggable="false"
+            />
+          </div>
         </div>
       </div>
-
       {/* Section 2 */}
       <div className="bg-IXBbg text-white h-[70vh] flex flex-col justify-center items-center relative">
         {/* Wave separator at the top */}
