@@ -23,16 +23,16 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
-            <h1 className="text-3xl md:text-5xl font-bold">
-              <span className="text-IXBPurple">Karrieredag</span> og
-              <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
+            <h1 className="text-3xl md:text-4xl font-bold">
+              <span className="text-IXBPurple font-montSerrat">Karrieredag</span> og
+              <span className="text-IXBPurple font-montSerrat"> nettverking</span> <br /> for IT-studenter i Bergen!
             </h1>
             <ButtonIXB
               label="Sjekk ut karrieredagen vår"
               onClick={handleButtonClick}
               variant="primary"
             />
-            <p className="text-base md:text-xl">
+            <p className="text-base md:text-lg">
               Ikke karrieredag enda? <br />
               Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
             </p>
@@ -45,7 +45,7 @@ export default function Home() {
               alt="ItxBergen"
               height={500}
               width={500}
-              className="object-contain"
+              className="object-contain md:transform md:scale-125"
               draggable="false"
             />
           </div>
@@ -71,8 +71,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center justify-center w-full px-6 md:px-40 md:space-x-20" style={{ zIndex: '20' }}>
           {/* Text Content */}
           <div className="w-full md:w-full flex flex-col space-y-14 mb-10 md:ml-24 text-center md:text-left">
-            <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
-            <p className="text-lg md:text-xl">
+            <h1 className="text-IXBfg text-3xl font-bold font-montSerrat">Hva er ITxBergen?</h1>
+            <p className="text-lg font-montSerrat">
               ITxBergen arrangerer karrieredager for IT-studenter i
               bergensområdet, og er tidligere kjent som echo karriere.
               Arrangementet ble holdt for første gang i 2019, noe som ble en
@@ -97,7 +97,7 @@ export default function Home() {
               alt="ITxBergen"
               width={1920}
               height={1080}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain transform scale-150"
               draggable="false"
             />
           </div>
