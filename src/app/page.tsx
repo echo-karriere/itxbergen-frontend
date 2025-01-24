@@ -24,8 +24,8 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
             <h1 className="text-3xl md:text-4xl font-bold">
-              <span className="text-IXBPurple font-montSerrat">Karrieredag</span> og
-              <span className="text-IXBPurple font-montSerrat"> nettverking</span> <br /> for IT-studenter i Bergen!
+              <span className="text-IXBPurple">Karrieredag</span> og
+              <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
             </h1>
             <ButtonIXB
               label="Sjekk ut karrieredagen vår"
@@ -70,9 +70,9 @@ export default function Home() {
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20" style={{ zIndex: '20' }}>
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left">
-            <h1 className="text-IXBfg text-3xl font-bold font-montSerrat">Hva er ITxBergen?</h1>
-            <p className="text-lg font-montSerrat">
+          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left mt-12 md:mt-0">
+            <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
+            <p className="text-lg">
               ITxBergen arrangerer karrieredager for IT-studenter i
               bergensområdet, og er tidligere kjent som echo karriere.
               Arrangementet ble holdt for første gang i 2019, noe som ble en
@@ -117,49 +117,55 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Section 3 */}
-      <div className="bg-IXBbg1 text-black h-[95vh] flex flex-col justify-center items-center relative p-8 space-y-20">
-        {/* Event Section */}
-        <div className="w-full">
-          <h2 className="text-2xl font-bold text-start mb-6 ml-32">Kommende arrangementer</h2>
-          <div className="flex justify-start space-x-4 ml-32">
-            <EventCard
-              title="F*ck-Up Night"
-              date="6. november 2024 17:00"
-              address="Jonsvollsgaten 2"
-            />
-            <EventCard
-              title="F*ck-Up Night"
-              date="6. november 2024 17:00"
-              address="Jonsvollsgaten 2"
-            />
-            <EventCard
-              title="Event 3"
-              date="March 10, 2025"
-              address="789 Different Ave, Villagetown"
-            />
-          </div>
-        </div>
 
-        {/* News Section */}
-        <div className="w-full">
-          <h2 className="text-2xl font-bold text-start mb-6 ml-32">Nyheter</h2>
-          <div className="flex justify-start space-x-6 ml-32">
-            <NewsCard
-              image="/fuckup.png"
-              title="News Article 1"
-              date="January 5, 2025"
-            />
-            <NewsCard
-              image="/fuckup.png"
-              title="News Article 2"
-              date="February 10, 2025"
-            />
-            <NewsCard
-              image="/fuckup.png"
-              title="News Article 3"
-              date="March 15, 2025"
-            />
+      {/* Section 3 */}
+      <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-12 px-8">
+        {/* Content Wrapper */}
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mt-14">
+          <div className="w-full flex flex-col space-y-16">
+            {/* Events Section */}
+            <div className="flex flex-col">
+              <h2 className="text-2xl font-bold mb-6">Kommende arrangementer</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <EventCard
+                  title="F*ck-Up Night"
+                  date="6. november 2024 17:00"
+                  address="Jonsvollsgaten 2"
+                />
+                <EventCard
+                  title="F*ck-Up Night"
+                  date="6. november 2024 17:00"
+                  address="Jonsvollsgaten 2"
+                />
+                <EventCard
+                  title="Event 3"
+                  date="March 10, 2025"
+                  address="789 Different Ave, Villagetown"
+                />
+              </div>
+            </div>
+
+            {/* News Section */}
+            <div className="flex flex-col">
+              <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <NewsCard
+                  image="/fuckup.png"
+                  title="News Article 1"
+                  date="January 5, 2025"
+                />
+                <NewsCard
+                  image="/fuckup.png"
+                  title="News Article 2"
+                  date="February 10, 2025"
+                />
+                <NewsCard
+                  image="/fuckup.png"
+                  title="News Article 3"
+                  date="March 15, 2025"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
