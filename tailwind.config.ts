@@ -63,6 +63,7 @@ const config = {
         promptBold: ["Prompt"],
         montSerrat: ["Montserrat"],
         sourceSans: ["Source Sans 3"],
+        inter: ["Inter"],
       },
       borderRadius: {
         lg: "var(--radius)",
