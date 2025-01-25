@@ -1,67 +1,95 @@
 import Logo from "./logo";
 import Partners from "./partners";
-import WavePattern from "./wave-pattern";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <>
-      {/* SVG wave pattern*/}
-      <div className="relative w-full -mb-[80px]">
-        <WavePattern />
+    <footer className="relative bg-IXBbg text-white">
+      {/* Wave Image */}
+      <div className="w-full bg-white">
+        <Image
+          src="/FooterWave.png"
+          alt="Wave"
+          layout="intrinsic"
+          width={1920}
+          height={1080}
+          draggable='false'
+        />
       </div>
 
-      <footer className="relative w-full h-96 bg-IXBbg flex items-center justify-center">
+      {/* Footer Content Container */}
+      <div className="relative container mx-auto py-4">
         {/* Logo */}
-        <div className="absolute top-2 left-8">
+        <div className="mb-8">
           <Logo />
         </div>
 
-        {/* Links */}
-        <div className="w-[75%] grid grid-cols-4 gap-8 text-white text-sm text-left mb-16">
-          <div>
+        {/* Top Section: Links */}
+        <div className="flex flex-col items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16 text-sm max-w-screen-lg w-full">
             {/* Informasjon */}
-            <h3 className="font-semibold mb-4">Informasjon</h3>
-            <p className="mb-4">Karrieredag</p>
-            <p className="mb-4">Arrangementer</p>
-            <p className="mb-4">Stillingsannonser</p>
-            <p className="mb-4">Om ItxBergen</p>
-          </div>
+            <div>
+              <h3 className="font-bold mb-4">Informasjon</h3>
+              <ul>
+                <li className="mb-4">Karrieredag</li>
+                <li className="mb-4">Arrangementer</li>
+                <li className="mb-4">Stillingsannonser</li>
+                <li className="mb-4">Om ItxBergen</li>
+              </ul>
+            </div>
 
-          {/* Kontakt oss */}
-          <div>
-            <h3 className="font-semibold mb-4">Kontakt oss</h3>
-            <p className="mb-4">Kontakt oss</p>
-            <p className="mb-4">Presse</p>
-            <p className="mb-4">Opplevd noe ugreit?</p>
-          </div>
+            {/* Kontakt oss */}
+            <div>
+              <h3 className="font-bold mb-4">Kontakt oss</h3>
+              <ul>
+                <li className="mb-4">Kontakt oss</li>
+                <li className="mb-4">Presse</li>
+                <li className="mb-4">Opplevd noe ugreit?</li>
+              </ul>
+            </div>
 
-          {/* Om nettstedet */}
-          <div>
-            <h3 className="font-semibold mb-4">Om nettstedet</h3>
-            <p className="mb-4">Personvernserklæring</p>
-            <p className="mb-4">Salgs- og påmeldingsvilkår</p>
-            <p className="mb-4">Tilgjengilighet</p>
-            <p className="mb-4">Informasjonskapsler</p>
-          </div>
+            {/* Om nettstedet */}
+            <div>
+              <h3 className="font-bold mb-4">Om nettstedet</h3>
+              <ul>
+                <li className="mb-4">Personvernserklæring</li>
+                <li className="mb-4">Salgs- og påmeldingsvilkår</li>
+                <li className="mb-4">Tilgjengelighet</li>
+                <li className="mb-4">Informasjonskapsler</li>
+              </ul>
+            </div>
 
-          {/* Sosiale medier */}
-          <div>
-            <h3 className="font-semibold mb-4">Sosiale medier</h3>
-            <p className="mb-4">Linkedin</p>
-            <p className="mb-4">Instagram</p>
-            <p className="mb-4">Facebook</p>
-            <p className="mb-4">Github</p>
+            {/* Sosiale medier */}
+            <div>
+              <h3 className="font-bold mb-4">Sosiale medier</h3>
+              <ul>
+                <li className="mb-4">LinkedIn</li>
+                <li className="mb-4">Instagram</li>
+                <li className="mb-4">Facebook</li>
+                <li className="mb-4">GitHub</li>
+              </ul>
+            </div>
           </div>
+        </div>
+
+        {/* text */}
+        <div className="flex justify-center text-sm font-bold mb-2 mt-4">
+          <p>ITxBergen © 2019 - 2024</p>
         </div>
 
         {/* Horizontal Line */}
-        <div className="absolute bottom-[25%] left-1/2 -translate-x-1/2 w-[75%] border-t border-white" />
+        <div className="w-full border-t border-white mb-2"></div>
 
-        {/* Parters */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        {/* "Powered by" Text */}
+        <div className="flex justify-center text-sm mb-2 mt-4">
+          <p>Powered by:</p>
+        </div>
+
+        {/* Bottom Section: Partners */}
+        <div className="flex justify-center mb-2">
           <Partners />
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }
