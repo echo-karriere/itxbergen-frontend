@@ -14,7 +14,7 @@ export default function Footer() {
         {/* Footer Content Container */}
         <div className="relative container mx-auto py-4">
           {/* Logo */}
-          <div className="mb-4">
+          <div className="flex justify-center md:justify-start mb-4">
             <Logo />
           </div>
 
