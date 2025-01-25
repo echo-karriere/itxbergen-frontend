@@ -53,7 +53,7 @@ export default function Home() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white md:h-[70vh] h-[130vh] flex items-center justify-center relative">
+      <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
           <Image
