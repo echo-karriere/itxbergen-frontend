@@ -55,9 +55,9 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
         {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full" style={{ marginTop: '-10vh' }}>
+        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[25vh]">
           <Image
-            src="/wave_top.png"
+            src="/wave_top_dark.svg"
             alt="Wave Top"
             layout="intrinsic"
             width={1920}
@@ -104,9 +104,9 @@ export default function Home() {
         </div>
 
         {/* Wave separator at the bottom */}
-        <div className="absolute bottom-0 w-full" style={{ marginBottom: '-10vh', zIndex: '10' }}>
+        <div className="absolute bottom-0 w-full -mb-[12vh] md:-mb-[18vh] z-10">
           <Image
-            src="/wave_bottom.png"
+            src="/wave_bottom_dark.svg"
             alt="Wave Bottom"
             layout="intrinsic"
             width={1920}
@@ -116,7 +116,6 @@ export default function Home() {
           />
         </div>
       </div>
-
 
       {/* Section 3 */}
       <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-12 px-8">
