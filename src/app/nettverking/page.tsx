@@ -1,6 +1,6 @@
-import { Link } from "lucide-react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Nettverking() {
   return (
@@ -15,22 +15,23 @@ export default function Nettverking() {
               <span>Nettverking</span>
             </h1>
             <p className="text-base">
-              ITxBergen er opptatt av at studentene skal finne rikelig med informasjon som kan fremme deres karriere innen IT.
+              ITxBergen er opptatt av at studentene skal finne rikelig med
+              informasjon som kan fremme deres karriere innen IT.
             </p>
             <p className="text-base">
               På denne siden vil du finne ressurser for IT-studenter, som:
             </p>
 
             {/* Links */}
-            <a href="#" className="flex items-center font-bold hover:underline">
+            <a href="#" className="flex items-center font-semibold hover:underline">
               Studentorganisasjoner og linjeforeninger
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a href="#" className="flex items-center font-bold hover:underline">
+            <a href="#" className="flex items-center font-semibold hover:underline">
               Arrangementer
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a href="#" className="flex items-center font-bold hover:underline">
+            <a href="#" className="flex items-center font-semibold hover:underline">
               Nyheter
               <ChevronRight className="w-5 h-5" />
             </a>
@@ -66,8 +67,34 @@ export default function Nettverking() {
         </div>
 
         {/* Content Wrapper */}
-        <div className="">
+        <div className="relative flex flex-col items-start w-full px-6 md:px-40">
+          {/* Student organisations section */}
+          <div className="relative flex flex-col items-start space-y-2">
+            <h2 className="text-2xl font-bold text-left">
+              Studentorganisasjoner og linjeforeninger for <br />
+              IT-studenter
+            </h2>
+            <p>
+              Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
+              ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
+            </p>
 
+            {/* Button row */}
+            <div className="flex flex-row md:space md:space-x-12 text-sm">
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
+                Vis alle
+              </Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
+                Universitetet i ItxBergen
+              </Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
+                Høgskolen på Vestlandet
+              </Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
+                Høyskolen Kristiania
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -81,15 +108,15 @@ export default function Nettverking() {
 
           {/* Links */}
           <a href="#" className="flex items-center hover:underline">
-            Studentorganisasjoner og linjeforeninger
+            Karrieredagen
             <ChevronRight className="w-5 h-5" />
           </a>
           <a href="#" className="flex items-center hover:underline">
-            Arrangementer
+            Stillingsannonser
             <ChevronRight className="w-5 h-5" />
           </a>
           <a href="#" className="flex items-center hover:underline">
-            Nyheter
+            Om ITxBergen
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
