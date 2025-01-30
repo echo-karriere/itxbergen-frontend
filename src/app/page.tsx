@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[70vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
+      <div className="bg-IXBbg2 text-black md:h-[75vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
