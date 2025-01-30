@@ -52,7 +52,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black h-screen flex items-center justify-center relative">
+      <div className="bg-IXBbg2 text-black min-h-screen flex items-center justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
@@ -69,23 +69,25 @@ export default function Nettverking() {
         {/* Content Wrapper */}
         <div className="relative flex flex-col items-start w-full px-6 md:px-40">
           {/* Student organisations section */}
-          <div className="relative flex flex-col items-start space-y-2">
-            <h2 className="text-2xl font-bold text-left">
-              Studentorganisasjoner og linjeforeninger for <br />
-              IT-studenter
-            </h2>
-            <p>
-              Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
-              ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
-            </p>
+          <div className="relative flex flex-col items-start">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-left">
+                Studentorganisasjoner og linjeforeninger for <br />
+                IT-studenter
+              </h2>
+              <p>
+                Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
+                ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
+              </p>
+            </div>
 
-            {/* Button row */}
-            <div className="flex flex-row md:space md:space-x-12 text-sm">
+            {/* Button row with added spacing */}
+            <div className="flex flex-row md:space-x-12 text-sm mt-12">
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
                 Vis alle
               </Button>
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
-                Universitetet i ItxBergen
+                Universitetet i Bergen
               </Button>
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
                 Høgskolen på Vestlandet
@@ -94,6 +96,9 @@ export default function Nettverking() {
                 Høyskolen Kristiania
               </Button>
             </div>
+
+            {/* Line under buttons */}
+            <div className="w-full border-t-2 border-black mt-2"></div>
           </div>
         </div>
       </div>
