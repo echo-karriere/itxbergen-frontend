@@ -55,7 +55,7 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
         {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[25vh]">
+        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[24vh]">
           <Image
             src="/wave_top_dark.svg"
             alt="Wave Top"
