@@ -117,7 +117,6 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* Section 3 */}
       <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-12 px-8">
         {/* Content Wrapper */}
