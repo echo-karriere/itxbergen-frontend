@@ -53,7 +53,7 @@ export default function Nettverking() {
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black h-screen flex items-center justify-center relative">
         {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full" style={{ marginTop: '-12vh' }}>
+        <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
             src="/wave_top_light.svg"
             alt="Wave Top"
@@ -65,6 +65,10 @@ export default function Nettverking() {
           />
         </div>
 
+        {/* Content Wrapper */}
+        <div className="">
+
+        </div>
       </div>
 
       <div className="bg-white text-black flex items-center justify-center py-12 px-4">
