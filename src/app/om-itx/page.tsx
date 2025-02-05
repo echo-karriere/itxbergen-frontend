@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import Styremedlem from "@/components/utils/styremedlem";
+import Wavepattern from "@/components/utils/general-wavepattern";
+import Styremedlemgrid from "@/components/utils/styremedlemgrid";
 
 const Page = () => {
   return (
@@ -38,18 +40,9 @@ const Page = () => {
           />
         </div>
       </div>
-      <div className="h-20 bg-IXBbg"></div>
-
-      <div className="w-[100%] flex justify-center pt-5">
-        <ol>
-          <Styremedlem
-            image={"/fredric.png"}
-            name={"Fredric Hegland"}
-            title={"Leder"}
-            mail={"fredric.hegland@itxbergen.no"}
-          />
-        </ol>
-      </div>
+      <Wavepattern>
+        <Styremedlemgrid />
+      </Wavepattern>
     </>
   );
 };
