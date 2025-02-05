@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Breadcrumbs from "@/components/utils/breadcrumbs";
 
 export default function Nettverking() {
   return (
@@ -11,6 +12,10 @@ export default function Nettverking() {
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+            {/* Breadcrumb */}
+            <Breadcrumbs
+              current="Nettverking"
+            />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Nettverking</span>
             </h1>
@@ -52,7 +57,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black min-h-screen flex items-center justify-center relative">
+      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
@@ -67,42 +72,26 @@ export default function Nettverking() {
         </div>
 
         {/* Content Wrapper */}
-        <div className="relative flex flex-col items-start w-full px-6 md:px-40">
-          {/* Student organisations section */}
+        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-12">
           <div className="relative flex flex-col items-start">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-left">
-                Studentorganisasjoner og linjeforeninger for <br />
-                IT-studenter
-              </h2>
-              <p>
-                Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
-                ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
-              </p>
+              <h2 className="text-2xl font-bold text-left">Studentorganisasjoner og linjeforeninger for <br /> IT-studenter</h2>
+              <p>Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br /> ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!</p>
             </div>
-
-            {/* Button row with added spacing */}
-            <div className="flex flex-row md:space-x-12 text-sm mt-12">
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
-                Vis alle
-              </Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
-                Universitetet i Bergen
-              </Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
-                Høgskolen på Vestlandet
-              </Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">
-                Høyskolen Kristiania
-              </Button>
-            </div>
-
             {/* Line under buttons */}
             <div className="w-full border-t-2 border-black mt-2"></div>
+            {/* Button row with added spacing */}
+            <div className="flex flex-row md:space-x-12 text-sm mt-6">
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Vis alle</Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Universitetet i Bergen</Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høgskolen på Vestlandet</Button>
+              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høyskolen Kristiania</Button>
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Section 3 */}
       <div className="bg-white text-black flex items-center justify-center py-12 px-4">
         {/* Single Box */}
         <div className="w-[90%] bg-IXBbg1 rounded-3xl shadow-2xl p-6 flex flex-col space-y-6">

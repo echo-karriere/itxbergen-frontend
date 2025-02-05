@@ -1,15 +1,9 @@
 import Logo from "./logo";
 import Partners from "./partners";
-import WavPattern from "./wave-pattern";
 
 export default function Footer() {
   return (
     <>
-      {/* Wave Image */}
-      <div className="relative w-full -mb-[80px]">
-        <WavPattern />
-      </div>
-
       <footer className="relative bg-IXBbg text-white">
         {/* Footer Content Container */}
         <div className="relative container mx-auto py-4">

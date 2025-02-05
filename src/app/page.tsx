@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[70vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
+      <div className="bg-IXBbg2 text-black md:h-[75vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
@@ -34,7 +35,7 @@ export default function Home() {
             />
             <p className="text-base md:text-lg">
               Ikke karrieredag enda? <br />
-              Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
+              Sjekk ut mulighetene for <Link href="/nettverking" className="font-bold underline">nettverking!</Link>
             </p>
           </div>
 
