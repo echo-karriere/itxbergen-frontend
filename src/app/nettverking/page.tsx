@@ -1,7 +1,10 @@
+'use client'
+
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
+import OrganisationCard from "@/components/utils/organisation-card";
 
 export default function Nettverking() {
   return (
@@ -73,19 +76,35 @@ export default function Nettverking() {
 
         {/* Content Wrapper */}
         <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-12">
-          <div className="relative flex flex-col items-start">
+          {/* Text Section */}
+          <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-left">Studentorganisasjoner og linjeforeninger for <br /> IT-studenter</h2>
               <p>Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br /> ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!</p>
             </div>
-            {/* Line under buttons */}
-            <div className="w-full border-t-2 border-black mt-2"></div>
             {/* Button row with added spacing */}
-            <div className="flex flex-row md:space-x-12 text-sm mt-6">
+            <div className="flex flex-row md:space-x-12 text-sm pt-12">
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Vis alle</Button>
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Universitetet i Bergen</Button>
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høgskolen på Vestlandet</Button>
               <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høyskolen Kristiania</Button>
+            </div>
+            {/* Line under buttons */}
+            <div className="w-full border-t-2 border-black"></div>
+          </div>
+
+          {/* Organisation Section */}
+          <div className="w-full pt-6">
+            {/* Organisation Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full justify-center md:justify-start place-items-center">
+              <OrganisationCard name="Cloud" location="Høyskolen Kristiania" />
+              <OrganisationCard name="CybVest" location="Høyskolen Kristiania" />
+              <OrganisationCard name="echo" location="Universitetet i Bergen" />
+              <OrganisationCard name="Enigma Fintech" location="Høgskulen på Vestlandet" />
+              <OrganisationCard name="Enter" location="Universitetet i Bergen" />
+              <OrganisationCard name="Helt Sikker" location="Universitetet i Bergen" />
+              <OrganisationCard name="Inkogvito" location="Universitetet i Bergen" />
+              <OrganisationCard name="ReMIX" location="Universitetet i Bergen" />
             </div>
           </div>
         </div>
