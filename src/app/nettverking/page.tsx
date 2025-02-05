@@ -75,7 +75,7 @@ export default function Nettverking() {
         </div>
 
         {/* Content Wrapper */}
-        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-12">
+        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
