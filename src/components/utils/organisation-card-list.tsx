@@ -30,7 +30,7 @@ export default function OrganisationCardList({ selectedLocation }: OrganisationC
     : organisations.filter(org => org.location === selectedLocation)
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center md:place-items-start">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center md:place-items-start">
       {filteredOrganisations.map((organisation, index) => (
         <OrganisationCard
           key={organisation.name}
