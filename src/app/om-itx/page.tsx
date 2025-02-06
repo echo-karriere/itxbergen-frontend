@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/utils/breadcrumbs";
 import Styremedlem from "@/components/utils/styremedlem";
 import Wavepattern from "@/components/utils/general-wavepattern";
 import Styremedlemgrid from "@/components/utils/styremedlemgrid";
+import Otherthings from "@/components/utils/otherthings";
 
 const Page = () => {
   return (
@@ -43,6 +44,10 @@ const Page = () => {
       <Wavepattern>
         <Styremedlemgrid />
       </Wavepattern>
+
+      <div className="w-[100%] flex justify-center">
+        <Otherthings />
+      </div>
     </>
   );
 };
