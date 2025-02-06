@@ -94,7 +94,7 @@ const Wavepattern = ({ children }) => {
         </defs>
       </svg>
 
-      <div className="bg-[#E4EFFF] w-[100%] flex justify-center mt-[-6rem] pb-32 shadow-xl mb-10">
+      <div className="bg-[#E4EFFF] w-[100%] flex justify-center mt-[-6rem] pb-32 shadow-lg mb-10">
         {children}
       </div>
     </>
