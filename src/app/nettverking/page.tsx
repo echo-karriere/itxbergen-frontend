@@ -113,11 +113,12 @@ export default function Nettverking() {
           {/* Info Section */}
           <div className="flex flex-col md:flex-row w-full gap-6 pt-12 pb-20">
             {/* First Box */}
-            <div className="w-full md:w-[60%] h-[450px] bg-white rounded-3xl p-6 shadow-lg">
+            <div className="w-full md:w-[60%] h-[450px] bg-white rounded-t-3xl p-6 shadow-2xl">
             </div>
 
             {/* Second Box */}
-            <div className="w-full md:w-[40%] h-[450px] bg-IXBbg1 rounded-3xl p-6 shadow-lg">
+            <div className="w-full md:w-[40%] h-[450px] bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl">
+
             </div>
           </div>
         </div>
