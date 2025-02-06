@@ -9,7 +9,7 @@ interface OrganisationCardListProps {
 const organisations = [
   { name: 'Cloud', location: 'Høyskolen Kristiania' },
   { name: 'CybVest', location: 'Høyskolen Kristiania' },
-  { name: 'Echo', location: 'Universitetet i Bergen' },
+  { name: 'echo', location: 'Universitetet i Bergen' },
   { name: 'Enigma Fintech', location: 'Høgskulen på Vestlandet' },
   { name: 'Enter', location: 'Universitetet i Bergen' },
   { name: 'Helt Sikker', location: 'Universitetet i Bergen' },
