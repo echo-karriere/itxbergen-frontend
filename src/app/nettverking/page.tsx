@@ -1,13 +1,15 @@
 'use client'
 
 import Image from "next/image";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Ghost } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
-import OrganisationCard from "@/components/utils/organisation-card";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
+import { useState } from "react";
 
 export default function Nettverking() {
+  const [selectedLocation, setSelectedLocation] = useState('Vis alle');
+
   return (
     <div>
       {/* Section 1 */}
@@ -61,7 +63,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
+      <div className="bg-IXBbg2 text-black h-auto flex items-start justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
@@ -83,20 +85,40 @@ export default function Nettverking() {
               <h2 className="text-2xl font-bold text-left">Studentorganisasjoner og linjeforeninger for <br /> IT-studenter</h2>
               <p>Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br /> ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!</p>
             </div>
-            {/* Button row with added spacing */}
+
+            {/* Button row with filtering */}
             <div className="flex flex-row md:space-x-12 text-sm pt-12">
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Vis alle</Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Universitetet i Bergen</Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høgskolen på Vestlandet</Button>
-              <Button variant="ghost" className="hover:underline hover:text-IXBPurple">Høyskolen Kristiania</Button>
+              {["Vis alle", "Universitetet i Bergen", "Høgskulen på Vestlandet", "Høyskolen Kristiania"].map((location) => (
+                <Button
+                  key={location}
+                  variant="ghost"
+                  className={`hover:underline hover:text-IXBPurple ${selectedLocation === location ? 'text-IXBPurple font-bold' : ''
+                    }`}
+                  onClick={() => setSelectedLocation(location)}
+                >
+                  {location}
+                </Button>
+              ))}
             </div>
+
             {/* Line under buttons */}
             <div className="w-full border-t-2 border-black"></div>
           </div>
 
           {/* Organisation Section */}
           <div className="w-full pt-6">
-            <OrganisationCardList />
+            <OrganisationCardList selectedLocation={selectedLocation} />
+          </div>
+
+          {/* Info Section */}
+          <div className="flex flex-col md:flex-row w-full gap-6 pt-12 pb-20">
+            {/* First Box */}
+            <div className="w-full md:w-[60%] h-[450px] bg-white rounded-3xl p-6 shadow-lg">
+            </div>
+
+            {/* Second Box */}
+            <div className="w-full md:w-[40%] h-[450px] bg-IXBbg1 rounded-3xl p-6 shadow-lg">
+            </div>
           </div>
         </div>
       </div>
