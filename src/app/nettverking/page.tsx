@@ -5,6 +5,7 @@ import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import OrganisationCard from "@/components/utils/organisation-card";
+import OrganisationCardList from "@/components/utils/organisation-card-list";
 
 export default function Nettverking() {
   return (
@@ -95,17 +96,7 @@ export default function Nettverking() {
 
           {/* Organisation Section */}
           <div className="w-full pt-6">
-            {/* Organisation Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full justify-center md:justify-start place-items-center">
-              <OrganisationCard name="Cloud" location="Høyskolen Kristiania" />
-              <OrganisationCard name="CybVest" location="Høyskolen Kristiania" />
-              <OrganisationCard name="echo" location="Universitetet i Bergen" />
-              <OrganisationCard name="Enigma Fintech" location="Høgskulen på Vestlandet" />
-              <OrganisationCard name="Enter" location="Universitetet i Bergen" />
-              <OrganisationCard name="Helt Sikker" location="Universitetet i Bergen" />
-              <OrganisationCard name="Inkogvito" location="Universitetet i Bergen" />
-              <OrganisationCard name="ReMIX" location="Universitetet i Bergen" />
-            </div>
+            <OrganisationCardList />
           </div>
         </div>
       </div>

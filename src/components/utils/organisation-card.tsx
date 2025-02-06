@@ -1,31 +1,27 @@
-import { useState } from "react";
-
 interface OrganisationCardProps {
   name: string;
   location: string;
   width?: string;
   height?: string;
-
+  selected: boolean;
+  onSelect: () => void;
 }
+
 export default function OrganisationCard({
   name,
   location,
   width = "320px",
-  height = "90px"
+  height = "90px",
+  selected,
+  onSelect
 }: OrganisationCardProps) {
-  const [selected, setSelected] = useState(false);
-
-  const toggleSelect = () => {
-    setSelected(!selected);
-  }
-
   return (
     <div
       style={{ width, height }}
-      className={`bg-white border border-gray-200 rounded-lg hover:shadow-md cursor-pointer ${
-          selected ? 'bg-[#EEEFFF] shadow-2xl' : 'hover:bg-[#EEEFFF]'
-        }`}
-      onClick={toggleSelect}
+      className={`bg-white border border-gray-200 rounded-lg cursor-pointer ${
+        selected ? 'bg-[#EEEFFF] shadow-2xl' : 'hover:bg-[#EEEFFF] hover:shadow-md'
+      }`}
+      onClick={onSelect}
     >
       {/* Purple bar */}
       <div className="h-[3px] w-full bg-IXBPurple rounded-t-lg"></div>
