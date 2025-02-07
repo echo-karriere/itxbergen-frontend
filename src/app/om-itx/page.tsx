@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
-import Styremedlem from "@/components/utils/styremedlem";
 import Wavepattern from "@/components/utils/general-wavepattern";
 import Styremedlemgrid from "@/components/utils/styremedlemgrid";
 import Otherthings from "@/components/utils/otherthings";
@@ -9,13 +8,13 @@ import Otherthings from "@/components/utils/otherthings";
 const Page = () => {
   return (
     <>
-      <div className="flex pl-12 space-x-12 pt-10">
-        <div className="w-[40%] pl-16">
+      <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:pl-12 md:pr-0 space-x-12 pt-10 pl-4 pr-4">
+        <div className="md:w-[40%] md:pl-16">
           <Breadcrumbs current={"Om ITxBergen"} />
           <h1 className="font-promptBold font-bold text-5xl/10 leading-tight mb-6 pt-5">
             Om ITxBergen
           </h1>
-          <p className="font-sourceSans text-sm/8 text-[#121212]">
+          <p className="font-sourceSans text-sm md:text-sm/8 text-[#121212]">
             ITxBergen arrangerer karrieredager for IT-studenter i
             bergensområdet, og er tidligere kjent som echo karriere.
             Arrangementet ble holdt for første gang i 2019, noe som ble en stor
@@ -31,7 +30,7 @@ const Page = () => {
             Bergen, og alle som er interesserte.
           </p>
         </div>
-        <div className="w-[60%] flex items-center justify-center">
+        <div className="md:w-[60%] flex items-center justify-center">
           <Image
             src="/omitxbilde.png"
             alt="ITxBergen illustration"
@@ -45,9 +44,7 @@ const Page = () => {
         <Styremedlemgrid />
       </Wavepattern>
 
-      <div className="w-[100%] flex justify-center">
-        <Otherthings />
-      </div>
+      <div className="w-[100%] flex justify-center"></div>
     </>
   );
 };
