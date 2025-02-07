@@ -9,6 +9,7 @@ import { useState } from "react";
 
 export default function Nettverking() {
   const [selectedLocation, setSelectedLocation] = useState('Vis alle');
+  const [selectedOrganisation, setSelectedOrganisation] = useState<string | null>(null);
 
   return (
     <div>
@@ -63,7 +64,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black h-auto flex items-start justify-center relative">
+      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
@@ -82,8 +83,13 @@ export default function Nettverking() {
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-left">Studentorganisasjoner og linjeforeninger for <br /> IT-studenter</h2>
-              <p>Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br /> ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!</p>
+              <h2 className="text-2xl font-bold text-left">
+                Studentorganisasjoner og linjeforeninger for <br /> IT-studenter
+              </h2>
+              <p>
+                Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
+                ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
+              </p>
             </div>
 
             {/* Button row with filtering */}
@@ -92,8 +98,7 @@ export default function Nettverking() {
                 <Button
                   key={location}
                   variant="ghost"
-                  className={`hover:underline hover:text-IXBPurple ${selectedLocation === location ? 'text-IXBPurple font-bold' : ''
-                    }`}
+                  className={`hover:underline hover:text-IXBPurple ${selectedLocation === location ? 'text-IXBPurple font-bold' : ''}`}
                   onClick={() => setSelectedLocation(location)}
                 >
                   {location}
@@ -107,7 +112,10 @@ export default function Nettverking() {
 
           {/* Organisation Section */}
           <div className="w-full pt-6">
-            <OrganisationCardList selectedLocation={selectedLocation} />
+            <OrganisationCardList
+              selectedLocation={selectedLocation}
+              onSelectOrganisation={setSelectedOrganisation}
+            />
           </div>
 
           {/* Info Section */}
@@ -116,16 +124,19 @@ export default function Nettverking() {
             <div className="w-full md:w-[55%] h-[450px] bg-white rounded-t-3xl p-6 shadow-2xl">
               {/* First Box Content */}
               <div>
-                <h3 className="text-2xl font-bold text-black mb-4">Title</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  {selectedOrganisation || "Velg en organisasjon"}
+                </h3>
                 <p className="text-gray-600">
-                  something
+                  {selectedOrganisation
+                    ? `Her kan du finne informasjon om ${selectedOrganisation}.`
+                    : "Klikk på en organisasjon for å se mer informasjon."}
                 </p>
               </div>
             </div>
 
             {/* Second Box */}
             <div className="w-full md:w-[35%] h-[450px] bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl">
-
             </div>
           </div>
         </div>

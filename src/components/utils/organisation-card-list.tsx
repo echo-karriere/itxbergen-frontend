@@ -3,8 +3,8 @@ import OrganisationCard from "./organisation-card";
 
 interface OrganisationCardListProps {
   selectedLocation: string;
+  onSelectOrganisation: (name: string | null) => void;
 }
-
 
 const organisations = [
   { name: 'Cloud', location: 'Høyskolen Kristiania' },
@@ -17,17 +17,23 @@ const organisations = [
   { name: 'ReMIX', location: 'Universitetet i Bergen' },
 ];
 
-
-export default function OrganisationCardList({ selectedLocation }: OrganisationCardListProps) {
+export default function OrganisationCardList({ selectedLocation, onSelectOrganisation }: OrganisationCardListProps) {
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(null);
 
-  const handleSelectCard = (index: number) => {
-    setSelectedCardIndex(selectedCardIndex === index ? null : index);
-  }
+  const handleSelectCard = (index: number, name: string) => {
+    if (selectedCardIndex === index) {
+      setSelectedCardIndex(null);
+      onSelectOrganisation(null);
+    } else {
+      setSelectedCardIndex(index);
+      onSelectOrganisation(name);
+    }
+  };
 
+  // Filter the organisations based on selected location
   const filteredOrganisations = selectedLocation === 'Vis alle'
     ? organisations
-    : organisations.filter(org => org.location === selectedLocation)
+    : organisations.filter(org => org.location === selectedLocation);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center md:place-items-start">
@@ -39,7 +45,7 @@ export default function OrganisationCardList({ selectedLocation }: OrganisationC
           width="320px"
           height="90px"
           selected={selectedCardIndex === index}
-          onSelect={() => handleSelectCard(index)}
+          onSelect={() => handleSelectCard(index, organisation.name)}
         />
       ))}
     </div>
