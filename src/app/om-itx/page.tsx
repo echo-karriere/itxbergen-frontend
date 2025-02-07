@@ -43,8 +43,9 @@ const Page = () => {
       <Wavepattern>
         <Styremedlemgrid />
       </Wavepattern>
-
-      <div className="w-[100%] flex justify-center"></div>
+      <br></br>
+      <Otherthings />
+      <br></br>
     </>
   );
 };
