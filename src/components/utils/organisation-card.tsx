@@ -18,8 +18,8 @@ export default function OrganisationCard({
   return (
     <div
       style={{ width, height }}
-      className={`bg-white border border-gray-200 rounded-lg cursor-pointer ${
-        selected ? 'bg-[#EEEFFF] shadow-2xl' : 'hover:bg-[#EEEFFF] hover:shadow-md'
+      className={`border border-gray-200 rounded-lg cursor-pointer ${
+        selected ? 'bg-[#EEEFFF] shadow-2xl' : ' bg-white hover:bg-[#EEEFFF] hover:shadow-md'
       }`}
       onClick={onSelect}
     >
