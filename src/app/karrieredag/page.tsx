@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Otherthings from "@/components/utils/otherthings"
 import Breadcrumbs from "@/components/utils/breadcrumbs"
 
 export default function Karrieredag() {
@@ -51,11 +50,45 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
-      {/* Section 2 */}
 
+      {/* Section 2 */}
+      <div className="bg-IXBbg text-white h-[40vh] flex items-center justify-center relative">
+        {/* Wave separator at the top */}
+        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[25vh]">
+          <Image
+            src="/wave_top_dark.svg"
+            alt="Wave Top"
+            layout="intrinsic"
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-contain"
+            draggable="false"
+          />
+        </div>
+
+        {/* Header */}
+        <h2 className="text-3xl font-bold text-IXBfg text-center px-6 z-20">
+          Ønsker du mer informasjon om Karrieredagen?
+        </h2>
+
+        {/* Wave separator at the bottom */}
+        <div className="absolute bottom-0 w-full -mb-[12vh] md:-mb-[18vh] z-10">
+          <Image
+            src="/wave_bottom_dark.svg"
+            alt="Wave Bottom"
+            layout="intrinsic"
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-contain"
+            draggable="false"
+          />
+        </div>
+      </div>
 
       {/* Section 3 */}
-      <Otherthings />
-    </div>
+      <div className="bg-white text-black h-screen flex items-center justify-center relative py-12 px-8">
+      </div>
+
+    </div >
   )
 }
