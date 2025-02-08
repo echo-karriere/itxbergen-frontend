@@ -13,6 +13,12 @@ interface Organisation {
   boxHeader: string;
   boxp1: string;
   boxp2: string;
+  participants?: string;
+  email?: string;
+  facebook?: string;
+  instagram?: string;
+  linkedin?: string;
+  github?: string;
 }
 
 export default function Nettverking() {
@@ -149,7 +155,26 @@ export default function Nettverking() {
                   </p>
                 )}
               </div>
-
+              {selectedOrganisation && (
+                <div className="flex justify-center gap-4 mt-4">
+                  {/* Facebook */}
+                  <a href={selectedOrganisation.facebook} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32} className="hover:opacity-80 transition-opacity" />
+                  </a>
+                  {/* Instagram */}
+                  <a href={selectedOrganisation.instagram} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/instagram.svg" alt="Instagram" width={32} height={32} className="hover:opacity-80 transition-opacity" />
+                  </a>
+                  {/* LinkedIn */}
+                  <a href={selectedOrganisation.linkedin} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={32} height={32} className="hover:opacity-80 transition-opacity" />
+                  </a>
+                  {/* GitHub */}
+                  <a href={selectedOrganisation.github} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/github.svg" alt="Github" width={32} height={32} className="hover:opacity-80 transition-opacity" />
+                  </a>
+                </div>
+              )}
             </div>
 
             {/* Second Box */}
