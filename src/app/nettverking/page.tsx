@@ -7,14 +7,22 @@ import Breadcrumbs from "@/components/utils/breadcrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
 import { useState } from "react";
 
+interface Organisation {
+  name: string;
+  location: string;
+  boxHeader: string;
+  boxp1: string;
+  boxp2: string;
+}
+
 export default function Nettverking() {
   const [selectedLocation, setSelectedLocation] = useState('Vis alle');
-  const [selectedOrganisation, setSelectedOrganisation] = useState<string | null>(null);
+  const [selectedOrganisation, setSelectedOrganisation] = useState<Organisation | null>(null);
 
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-white text-black md:h-[70vh] h-[120vh] flex items-center justify-center relative pt-0 md:pt-0">
+      <div className="bg-white text-black md:h-[70vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
@@ -121,22 +129,32 @@ export default function Nettverking() {
           {/* Info Section */}
           <div className="flex flex-col md:flex-row w-full gap-6 pt-12 pb-20">
             {/* First Box */}
-            <div className="w-full md:w-[55%] h-[450px] bg-white rounded-t-3xl p-6 shadow-2xl">
+            <div className="w-full md:w-[55%] h-auto bg-white rounded-t-3xl p-6 shadow-2xl">
               {/* First Box Content */}
               <div>
                 <h3 className="text-2xl font-bold text-black mb-4">
-                  {selectedOrganisation || "Velg en organisasjon"}
+                  {selectedOrganisation ? selectedOrganisation.name : "Velg en organisasjon"}
                 </h3>
+                <h2 className="font-bold text-black mb-4">
+                  {selectedOrganisation ? selectedOrganisation.boxHeader : ""}
+                </h2>
                 <p className="text-gray-600">
                   {selectedOrganisation
-                    ? `Her kan du finne informasjon om ${selectedOrganisation}.`
+                    ? selectedOrganisation.boxp1
                     : "Klikk på en organisasjon for å se mer informasjon."}
                 </p>
+                {selectedOrganisation && (
+                  <p className="text-gray-600 mt-4">
+                    {selectedOrganisation.boxp2}
+                  </p>
+                )}
               </div>
+
             </div>
 
             {/* Second Box */}
-            <div className="w-full md:w-[35%] h-[450px] bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl">
+            <div className="w-full md:w-[35%] h-auto bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl">
+
             </div>
           </div>
         </div>

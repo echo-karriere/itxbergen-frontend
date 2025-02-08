@@ -1,36 +1,25 @@
 import { useState } from "react";
 import OrganisationCard from "./organisation-card";
+import { organisations } from "@/lib/organisations"; // Ensure this file includes boxHeader, boxp1, boxp2
 
 interface OrganisationCardListProps {
   selectedLocation: string;
-  onSelectOrganisation: (name: string | null) => void;
+  onSelectOrganisation: (organisation: any | null) => void;
 }
-
-const organisations = [
-  { name: 'Cloud', location: 'Høyskolen Kristiania' },
-  { name: 'CybVest', location: 'Høyskolen Kristiania' },
-  { name: 'echo', location: 'Universitetet i Bergen' },
-  { name: 'Enigma Fintech', location: 'Høgskulen på Vestlandet' },
-  { name: 'Enter', location: 'Universitetet i Bergen' },
-  { name: 'Helt Sikker', location: 'Universitetet i Bergen' },
-  { name: 'Inkogvito', location: 'Universitetet i Bergen' },
-  { name: 'ReMIX', location: 'Universitetet i Bergen' },
-];
 
 export default function OrganisationCardList({ selectedLocation, onSelectOrganisation }: OrganisationCardListProps) {
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(null);
 
-  const handleSelectCard = (index: number, name: string) => {
+  const handleSelectCard = (index: number, organisation: any) => {
     if (selectedCardIndex === index) {
       setSelectedCardIndex(null);
       onSelectOrganisation(null);
     } else {
       setSelectedCardIndex(index);
-      onSelectOrganisation(name);
+      onSelectOrganisation(organisation);
     }
   };
 
-  // Filter the organisations based on selected location
   const filteredOrganisations = selectedLocation === 'Vis alle'
     ? organisations
     : organisations.filter(org => org.location === selectedLocation);
@@ -45,7 +34,7 @@ export default function OrganisationCardList({ selectedLocation, onSelectOrganis
           width="320px"
           height="90px"
           selected={selectedCardIndex === index}
-          onSelect={() => handleSelectCard(index, organisation.name)}
+          onSelect={() => handleSelectCard(index, organisation)}
         />
       ))}
     </div>
