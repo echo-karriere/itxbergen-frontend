@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronRight, Ghost } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
@@ -15,10 +16,10 @@ interface Organisation {
   boxp2: string;
   participants?: string;
   email?: string;
-  facebook?: string;
-  instagram?: string;
-  linkedin?: string;
-  github?: string;
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+  github: string;
 }
 
 export default function Nettverking() {
@@ -158,21 +159,25 @@ export default function Nettverking() {
               {selectedOrganisation && (
                 <div className="flex justify-center gap-4 mt-4">
                   {/* Facebook */}
-                  <a href={selectedOrganisation.facebook} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32} className="hover:opacity-80 transition-opacity" />
-                  </a>
+                  <Link href={selectedOrganisation.facebook || "#"} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32}
+                      className="hover:opacity-80 transition-opacity" />
+                  </Link>
                   {/* Instagram */}
-                  <a href={selectedOrganisation.instagram} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/instagram.svg" alt="Instagram" width={32} height={32} className="hover:opacity-80 transition-opacity" />
-                  </a>
+                  <Link href={selectedOrganisation.instagram || "#"} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/instagram.svg" alt="Instagram" width={32} height={32}
+                      className="hover:opacity-80 transition-opacity" />
+                  </Link>
                   {/* LinkedIn */}
-                  <a href={selectedOrganisation.linkedin} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={32} height={32} className="hover:opacity-80 transition-opacity" />
-                  </a>
+                  <Link href={selectedOrganisation.linkedin || "#"} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={32} height={32}
+                      className="hover:opacity-80 transition-opacity" />
+                  </Link>
                   {/* GitHub */}
-                  <a href={selectedOrganisation.github} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/github.svg" alt="Github" width={32} height={32} className="hover:opacity-80 transition-opacity" />
-                  </a>
+                  <Link href={selectedOrganisation.github || "#"} target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/github.svg" alt="Github" width={32} height={32}
+                      className="hover:opacity-80 transition-opacity" />
+                  </Link>
                 </div>
               )}
             </div>
