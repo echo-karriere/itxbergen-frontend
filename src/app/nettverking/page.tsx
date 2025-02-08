@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Ghost } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
@@ -157,7 +157,7 @@ export default function Nettverking() {
                 )}
               </div>
               {selectedOrganisation && (
-                <div className="flex justify-center gap-4 mt-4">
+                <div className="flex justify-center gap-4 mt-8">
                   {/* Facebook */}
                   <Link href={selectedOrganisation.facebook || "#"} target="_blank" rel="noopener noreferrer">
                     <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32}
