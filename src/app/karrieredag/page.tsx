@@ -4,6 +4,7 @@ import Image from "next/image"
 import Breadcrumbs from "@/components/utils/breadcrumbs"
 import ButtonIXB from "@/components/utils/button-ixb"
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
 
 export default function Karrieredag() {
   const companyLogos = [
@@ -48,6 +49,7 @@ export default function Karrieredag() {
     "tv2.png",
     "accenture.png",
     "intility.png",
+    "bekk.png",
   ]
 
   const [selectedYear, setSelectedYear] = useState('2024');
@@ -144,7 +146,31 @@ export default function Karrieredag() {
 
       {/* Section 3 */}
       <div className="bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
-        {/* Header */}
+        {/* Header 1 */}
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
+          Se bilder fra tidligere karrieredager
+        </h2>
+
+        {/* Button row with filtering (Wrapped in a div with correct padding) */}
+        <div className="px-6 md:px-40">
+          <div className="flex flex-row md:space-x-12 text-sm pt-12">
+            {["2024", "2023", "2022"].map((year) => (
+              <Button
+                key={year}
+                variant="ghost"
+                className={`hover:underline hover:text-IXBPurple ${selectedYear === year ? 'text-IXBPurple font-bold' : ''}`}
+                onClick={() => setSelectedYear(year)}
+              >
+                {year}
+              </Button>
+            ))}
+          </div>
+
+          {/* Line under buttons */}
+          <div className="w-full border-t-2 border-black mt-2"></div>
+        </div>
+
+        {/* Header 2 */}
         <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
@@ -155,7 +181,7 @@ export default function Karrieredag() {
             {(companyLogos || []).map((company, index) => (
               <div
                 key={index}
-                className="w-full h-18 bg-gray-100 rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+                className="w-full h-20 bg-gray-100 rounded-lg shadow-md flex items-center justify-center overflow-hidden"
               >
                 <Image
                   src={`/karrieredag_participants/${company}`}
