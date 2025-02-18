@@ -6,6 +6,50 @@ import ButtonIXB from "@/components/utils/button-ixb"
 import { useState } from "react"
 
 export default function Karrieredag() {
+  const companyLogos = [
+    "sparebanken-vest.png",
+    "amitec.png",
+    "aritma.png",
+    "avo.png",
+    "skatteetaten.png",
+    "sopra_steria.png",
+    "bergen_næringsråd.png",
+    "bkk.png",
+    "bouvet.png",
+    "capgemini.png",
+    "statens_vegvesen.png",
+    "tietoevry.png",
+    "cgi.png",
+    "computas.png",
+    "deloitte.png",
+    "digdir.png",
+    "twoday.png",
+    "vestland_fylkeskommune.png",
+    "dnb.png",
+    "dnv.png",
+    "equinor.png",
+    "ey.png",
+    "sparebank_1.png",
+    "itera.png",
+    "kantega.png",
+    "knowit.png",
+    "machina.png",
+    "tryg.png",
+    "miles.png",
+    "netcompany.png",
+    "nordea.png",
+    "norgesgruppen.png",
+    "vitec.png",
+    "norkart.png",
+    "pwc.png",
+    "sikt.png",
+    "simula.png",
+    "stacc.png",
+    "tv2.png",
+    "accenture.png",
+    "intility.png",
+  ]
+
   const [selectedYear, setSelectedYear] = useState('2024');
 
   return (
@@ -99,28 +143,32 @@ export default function Karrieredag() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-white text-black h-screen flex items-start relative py-20 px-8">
-        {/* First Content Wrapper */}
-        <div className="relative w-full flex flex-col px-6 md:px:40">
+      <div className="bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
+        {/* Header */}
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
+          Bedrifter som har deltatt på karrieredagene våres
+        </h2>
 
-        </div>
-        {/* Second Content Wrapper */}
-        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-8">
-          {/* Text Section */}
-          <div className="relative flex flex-col items-start pt-10">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-left">
-                Bedrifter som har deltatt på karrieredagene våres
-              </h2>
-            </div>
+        {/* Company Grid */}
+        <div className="relative w-full px-6 md:px-40 pt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {(companyLogos || []).map((company, index) => (
+              <div
+                key={index}
+                className="w-full h-18 bg-gray-100 rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+              >
+                <Image
+                  src={`/karrieredag_participants/${company}`}
+                  alt={`Company ${index + 1}`}
+                  width={120}
+                  height={80}
+                  objectFit="contain"
+                  draggable="false"
+                  className="max-w-full max-h-full"
+                />
+              </div>
+            ))}
           </div>
-
-          {/* Company Section */}
-
-          <div className="flex flex-grid w-full relative">
-
-          </div>
-
         </div>
       </div>
     </div >
