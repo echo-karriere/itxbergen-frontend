@@ -1,11 +1,17 @@
+'use client'
+
 import Image from "next/image"
 import Breadcrumbs from "@/components/utils/breadcrumbs"
+import ButtonIXB from "@/components/utils/button-ixb"
+import { useState } from "react"
 
 export default function Karrieredag() {
+  const [selectedYear, setSelectedYear] = useState('2024');
+
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[70vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
+      <div className="bg-IXBbg2 text-black md:h-[75vh] h-auto flex items-center justify-center relative pt-12 md:pt-0 mb-8">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
@@ -36,7 +42,6 @@ export default function Karrieredag() {
               ))}
             </ul>
           </div>
-
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
@@ -66,10 +71,18 @@ export default function Karrieredag() {
           />
         </div>
 
-        {/* Header */}
-        <h2 className="text-3xl font-bold text-IXBfg text-center px-6 z-20">
-          Ønsker du mer informasjon om Karrieredagen?
-        </h2>
+        {/* Content Wrapper */}
+        <div className="flex flex-col items-center text-center z-20">
+          {/* Header */}
+          <h2 className="text-3xl font-bold text-IXBfg px-6">
+            Ønsker du mer informasjon om Karrieredagen?
+          </h2>
+          {/* Buttons Below Text */}
+          <div className="flex space-x-4 md:space-x-20 mt-12">
+            <ButtonIXB label="  For Studenter  " variant="ghost" />
+            <ButtonIXB label="  For Bedrifter  " variant="ghost" />
+          </div>
+        </div>
 
         {/* Wave separator at the bottom */}
         <div className="absolute bottom-0 w-full -mb-[12vh] md:-mb-[18vh] z-10">
@@ -86,9 +99,30 @@ export default function Karrieredag() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-white text-black h-screen flex items-center justify-center relative py-12 px-8">
-      </div>
+      <div className="bg-white text-black h-screen flex items-start relative py-20 px-8">
+        {/* First Content Wrapper */}
+        <div className="relative w-full flex flex-col px-6 md:px:40">
 
+        </div>
+        {/* Second Content Wrapper */}
+        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-8">
+          {/* Text Section */}
+          <div className="relative flex flex-col items-start pt-10">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-left">
+                Bedrifter som har deltatt på karrieredagene våres
+              </h2>
+            </div>
+          </div>
+
+          {/* Company Section */}
+
+          <div className="flex flex-grid w-full relative">
+
+          </div>
+
+        </div>
+      </div>
     </div >
   )
 }

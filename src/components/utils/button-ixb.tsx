@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 interface buttonProps {
   label: string;
   onClick?: () => void;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "ghost";
   disabled?: boolean;
   className?: string;
 }
@@ -17,8 +17,10 @@ export default function ButtonIXB({
   className,
 }: buttonProps) {
   const variantStyle = variant === "primary"
-    ? 'bg-IXBbg text-white bold'
-    : 'bg-IXBfg text-white bold';
+    ? 'bg-IXBbg text-white font-bold'
+    : variant === "secondary"
+      ? 'bg-IXBfg text-white font-bold'
+      : 'bg-transparent border border-IXBfg text-IXBfg font-bold';
 
   return (
     <Button
