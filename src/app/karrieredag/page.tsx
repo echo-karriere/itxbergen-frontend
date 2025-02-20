@@ -5,54 +5,10 @@ import Breadcrumbs from "@/components/utils/breadcrumbs"
 import ButtonIXB from "@/components/utils/button-ixb"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { companyLogos } from "@/lib/organisations";
 
 export default function Karrieredag() {
-  const companyLogos = [
-    "sparebanken-vest.png",
-    "amitec.png",
-    "aritma.png",
-    "avo.png",
-    "skatteetaten.png",
-    "sopra_steria.png",
-    "bergen_næringsråd.png",
-    "bkk.png",
-    "bouvet.png",
-    "capgemini.png",
-    "statens_vegvesen.png",
-    "tietoevry.png",
-    "cgi.png",
-    "computas.png",
-    "deloitte.png",
-    "digdir.png",
-    "twoday.png",
-    "vestland_fylkeskommune.png",
-    "dnb.png",
-    "dnv.png",
-    "equinor.png",
-    "ey.png",
-    "sparebank_1.png",
-    "itera.png",
-    "kantega.png",
-    "knowit.png",
-    "machina.png",
-    "tryg.png",
-    "miles.png",
-    "netcompany.png",
-    "nordea.png",
-    "norgesgruppen.png",
-    "vitec.png",
-    "norkart.png",
-    "pwc.png",
-    "sikt.png",
-    "simula.png",
-    "stacc.png",
-    "tv2.png",
-    "accenture.png",
-    "intility.png",
-    "bekk.png",
-  ]
-
-  const [selectedYear, setSelectedYear] = useState('2024');
+  const [selectedPage, setSelectedPage] = useState("Side 1");
 
   return (
     <div>
@@ -148,26 +104,48 @@ export default function Karrieredag() {
       <div className="bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
         {/* Header 1 */}
         <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
-          Se bilder fra tidligere karrieredager
+          Se bilder fra karrieredagen 2024
         </h2>
 
-        {/* Button row with filtering (Wrapped in a div with correct padding) */}
-        <div className="px-6 md:px-40">
-          <div className="flex flex-row md:space-x-12 text-sm pt-12">
-            {["2024", "2023", "2022"].map((year) => (
+        {/* Button row */}
+        <div className="px-8 md:px-44">
+          <div className="flex flex-row md:space-x-12 text-sm pt-8">
+            {["Side 1", "Side 2", "Side 3"].map((page) => (
               <Button
-                key={year}
+                key={page}
                 variant="ghost"
-                className={`hover:underline hover:text-IXBPurple ${selectedYear === year ? 'text-IXBPurple font-bold' : ''}`}
-                onClick={() => setSelectedYear(year)}
+                className={`hover:underline hover:text-IXBPurple ${selectedPage === page ? 'text-IXBPurple font-bold' : ''}`}
+                onClick={() => setSelectedPage(page)}
               >
-                {year}
+                {page}
               </Button>
             ))}
           </div>
 
           {/* Line under buttons */}
           <div className="w-full border-t-2 border-black mt-2"></div>
+        </div>
+
+        {/* Image Grid */}
+        <div className="relative w-full px-6 md:px-40 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {Array.from({ length: 9 }, (_, index) => (
+              <div
+                key={index}
+                className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+              >
+                <Image
+                  src={`/karrieredag_2024_photos/karrieredag${index + 1}.jpg`}
+                  alt={`Karrieredag ${selectedPage} ${index + 1}`}
+                  width={500}
+                  height={500}
+                  objectFit="cover"
+                  draggable="false"
+                  className="max-w-full max-h-full"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Header 2 */}
