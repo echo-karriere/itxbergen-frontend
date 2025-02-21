@@ -6,9 +6,11 @@ import ButtonIXB from "@/components/utils/button-ixb"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { companyLogos } from "@/lib/organisations";
+import { useRouter } from "next/navigation"
 
 export default function Karrieredag() {
   const [selectedPage, setSelectedPage] = useState("Side 1");
+  const router = useRouter();
 
   return (
     <div>
@@ -81,8 +83,8 @@ export default function Karrieredag() {
           </h2>
           {/* Buttons Below Text */}
           <div className="flex space-x-4 md:space-x-20 mt-12">
-            <ButtonIXB label="  For Studenter  " variant="ghost" />
-            <ButtonIXB label="  For Bedrifter  " variant="ghost" />
+            <ButtonIXB label="  For Studenter  " variant="ghost" onClick={() => router.push("karrieredag/studenter")} />
+            <ButtonIXB label="  For Bedrifter  " variant="ghost" onClick={() => router.push("karrieredag/bedrifter")} />
           </div>
         </div>
 
@@ -110,7 +112,7 @@ export default function Karrieredag() {
         {/* Button row */}
         <div className="px-8 md:px-44">
           <div className="flex flex-row md:space-x-12 text-sm pt-8">
-            {["Side 1", "Side 2", "Side 3"].map((page) => (
+            {["Side 1", "Side 2", "Side 3"].map((page, index) => (
               <Button
                 key={page}
                 variant="ghost"
@@ -129,27 +131,64 @@ export default function Karrieredag() {
         {/* Image Grid */}
         <div className="relative w-full px-6 md:px-40 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Array.from({ length: 9 }, (_, index) => (
-              <div
-                key={index}
-                className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
-              >
-                <Image
-                  src={`/karrieredag_2024_photos/karrieredag${index + 1}.jpg`}
-                  alt={`Karrieredag ${selectedPage} ${index + 1}`}
-                  width={500}
-                  height={500}
-                  objectFit="cover"
-                  draggable="false"
-                  className="max-w-full max-h-full"
-                />
-              </div>
-            ))}
+            {selectedPage === "Side 1" &&
+              [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+                <div
+                  key={num}
+                  className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    src={`/karrieredag_2024_photos/page1/karrieredag${num}.jpg`}
+                    alt={`Karrieredag ${selectedPage} ${num}`}
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                    draggable="false"
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+              ))}
+
+            {selectedPage === "Side 2" &&
+              [10, 11, 12, 13, 14, 15, 16, 17, 18].map((num) => (
+                <div
+                  key={num}
+                  className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    src={`/karrieredag_2024_photos/page2/karrieredag${num}.jpg`}
+                    alt={`Karrieredag ${selectedPage} ${num}`}
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                    draggable="false"
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+              ))}
+
+            {selectedPage === "Side 3" &&
+              [19, 20, 21, 22, 23, 24, 25, 26, 27].map((num) => (
+                <div
+                  key={num}
+                  className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    src={`/karrieredag_2024_photos/page3/karrieredag${num}.jpg`}
+                    alt={`Karrieredag ${selectedPage} ${num}`}
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                    draggable="false"
+                    className="max-w-full max-h-full"
+                  />
+                </div>
+              ))}
           </div>
         </div>
 
         {/* Header 2 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
+        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-40">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
 
