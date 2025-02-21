@@ -17,7 +17,7 @@ export default function ButtonIXB({
   className,
 }: buttonProps) {
   const variantStyle = variant === "primary"
-    ? 'bg-IXBbg text-white font-bold'
+    ? 'bg-IXBbg text-white'
     : variant === "secondary"
       ? 'bg-IXBfg text-white font-bold'
       : 'bg-transparent border border-IXBfg text-IXBfg font-bold';
