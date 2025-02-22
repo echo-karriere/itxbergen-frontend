@@ -1,4 +1,18 @@
-const EventCard = ({ title, date, address, width = "240px", height = "100px" }) => {
+interface EventCardProps {
+  title: string;
+  date: string;
+  address: string;
+  width?: string;
+  height?: string;
+}
+
+const EventCard = ({
+  title,
+  date,
+  address,
+  width = "300px",
+  height = "100px"
+}: EventCardProps) => {
   return (
     <div
       style={{ width: width, height: height }}
