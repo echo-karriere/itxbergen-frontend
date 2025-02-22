@@ -1,47 +1,45 @@
 'use client'
 
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-import { GlobeIcon } from "lucide-react";
+import { useState, useEffect } from "react";
+
+enum Language {
+  NO = "NO",
+  EN = "EN",
+};
 
 export default function LanguagePicker() {
+  const [language, setLanguage] = useState<Language>(Language.NO);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language") as Language;
+    if (savedLanguage) {
+      setLanguage(savedLanguage as Language);
+    }
+  }, []);
+
+  const toggleLanguage = () => {
+    const newLanguage = language === Language.NO ? Language.EN : Language.NO;
+    setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);  // Save language to localStorage
+  };
+
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button type="button" variant="ghost" size="icon">
-          <GlobeIcon className="w-5 h-5 text-white" />
-        </Button>
-      </DropdownMenuTrigger>
+    <div onClick={toggleLanguage} className="cursor-pointer inline-flex gap-2">
+      <span
+        className={language === 'NO'
+          ? 'text-IXBfg border-b-2 border-IXBfg text-sm'
+          : 'text-white text-sm'}>
+        NO
+      </span>
 
-      <DropdownMenuContent
-        align="end"
-        className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-2"
-      >
-        <DropdownMenuLabel className="text-gray-700 dark:text-gray-200">
-          Language
-        </DropdownMenuLabel>
+      <span className="text-white text-sm">/</span>
 
-        {/* Enhanced Visual Separator */}
-        <DropdownMenuSeparator className="border-t-2 border-gray-300 dark:border-gray-600 my-2" />
-
-        <DropdownMenuCheckboxItem
-          className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
-          Norwegian
-        </DropdownMenuCheckboxItem>
-
-        <DropdownMenuCheckboxItem
-          className="text-gray-700 dark:text-gray-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 p-2">
-          English
-        </DropdownMenuCheckboxItem>
-
-      </DropdownMenuContent>
-    </DropdownMenu>
-  )
+      <span
+        className={language === 'EN'
+          ? 'text-IXBfg border-b-2 border-IXBfg text-sm'
+          : 'text-white text-sm'}>
+        EN
+      </span>
+    </div>
+  );
 }
