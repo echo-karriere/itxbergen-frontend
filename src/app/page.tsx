@@ -125,21 +125,12 @@ export default function Home() {
             {/* Events Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Kommende arrangementer</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <EventCard
-                  title="F*ck-Up Night"
-                  date="6. november 2024 17:00"
+                  title="Github Workshop med SPV"
+                  date="23. Mars 17:00"
                   address="Jonsvollsgaten 2"
-                />
-                <EventCard
-                  title="F*ck-Up Night"
-                  date="6. november 2024 17:00"
-                  address="Jonsvollsgaten 2"
-                />
-                <EventCard
-                  title="Event 3"
-                  date="March 10, 2025"
-                  address="789 Different Ave, Villagetown"
+                  redirectTo="/event/github-workshop"
                 />
               </div>
             </div>
@@ -147,7 +138,7 @@ export default function Home() {
             {/* News Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <NewsCard
                   image="/fuckup.png"
                   title="News Article 1"
