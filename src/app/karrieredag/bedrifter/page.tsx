@@ -9,9 +9,9 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function ForBedrifter() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleDropdown = (index) => {
+  const toggleDropdown = (index: number): void => {
     setOpenIndex(openIndex === index ? null : index);
   };
 

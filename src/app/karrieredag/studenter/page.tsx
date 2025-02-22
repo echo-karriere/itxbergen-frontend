@@ -1,8 +1,28 @@
+'use client';
+
+import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import Otherthings from "@/components/utils/otherthings";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ForStudenter() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleDropdown = (index: number): void => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const dropdownItems = [
+    { title: "Møte bedrifter", content: "Det vil være stands fra bedrifter som ønsker å rekruttere studenter.  Her vil du få muligheten til å snakke med representanter fra bedriften  og få vite mer om hva de driver med, hvilke muligheter de har og hvordan du kan søke på jobb hos dem." },
+    { title: "Ballongslipp", content: "Vi har ballongslipp med premier før lynpresentasjonene, så her er det smart å være tidlig ute!" },
+    { title: "Lynpresentasjoner", content: "Usikker på hvem du skal snakke med? Her vil du få muligheten til å få en kort presentasjon av bedriften, og deretter kan du bestemme om du  vil snakke med dem eller ikke." },
+    { title: "Konseptpresentasjoner", content: "Presentasjoner av konsepter som er relevant for IT-bransjen." },
+    { title: "Workshops", content: "Det vil være ulike workshops som du kan delta på. Her vil du få  muligheten til å lære mer om ulike temaer som er relevante for deg som student." },
+    { title: "Bankett", content: "Studenter som gir et positivt inntrykk av seg selv på karrieredagene  kan kanskje være heldige i å få tak i en gullbillett til banketen. Mer  informasjon gis til de heldige som får gullbillett." },
+  ];
+
   return (
     <div>
       {/* Section 1 */}
@@ -40,7 +60,7 @@ export default function ForStudenter() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
+      <div className="bg-IXBbg2 text-black h-auto flex flex-col md:flex-row justify-center items-center relative">
         {/* Wave separator at the top */}
         <div className="absolute top-0 w-full -mt-[12vh]">
           <Image
@@ -53,6 +73,46 @@ export default function ForStudenter() {
             draggable="false"
           />
         </div>
+
+        {/* Content Wrapper */}
+        <div className="relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-40 mb-24 mt-24 md:gap-16">
+          {/* Left Text Content */}
+          <div className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left" style={{ minHeight: '200px' }}>
+            <h2 className="text-xl md:text-2xl font-bold">
+              Hva du forvente deg?
+            </h2>
+            <p className="text-base">
+              Karrieredagen er en spennende dag! Hvert år jobber vi for å skape den beste karrieredagen hittil! 
+              <br /> <br />
+              Har dere noen tips? Send det gjerne på mail til oss på{' '}
+              <a href="mailto:example@example.com" className="font-bold">
+                kontakt@itxbergen.no
+              </a>
+            </p>
+          </div>
+
+          {/* Right Dropdown Section */}
+          <div className="w-full md:w-1/2 border-t border-b border-gray-400 flex flex-col divide-y divide-gray-400 mt-12 md:mt-0">
+            {dropdownItems.map((item, index) => (
+              <div key={index}>
+                <Button
+                  className={`flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-left transition-colors duration-200
+                      bg-transparent
+                      ${openIndex === index ? 'text-IXBPurple' : 'text-gray-800'}
+                      hover:bg-gray-100 hover:text-IXBPurple`}
+                  onClick={() => toggleDropdown(index)}
+                >
+                  <span>{item.title}</span>
+                  <ChevronDown className={`h-5 w-5 transform ${openIndex === index ? 'rotate-180' : ''}`} />
+                </Button>
+                {openIndex === index && (
+                  <p className="px-4 py-2 text-sm text-gray-700">{item.content}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       {/* Section 3 */}
