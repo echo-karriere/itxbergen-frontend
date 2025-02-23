@@ -1,0 +1,130 @@
+'use client';
+
+import Breadcrumbs from "@/components/utils/breadcrumbs";
+import ButtonIXB from "@/components/utils/button-ixb";
+import Otherthings from "@/components/utils/otherthings";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
+
+export default function ForBedrifter() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleDropdown = (index: number): void => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const dropdownItems = [
+    { title: "Møte studenter på stand", content: "Alle som deltar på karrieredagene får en stand hvor de kan møte studenter og fortelle om bedriften sin. Det er også mulig å finne områder for lynintervjuer." },
+    { title: "Lynpresentasjoner", content: "3 minutters kort introduksjon av bedriften for å informere studentene om at dere står på stand og gjerne litt kort om hvorfor de skal besøke nettopp deres stand. Lynpresentasjoner skjer på starten av dagen før standområdet åpnes.  Vi har ballongslipp med premier før lynpresentasjonene for å tiltrekke oss flere studenter på morgenen." },
+    { title: "Konseptpresentasjoner", content: "20 minutters presentasjon av bedriften eller et tema som er spesielt  interessant for deres bedrift. Det vil være enkel snacks og drikke  tilgjengelig, uten ekstra kostnader." },
+    { title: "Workshops", content: "60 minutter workshop med studenter. Det vil være enkel snacks og drikke  tilgjengelig, uten ekstra kostnader. Vi lager påmeldingsside for  presentasjonen. Dersom det er ledige plasser ved start slipper vi inn de som ønsker, så lenge det er ledig plass. Dere er selv ansvarlige for å  promotere deres workshop, men dere vil få mulighet til å benytte dere av våre kanaler dersom dere ønsker." },
+    { title: "Bankett", content: "Det er mulig å delta på bankett som avholdes etter karrieredagene.  Dere får muligheten til å dele ut ti gullbilletter helt fritt til de  studentene dere ønsker." },
+    { title: "Frakt", content: "Vi kan tilby frakt til karrieredagene via en tredjepart. Ta kontakt med oss for mer informasjon." },
+    { title: "Promotering", content: "Vi kan tilby ekstra promotering på forespørsel. Ta kontakt med oss for mer informasjon." },
+  ];
+
+  return (
+    <div>
+      {/* Section 1 */}
+      <div className="bg-white text-black md:h-[85vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
+        {/* Content Wrapper */}
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+            {/* Breadcrumb */}
+            <Breadcrumbs
+              current="Karrieredag"
+            />
+            <h1 className="text-3xl md:text-4xl font-bold mb-9">
+              <span>Karrieredag for bedrifter</span>
+            </h1>
+            <p className="text-base">
+              ITxBergen er en frivillig studentorganisasjon som arrangerer karrieredager som holdes minst en gang i året. Det er en organisasjon som gjennom året jobber for IT-studentene i Bergensområdet skal ha en plattform hvor de kan finne og møte bedrifter, være med på foredrag og workshops og mer! <br /> <br />
+              Gjennom deltakelse på ITxBergen får bedriftene muligheten til å møte fremtidens IT-talenter, og samtidig få en unik mulighet til å markedsføre seg selv. Arrangementet vil også bli eksponert i flere kanaler, og når i dag ut til studenter ved Universitetet i Bergen, Høgskulen på Vestlandet, Kristiania - Campus Bergen og alle interesserte.
+            </p>
+
+            {/* PåmeldingSkjema */}
+            <div className="pt-8">
+              <ButtonIXB
+                label="Til Påmeldingsskjema"
+                variant="primary"
+                onClick={() => window.open("https://delta.itxbergen.no/")}
+              />
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="flex justify-center items-center w-full md:w-2/5">
+            <Image
+              src="/testing_amico.png"
+              alt="ItxBergen"
+              height={500}
+              width={500}
+              className="object-contain md:transform md:scale-110"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Section 2 */}
+      <div className="bg-IXBbg2 text-black h-auto flex flex-col md:flex-row justify-center items-center relative">
+        {/* Wave separator at the top */}
+        <div className="absolute top-0 w-full -mt-[12vh]">
+          <Image
+            src="/wave_top_light.svg"
+            alt="Wave Top"
+            layout="intrinsic"
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-contain"
+            draggable="false"
+          />
+        </div>
+
+        {/* Content Wrapper */}
+        <div className="relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-40 mb-24 mt-24 md:gap-16">
+          {/* Left Text Content */}
+          <div className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left" style={{ minHeight: '200px' }}>
+            <h2 className="text-xl md:text-2xl font-bold">
+              Hva kan bedriftene forvente seg på karrieredagen?
+            </h2>
+            <p className="text-base">
+              Karrieredagen er en spennende dag! Her har du som bedrift mulighet til å møte engasjerte studenter innen IT! Hvert år jobber vi for å skape den beste karrieredagen hittil! <br /> <br />
+              Har dere noen tips? Send det gjerne på mail til oss på{' '}
+              <a href="mailto:example@example.com" className="font-bold">
+                kontakt@itxbergen.no
+              </a>
+            </p>
+          </div>
+
+          {/* Right Dropdown Section */}
+          <div className="w-full md:w-1/2 border-t border-b border-gray-400 flex flex-col divide-y divide-gray-400 mt-12 md:mt-0">
+            {dropdownItems.map((item, index) => (
+              <div key={index}>
+                <Button
+                  className={`flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-left transition-colors duration-200
+                      bg-transparent
+                      ${openIndex === index ? 'text-IXBPurple' : 'text-gray-800'}
+                      hover:bg-gray-100 hover:text-IXBPurple`}
+                  onClick={() => toggleDropdown(index)}
+                >
+                  <span>{item.title}</span>
+                  <ChevronDown className={`h-5 w-5 transform ${openIndex === index ? 'rotate-180' : ''}`} />
+                </Button>
+                {openIndex === index && (
+                  <p className="px-4 py-2 text-sm text-gray-700">{item.content}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <Otherthings />
+    </div>
+  )
+}
