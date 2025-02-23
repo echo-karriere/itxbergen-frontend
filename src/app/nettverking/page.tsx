@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
 import { useState } from "react";
+import Otherthings from "@/components/utils/otherthings";
 
 interface Organisation {
   name: string;
@@ -157,7 +158,7 @@ export default function Nettverking() {
                 )}
               </div>
               {selectedOrganisation && (
-                <div className="flex justify-center gap-4 mt-4">
+                <div className="flex justify-center gap-4 mt-8">
                   {/* Facebook */}
                   <Link href={selectedOrganisation.facebook || "#"} target="_blank" rel="noopener noreferrer">
                     <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32}
@@ -191,29 +192,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-white text-black flex items-center justify-center py-12 px-4">
-        {/* Single Box */}
-        <div className="w-[90%] bg-IXBbg1 rounded-3xl shadow-2xl p-6 flex flex-col space-y-6">
-          {/* Title */}
-          <h2 className="text-2xl font-bold text-left">
-            Se andre ting ITxBergen tilbyr!
-          </h2>
-
-          {/* Links */}
-          <a href="#" className="flex items-center hover:underline">
-            Karrieredagen
-            <ChevronRight className="w-5 h-5" />
-          </a>
-          <a href="#" className="flex items-center hover:underline">
-            Stillingsannonser
-            <ChevronRight className="w-5 h-5" />
-          </a>
-          <a href="#" className="flex items-center hover:underline">
-            Om ITxBergen
-            <ChevronRight className="w-5 h-5" />
-          </a>
-        </div>
-      </div>
+      <Otherthings />
     </div>
   );
 }

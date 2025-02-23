@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -35,7 +34,7 @@ export default function Home() {
             />
             <p className="text-base md:text-lg">
               Ikke karrieredag enda? <br />
-              Sjekk ut mulighetene for <Link href="/nettverking" className="font-bold underline">nettverking!</Link>
+              Sjekk ut mulighetene for <span className="font-bold underline">nettverking</span>!
             </p>
           </div>
 
@@ -56,7 +55,7 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
         {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[25vh]">
+        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[24vh]">
           <Image
             src="/wave_top_dark.svg"
             alt="Wave Top"
@@ -119,28 +118,19 @@ export default function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-20 px-8">
+      <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-12 px-8">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mt-14">
           <div className="w-full flex flex-col space-y-16">
             {/* Events Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Kommende arrangementer</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <EventCard
-                  title="F*ck-Up Night"
-                  date="6. november 2024 17:00"
+                  title="Github Workshop med SPV"
+                  date="23. Mars 17:00"
                   address="Jonsvollsgaten 2"
-                />
-                <EventCard
-                  title="F*ck-Up Night"
-                  date="6. november 2024 17:00"
-                  address="Jonsvollsgaten 2"
-                />
-                <EventCard
-                  title="Event 3"
-                  date="March 10, 2025"
-                  address="789 Different Ave, Villagetown"
+                  redirectTo="/event/github-workshop"
                 />
               </div>
             </div>
@@ -148,7 +138,7 @@ export default function Home() {
             {/* News Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <NewsCard
                   image="/fuckup.png"
                   title="News Article 1"
