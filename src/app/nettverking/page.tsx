@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Ghost } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
