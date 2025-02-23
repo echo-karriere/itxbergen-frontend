@@ -9,7 +9,7 @@ import { companyLogos } from "@/lib/organisations";
 import { useRouter } from "next/navigation"
 
 export default function Karrieredag() {
-  const [selectedPage, setSelectedPage] = useState("Side 1");
+  const [selectedPage, setSelectedPage] = useState("KD Side 1");
   const router = useRouter();
 
   return (
@@ -112,7 +112,7 @@ export default function Karrieredag() {
         {/* Button row */}
         <div className="px-8 md:px-44">
           <div className="flex flex-row md:space-x-12 text-sm pt-8">
-            {["Side 1", "Side 2", "Side 3"].map((page, index) => (
+            {["KD Side 1", "KD Side 2", "Bankett"].map((page) => (
               <Button
                 key={page}
                 variant="ghost"
@@ -131,7 +131,7 @@ export default function Karrieredag() {
         {/* Image Grid */}
         <div className="relative w-full px-6 md:px-40 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {selectedPage === "Side 1" &&
+            {selectedPage === "KD Side 1" &&
               [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
                 <div
                   key={num}
@@ -149,7 +149,7 @@ export default function Karrieredag() {
                 </div>
               ))}
 
-            {selectedPage === "Side 2" &&
+            {selectedPage === "KD Side 2" &&
               [10, 11, 12, 13, 14, 15, 16, 17, 18].map((num) => (
                 <div
                   key={num}
@@ -167,14 +167,14 @@ export default function Karrieredag() {
                 </div>
               ))}
 
-            {selectedPage === "Side 3" &&
-              [19, 20, 21, 22, 23, 24, 25, 26, 27].map((num) => (
+            {selectedPage === "Bankett" &&
+              [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
                 <div
                   key={num}
                   className="w-full rounded-lg shadow-md flex items-center justify-center overflow-hidden"
                 >
                   <Image
-                    src={`/karrieredag_2024_photos/page3/karrieredag${num}.jpg`}
+                    src={`/karrieredag_2024_photos/page3/bankett${num}.jpg`}
                     alt={`Karrieredag ${selectedPage} ${num}`}
                     width={500}
                     height={500}
