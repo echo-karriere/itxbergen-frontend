@@ -50,6 +50,7 @@ export default function ForBedrifter() {
               <ButtonIXB
                 label="Til Påmeldingsskjema"
                 variant="primary"
+                onClick={() => window.open("https://delta.itxbergen.no/")}
               />
             </div>
           </div>
