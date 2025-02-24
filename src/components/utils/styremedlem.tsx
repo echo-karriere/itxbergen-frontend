@@ -1,11 +1,18 @@
 import Image from "next/image";
 
+interface StyremedlemProps {
+  image?: string;
+  name: string;
+  title: string;
+  mail?: string;
+}
+
 const Styremedlem = ({
   image = "/person.jpg",
   name,
   title,
   mail = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
-}) => {
+}: StyremedlemProps) => {
   return (
     <>
       <div className="flex pt-2 pb-2 md:pt-0 md:pb-0">
