@@ -14,7 +14,7 @@ const Page = () => {
           <h1 className="font-promptBold font-bold text-5xl/10 leading-tight mb-6 pt-5">
             Om ITxBergen
           </h1>
-          <p className="font-sourceSans text-sm md:text-sm/8 text-[#121212]">
+          <p className="text-sm md:text-sm/8 text-[#121212]">
             ITxBergen arrangerer karrieredager for IT-studenter i
             bergensområdet, og er tidligere kjent som echo karriere.
             Arrangementet ble holdt for første gang i 2019, noe som ble en stor

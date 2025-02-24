@@ -3,7 +3,6 @@ import LanguagePicker from "./language-picker";
 import Link from "next/link";
 
 export default function Navbar() {
-
   return (
     <>
       <div className="w-full h-20 bg-IXBbg top-0 flex items-center">
@@ -20,7 +19,7 @@ export default function Navbar() {
                 <Link href="/karrieredag">Karrieredag </Link>
                 <Link href="/nettverking">Nettverking </Link>
                 <li>Stillingsannonser </li>
-                <li>Om ITxBergen </li>
+                <Link href="/om-itx">Om ITxBergen </Link>
                 <li>Kontakt oss</li>
               </ul>
             </div>
