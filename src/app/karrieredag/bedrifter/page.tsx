@@ -123,6 +123,42 @@ export default function ForBedrifter() {
         </div>
       </div>
 
+      <div className="bg-white text-black min-h-auto flex items-start justify-center relative">
+        {/* Content Wrapper */}
+        <div className="relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-40 mb-12 mt-12 md:gap-16">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left">
+            <h2 className="text-xl md:text-2xl font-bold">
+              Priser
+            </h2>
+            <p>
+              Prisene våre er ikke hemmelige, og ligger synlig i vårt påmeldingsskjema. Den vil automatisk regne ut prisen for dere basert på hvilke valg dere gjør, og på denne måten vet dere hva dere må betale. Prisene vil korrigeres årlig avhengig av våre kostnadder og andre faktorer, og vil aldri være klar før påmeldingen åpner.
+            </p>
+            <h2 className="text-xl md:text-2xl font-bold md:mt-4">
+              Andre arrangementer
+            </h2>
+            <p>
+              En gang i blant arrangerer vi andre arrangementer som ikke er karrieredager. Dette kan være foredrag, workshops, eller andre arrangementer som vi mener kan være interessant for studentene. Vi sender ofte ut forespørsler til bedrifter som har samtykket til å motta dette.
+            </p>
+            <h2 className="text-xl md:text-2xl font-bold md:mt-4">
+              E-postliste
+            </h2>
+            <p>
+              Vi har en e-postliste som vi bruker til å sende ut informasjon til bedrifter. Hvis du er usikker på om du er på denne listen, eller om du ønsker å bli påmeldt, kan du sende en e-post til oss til{' '}
+              <a href="mailto:example@example.com" className="font-bold">
+                kontakt@itxbergen.no
+              </a>
+            </p>
+          </div>
+          {/* Company box */}
+          <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="bg-gray-900 text-white p-6 w-64 h-64 flex items-center justify-center">
+              <p className="text-lg font-bold">Company Box</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Section 3 */}
       <Otherthings />
     </div>
