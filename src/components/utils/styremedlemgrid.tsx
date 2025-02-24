@@ -22,7 +22,7 @@ const BoardMembers = [
 
 const StyremedlemGrid = () => {
   return (
-    <div className="w-[80%] mx-auto pt-5">
+    <div className="w-[80%] mx-auto">
       <div>
         <h2 className="font-montSerrat font-bold text-3xl pb-9">
           Møt våre styremedlemmer!
