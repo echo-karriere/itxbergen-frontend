@@ -1,6 +1,6 @@
 import React from "react";
 
-const Wavepattern = ({ children }) => {
+const Wavepattern = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <svg
