@@ -1,10 +1,24 @@
 import Image from "next/image";
 
-const Card = ({ image, title, date, width = "265px", height = "290px" }) => {
+interface NewsCardProos {
+  image: string;
+  title: string;
+  date: string;
+  width?: string;
+  height?: string;
+}
+
+const NewsCard = ({
+  image,
+  title,
+  date,
+  width = "265px",
+  height = "290px",
+}: NewsCardProos) => {
   return (
     <div
       style={{ width: width, height: height }}
-      className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-IXBbg1"
+      className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-[#EEEFFF]"
     >
       {/* Purple bar */}
       <div className="h-[3px] w-full bg-[#9747FF] rounded-t-lg"></div>
@@ -29,4 +43,4 @@ const Card = ({ image, title, date, width = "265px", height = "290px" }) => {
   );
 };
 
-export default Card;
+export default NewsCard;

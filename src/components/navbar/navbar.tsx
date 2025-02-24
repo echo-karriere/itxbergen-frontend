@@ -1,6 +1,5 @@
 import Logo from "./logo";
 import LanguagePicker from "./language-picker";
-import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -18,9 +17,7 @@ export default function Navbar() {
                 <li>Karrieredag </li>
                 <li>Nettverking </li>
                 <li>Stillingsannonser </li>
-                <Link href="/om-itx">
-                  <li>Om ITxBergen </li>
-                </Link>
+                <li>Om ITxBergen </li>
                 <li>Kontakt oss</li>
               </ul>
             </div>

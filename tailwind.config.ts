@@ -19,13 +19,15 @@ const config = {
     },
     extend: {
       colors: {
-        IXBbg1: "#EEEFFF",
         IXBRed: "#5c0418",
         IXBRed2: "#480413",
         IXBGold: "#d0b46c",
         GrayText: "#D3D3D3",
         IXBbg: "#000E1E",
+        IXBbg1: "#EEEFFF",
+        IXBbg2: "#E4EFFF",
         IXBfg: "#9CEDE9",
+        IXBPurple: "#7E57C2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -64,7 +66,6 @@ const config = {
         promptBold: ["Prompt"],
         montSerrat: ["Montserrat"],
         sourceSans: ["Source Sans 3"],
-        inter: ["Inter"],
       },
       borderRadius: {
         lg: "var(--radius)",

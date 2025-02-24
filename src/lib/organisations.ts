@@ -1,0 +1,102 @@
+export const organisations = [
+  {
+    name: 'Cloud',
+    location: 'Høyskolen Kristiania',
+    boxHeader: 'Vi er Cloud, linjeforeningen for alle IT-studenter ved Høyskolen Kristiania campus Bergen.',
+    boxp1: 'Cloud har siden IT-linjene startet opp ved Campus Bergen i 2020 jobbet for å gjøre studiehverdagen til medstudentene våre bedre, i tillegg til å fungere som et bindeledd mellom studentene og næringslivet.',
+    boxp2: 'Vårt ønske er å la våre medstudenter se hvor mange muligheter som finnes innen IT-verden da vår erfaring er at mange studenter ikke vet hvor mange bedrifter som driver med IT eller har egen IT-avdeling. Dette gjør vi gjennom å arrangere både sosiale arrangement og bedriftspresentasjoner med næringslivet i Bergen og omegn.'
+  },
+  {
+    name: 'CybVest',
+    location: 'Høyskolen Kristiania',
+    boxHeader: '',
+    boxp1: '',
+    boxp2: '',
+    participants: '',
+    email: '',
+    adresss: '',
+    facebook: '',
+    instagram: '',
+    linkedin: '',
+    github: '',
+  },
+  {
+    name: 'echo',
+    location: 'Universitetet i Bergen',
+    boxHeader: '',
+    boxp1: '',
+    boxp2: '',
+    participants: '',
+    email: '',
+    adresss: '',
+    facebook: '',
+    instagram: '',
+    linkedin: '',
+    github: '',
+  },
+  {
+    name: 'Enigma Fintech',
+    location: 'Høgskulen på Vestlandet'
+  },
+  {
+    name: 'Enter',
+    location: 'Universitetet i Bergen'
+  },
+  {
+    name: 'Helt Sikker',
+    location: 'Universitetet i Bergen'
+  },
+  {
+    name: 'Inkogvito',
+    location: 'Universitetet i Bergen'
+  },
+  {
+    name: 'ReMIX',
+    location: 'Universitetet i Bergen'
+  },
+];
+
+export const companyLogos = [
+  "sparebanken-vest.png",
+  "amitec.png",
+  "aritma.png",
+  "avo.png",
+  "skatteetaten.png",
+  "sopra_steria.png",
+  "bergen_næringsråd.png",
+  "bkk.png",
+  "bouvet.png",
+  "capgemini.png",
+  "statens_vegvesen.png",
+  "tietoevry.png",
+  "cgi.png",
+  "computas.png",
+  "deloitte.png",
+  "digdir.png",
+  "twoday.png",
+  "vestland_fylkeskommune.png",
+  "dnb.png",
+  "dnv.png",
+  "equinor.png",
+  "ey.png",
+  "sparebank_1.png",
+  "itera.png",
+  "kantega.png",
+  "knowit.png",
+  "machina.png",
+  "tryg.png",
+  "miles.png",
+  "netcompany.png",
+  "nordea.png",
+  "norgesgruppen.png",
+  "vitec.png",
+  "norkart.png",
+  "pwc.png",
+  "sikt.png",
+  "simula.png",
+  "stacc.png",
+  "tv2.png",
+  "accenture.png",
+  "intility.png",
+  "bekk.png",
+]
