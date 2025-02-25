@@ -1,4 +1,5 @@
 import Logo from "./logo";
+import Link from "next/link";
 import LanguagePicker from "./language-picker";
 
 export default function Navbar() {
@@ -16,7 +17,7 @@ export default function Navbar() {
               <ul className="hidden md:flex gap-x-20 text-white items-center text-sm">
                 <li>Karrieredag </li>
                 <li>Nettverking </li>
-                <li>Stillingsannonser </li>
+                <Link href="/stillingsannonser">Stillingsannonser </Link>
                 <li>Om ITxBergen </li>
                 <li>Kontakt oss</li>
               </ul>

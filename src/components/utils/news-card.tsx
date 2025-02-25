@@ -1,6 +1,20 @@
 import Image from "next/image";
 
-const NewsCard = ({ image, title, date, width = "265px", height = "290px" }) => {
+interface NewsCardProos {
+  image: string;
+  title: string;
+  date: string;
+  width?: string;
+  height?: string;
+}
+
+const NewsCard = ({
+  image,
+  title,
+  date,
+  width = "265px",
+  height = "290px",
+}: NewsCardProos) => {
   return (
     <div
       style={{ width: width, height: height }}
