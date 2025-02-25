@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ForBedrifter() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -119,6 +120,55 @@ export default function ForBedrifter() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white text-black min-h-auto flex items-start justify-center relative">
+        {/* Content Wrapper */}
+        <div className="relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-40 mb-12 mt-12 md:gap-16">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left">
+            <h2 className="text-xl md:text-2xl font-bold">
+              Priser
+            </h2>
+            <p>
+              Prisene våre er ikke hemmelige, og ligger synlig i vårt påmeldingsskjema. Den vil automatisk regne ut prisen for dere basert på hvilke valg dere gjør, og på denne måten vet dere hva dere må betale. Prisene vil korrigeres årlig avhengig av våre kostnadder og andre faktorer, og vil aldri være klar før påmeldingen åpner.
+            </p>
+            <h2 className="text-xl md:text-2xl font-bold md:mt-4">
+              Andre arrangementer
+            </h2>
+            <p>
+              En gang i blant arrangerer vi andre arrangementer som ikke er karrieredager. Dette kan være foredrag, workshops, eller andre arrangementer som vi mener kan være interessant for studentene. Vi sender ofte ut forespørsler til bedrifter som har samtykket til å motta dette.
+            </p>
+            <h2 className="text-xl md:text-2xl font-bold md:mt-4">
+              E-postliste
+            </h2>
+            <p>
+              Vi har en e-postliste som vi bruker til å sende ut informasjon til bedrifter. Hvis du er usikker på om du er på denne listen, eller om du ønsker å bli påmeldt, kan du sende en e-post til oss til{' '}
+              <a href="mailto:example@example.com" className="font-bold">
+                kontakt@itxbergen.no
+              </a>
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center items-center flex-grow mt-24 md:mt-24">
+            {/* Company box */}
+            <div className="w-full md:w-[75%] h-[450px] bg-IXBbg text-white rounded-t-3xl rounded-tr-[150px] shadow-2xl flex flex-col items-center justify-center text-left space-y-4 p-6">
+
+              <p className="text-lg font-bold">
+                Har bedriften deres en stillingsannonse dere ønsker å legge ut?
+              </p>
+
+              <p className="text-sm pb-4">
+                <span className="font-bold">Vi tilbyr gratis annonsering av stillingsannonser på våre nettsider.</span> <br /> <br />
+                Klikk på knappen under for å publisere deres stillingsannonse.
+              </p>
+
+              <ButtonIXB label="Legg ut stillingsannonse" variant="ghost" />
+
+              <Link href=".">Rediger stillingsannonse</Link>
+
+            </div>
           </div>
         </div>
       </div>
