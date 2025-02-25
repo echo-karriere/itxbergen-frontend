@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ForBedrifter() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -150,10 +151,23 @@ export default function ForBedrifter() {
               </a>
             </p>
           </div>
-          {/* Company box */}
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="bg-gray-900 text-white p-6 w-64 h-64 flex items-center justify-center">
-              <p className="text-lg font-bold">Company Box</p>
+          <div className="w-full md:w-1/2 flex justify-center items-center flex-grow mt-24 md:mt-24">
+            {/* Company box */}
+            <div className="w-full md:w-[75%] h-[450px] bg-IXBbg text-white rounded-t-3xl rounded-tr-[150px] shadow-2xl flex flex-col items-center justify-center text-left space-y-4 p-6">
+
+              <p className="text-lg font-bold">
+                Har bedriften deres en stillingsannonse dere ønsker å legge ut?
+              </p>
+
+              <p className="text-sm pb-4">
+                <span className="font-bold">Vi tilbyr gratis annonsering av stillingsannonser på våre nettsider.</span> <br /> <br />
+                Klikk på knappen under for å publisere deres stillingsannonse.
+              </p>
+
+              <ButtonIXB label="Legg ut stillingsannonse" variant="ghost" />
+
+              <Link href=".">Rediger stillingsannonse</Link>
+
             </div>
           </div>
         </div>
