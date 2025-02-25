@@ -166,8 +166,7 @@ export default function ForBedrifter() {
 
               <ButtonIXB label="Legg ut stillingsannonse" variant="ghost" />
 
-              <Link href=".">Rediger stillingsannonse</Link>
-
+              <Link href="." className="text-sm underline">Rediger stillingsannonse</Link>
             </div>
           </div>
         </div>
