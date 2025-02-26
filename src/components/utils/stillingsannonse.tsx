@@ -18,21 +18,22 @@ export default function Stillingsannonse({
   date,
 }: StillingsannonseProps) {
   return (
-    <div className="md:h-[165px] md:w-[685px] border border-[#E5E7EB] m-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm p-3 shadow-md shadow-gray hover:bg-IXBbg1">
+    <div className="md:w-[685px] border border-[#E5E7EB] m-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm p-3 shadow-md shadow-gray hover:bg-IXBbg1">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
         {/* Image container */}
-        <div className="h-28 w-28 flex justify-center items-center align-middle mt-4 mx-5 md:mr-4 flex-shrink-0">
+        <div className="h-28 w-28 flex justify-center items-center align-middl m-5 md:mr-4 flex-shrink-0">
           <Image
             src={image}
             alt={company}
             height={400}
             width={400}
-            className="h-20 w-20 md:h-28 md:w-28 rounded-sm object-contain"
+            className="h-26 w-26 rounded-sm object-contain"
           />
         </div>
-        <div className="text-center sm:text-left">
-          <h4 className="font-bold md:text-xl/6 pb-2">{title}</h4>
-          <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 ">
+        {/* Text container */}
+        <div className="text-center sm:text-left md:flex md:flex-col md:justify-between">
+          <h4 className="font-bold text-lg md:text-xl/6 pb-2 mt-2">{title}</h4>
+          <p className="text-gray-600 text-xs md:text-sm/6 my-1 md:m-0">
             <i className="ri-building-3-line mr-1 md:mr-3"></i>
             {company}
           </p>
