@@ -15,8 +15,8 @@ export default function Navbar() {
             {/* Spacer */}
             <div className="flex-grow flex justify-center">
               <ul className="hidden md:flex gap-x-20 text-white items-center text-sm">
-                <li>Karrieredag </li>
-                <li>Nettverking </li>
+                <Link href="/karrieredag">Karrieredag </Link>
+                <Link href="/nettverking">Nettverking </Link>
                 <Link href="/stillingsannonser">Stillingsannonser </Link>
                 <li>Om ITxBergen </li>
                 <li>Kontakt oss</li>
