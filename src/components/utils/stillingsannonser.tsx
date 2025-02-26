@@ -1,4 +1,5 @@
 import Stillingsannonse from "./stillingsannonse";
+import Link from "next/link";
 
 interface StillingsannonserProps {
   jobs: {
@@ -15,7 +16,9 @@ export default function Stillingsannonser({ jobs }: StillingsannonserProps) {
   return (
     <div className="">
       {jobs.map((job, index) => (
-        <Stillingsannonse key={index} {...job} />
+        <Link key={index} href={`/stillingsannonser/${index}`}>
+          <Stillingsannonse key={index} {...job} />
+        </Link>
       ))}
     </div>
   );

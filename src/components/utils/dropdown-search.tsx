@@ -18,13 +18,13 @@ export default function DropdownSearch({
   };
 
   return (
-    <div className="my-2">
+    <div className="my-4">
       <label className="font-bold text-sm">
         {filterFrom.charAt(0).toUpperCase() + filterFrom.slice(1)}:
       </label>
       <input
         type="search"
-        className="w-full px-4 py-2 mt-1 border border-black rounded-md text-gray-600"
+        className="w-full px-4 mt-1 py-1 border border-black rounded-md text-gray-600"
         placeholder={`Filtrer etter ${filterFrom}`}
         value={inputValue}
         onChange={handleChange} // Call function on input change
