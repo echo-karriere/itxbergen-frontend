@@ -30,7 +30,6 @@ const jobs: JobPosting[] = [
 
 const Page = () => {
   const id = Number(usePathname().split("/").pop());
-  console.log(usePathname());
   const job = jobs.find((job) => job.id === id);
 
   if (!job) {
