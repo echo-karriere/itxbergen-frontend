@@ -36,15 +36,15 @@ const Page = () => {
     return <div>nei</div>;
   }
   return (
-    <div className="flex flex-col md:flex-row m-8 md:m-0">
+    <div className="flex flex-col md:flex-row">
       <div className="md:ml-40 md:m-8 md:mt-28 w-[90%] ml-[1.6rem] md:w-[50%] flex flex-col items-center md:items-start text-center md:text-start">
         <Breadcrumbs customLast={`${job.company}`} />
         <h1 className="text-3xl md:text-4xl font-bold mb-9 mt-4">
           {job.title}
         </h1>
-        <p>{job.description}</p>
+        <p className="md:w-[90%]">{job.description}</p>
       </div>
-      <div className="md:mt-28 mt-5 mb-10 md:w-[20%] flex flex-col items-center justify-center">
+      <div className="mt-[-3rem] mb-10 md:w-[20%] flex flex-col items-center md:items-start justify-center">
         <Image
           src={job.image}
           alt={job.company + " image"}
@@ -53,8 +53,7 @@ const Page = () => {
           className="w-36 h-36 mb-5 rounded"
         />
 
-        {/* Text container */}
-        <div className="text-center sm:text-left md:flex md:flex-col md:justify-between mb-3">
+        <div className="text-left md:flex md:flex-col md:justify-between mb-3">
           <p className="text-gray-600 text-xs md:text-sm/6 my-1 md:m-0 font-bold">
             <i className="ri-building-3-line mr-1 md:mr-3"></i>
             {job.company}
