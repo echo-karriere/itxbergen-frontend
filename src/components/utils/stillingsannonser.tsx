@@ -7,7 +7,7 @@ interface StillingsannonserProps {
     title: string;
     company: string;
     location: string;
-    description: string;
+    type: string;
     date?: string;
   }[];
 }
@@ -17,7 +17,7 @@ export default function Stillingsannonser({ jobs }: StillingsannonserProps) {
     <div className="">
       {jobs.map((job, index) => (
         <Link key={index} href={`/stillingsannonser/${index}`}>
-          <Stillingsannonse key={index} {...job} />
+          <Stillingsannonse {...job} />
         </Link>
       ))}
     </div>

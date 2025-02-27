@@ -18,7 +18,7 @@ const Page = () => {
       title: "Fra sommerjobb til samfunnsnyttig rolle!",
       company: "Statens vegvesen",
       location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      description: "Sommerjobb",
+      type: "Sommerjobb",
       date: "10. Januar 2025",
     },
     {
@@ -26,7 +26,7 @@ const Page = () => {
       title: "Fra sommerjobb til samfunnsnyttig rolle!",
       company: "Statens vegvesen",
       location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      description: "Sommerjobb",
+      type: "Sommerjobb",
       date: "10. Januar 2025",
     },
     {
@@ -34,7 +34,7 @@ const Page = () => {
       title: "Nyutdannede utviklere i Bergen 2025",
       company: "Knowit",
       location: "Bergen",
-      description: "Fulltid",
+      type: "Fulltid",
     },
   ];
 
@@ -42,12 +42,12 @@ const Page = () => {
     (job) =>
       job.company.toLowerCase().includes(companySearchTerm.toLowerCase()) &&
       job.location.toLowerCase().includes(locationSearchTerm.toLowerCase()) &&
-      job.description.toLowerCase().includes(typeSearchTerm.toLowerCase()),
+      job.type.toLowerCase().includes(typeSearchTerm.toLowerCase()),
   );
 
   return (
     <>
-      <div className="m-8 md:ml-40 md:mt-28">
+      <div className="m-8 md:ml-40 md:mt-28 flex flex-col items-center md:items-start">
         <Breadcrumbs current={"Stillingsannonser"} />
         <h1 className="text-3xl md:text-4xl font-bold mb-9 md:mt-4">
           <span>Stillingsannonser</span>
@@ -95,6 +95,7 @@ const Page = () => {
                 <ButtonIXB
                   label={"Publiser stillingsannonse"}
                   variant="primary"
+                  className="w-[95%]"
                 />
                 {/* Secondary Button */}
                 <div className="mt-3 text-center">

@@ -6,7 +6,7 @@ interface StillingsannonseProps {
   title: string;
   company: string;
   location: string;
-  description: string;
+  type: string;
   date?: string;
 }
 
@@ -15,7 +15,7 @@ export default function Stillingsannonse({
   title,
   company,
   location,
-  description,
+  type,
   date,
 }: StillingsannonseProps) {
   return (
@@ -44,7 +44,7 @@ export default function Stillingsannonse({
           </p>
           <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 md:m-0">
             <i className="ri-suitcase-line mr-1 md:mr-3"></i>
-            {description}
+            {type}
           </p>
           {date && (
             <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 md:m-0">
