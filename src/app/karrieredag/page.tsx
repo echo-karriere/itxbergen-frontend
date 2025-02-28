@@ -17,7 +17,7 @@ export default function Karrieredag() {
       {/* Section 1 */}
       <div className="bg-IXBbg2 text-black h-auto flex items-center justify-center relative pt-12 mb-8">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
@@ -60,6 +60,7 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
+      {/* Wave separator at the top */}
       <div>
         <Image
           src="/wave_top_dark.svg"
@@ -72,8 +73,6 @@ export default function Karrieredag() {
       </div>
       {/* Section 2 */}
       <div className="bg-IXBbg text-white h-auto flex items-center justify-center relative">
-        {/* Wave separator at the top */}
-
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
           {/* Header */}
@@ -94,9 +93,8 @@ export default function Karrieredag() {
             />
           </div>
         </div>
-
-        {/* Wave separator at the bottom */}
       </div>
+      {/* Wave separator at the bottom */}
       <div>
         <Image
           src="/wave_bottom_dark.svg"
@@ -108,14 +106,14 @@ export default function Karrieredag() {
         />
       </div>
       {/* Section 3 */}
-      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
+      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative py-10 px-8">
         {/* Header 1 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-32">
           Se bilder fra karrieredagen 2024
         </h2>
 
         {/* Button row */}
-        <div className="px-8 md:px-44">
+        <div className="px-8 md:px-36">
           <div className="flex flex-row md:space-x-12 text-sm pt-8">
             {["KD Side 1", "KD Side 2", "Bankett"].map((page) => (
               <Button
@@ -134,7 +132,7 @@ export default function Karrieredag() {
         </div>
 
         {/* Image Grid */}
-        <div className="maxwidth relative w-full px-6 md:px-40 pt-8">
+        <div className="maxwidth relative w-full px-6 md:px-32 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {selectedPage === "KD Side 1" &&
               [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
@@ -193,12 +191,12 @@ export default function Karrieredag() {
         </div>
 
         {/* Header 2 */}
-        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-40">
+        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-32">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
 
         {/* Company Grid */}
-        <div className="relative w-full px-6 md:px-40 pt-8">
+        <div className="relative w-full px-6 md:px-32 pt-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {(companyLogos || []).map((company, index) => (
               <div
