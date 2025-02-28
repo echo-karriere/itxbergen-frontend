@@ -31,7 +31,7 @@ export default function Nettverking() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-white text-black flex items-center justify-center relative pt-12">
+      <div className="bg-white text-black flex items-center justify-center relative mt-12 md:pt-5">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
