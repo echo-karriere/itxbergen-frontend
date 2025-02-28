@@ -14,15 +14,23 @@ export default function AboutUS() {
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <Breadcrumbs
-              current="Om ITxBergen"
-            />
+            <Breadcrumbs current="Om ITxBergen" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Om ItxBergen</span>
             </h1>
             <p className="text-base">
-              ITxBergen arrangerer karrieredager for IT-studenter i bergensområdet, og er tidligere kjent som echo karriere. Arrangementet ble holdt for første gang i 2019, noe som ble en stor suksess med stort oppmøte fra IT-studenter fra hele Bergen. Eneklte ganger holder vi også andre karrierefremmende arrangementer. <br /> <br />
-              Vi er en frivillig studentorganisasjon som samarbeider med andre linjeforeninger innenfor IT i Bergen, for å sakpe en felles årlig karrieredag. Vi når ut til linjeforeningene på Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania. Samtidig skaper vi et arrangement som er åpent for alle IT-studenter i Bergen, og alle som er interesserte.
+              ITxBergen arrangerer karrieredager for IT-studenter i
+              bergensområdet, og er tidligere kjent som echo karriere.
+              Arrangementet ble holdt for første gang i 2019, noe som ble en
+              stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
+              Eneklte ganger holder vi også andre karrierefremmende
+              arrangementer. <br /> <br />
+              Vi er en frivillig studentorganisasjon som samarbeider med andre
+              linjeforeninger innenfor IT i Bergen, for å sakpe en felles årlig
+              karrieredag. Vi når ut til linjeforeningene på Universitetet i
+              Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania. Samtidig
+              skaper vi et arrangement som er åpent for alle IT-studenter i
+              Bergen, og alle som er interesserte.
             </p>
           </div>
 
@@ -42,17 +50,6 @@ export default function AboutUS() {
 
       <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
         {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full -mt-[12vh]">
-          <Image
-            src="/wave_top_light.svg"
-            alt="Wave Top"
-            layout="intrinsic"
-            width={1920}
-            height={1080}
-            className="w-full h-auto object-contain"
-            draggable="false"
-          />
-        </div>
         <div className="w-full z-20 mt-4 md:mt-12">
           <Styremedlemgrid />
         </div>
@@ -60,5 +57,4 @@ export default function AboutUS() {
       <Otherthings />
     </div>
   );
-};
-
+}
