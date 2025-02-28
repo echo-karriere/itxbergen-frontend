@@ -119,7 +119,7 @@ export default function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative py-12 px-8">
+      <div className="bg-IXBbg1 text-black h-auto flex items-center justify-center relative pb-12">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mt-14">
           <div className="w-full flex flex-col space-y-16">
