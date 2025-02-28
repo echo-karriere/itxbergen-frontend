@@ -47,7 +47,6 @@ export default function Home() {
               alt="ItxBergen"
               height={500}
               width={500}
-
               draggable="false"
             />
           </div>
@@ -70,9 +69,7 @@ export default function Home() {
         {/* Wave separator at the top */}
 
         {/* Content Wrapper */}
-        <div
-          className="maxwidth w-11/12 flex flex-col md:flex-row items-center -py-12"
-        >
+        <div className="maxwidth w-11/12 flex flex-col md:flex-row items-center -py-12">
           {/* Text Content */}
           <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left md:px-32">
             <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
@@ -107,8 +104,6 @@ export default function Home() {
         </div>
 
         {/* Wave separator at the bottom */}
-
-
       </div>
 
       <div>
@@ -119,7 +114,6 @@ export default function Home() {
           className="bg-IXBbg1 w-full"
           width={1920}
           height={1080}
-
         />
       </div>
 
