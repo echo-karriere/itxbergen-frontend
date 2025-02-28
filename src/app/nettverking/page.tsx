@@ -100,7 +100,7 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
+      <div className="bg-IXBbg2 text-black h-auto flex items-start justify-center relative">
         {/* Content Wrapper */}
         <div className="maxwidth relative flex flex-col items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
