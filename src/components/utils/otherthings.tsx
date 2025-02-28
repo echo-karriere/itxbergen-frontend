@@ -5,7 +5,7 @@ const Otherthings = () => {
   return (
     <>
       {/* Section 3 */}
-      <div className="bg-white text-black flex items-center justify-center py-12 px-4">
+      <div className="maxwidth bg-white text-black flex items-center justify-center py-12 px-4">
         {/* Single Box */}
         <div className="w-[90%] bg-IXBbg1 rounded-3xl shadow-2xl p-6 flex flex-col space-y-6">
           {/* Title */}

@@ -15,13 +15,13 @@ export default function Karrieredag() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[75vh] h-auto flex items-center justify-center relative pt-12 md:pt-0 mb-8">
+      <div className="bg-IXBbg2 text-black h-auto flex items-center justify-center relative pt-12 mb-8">
         {/* Content Wrapper */}
         <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <Breadcrumbs current="Karrieredag" />
+            <Breadcrumbs />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Karrieredag</span>
             </h1>
