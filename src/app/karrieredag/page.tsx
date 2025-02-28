@@ -60,7 +60,6 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
-
       {/* Wave separator at the top */}
       <div>
         <Image
@@ -73,7 +72,6 @@ export default function Karrieredag() {
           draggable={false}
         />
       </div>
-
       {/* Section 2 */}
       <div className="bg-IXBbg text-white flex items-center justify-center relative">
         {/* Content Wrapper */}

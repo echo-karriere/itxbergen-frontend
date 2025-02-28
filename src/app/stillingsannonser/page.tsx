@@ -47,7 +47,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="mt-12 mx-8 md:ml-40 md:mt-28 flex flex-col items-center md:items-start">
+      <div className="mt-12 mx-8 md:ml-40 flex flex-col items-center md:items-start">
         <Breadcrumbs current={"Stillingsannonser"} />
         <h1 className="text-3xl md:text-4xl font-bold mb-9 md:mt-4">
           <span>Stillingsannonser</span>
