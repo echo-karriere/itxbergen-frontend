@@ -113,7 +113,7 @@ export default function Home() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="bg-IXBbg2 w-full"
+          className="bg-IXBbg1 w-full"
           draggable="false"
         />
       </div>
