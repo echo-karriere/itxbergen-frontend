@@ -83,16 +83,18 @@ export default function Karrieredag() {
             Ønsker du mer informasjon om Karrieredagen?
           </h2>
           {/* Buttons Below Text */}
-          <div className="flex space-x-4 md:space-x-20 mt-12">
+          <div className="flex space-y-5 md:space-y-0 md:space-x-20 mt-12 flex-col md:flex-row">
             <ButtonIXB
               label="  For Studenter  "
               variant="ghost"
               onClick={() => router.push("karrieredag/studenter")}
+              className="w-80"
             />
             <ButtonIXB
               label="  For Bedrifter  "
               variant="ghost"
               onClick={() => router.push("karrieredag/bedrifter")}
+              className="w-80"
             />
           </div>
         </div>
