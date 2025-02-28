@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
+import Breadcrumbs from "@/components/utils/breadcrumbs";
 import ButtonIXB from "@/components/utils/button-ixb";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -15,14 +15,13 @@ export default function Karrieredag() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black h-auto flex items-center justify-center relative pt-12 md:pt-0 mb-8">
+      <div className="bg-IXBbg2 text-black md:h-[75vh] h-auto flex items-center justify-center relative pt-12 md:pt-0 mb-8">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <br></br>
-            <Breadcrumbs />
+            <Breadcrumbs current="Karrieredag" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Karrieredag</span>
             </h1>
@@ -61,22 +60,13 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
-      <div>
-        <Image
-          src="/wave_top_dark.svg"
-          alt="Wave Top"
-          layout="intrinsic"
-          className="bg-IXBbg2 w-full -my-10"
-          width={1920}
-          height={1080}
-        />
-      </div>
+
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white h-auto flex items-center justify-center relative">
+      <div className="bg-IXBbg text-white h-[40vh] flex items-center justify-center relative">
         {/* Wave separator at the top */}
 
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
+        <div className="flex flex-col items-center text-center z-20">
           {/* Header */}
           <h2 className="text-3xl font-bold text-IXBfg px-6">
             Ønsker du mer informasjon om Karrieredagen?
@@ -98,18 +88,9 @@ export default function Karrieredag() {
 
         {/* Wave separator at the bottom */}
       </div>
-      <div>
-        <Image
-          src="/wave_bottom_dark.svg"
-          alt="Wave Top"
-          layout="intrinsic"
-          className="w-full"
-          width={1920}
-          height={1080}
-        />
-      </div>
+
       {/* Section 3 */}
-      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
+      <div className="bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
         {/* Header 1 */}
         <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
           Se bilder fra karrieredagen 2024
@@ -135,7 +116,7 @@ export default function Karrieredag() {
         </div>
 
         {/* Image Grid */}
-        <div className="maxwidth relative w-full px-6 md:px-40 pt-8">
+        <div className="relative w-full px-6 md:px-40 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {selectedPage === "KD Side 1" &&
               [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
