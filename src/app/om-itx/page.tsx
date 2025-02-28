@@ -58,8 +58,7 @@ export default function AboutUS() {
           draggable="false"
         />
       </div>
-      <div className="bg-IXBbg2 text-black h-auto pb-10 flex items-start justify-center relative">
-        {/* Wave separator at the top */}
+      <div className="bg-IXBbg2 text-black h-auto pb-10 flex items-start justify-center relative shadow-lg">
         <div className="maxwidth w-full z-20 mt-4 md:mt-12">
           <Styremedlemgrid />
         </div>
