@@ -100,13 +100,13 @@ export default function Nettverking() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black h-auto flex items-start justify-center relative">
+      <div className="bg-IXBbg2 text-black h-auto p-3 flex items-start justify-center relative shadow-lg mb-3">
         {/* Content Wrapper */}
-        <div className="maxwidth relative flex flex-col items-start w-full px-6 md:px-32 pt-8">
+        <div className="maxwidth relative flex flex-col items-center text-center md:text-start md:items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-left">
+              <h2 className="text-2xl font-bold text-center md:text-start">
                 Studentorganisasjoner og linjeforeninger for <br /> IT-studenter
               </h2>
               <p>
@@ -118,7 +118,7 @@ export default function Nettverking() {
             </div>
 
             {/* Button row with filtering */}
-            <div className="flex flex-row md:space-x-12 text-sm pt-12">
+            <div className="flex flex-col md:flex-row md:space-x-12 text-sm pt-12 w-full items-center">
               {[
                 "Vis alle",
                 "Universitetet i Bergen",
@@ -137,7 +137,7 @@ export default function Nettverking() {
             </div>
 
             {/* Line under buttons */}
-            <div className="w-full border-t-2 border-black"></div>
+            <div className="w-full md:border-t-2 md:border-black"></div>
           </div>
 
           {/* Organisation Section */}
