@@ -31,9 +31,9 @@ export default function Nettverking() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-white text-black md:h-[70vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
+      <div className="bg-white text-black flex items-center justify-center relative pt-12">
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
@@ -87,12 +87,22 @@ export default function Nettverking() {
         </div>
       </div>
 
+      <div>
+        <Image
+          src="/wave_top_light.svg"
+          alt="Wave Top"
+          layout="intrinsic"
+          width={1920}
+          height={1080}
+          className="bg-white w-full"
+          draggable="false"
+        />
+      </div>
+
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
-        {/* Wave separator at the top */}
-
         {/* Content Wrapper */}
-        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-8">
+        <div className="maxwidth relative flex flex-col items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
