@@ -18,7 +18,7 @@ export default function Navbar() {
               <ul className="hidden md:flex gap-x-6 md:gap-x-20 text-white items-center text-sm">
                 <Link href="/karrieredag">Karrieredag </Link>
                 <Link href="/nettverking">Nettverking </Link>
-                <li>Stillingsannonser </li>
+                <Link href="/stillingsannonser" >Stillingsannonser </Link>
                 <Link href="/om-itx">Om ITxBergen </Link>
                 <li>Kontakt oss</li>
               </ul>

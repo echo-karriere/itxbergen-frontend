@@ -79,8 +79,7 @@ const Page = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Trykk her for å gå til søknaden for stillingen - ${job.title}, Ekstern lenke.`}
-          className="bg-blue-500 hover:bg-blue-700 md:w-full w-[60%] text-white font-bold py-2 px-4 rounded flex justify-center items-center focus:outline-none focus:ring-4 focus:ring-yellow-400"
-        >
+          className="bg-blue-500 hover:bg-blue-700 md:w-full w-[60%] text-white font-bold py-2 px-4 rounded flex justify-center items-center focus:outline-none focus:ring-4 focus:ring-yellow-400">
           <span className="text-center md:w-full w-[60%]">Gå til søknad</span>
           <i className="ri-external-link-fill ml-2" />
         </a>
@@ -91,7 +90,7 @@ const Page = () => {
               navigator
                 .share({
                   title: `Ta en titt på denne stillingsannonsen til ${job.company} på ITxBERGEN sin nettside.`,
-                  url: `https://ixb.no/for-studenter/stillingsannonser/${job.id}`,
+                  url: `https://ixb.no/stillingsannonser/${job.id}`,
                 })
                 .then(() => console.log("Successful share"))
                 .catch((error) => console.log("Error sharing", error));
@@ -123,8 +122,7 @@ const Page = () => {
               }, 3000);
             }
           }}
-          className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 w-[60%] md:w-full font-semibold py-2 px-4 flex justify-center items-center rounded focus:outline-none focus:ring-4 focus:ring-yellow-400"
-        >
+          className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 w-[60%] md:w-full font-semibold py-2 px-4 flex justify-center items-center rounded focus:outline-none focus:ring-4 focus:ring-yellow-400">
           <span id="shareButton" className="text-center ">
             Del stillingen
           </span>
