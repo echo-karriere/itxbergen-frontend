@@ -15,7 +15,7 @@ export default function Karrieredag() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black h-auto flex items-center justify-center relative pt-12 mb-8">
+      <div className="bg-IXBbg2 text-black flex items-center justify-center relative pt-12">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
@@ -60,19 +60,22 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
+
       {/* Wave separator at the top */}
       <div>
         <Image
           src="/wave_top_dark.svg"
           alt="Wave Top"
           layout="intrinsic"
-          className="bg-IXBbg2 w-full -my-10"
           width={1920}
           height={1080}
+          className="bg-IXBbg2 w-full"
+          draggable={false}
         />
       </div>
+
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white h-auto flex items-center justify-center relative">
+      <div className="bg-IXBbg text-white flex items-center justify-center relative">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
           {/* Header */}
@@ -103,10 +106,11 @@ export default function Karrieredag() {
           className="w-full"
           width={1920}
           height={1080}
+          draggable={false}
         />
       </div>
       {/* Section 3 */}
-      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative py-10 px-8">
+      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative">
         {/* Header 1 */}
         <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-32">
           Se bilder fra karrieredagen 2024
