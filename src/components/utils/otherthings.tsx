@@ -14,7 +14,7 @@ const Otherthings = () => {
           </h2>
 
           {/* Links */}
-          <a href="#" className="flex items-center hover:underline">
+          <a href="/karrieredag" className="flex items-center hover:underline">
             Karrieredagen
             <ChevronRight className="w-5 h-5" />
           </a>
@@ -22,7 +22,7 @@ const Otherthings = () => {
             Stillingsannonser
             <ChevronRight className="w-5 h-5" />
           </a>
-          <a href="#" className="flex items-center hover:underline">
+          <a href="om-itx" className="flex items-center hover:underline">
             Om ITxBergen
             <ChevronRight className="w-5 h-5" />
           </a>
