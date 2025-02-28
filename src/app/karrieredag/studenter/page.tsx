@@ -104,11 +104,11 @@ export default function ForStudenter() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg2 text-black h-auto flex flex-col md:flex-row justify-center items-center relative">
+      <div className="bg-IXBbg2 text-black flex flex-col md:flex-row justify-center items-center relative">
         {/* Wave separator at the top */}
 
         {/* Content Wrapper */}
-        <div className="relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-40 mb-24 mt-24 md:gap-16">
+        <div className="maxwidth relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-32 mb-24 mt-24 md:gap-16">
           {/* Left Text Content */}
           <div
             className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left"
