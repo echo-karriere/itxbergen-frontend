@@ -50,7 +50,7 @@ const Page = () => {
           alt={job.company + " image"}
           width={300}
           height={300}
-          className="w-36 h-36 mb-5 rounded"
+          className="w-36 h-36 mb-5 rounded mt-16 md:mt-0"
         />
 
         <div className="text-left md:flex md:flex-col md:justify-between mb-3">
