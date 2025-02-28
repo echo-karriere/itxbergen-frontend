@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Breadcrumbs from "@/components/utils/breadcrumbs";
+import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Styremedlemgrid from "@/components/utils/styremedlemgrid";
 import Otherthings from "@/components/utils/otherthings";
 
@@ -8,13 +8,13 @@ export default function AboutUS() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-white text-black md:h-[70vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
+      <div className="bg-white text-black h-auto flex items-center justify-center relative pt-12">
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <Breadcrumbs current="Om ITxBergen" />
+            <Breadcrumbs customLast="Om ITxBergen" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Om ItxBergen</span>
             </h1>
@@ -47,10 +47,20 @@ export default function AboutUS() {
           </div>
         </div>
       </div>
-
-      <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
+      <div>
+        <Image
+          src="/wave_top_light.svg"
+          alt="Wave Top"
+          layout="intrinsic"
+          width={1920}
+          height={1080}
+          className="w-full h-auto object-contain"
+          draggable="false"
+        />
+      </div>
+      <div className="bg-IXBbg2 text-black h-auto pb-10 flex items-start justify-center relative">
         {/* Wave separator at the top */}
-        <div className="w-full z-20 mt-4 md:mt-12">
+        <div className="maxwidth w-full z-20 mt-4 md:mt-12">
           <Styremedlemgrid />
         </div>
       </div>
