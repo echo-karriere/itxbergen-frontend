@@ -112,7 +112,7 @@ export default function Karrieredag() {
       {/* Section 3 */}
       <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative">
         {/* Header 1 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-32">
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-6 md:px-32">
           Se bilder fra karrieredagen 2024
         </h2>
 
