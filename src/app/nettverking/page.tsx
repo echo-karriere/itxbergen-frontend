@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -24,21 +24,20 @@ interface Organisation {
 }
 
 export default function Nettverking() {
-  const [selectedLocation, setSelectedLocation] = useState('Vis alle');
-  const [selectedOrganisation, setSelectedOrganisation] = useState<Organisation | null>(null);
+  const [selectedLocation, setSelectedLocation] = useState("Vis alle");
+  const [selectedOrganisation, setSelectedOrganisation] =
+    useState<Organisation | null>(null);
 
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-white text-black md:h-[70vh] h-auto flex items-center justify-center relative pt-12 md:pt-0">
+      <div className="bg-white text-black flex items-center justify-center relative pt-12">
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <Breadcrumbs
-              current="Nettverking"
-            />
+            <Breadcrumbs current="Nettverking" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Nettverking</span>
             </h1>
@@ -51,15 +50,24 @@ export default function Nettverking() {
             </p>
 
             {/* Links */}
-            <a href="#" className="flex items-center font-semibold hover:underline">
+            <a
+              href="#"
+              className="flex items-center font-semibold hover:underline"
+            >
               Studentorganisasjoner og linjeforeninger
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a href="#" className="flex items-center font-semibold hover:underline">
+            <a
+              href="#"
+              className="flex items-center font-semibold hover:underline"
+            >
               Arrangementer
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a href="#" className="flex items-center font-semibold hover:underline">
+            <a
+              href="#"
+              className="flex items-center font-semibold hover:underline"
+            >
               Nyheter
               <ChevronRight className="w-5 h-5" />
             </a>
@@ -79,23 +87,22 @@ export default function Nettverking() {
         </div>
       </div>
 
+      <div>
+        <Image
+          src="/wave_top_light.svg"
+          alt="Wave Top"
+          layout="intrinsic"
+          width={1920}
+          height={1080}
+          className="bg-white w-full"
+          draggable="false"
+        />
+      </div>
+
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black min-h-screen flex items-start justify-center relative">
-        {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full -mt-[12vh]">
-          <Image
-            src="/wave_top_light.svg"
-            alt="Wave Top"
-            layout="intrinsic"
-            width={1920}
-            height={1080}
-            className="w-full h-auto object-contain"
-            draggable="false"
-          />
-        </div>
-
         {/* Content Wrapper */}
-        <div className="relative flex flex-col items-start w-full px-6 md:px-40 pt-8">
+        <div className="maxwidth relative flex flex-col items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
@@ -103,18 +110,25 @@ export default function Nettverking() {
                 Studentorganisasjoner og linjeforeninger for <br /> IT-studenter
               </h2>
               <p>
-                Vi har samlet alle studentorganisasjonene som retter seg mot IT-studenter linjeforeningene <br />
-                ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania!
+                Vi har samlet alle studentorganisasjonene som retter seg mot
+                IT-studenter linjeforeningene <br />
+                ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen
+                Kristiania!
               </p>
             </div>
 
             {/* Button row with filtering */}
             <div className="flex flex-row md:space-x-12 text-sm pt-12">
-              {["Vis alle", "Universitetet i Bergen", "Høgskulen på Vestlandet", "Høyskolen Kristiania"].map((location) => (
+              {[
+                "Vis alle",
+                "Universitetet i Bergen",
+                "Høgskulen på Vestlandet",
+                "Høyskolen Kristiania",
+              ].map((location) => (
                 <Button
                   key={location}
                   variant="ghost"
-                  className={`hover:underline hover:text-IXBPurple ${selectedLocation === location ? 'text-IXBPurple font-bold' : ''}`}
+                  className={`hover:underline hover:text-IXBPurple ${selectedLocation === location ? "text-IXBPurple font-bold" : ""}`}
                   onClick={() => setSelectedLocation(location)}
                 >
                   {location}
@@ -141,7 +155,9 @@ export default function Nettverking() {
               {/* First Box Content */}
               <div>
                 <h3 className="text-2xl font-bold text-black mb-4">
-                  {selectedOrganisation ? selectedOrganisation.name : "Velg en organisasjon"}
+                  {selectedOrganisation
+                    ? selectedOrganisation.name
+                    : "Velg en organisasjon"}
                 </h3>
                 <h2 className="font-bold text-black mb-4">
                   {selectedOrganisation ? selectedOrganisation.boxHeader : ""}
@@ -160,33 +176,67 @@ export default function Nettverking() {
               {selectedOrganisation && (
                 <div className="flex justify-center gap-4 mt-8">
                   {/* Facebook */}
-                  <Link href={selectedOrganisation.facebook || "#"} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/facebook.svg" alt="Facebook" width={32} height={32}
-                      className="hover:opacity-80 transition-opacity" />
+                  <Link
+                    href={selectedOrganisation.facebook || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/icons/facebook.svg"
+                      alt="Facebook"
+                      width={32}
+                      height={32}
+                      className="hover:opacity-80 transition-opacity"
+                    />
                   </Link>
                   {/* Instagram */}
-                  <Link href={selectedOrganisation.instagram || "#"} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/instagram.svg" alt="Instagram" width={32} height={32}
-                      className="hover:opacity-80 transition-opacity" />
+                  <Link
+                    href={selectedOrganisation.instagram || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="Instagram"
+                      width={32}
+                      height={32}
+                      className="hover:opacity-80 transition-opacity"
+                    />
                   </Link>
                   {/* LinkedIn */}
-                  <Link href={selectedOrganisation.linkedin || "#"} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={32} height={32}
-                      className="hover:opacity-80 transition-opacity" />
+                  <Link
+                    href={selectedOrganisation.linkedin || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="LinkedIn"
+                      width={32}
+                      height={32}
+                      className="hover:opacity-80 transition-opacity"
+                    />
                   </Link>
                   {/* GitHub */}
-                  <Link href={selectedOrganisation.github || "#"} target="_blank" rel="noopener noreferrer">
-                    <Image src="/icons/github.svg" alt="Github" width={32} height={32}
-                      className="hover:opacity-80 transition-opacity" />
+                  <Link
+                    href={selectedOrganisation.github || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/icons/github.svg"
+                      alt="Github"
+                      width={32}
+                      height={32}
+                      className="hover:opacity-80 transition-opacity"
+                    />
                   </Link>
                 </div>
               )}
             </div>
 
             {/* Second Box */}
-            <div className="w-full md:w-[35%] h-auto bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl">
-
-            </div>
+            <div className="w-full md:w-[35%] h-auto bg-IXBbg1 rounded-t-3xl rounded-tr-[150px] p-6 shadow-2xl"></div>
           </div>
         </div>
       </div>

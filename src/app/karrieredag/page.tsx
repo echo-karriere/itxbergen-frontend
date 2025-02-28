@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import Image from "next/image"
-import Breadcrumbs from "@/components/utils/breadcrumbs"
-import ButtonIXB from "@/components/utils/button-ixb"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
+import ButtonIXB from "@/components/utils/button-ixb";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { companyLogos } from "@/lib/organisations";
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation";
 
 export default function Karrieredag() {
   const [selectedPage, setSelectedPage] = useState("KD Side 1");
@@ -15,30 +15,31 @@ export default function Karrieredag() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black md:h-[75vh] h-auto flex items-center justify-center relative pt-12 md:pt-0 mb-8">
+      <div className="bg-IXBbg2 text-black flex items-center justify-center relative pt-12">
         {/* Content Wrapper */}
-        <div className="flex flex-col md:flex-row items-center w-full px-6 md:px-40 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
-            <Breadcrumbs
-              current="Karrieredag"
-            />
+            <Breadcrumbs />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
               <span>Karrieredag</span>
             </h1>
             <p className="text-base">
-              Karrieredagen i 2024 ble en suksess! Den ble avholdt den 19. september i Grieghallen.
-              Vi har allerede startet planleggingen av karrieredagen 2025!
+              Karrieredagen i 2024 ble en suksess! Den ble avholdt den 19.
+              september i Grieghallen. Vi har allerede startet planleggingen av
+              karrieredagen 2025!
             </p>
-            <p className="text-base">På denne siden vil du finne ressurser til neste karrieredag, som:</p>
+            <p className="text-base">
+              På denne siden vil du finne ressurser til neste karrieredag, som:
+            </p>
             <ul className="text-base space-y-2 md:pl-8">
               {[
                 "Timeplan",
                 "Standkart og bedrifter som deltar",
                 "Workshops",
                 "Konseptpresentasjoner",
-                "Ekstra informasjon"
+                "Ekstra informasjon",
               ].map((item, index) => (
                 <li key={index} className="flex items-center">
                   <span className="mr-2">•</span> {item}
@@ -60,63 +61,69 @@ export default function Karrieredag() {
         </div>
       </div>
 
-      {/* Section 2 */}
-      <div className="bg-IXBbg text-white h-[40vh] flex items-center justify-center relative">
-        {/* Wave separator at the top */}
-        <div className="absolute top-0 w-full -mt-[12vh] md:-mt-[25vh]">
-          <Image
-            src="/wave_top_dark.svg"
-            alt="Wave Top"
-            layout="intrinsic"
-            width={1920}
-            height={1080}
-            className="w-full h-auto object-contain"
-            draggable="false"
-          />
-        </div>
+      {/* Wave separator at the top */}
+      <div>
+        <Image
+          src="/wave_top_dark.svg"
+          alt="Wave Top"
+          layout="intrinsic"
+          width={1920}
+          height={1080}
+          className="bg-IXBbg2 w-full"
+          draggable={false}
+        />
+      </div>
 
+      {/* Section 2 */}
+      <div className="bg-IXBbg text-white flex items-center justify-center relative">
         {/* Content Wrapper */}
-        <div className="flex flex-col items-center text-center z-20">
+        <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
           {/* Header */}
           <h2 className="text-3xl font-bold text-IXBfg px-6">
             Ønsker du mer informasjon om Karrieredagen?
           </h2>
           {/* Buttons Below Text */}
           <div className="flex space-x-4 md:space-x-20 mt-12">
-            <ButtonIXB label="  For Studenter  " variant="ghost" onClick={() => router.push("karrieredag/studenter")} />
-            <ButtonIXB label="  For Bedrifter  " variant="ghost" onClick={() => router.push("karrieredag/bedrifter")} />
+            <ButtonIXB
+              label="  For Studenter  "
+              variant="ghost"
+              onClick={() => router.push("karrieredag/studenter")}
+            />
+            <ButtonIXB
+              label="  For Bedrifter  "
+              variant="ghost"
+              onClick={() => router.push("karrieredag/bedrifter")}
+            />
           </div>
         </div>
-
-        {/* Wave separator at the bottom */}
-        <div className="absolute bottom-0 w-full -mb-[12vh] md:-mb-[18vh] z-10">
-          <Image
-            src="/wave_bottom_dark.svg"
-            alt="Wave Bottom"
-            layout="intrinsic"
-            width={1920}
-            height={1080}
-            className="w-full h-auto object-contain"
-            draggable="false"
-          />
-        </div>
       </div>
-
+      {/* Wave separator at the bottom */}
+      <div>
+        <Image
+          src="/wave_bottom_dark.svg"
+          alt="Wave Top"
+          layout="intrinsic"
+          className="w-full"
+          width={1920}
+          height={1080}
+          draggable={false}
+        />
+      </div>
       {/* Section 3 */}
-      <div className="bg-white text-black h-auto flex flex-col items-start relative py-20 px-8">
+      <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative pb-12">
         {/* Header 1 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-12 md:px-40">
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-6 md:px-32">
           Se bilder fra karrieredagen 2024
         </h2>
 
         {/* Button row */}
-        <div className="px-8 md:px-44">
+        <div className="px-8 md:px-36">
           <div className="flex flex-row md:space-x-12 text-sm pt-8">
             {["KD Side 1", "KD Side 2", "Bankett"].map((page) => (
               <Button
                 key={page}
                 variant="ghost"
-                className={`hover:underline hover:text-IXBPurple ${selectedPage === page ? 'text-IXBPurple font-bold' : ''}`}
+                className={`hover:underline hover:text-IXBPurple ${selectedPage === page ? "text-IXBPurple font-bold" : ""}`}
                 onClick={() => setSelectedPage(page)}
               >
                 {page}
@@ -129,7 +136,7 @@ export default function Karrieredag() {
         </div>
 
         {/* Image Grid */}
-        <div className="relative w-full px-6 md:px-40 pt-8">
+        <div className="maxwidth relative w-full px-6 md:px-32 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {selectedPage === "KD Side 1" &&
               [1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
@@ -188,12 +195,12 @@ export default function Karrieredag() {
         </div>
 
         {/* Header 2 */}
-        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-40">
+        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-32">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
 
         {/* Company Grid */}
-        <div className="relative w-full px-6 md:px-40 pt-8">
+        <div className="relative w-full px-6 md:px-32 pt-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {(companyLogos || []).map((company, index) => (
               <div
@@ -214,6 +221,6 @@ export default function Karrieredag() {
           </div>
         </div>
       </div>
-    </div >
-  )
+    </div>
+  );
 }
