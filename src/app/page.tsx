@@ -20,7 +20,7 @@ export default function Home() {
       {/* Section 1 */}
       <div className="bg-IXBbg2 text-black flex items-center justify-center relative ">
         {/* Content Wrapper */}
-        <div className="maxwidth pt-24 flex flex-col md:flex-row items-center w-full -pb-12 md:px-40 space-y-12 md:space-y-0 md:space-x-20">
+        <div className="maxwidth pt-24 flex flex-col md:flex-row items-center w-full -pb-12 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
             <h1 className="text-3xl md:text-4xl font-bold">
@@ -47,35 +47,34 @@ export default function Home() {
               alt="ItxBergen"
               height={500}
               width={500}
-            
+
               draggable="false"
             />
           </div>
         </div>
       </div>
+
       <div>
         <Image
           src="/wave_top_dark.svg"
           alt="Wave Top"
-          layout="intrinsic" 
+          layout="intrinsic"
           className="bg-IXBbg2 w-full"
           width={1920}
           height={1080}
-         
         />
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white flex items-center justify-center ">
+      <div className="bg-IXBbg h-auto text-white flex items-center justify-center ">
         {/* Wave separator at the top */}
 
         {/* Content Wrapper */}
         <div
           className="maxwidth w-11/12 flex flex-col md:flex-row items-center -py-12"
-  
         >
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left mt-12 md:mt-0">
+          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left md:px-32">
             <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
             <p className="text-lg">
               ITxBergen arrangerer karrieredager for IT-studenter i
@@ -108,18 +107,19 @@ export default function Home() {
         </div>
 
         {/* Wave separator at the bottom */}
-        
+
 
       </div>
+
       <div>
         <Image
           src="/wave_bottom_dark.svg"
           alt="Wave Top"
-          layout="intrinsic" 
+          layout="intrinsic"
           className="bg-IXBbg1 w-full"
           width={1920}
           height={1080}
-         
+
         />
       </div>
 
