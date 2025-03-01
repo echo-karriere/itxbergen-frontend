@@ -22,8 +22,8 @@ export default function Home() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
-            <h1 className="text-3xl md:text-4xl font-bold">
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-left space-y-8 md:space-y-16">
+            <h1 className="text-3xl md:text-4xl font-bold text-left ml-9 md:ml-0">
               <span className="text-IXBPurple">Karrieredag</span> og
               <span className="text-IXBPurple"> nettverking</span> <br /> for
               IT-studenter i Bergen!
@@ -69,13 +69,13 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
         {/* Content Wrapper */}
-        <div
-          className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20"
-        >
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left mt-12 md:mt-0">
-            <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
-            <p className="text-lg">
+          <div className="w-full md:w-3/5 flex flex-col space-y-14 md:text-left mt-12 md:mt-0">
+            <h1 className="text-IXBfg text-3xl font-bold text-left ml-9 md:ml-0">
+              Hva er ITxBergen?
+            </h1>
+            <p className="text-lg ml-9 md:ml-0">
               ITxBergen arrangerer karrieredager for IT-studenter i
               bergensområdet, og er tidligere kjent som echo karriere.
               Arrangementet ble holdt for første gang i 2019, noe som ble en
@@ -125,10 +125,10 @@ export default function Home() {
           <div className="w-full flex flex-col space-y-16">
             {/* Events Section */}
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-bold mb-6 text-left ml-9 md:ml-0">
                 Kommende arrangementer
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-left ml-9 md:ml-0">
                 <EventCard
                   title="Github Workshop med SPV"
                   date="23. Mars 17:00"
@@ -140,8 +140,10 @@ export default function Home() {
 
             {/* News Section */}
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+              <h2 className="text-2xl font-bold mb-6 text-left ml-9 md:ml-0">
+                Nyheter
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-left ml-9 md:ml-0">
                 <NewsCard
                   image="/fuckup.png"
                   title="News Article 1"

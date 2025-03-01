@@ -35,10 +35,10 @@ export default function Nettverking() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center items-start w-full md:w-3/5 text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
             <Breadcrumbs current="Nettverking" />
-            <h1 className="text-3xl md:text-4xl font-bold mb-9">
+            <h1 className="text-3xl md:text-4xl font-bold mb-9 text-center md:text-left">
               <span>Nettverking</span>
             </h1>
             <p className="text-base">
@@ -50,24 +50,15 @@ export default function Nettverking() {
             </p>
 
             {/* Links */}
-            <a
-              href="#"
-              className="flex items-center font-semibold hover:underline"
-            >
+            <a href="#" className="flex font-semibold hover:underline">
               Studentorganisasjoner og linjeforeninger
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a
-              href="#"
-              className="flex items-center font-semibold hover:underline"
-            >
+            <a href="#" className="flex font-semibold hover:underline">
               Arrangementer
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a
-              href="#"
-              className="flex items-center font-semibold hover:underline"
-            >
+            <a href="#" className="flex font-semibold hover:underline">
               Nyheter
               <ChevronRight className="w-5 h-5" />
             </a>
@@ -102,11 +93,11 @@ export default function Nettverking() {
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black h-auto p-3 flex items-start justify-center relative shadow-lg mb-3">
         {/* Content Wrapper */}
-        <div className="maxwidth relative flex flex-col items-center text-center md:text-start md:items-start w-full px-6 md:px-32 pt-8">
+        <div className="maxwidth relative flex flex-col items-center text-start md:items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-center md:text-start">
+              <h2 className="text-2xl font-bold text-start">
                 Studentorganisasjoner og linjeforeninger for <br /> IT-studenter
               </h2>
               <p>
