@@ -19,7 +19,7 @@ export default function Karrieredag() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center items-start w-full md:w-3/5 text-left space-y-4 md:space-y-4 ml-9 md:ml-0">
             {/* Breadcrumb */}
             <Breadcrumbs />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
@@ -75,9 +75,9 @@ export default function Karrieredag() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white flex items-center justify-center relative">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
+        <div className="maxwidth flex flex-col items-center text-left z-20 py-10">
           {/* Header */}
-          <h2 className="text-3xl font-bold text-IXBfg px-6">
+          <h2 className="text-3xl font-bold text-IXBfg px-6 ml-9 md:ml-0">
             Ønsker du mer informasjon om Karrieredagen?
           </h2>
           {/* Buttons Below Text */}
@@ -112,7 +112,7 @@ export default function Karrieredag() {
       {/* Section 3 */}
       <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative pb-12">
         {/* Header 1 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-6 md:px-32">
+        <h2 className="text-2xl font-bold text-left px-6 md:mt-6 md:px-32 ml-9 md:ml-0">
           Se bilder fra karrieredagen 2024
         </h2>
 
@@ -195,7 +195,7 @@ export default function Karrieredag() {
         </div>
 
         {/* Header 2 */}
-        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-32">
+        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-32 ml-9 md:ml-0">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
 
