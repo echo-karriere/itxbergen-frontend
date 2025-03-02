@@ -15,6 +15,7 @@ interface Organisation {
   boxHeader: string;
   boxp1: string;
   boxp2: string;
+  list: string[];
   participants?: string;
   email?: string;
   facebook: string;
@@ -155,9 +156,7 @@ export default function Nettverking() {
               {/* First Box Content */}
               <div>
                 <h3 className="text-2xl font-bold text-black mb-4">
-                  {selectedOrganisation
-                    ? selectedOrganisation.name
-                    : "Velg en organisasjon"}
+                  {selectedOrganisation ? selectedOrganisation.name : "Velg en organisasjon"}
                 </h3>
                 <h2 className="font-bold text-black mb-4">
                   {selectedOrganisation ? selectedOrganisation.boxHeader : ""}
@@ -168,9 +167,21 @@ export default function Nettverking() {
                     : "Klikk på en organisasjon for å se mer informasjon."}
                 </p>
                 {selectedOrganisation && (
-                  <p className="text-gray-600 mt-4">
-                    {selectedOrganisation.boxp2}
-                  </p>
+                  <div className="text-gray-600 mt-4">
+                    <p>{selectedOrganisation.boxp2}</p>
+                    {selectedOrganisation.list && (
+                      <ul className="list-disc list-inside mt-2">
+                        {/* If list is an array, map over it to display multiple bullet points */}
+                        {Array.isArray(selectedOrganisation.list) ? (
+                          selectedOrganisation.list.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))
+                        ) : (
+                          <li>{selectedOrganisation.list}</li>
+                        )}
+                      </ul>
+                    )}
+                  </div>
                 )}
               </div>
               {selectedOrganisation && (
