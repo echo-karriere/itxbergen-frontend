@@ -7,8 +7,13 @@ interface OrganisationCardListProps {
   onSelectOrganisation: (organisation: any | null) => void;
 }
 
-export default function OrganisationCardList({ selectedLocation, onSelectOrganisation }: OrganisationCardListProps) {
-  const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(null);
+export default function OrganisationCardList({
+  selectedLocation,
+  onSelectOrganisation,
+}: OrganisationCardListProps) {
+  const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
+    null,
+  );
 
   const handleSelectCard = (index: number, organisation: any) => {
     if (selectedCardIndex === index) {
@@ -20,12 +25,13 @@ export default function OrganisationCardList({ selectedLocation, onSelectOrganis
     }
   };
 
-  const filteredOrganisations = selectedLocation === 'Vis alle'
-    ? organisations
-    : organisations.filter(org => org.location === selectedLocation);
+  const filteredOrganisations =
+    selectedLocation === "Vis alle"
+      ? organisations
+      : organisations.filter((org) => org.location === selectedLocation);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center md:place-items-start">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center md:place-items-start">
       {filteredOrganisations.map((organisation, index) => (
         <OrganisationCard
           key={organisation.name}
