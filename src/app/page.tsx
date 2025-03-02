@@ -23,7 +23,7 @@ export default function Home() {
           {/* Content Wrapper */}
           <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
             {/* Text Content */}
-            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
+            <div className="flex flex-col justify-center mx-9 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-16">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
                 <span className="text-IXBPurple"> nettverking</span> <br /> for
@@ -74,7 +74,7 @@ export default function Home() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32">
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-8 text-left">
+          <div className="mx-9 md:w-3/5 flex flex-col space-y-8 text-left">
             <h1 className="text-IXBfg text-3xl font-bold mb-4 mt-10 md:mt-0">
               Hva er ITxBergen?
             </h1>
