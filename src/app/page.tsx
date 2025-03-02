@@ -17,43 +17,46 @@ export default function Home() {
 
   return (
     <div>
-      {/* Section 1 */}
-      <div className="bg-IXBbg2 text-black flex items-center justify-center relative pt-12">
-        {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
-          {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
-            <h1 className="text-3xl md:text-4xl font-bold">
-              <span className="text-IXBPurple">Karrieredag</span> og
-              <span className="text-IXBPurple"> nettverking</span> <br /> for
-              IT-studenter i Bergen!
-            </h1>
-            <ButtonIXB
-              label="Sjekk ut karrieredagen vår"
-              onClick={handleButtonClick}
-              variant="primary"
-            />
-            <p className="text-base md:text-lg">
-              Ikke karrieredag enda? <br />
-              Sjekk ut mulighetene for{" "}
-              <span className="font-bold underline">nettverking</span>!
-            </p>
-          </div>
+      <div>
+        {/* Section 1 */}
+        <div className="bg-IXBbg2 text-black flex items-center justify-center relative pt-12">
+          {/* Content Wrapper */}
+          <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+            {/* Text Content */}
+            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
+              <h1 className="text-3xl md:text-4xl font-bold">
+                <span className="text-IXBPurple">Karrieredag</span> og
+                <span className="text-IXBPurple"> nettverking</span> <br /> for
+                IT-studenter i Bergen!
+              </h1>
+              <ButtonIXB
+                label="Sjekk ut karrieredagen vår"
+                onClick={handleButtonClick}
+                variant="primary"
+              />
+              <p className="text-base md:text-lg">
+                Ikke karrieredag enda? <br />
+                Sjekk ut mulighetene for{" "}
+                <span className="font-bold underline">nettverking</span>!
+              </p>
+            </div>
 
-          {/* Image */}
-          <div className="flex justify-center items-center w-full md:w-2/5">
-            <Image
-              src="/tech-company-amico.png"
-              alt="ItxBergen"
-              height={500}
-              width={500}
-              className="object-contain md:transform md:scale-110"
-              draggable="false"
-            />
+            {/* Image */}
+            <div className="flex justify-center items-center w-full md:w-2/5">
+              <Image
+                src="/tech-company-amico.png"
+                alt="ItxBergen"
+                height={500}
+                width={500}
+                className="object-contain md:transform md:scale-110"
+                draggable="false"
+              />
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Wave separator at the top */}
       <div>
         <Image
           src="/wave_top_dark.svg"
@@ -62,44 +65,36 @@ export default function Home() {
           width={1920}
           height={1080}
           className="bg-IXBbg2 w-full"
-          draggable="false"
+          draggable={false}
         />
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white md:h-[70vh] h-auto flex items-center justify-center relative">
+      <div className="bg-IXBbg text-white flex items-center justify-center">
         {/* Content Wrapper */}
-        <div
-          className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20"
-        >
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32">
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-14 text-center md:text-left mt-12 md:mt-0">
-            <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
+          <div className="w-full md:w-3/5 flex flex-col space-y-8 text-left">
+            <h1 className="text-IXBfg text-3xl font-bold mb-4">Hva er ITxBergen?</h1>
             <p className="text-lg">
-              ITxBergen arrangerer karrieredager for IT-studenter i
-              bergensområdet, og er tidligere kjent som echo karriere.
-              Arrangementet ble holdt for første gang i 2019, noe som ble en
-              stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
-              Enkelte ganger holder vi også andre karrierefremmende
-              arrangementer.
+              ITxBergen arrangerer karrieredager for IT-studenter i bergensområdet, og er tidligere kjent som echo karriere.
+              Arrangementet ble holdt for første gang i 2019, noe som ble en stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
+              Enkelte ganger holder vi også andre karrierefremmende arrangementer.
               <br /> <br />
-              Vi er en frivillig studentorganisasjon som samarbeider med andre
-              linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
-              karrieredag. Vi når ut til linjeforeningene ved Universitetet i
-              Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania. Samtidig
-              skaper vi et arrangement som er åpent for alle IT-studenter i
-              Bergen, og alle som er interesserte.
+              Vi er en frivillig studentorganisasjon som samarbeider med andre linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
+              karrieredag. Vi når ut til linjeforeningene ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania.
+              Samtidig skaper vi et arrangement som er åpent for alle IT-studenter i Bergen, og alle som er interesserte.
             </p>
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-2/5 flex justify-center items-center">
+          <div className="w-full md:w-2/5 flex justify-right">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
-              width={1920}
-              height={1080}
-              className="w-full h-auto object-contain transform scale-150"
+              width={600}
+              height={600}
+              className="max-w-xl "
               draggable="false"
             />
           </div>
@@ -163,5 +158,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
