@@ -118,7 +118,7 @@ export default function Nettverking() {
             </div>
 
             {/* Button row with filtering */}
-            <div className="flex flex-col md:flex-row md:space-x-12 text-sm pt-12 w-full items-center">
+            <div className="flex flex-col lg:flex-row md:space-x-12 text-sm pt-12 w-full items-center">
               {[
                 "Vis alle",
                 "Universitetet i Bergen",
@@ -137,7 +137,7 @@ export default function Nettverking() {
             </div>
 
             {/* Line under buttons */}
-            <div className="w-full md:border-t-2 md:border-black"></div>
+            <div className="w-full lg:border-t-2 lg:border-black"></div>
           </div>
 
           {/* Organisation Section */}

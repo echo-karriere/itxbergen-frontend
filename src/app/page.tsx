@@ -144,7 +144,7 @@ export default function Home() {
             {/* News Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                 <NewsCard
                   image="/fuckup.png"
                   title="News Article 1"
