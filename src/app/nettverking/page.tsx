@@ -94,7 +94,7 @@ export default function Nettverking() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="bg-white w-full"
+          className="hidden md:flex bg-white w-full"
           draggable="false"
         />
       </div>
