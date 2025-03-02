@@ -35,7 +35,7 @@ export default function Nettverking() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
           {/* Text Content */}
-          <div className="flex flex-col justify-center mx-9 items-start md:w-3/5 text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center mx-9 md:mx-0 items-start md:w-3/5 text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
             <Breadcrumbs current="Nettverking" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
@@ -104,7 +104,7 @@ export default function Nettverking() {
         {/* Content Wrapper */}
         <div className="maxwidth relative flex flex-col text-start items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
-          <div className="relative flex flex-col items-start pt-10 mx-9">
+          <div className="relative flex flex-col items-start pt-10 mx-9 md:mx-0">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-start">
                 Studentorganisasjoner og linjeforeninger for <br /> IT-studenter

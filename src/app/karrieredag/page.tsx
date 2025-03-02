@@ -19,7 +19,7 @@ export default function Karrieredag() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center items-start mx-9 md:mx-0 md:w-3/5 text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
             <Breadcrumbs />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
@@ -68,7 +68,7 @@ export default function Karrieredag() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="bg-IXBbg2 w-full"
+          className="bg-IXBbg2 w-full hidden md:flex"
           draggable={false}
         />
       </div>
@@ -98,12 +98,12 @@ export default function Karrieredag() {
         </div>
       </div>
       {/* Wave separator at the bottom */}
-      <div>
+      <div className="mb-9 md:mb-0">
         <Image
           src="/wave_bottom_dark.svg"
           alt="Wave Top"
           layout="intrinsic"
-          className="w-full"
+          className="w-full hidden md:flex"
           width={1920}
           height={1080}
           draggable={false}
@@ -112,7 +112,7 @@ export default function Karrieredag() {
       {/* Section 3 */}
       <div className="maxwidth bg-white text-black h-auto flex flex-col items-start relative pb-12">
         {/* Header 1 */}
-        <h2 className="text-2xl font-bold text-left px-6 md:mt-6 md:px-32">
+        <h2 className="text-2xl mx-4 font-bold text-left px-6 md:mt-6 md:px-32">
           Se bilder fra karrieredagen 2024
         </h2>
 
@@ -195,7 +195,7 @@ export default function Karrieredag() {
         </div>
 
         {/* Header 2 */}
-        <h2 className="text-2xl font-bold text-left px-6 mt-12 md:px-32">
+        <h2 className="text-2xl font-bold text-left mx-4 px-6 mt-12 md:px-32">
           Bedrifter som har deltatt på karrieredagene våres
         </h2>
 
