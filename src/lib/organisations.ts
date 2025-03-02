@@ -9,15 +9,21 @@ export const organisations = [
     facebook: "https://www.facebook.com/LinjeforeningenCloud",
     instagram: "https://www.instagram.com/linjeforeningencloud/",
     linkedin: "https://www.linkedin.com/company/cloud-linjeforeningen-for-it/",
+    participants: "Alle som studerer IT-bachelor på Kristiania campus Bergen. Campus Bergen tilbyr per nå to IT-bachelorgrader: Cybersikkerhet og Informasjonsteknologi: Frontend- og mobilutvikling.",
+    epost: "leder.cloud@studentunionen.no",
+    address: "Høyskolen Kristiania Campus Bergen på Kalfarlien (gamle Hansa-bryggeriet, Kalfarveien 78C, 5022 Bergen)",
   },
   {
     name: "CybVest",
     location: "Høyskolen Kristiania",
     boxHeader: "Vi er en linjeforening hovedsakelig for Cyber Studenter, men også alle IT studenter her på Høyskolen Kristiania.",
     boxp1: "Vi jobber for å skape spennende sosiale- og faglige arrangementer for studentene. Alle våre arrangementer er gratis å delta på, så mest mulig folk kan være med! Vi planlegger blant annet bedriftspresentasjoner og spillkvelder hvert semester.",
-
     website: "https://www.studentunionen.no/",
     instagram: "https://www.instagram.com/cybvest/",
+    participants: "Hovedsakelig så er det IT / Cyber studenter på HK, men vi er absolutt åpen for at andre IT studenter kan komme på arrangementene våre hvis de vil!",
+    epost: "leder.cybvest@studentunionen.no",
+    address: "Høyskolen Kristiania Bergen ved Kalfarveien 87C",
+
   },
   {
     name: "echo",
@@ -51,6 +57,8 @@ export const organisations = [
     boxHeader: "Vi i Enter er studentforeningen ved infomedia-instituttet på Universitetet i Bergen.",
     boxp1: "Det vil si en felles organisasjon for hele instituttet vårt og ikke bare en enkelt linje. Arrangementene vi holder er både sosiale og faglige. De sosiale arrangementene kan være alt fra quiz på diskuterbar eller grilling i parken til gokart eller egne fester på utesteder. De faglige arrangementene kan være bedriftspresentasjoner med ulike bedrifter eller workshops. Innad i Enter har vi en egen bedriftskomite, sosialkomité og PR. Her er det egne oppdrag for hver av komiteene, men vi samarbeider også mye på tvers av hverandre.",
     website: "https://www.svstudent.no/enter",
+    instagram: "https://www.instagram.com/enter_uib/",
+    linkedin: "https://www.linkedin.com/company/studentforeningen-enter/posts/?feedView=all",
   },
   {
     name: "Helt Sikker",
@@ -58,18 +66,26 @@ export const organisations = [
     boxHeader: "Er du en student med interesse for datasikkerhet? Er du keen på å lære mer om sikkerhet, og få solid erfaring med styreverv og drifting av en studentorganisasjon?",
     boxp1: "Helt Sikker er en studentorganisasjon ved Universitetet i Bergen. Vår målsetning er å tilby studenter en arena hvor man kan lære mer om informasjonssikkerhet, samtidig som vi bidrar til å bygge et miljø for sikkerhetsinteresserte studenter i Bergen.",
     boxp2: "Helt Sikker ble originalt stiftet av studenter som tilhørte det første kullet av UiBs bachelorprogram i datasikkerhet. Et av våre mål er å komplementere UiBs mer teoretiske tilnærming til sikkerhet ved å arrangere workshops, foredrag, CTF-er, konkurranser og mer.",
+    website: "https://heltsikker.no/",
+    facebook: "https://www.facebook.com/groups/heltsikker/",
+    instagram: "https://www.instagram.com/heltsikker_bergen/",
+    linkedin: "https://www.linkedin.com/company/helt-sikker/?viewAsMember=true",
   },
   {
     name: "Inkogvito",
     location: "Universitetet i Bergen",
     boxHeader: "Inkogvito sitt hovedfokus er å styrke det sosiale samholdet og det faglige innholdet knyttet til studiet vårt.",
     boxp1: "Kognitiv Vitenskap er et lite studie hvor hvert kull kun består av 20-30 studenter hvert år. Når klassene er såpass små er det sosiale samholdet og kulturen til studentene desto mer viktig. Derfor ble Inkogvito stiftet i våren 2021 med mål om å bedre studiehverdagen til alle våre studenter. Med dette nye sentraliserte organet for Kognitiv Vitenskap ble det også mulig å ha et mer overordnet fokus på næringsliv og den faglige strukturen til studiet vårt.",
+    facebook: "https://www.facebook.com/groups/inkogvito",
+    instagram: "https://www.instagram.com/inkogvito.uib/",
   },
   {
     name: "ReMIX",
     location: "Universitetet i Bergen",
     boxHeader: "ReMIX er linjeforeningen for medie- og interaksjonsdesign ved UiB.",
     boxp1: "Vi jobber for å skape et inkluderende miljø som styrker både det sosiale og faglige. Gjennom arrangementer, workshops og samarbeid med bransjen kobler vi studiet til arbeidslivet, samtidig som vi bygger et sterkt studentfellesskap.",
+    instagram: "https://www.instagram.com/remix_uib/",
+    facebook: "https://www.facebook.com/groups/535661775706870/",
   },
 ];
 
