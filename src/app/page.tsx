@@ -23,7 +23,7 @@ export default function Home() {
           {/* Content Wrapper */}
           <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
             {/* Text Content */}
-            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-8 md:space-y-16">
+            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-16">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
                 <span className="text-IXBPurple"> nettverking</span> <br /> for
@@ -64,7 +64,7 @@ export default function Home() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="bg-IXBbg2 w-full"
+          className="hidden md:flex bg-IXBbg2 w-full"
           draggable={false}
         />
       </div>
@@ -72,29 +72,37 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white flex items-center justify-center">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full md:px-32">
           {/* Text Content */}
-          <div className="w-full md:w-3/5 flex flex-col space-y-8 text-left">
-            <h1 className="text-IXBfg text-3xl font-bold mb-4">Hva er ITxBergen?</h1>
+          <div className="mx-6 md:mx-0 md:w-3/5 flex flex-col space-y-8 text-left">
+            <h1 className="text-IXBfg text-3xl font-bold mb-4 mt-10 md:mt-0">
+              Hva er ITxBergen?
+            </h1>
             <p className="text-lg">
-              ITxBergen arrangerer karrieredager for IT-studenter i bergensområdet, og er tidligere kjent som echo karriere.
-              Arrangementet ble holdt for første gang i 2019, noe som ble en stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
-              Enkelte ganger holder vi også andre karrierefremmende arrangementer.
+              ITxBergen arrangerer karrieredager for IT-studenter i
+              bergensområdet, og er tidligere kjent som echo karriere.
+              Arrangementet ble holdt for første gang i 2019, noe som ble en
+              stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
+              Enkelte ganger holder vi også andre karrierefremmende
+              arrangementer.
               <br /> <br />
-              Vi er en frivillig studentorganisasjon som samarbeider med andre linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
-              karrieredag. Vi når ut til linjeforeningene ved Universitetet i Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania.
-              Samtidig skaper vi et arrangement som er åpent for alle IT-studenter i Bergen, og alle som er interesserte.
+              Vi er en frivillig studentorganisasjon som samarbeider med andre
+              linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
+              karrieredag. Vi når ut til linjeforeningene ved Universitetet i
+              Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania. Samtidig
+              skaper vi et arrangement som er åpent for alle IT-studenter i
+              Bergen, og alle som er interesserte.
             </p>
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-2/5 flex justify-right">
+          <div className="w-full md:w-2/5 flex items-center justify-center">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
               width={600}
               height={600}
-              className="max-w-xl "
+              className="max-w-xl overflow-hidden"
               draggable="false"
             />
           </div>
@@ -108,7 +116,7 @@ export default function Home() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="bg-IXBbg1 w-full"
+          className="hidden md:flex bg-IXBbg1 w-full"
           draggable="false"
         />
       </div>
@@ -136,7 +144,7 @@ export default function Home() {
             {/* News Section */}
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                 <NewsCard
                   image="/fuckup.png"
                   title="News Article 1"
@@ -158,5 +166,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }

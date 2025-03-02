@@ -12,7 +12,7 @@ export default function AboutUS() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center md:items-start mx-6 md:mx-0 md:w-3/5 text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
             <Breadcrumbs customLast="Om ITxBergen" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
@@ -54,12 +54,12 @@ export default function AboutUS() {
           layout="intrinsic"
           width={1920}
           height={1080}
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain hidden md:flex"
           draggable="false"
         />
       </div>
       <div className="bg-IXBbg2 text-black h-auto pb-10 flex items-start justify-center relative shadow-lg">
-        <div className="maxwidth w-full z-20 mt-4 md:mt-12">
+        <div className="maxwidth w-full z-20 mt-4 md:mt-12 pt-5 md:pt-0">
           <Styremedlemgrid />
         </div>
       </div>

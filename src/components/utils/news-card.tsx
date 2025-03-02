@@ -12,7 +12,7 @@ const NewsCard = ({
   image,
   title,
   date,
-  width = "265px",
+  width = "290px",
   height = "290px",
 }: NewsCardProos) => {
   return (

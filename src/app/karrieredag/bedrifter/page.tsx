@@ -61,7 +61,7 @@ export default function ForBedrifter() {
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
           {/* Text Content */}
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-3/5 text-center md:text-left space-y-4 md:space-y-4">
+          <div className="flex flex-col justify-center items-start mx-6 md:w-3/5 text-left space-y-4 md:space-y-4">
             {/* Breadcrumb */}
             <Breadcrumbs />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
@@ -122,7 +122,7 @@ export default function ForBedrifter() {
         <div className="maxwidth relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-32 mb-24 mt-24 md:gap-16">
           {/* Left Text Content */}
           <div
-            className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left"
+            className="flex flex-col justify-center mx-6 md:w-1/2 space-y-6 text-left"
             style={{ minHeight: "200px" }}
           >
             <h2 className="text-xl md:text-2xl font-bold">
@@ -170,7 +170,7 @@ export default function ForBedrifter() {
         {/* Content Wrapper */}
         <div className="maxwidth relative flex flex-col md:flex-row justify-between items-start w-full px-6 md:px-32 mb-12 mt-12 md:gap-16">
           {/* Text Content */}
-          <div className="flex flex-col justify-center w-full md:w-1/2 space-y-6 text-center md:text-left">
+          <div className="flex flex-col justify-center mx-6 md:w-1/2 space-y-6 text-left">
             <h2 className="text-xl md:text-2xl font-bold">Priser</h2>
             <p>
               Prisene våre er ikke hemmelige, og ligger synlig i vårt
