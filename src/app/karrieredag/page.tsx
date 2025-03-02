@@ -75,7 +75,7 @@ export default function Karrieredag() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white flex items-center justify-center relative">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col items-center text-center z-20 py-10">
+        <div className="maxwidth flex flex-col items-center mx-9 md:text-center z-20 py-10">
           {/* Header */}
           <h2 className="text-3xl font-bold text-IXBfg px-6">
             Ønsker du mer informasjon om Karrieredagen?

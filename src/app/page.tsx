@@ -72,7 +72,7 @@ export default function Home() {
       {/* Section 2 */}
       <div className="bg-IXBbg text-white flex items-center justify-center">
         {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32">
+        <div className="maxwidth flex flex-col md:flex-row items-center w-full md:px-32">
           {/* Text Content */}
           <div className="mx-9 md:mx-0 md:w-3/5 flex flex-col space-y-8 text-left">
             <h1 className="text-IXBfg text-3xl font-bold mb-4 mt-10 md:mt-0">
