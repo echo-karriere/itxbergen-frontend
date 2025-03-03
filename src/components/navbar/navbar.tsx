@@ -16,12 +16,14 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full ${isOpen ? "h-72" : "h-20"} bg-IXBbg top-0 flex items-center transition-all duration-300`}
-      >
+        className={`w-full ${
+          isOpen ? "h-72" : "h-20"
+        } bg-IXBbg top-0 flex items-center transition-all duration-300`}>
         <div className="container mx-auto px-4 h-full">
           <div
-            className={`flex ${isOpen ? "flex-col" : ""} items-center justify-between h-full`}
-          >
+            className={`flex ${
+              isOpen ? "flex-col" : ""
+            } items-center justify-between h-full`}>
             {/* Logo Container */}
             <div className="pl-6">
               <Logo />
@@ -30,8 +32,9 @@ export default function Navbar() {
             {/* Centered Navigation */}
             <div className="flex-grow flex justify-center">
               <ul
-                className={`${isOpen ? "flex justify-between text-lg mt-2" : "hidden"} md:flex-row flex-col md:flex md:gap-x-20 text-white items-center text-sm`}
-              >
+                className={`${
+                  isOpen ? "flex justify-between text-lg mt-2" : "hidden"
+                } md:flex-row flex-col md:flex md:gap-x-20 text-white items-center text-sm`}>
                 <Link onClick={handleClick} href="/karrieredag">
                   Karrieredag{" "}
                 </Link>
@@ -44,7 +47,9 @@ export default function Navbar() {
                 <Link onClick={handleClick} href="/om-itx">
                   Om ITxBergen{" "}
                 </Link>
-                <li>Kontakt oss</li>
+                <Link onClick={handleClick} href="/kontakt">
+                  Kontakt oss
+                </Link>
               </ul>
             </div>
 
