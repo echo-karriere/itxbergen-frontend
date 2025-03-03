@@ -31,10 +31,6 @@ export default function ForStudenter() {
         "Usikker på hvem du skal snakke med? Her vil du få muligheten til å få en kort presentasjon av bedriften, og deretter kan du bestemme om du  vil snakke med dem eller ikke.",
     },
     {
-      title: "Konseptpresentasjoner",
-      content: "Presentasjoner av konsepter som er relevant for IT-bransjen.",
-    },
-    {
       title: "Workshops",
       content:
         "Det vil være ulike workshops som du kan delta på. Her vil du få  muligheten til å lære mer om ulike temaer som er relevante for deg som student.",

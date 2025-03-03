@@ -28,11 +28,6 @@ export default function ForBedrifter() {
         "3 minutters kort introduksjon av bedriften for å informere studentene om at dere står på stand og gjerne litt kort om hvorfor de skal besøke nettopp deres stand. Lynpresentasjoner skjer på starten av dagen før standområdet åpnes.  Vi har ballongslipp med premier før lynpresentasjonene for å tiltrekke oss flere studenter på morgenen.",
     },
     {
-      title: "Konseptpresentasjoner",
-      content:
-        "20 minutters presentasjon av bedriften eller et tema som er spesielt  interessant for deres bedrift. Det vil være enkel snacks og drikke  tilgjengelig, uten ekstra kostnader.",
-    },
-    {
       title: "Workshops",
       content:
         "60 minutter workshop med studenter. Det vil være enkel snacks og drikke  tilgjengelig, uten ekstra kostnader. Vi lager påmeldingsside for  presentasjonen. Dersom det er ledige plasser ved start slipper vi inn de som ønsker, så lenge det er ledig plass. Dere er selv ansvarlige for å  promotere deres workshop, men dere vil få mulighet til å benytte dere av våre kanaler dersom dere ønsker.",
