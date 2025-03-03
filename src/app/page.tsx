@@ -23,17 +23,24 @@ export default function Home() {
           {/* Content Wrapper */}
           <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
             {/* Text Content */}
-            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-16">
+            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-12">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
                 <span className="text-IXBPurple"> nettverking</span> <br /> for
                 IT-studenter i Bergen!
               </h1>
-              <ButtonIXB
-                label="Sjekk ut karrieredagen vår"
-                onClick={handleButtonClick}
-                variant="primary"
-              />
+              <div className="flex flex-col space-y-2">
+                <ButtonIXB
+                  label="Sjekk ut karrieredagen vår"
+                  onClick={handleButtonClick}
+                  variant="primary"
+                />
+                <ButtonIXB
+                  label="Sjekk ut karrieredagen vår"
+                  onClick={() => window.open("https://delta.itxbergen.no/")}
+                  variant="primary"
+                />
+              </div>
               <p className="text-base md:text-lg">
                 Ikke karrieredag enda? <br />
                 Sjekk ut mulighetene for{" "}
