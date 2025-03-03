@@ -2,22 +2,77 @@ import Styremedlem from "./styremedlem";
 
 const BoardMembers = [
   {
-    image: "/fredric.png",
+    image: "/styremedlemmer/fredric.png",
     name: "Fredric Hegland",
     title: "Leder",
     mail: "fredric.hegland@itxbergen.no",
   },
-  { name: "Sigurd Dårflot Olsen", title: "Nestleder" },
   {
+    image: "/styremedlemmer/sigurd.jpg",
+    name: "Sigurd Dårflot Olsen",
+    title: "Nestleder",
+    mail: "sigurd.dårflot@itxbergen.no",
+  },
+  {
+    image: "/styremedlemmer/kamil.jpg",
     name: "Kamil Matyjaszczyk",
     title: "Økonomiansvarlig",
+    mail: "kaimil.matyjaszczyk@itxbergen.no",
   },
   {
-    name: "Maella Irebe Muganga",
-    title: "Økonomiansvarlig (avtroppende)",
+    name: "Hasan Al-Ajeel",
+    title: "Økonomiassistent"
   },
-  { name: "Hasan Al-Ajeel", title: "Økonomiassistent" },
-  { name: "Isak Solberg Hansen", title: "Webansvarlig" },
+  {
+    image: "/styremedlemmer/isak.jpg",
+    name: "Isak Solberg Hansen",
+    title: "Webansvarlig"
+  },
+  {
+    image: "/styremedlemmer/idris.jpg",
+    name: "Idris Elmi",
+    title: "Web Assistent"
+  },
+  {
+    image: "/styremedlemmer/hoang.jpeg",
+    name: "Hoang Vinh Nguyen",
+    title: "Web Assistent"
+  },
+  {
+    image: "/styremedlemmer/anna.jpg",
+    name: "Anna Balke",
+    title: "PR Ansvarlig"
+  },
+  {
+    name: "Brage Nybakk",
+    title: "Bedriftsassitent"
+  },
+  {
+    image: "/styremedlemmer/christina.png",
+    name: "Christina Nguyen",
+    title: "Kontaktansvarlig"
+  },
+  {
+    name: "Ella Solberg",
+    title: "Bedriftsansvarlig"
+  },
+  {
+    name: "Emilie Løvik",
+    title: "PR Assistent"
+  },
+  {
+    name: "Idris Elmi",
+    title: "Webansvarlig"
+  },
+  {
+    image: "/styremedlemmer/emilieT.png",
+    name: "Emilie Tryggan",
+    title: "Grafiker / UX-Designer"
+  },
+  {
+    name: "Guro Flatås",
+    title: "Bedriftsassitent"
+  },
 ];
 
 const StyremedlemGrid = () => {
