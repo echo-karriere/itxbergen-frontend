@@ -19,10 +19,18 @@ export default function Footer() {
               <div>
                 <h3 className="font-bold mb-4">Informasjon</h3>
                 <ul>
-                  <li className="mb-4">Karrieredag</li>
-                  <li className="mb-4">Arrangementer</li>
-                  <li className="mb-4">Stillingsannonser</li>
-                  <li className="mb-4">Om ItxBergen</li>
+                  <li className="mb-4">
+                    <a href="/karrieredag" className="hover:underline">Karrieredag</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/#bottom" className="hover:underline">Arrangementer</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/stillingsannonser" className="hover:underline">Stillingsannonser</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/om-itx" className="hover:underline">Om ITxBergen</a>
+                  </li>
                 </ul>
               </div>
 
@@ -51,10 +59,18 @@ export default function Footer() {
               <div>
                 <h3 className="font-bold mb-4">Sosiale medier</h3>
                 <ul>
-                  <li className="mb-4">LinkedIn</li>
-                  <li className="mb-4">Instagram</li>
-                  <li className="mb-4">Facebook</li>
-                  <li className="mb-4">GitHub</li>
+                  <li className="mb-4">
+                    <a href="https://no.linkedin.com/company/itxbergen?trk=public_post_follow-view-profile" className="hover:underline">Linkedin</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="https://www.instagram.com/itxbergen/" className="hover:underline">Instagram</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="https://www.facebook.com/itxbergen" className="hover:underline">Facebook</a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="https://github.com/echo-karriere" className="hover:underline">GitHub</a>
+                  </li>
                 </ul>
               </div>
             </div>
