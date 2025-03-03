@@ -35,7 +35,7 @@ export default function Home() {
                   variant="primary"
                 />
                 <ButtonIXB
-                  label="Sjekk ut karrieredagen vår"
+                  label="Til Påmeldingsskjema"
                   onClick={() => window.open("https://delta.itxbergen.no/")}
                   variant="primary"
                 />
