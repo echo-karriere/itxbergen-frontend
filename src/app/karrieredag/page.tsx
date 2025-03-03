@@ -38,7 +38,6 @@ export default function Karrieredag() {
                 "Timeplan",
                 "Standkart og bedrifter som deltar",
                 "Workshops",
-                "Konseptpresentasjoner",
                 "Ekstra informasjon",
               ].map((item, index) => (
                 <li key={index} className="flex items-center">
