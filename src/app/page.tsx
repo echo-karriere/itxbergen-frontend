@@ -136,7 +136,7 @@ export default function Home() {
                   title="Github Workshop med SPV"
                   date="10. Mars 08:30"
                   address="Jonsvollsgaten 2"
-                  redirectTo="/event/github-workshop"
+                  redirectTo="https://pameldinger.no/e/nkflrn"
                 />
               </div>
             </div>
@@ -168,4 +168,3 @@ export default function Home() {
   //   </div>
   // </div>
 }
-
