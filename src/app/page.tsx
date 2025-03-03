@@ -134,7 +134,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <EventCard
                   title="Github Workshop med SPV"
-                  date="23. Mars 17:00"
+                  date="10. Mars 08:30"
                   address="Jonsvollsgaten 2"
                   redirectTo="https://pameldinger.no/e/nkflrn"
                 />
