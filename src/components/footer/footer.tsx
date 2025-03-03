@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* text */}
           <div className="flex justify-center text-sm font-bold mb-2 mt-4">
-            <p>ITxBergen © 2019 - 2024</p>
+            <p>ITxBergen © 2019 - 2025</p>
           </div>
 
           {/* Horizontal Line */}
