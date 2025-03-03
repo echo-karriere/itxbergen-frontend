@@ -11,63 +11,74 @@ const BoardMembers = [
     image: "/styremedlemmer/sigurd.jpg",
     name: "Sigurd Dårflot Olsen",
     title: "Nestleder",
-    mail: "sigurd.dårflot@itxbergen.no",
+    mail: "sigurd.olsen@itxbergen.no",
   },
   {
     image: "/styremedlemmer/kamil.jpg",
     name: "Kamil Matyjaszczyk",
     title: "Økonomiansvarlig",
-    mail: "kaimil.matyjaszczyk@itxbergen.no",
+    mail: "kamil.matyjaszczyk@itxbergen.no",
   },
   {
     name: "Hasan Al-Ajeel",
-    title: "Økonomiassistent"
+    title: "Økonomiassistent",
+    mail: "hasan.alajeel@itxbergen.no",
   },
   {
     image: "/styremedlemmer/isak.jpg",
     name: "Isak Solberg Hansen",
-    title: "Webansvarlig"
+    title: "Webansvarlig",
+    mail: "isak.hansen@itxbergen.no",
   },
   {
     image: "/styremedlemmer/idris.jpg",
     name: "Idris Elmi",
-    title: "Web Assistent"
+    title: "Web Assistent",
+    mail: "idris.elmi@itxbergen.no",
   },
   {
     image: "/styremedlemmer/hoang.jpeg",
     name: "Hoang Vinh Nguyen",
-    title: "Web Assistent"
+    title: "Web Assistent",
+    mail: "hvnguyen@itxbergen.no",
   },
   {
     image: "/styremedlemmer/anna.jpg",
     name: "Anna Balke",
-    title: "PR Ansvarlig"
+    title: "PR Ansvarlig",
+    mail: "anna.balke@itxbergen.no",
   },
   {
     name: "Brage Nybakk",
-    title: "Bedriftsassitent"
+    title: "Bedriftsassitent",
+    mail: "brage.nybakk@itxbergen.no",
   },
   {
     image: "/styremedlemmer/christina.png",
     name: "Christina Nguyen",
-    title: "Kontaktansvarlig"
+    title: "Kontaktansvarlig",
+    mail: "christina.nguyen@itxbergen.no",
   },
   {
     name: "Ella Solberg",
-    title: "Bedriftsansvarlig"
+    title: "Bedriftsansvarlig",
+    mail: "ella.solberg@itxbergen.no",
   },
   {
     name: "Emilie Løvik",
-    title: "PR Assistent"
+    title: "PR Assistent",
+    mail: "emilie.lovik@itxbergen.no",
   },
   {
     image: "/styremedlemmer/emilieT.png",
     name: "Emilie Tryggan",
-    title: "Grafiker / UX-Designer"
+    title: "Grafiker / UX-Designer",
+    mail: "emilie.tryggan@itxbergen.no",
   },
   {
     name: "Guro Flatås",
-    title: "Bedriftsassitent"
+    title: "Bedriftsassitent",
+    mail: "guro.flatas@itxbergen.no",
   },
 ];
 
