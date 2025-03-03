@@ -26,7 +26,7 @@ export default function AboutUS() {
               Eneklte ganger holder vi også andre karrierefremmende
               arrangementer. <br /> <br />
               Vi er en frivillig studentorganisasjon som samarbeider med andre
-              linjeforeninger innenfor IT i Bergen, for å sakpe en felles årlig
+              linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
               karrieredag. Vi når ut til linjeforeningene på Universitetet i
               Bergen, Høgskulen på Vestlandet og Høyskolen Kristiania. Samtidig
               skaper vi et arrangement som er åpent for alle IT-studenter i
