@@ -26,8 +26,7 @@ export default function Home() {
             <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-12">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
-                <span className="text-IXBPurple"> nettverking</span> <br /> for
-                IT-studenter i Bergen!
+                <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
               </h1>
               <div className="flex flex-col space-y-2">
                 <ButtonIXB
@@ -44,7 +43,7 @@ export default function Home() {
               <p className="text-base md:text-lg">
                 Ikke karrieredag enda? <br />
                 Sjekk ut mulighetene for{" "}
-                <span className="font-bold underline">nettverking</span>!
+                <a href="/nettverking" className="font-bold underline">nettverking</a>!
               </p>
             </div>
 
