@@ -61,10 +61,6 @@ const BoardMembers = [
     title: "PR Assistent"
   },
   {
-    name: "Idris Elmi",
-    title: "Webansvarlig"
-  },
-  {
     image: "/styremedlemmer/emilieT.png",
     name: "Emilie Tryggan",
     title: "Grafiker / UX-Designer"

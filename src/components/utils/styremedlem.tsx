@@ -8,7 +8,7 @@ interface StyremedlemProps {
 }
 
 const Styremedlem = ({
-  image = "/person.jpg",
+  image = "/styremedlemmer/logo_undefined.png",
   name,
   title,
   mail = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
