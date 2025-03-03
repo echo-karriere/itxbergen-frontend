@@ -33,6 +33,9 @@ export const organisations = [
     website: "https://echo.uib.no/",
     facebook: "https://www.facebook.com/groups/informatikk/",
     instagram: "https://www.instagram.com/echo_uib/",
+    participants: "Informatikkstudenter er automatisk medlem av echo",
+    address: "Institutt for informatikk, Thormøhlensgate 55, 5008 Bergen",
+    epost: "echo@uib.no",
   },
   {
     name: "Enigma Fintech",
@@ -50,6 +53,9 @@ export const organisations = [
     instagram: "https://www.instagram.com/fintechenigma.uib/",
     linkedin: "https://www.linkedin.com/company/fintech-enigma/",
     github: "https://github.com/fintech-enigma",
+    participants: "Alle på ITØK kan være med. Vi ser på mulighetene for å åpne for alle, men trenger godkjenningen fra Enigma, som vi tross alt forvalter pengene til. E-post",
+    address: "Fosswinckels Gate 14",
+    epost: "fintechenigma@gmail.com",
   },
   {
     name: "Enter",
@@ -59,6 +65,9 @@ export const organisations = [
     website: "https://www.svstudent.no/enter",
     instagram: "https://www.instagram.com/enter_uib/",
     linkedin: "https://www.linkedin.com/company/studentforeningen-enter/posts/?feedView=all",
+    participants: "Infomedia-studenter er automatisk medlem av Enter",
+    address: "SV-fakultetet, Fosswinckels gate 6, Bergen, Norway",
+    epost: "Enter@uib.no",
   },
   {
     name: "Helt Sikker",
@@ -70,6 +79,9 @@ export const organisations = [
     facebook: "https://www.facebook.com/groups/heltsikker/",
     instagram: "https://www.instagram.com/heltsikker_bergen/",
     linkedin: "https://www.linkedin.com/company/helt-sikker/?viewAsMember=true",
+    participants: "Studenter ved UiB interessert i datasikkerhet",
+    epost: "styret@heltsikker.no",
+    address: "Ingen adresse",
   },
   {
     name: "Inkogvito",
@@ -78,6 +90,8 @@ export const organisations = [
     boxp1: "Kognitiv Vitenskap er et lite studie hvor hvert kull kun består av 20-30 studenter hvert år. Når klassene er såpass små er det sosiale samholdet og kulturen til studentene desto mer viktig. Derfor ble Inkogvito stiftet i våren 2021 med mål om å bedre studiehverdagen til alle våre studenter. Med dette nye sentraliserte organet for Kognitiv Vitenskap ble det også mulig å ha et mer overordnet fokus på næringsliv og den faglige strukturen til studiet vårt.",
     facebook: "https://www.facebook.com/groups/inkogvito",
     instagram: "https://www.instagram.com/inkogvito.uib/",
+    participants: "Alle som studerer Kognitiv Vitenskap har allerede åpen invitasjon til å engasjere seg. Du trenger ikke registrere deg for å bli med.",
+    epost: "inkogvito@uib.no",
   },
   {
     name: "ReMIX",
@@ -86,6 +100,9 @@ export const organisations = [
     boxp1: "Vi jobber for å skape et inkluderende miljø som styrker både det sosiale og faglige. Gjennom arrangementer, workshops og samarbeid med bransjen kobler vi studiet til arbeidslivet, samtidig som vi bygger et sterkt studentfellesskap.",
     instagram: "https://www.instagram.com/remix_uib/",
     facebook: "https://www.facebook.com/groups/535661775706870/",
+    participants: "Alle studenter ved medie- og interaksjonsdesign ved UiB kan være med i linjeforeningen. (master og bachelor)",
+    epost: "remix@uibstudent.no",
+    address: "Media City Bergen",
   },
 ];
 

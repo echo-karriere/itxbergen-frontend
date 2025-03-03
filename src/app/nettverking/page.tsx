@@ -18,7 +18,7 @@ interface Organisation {
   list: string[];
   address?: string;
   participants?: string;
-  email?: string;
+  epost?: string;
   website?: string;
   facebook?: string;
   instagram?: string;
@@ -222,10 +222,10 @@ export default function Nettverking() {
               <p className="text-sm">{selectedOrganisation?.participants}</p>
 
               <p className="font-bold text-sm">E-post</p>
-              {selectedOrganisation?.email ? (
+              {selectedOrganisation?.epost ? (
                 <p className="text-sm">
-                  <a href={`mailto:${selectedOrganisation.email}`}>
-                    {selectedOrganisation.email}
+                  <a href={`mailto:${selectedOrganisation.epost}`}>
+                    {selectedOrganisation.epost}
                   </a>
                 </p>
               ) : (
