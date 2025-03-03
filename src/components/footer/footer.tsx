@@ -38,7 +38,9 @@ export default function Footer() {
               <div>
                 <h3 className="font-bold mb-4">Kontakt oss</h3>
                 <ul>
-                  <li className="mb-4">Kontakt oss</li>
+                  <li className="mb-4">
+                    <a href="/kontakt" className="hover:underline">Kontakt Oss</a>
+                  </li>
                   <li className="mb-4">Presse</li>
                   <li className="mb-4">Opplevd noe ugreit?</li>
                 </ul>
@@ -48,7 +50,9 @@ export default function Footer() {
               <div>
                 <h3 className="font-bold mb-4">Om nettstedet</h3>
                 <ul>
-                  <li className="mb-4">Personvernserklæring</li>
+                  <li className="mb-4">
+                    <a href="/personvern" className="hover:underline">Personvernserklæring</a>
+                  </li>
                   <li className="mb-4">Salgs- og påmeldingsvilkår</li>
                   <li className="mb-4">Tilgjengelighet</li>
                   <li className="mb-4">Informasjonskapsler</li>
