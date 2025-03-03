@@ -36,7 +36,7 @@ export const organisations = [
   },
   {
     name: "Enigma Fintech",
-    location: "Høgskulen på Vestlandet",
+    location: "Universitetet i Bergen",
     boxHeader: "Vi er en interessegruppe for studenter ved sivilingeniørstudiet ITØK",
     boxp1: "Vi bruker det vi lærer for å få sparepengene til ENIGMA til å vokse. Er du interessert i finans og teknologi? Da er Fintech Enigma noe for deg!",
     boxp2: "Dette kan du gjøre som medlem i Fintech Enigma:",
