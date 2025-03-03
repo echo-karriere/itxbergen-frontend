@@ -141,30 +141,34 @@ export default function Home() {
               </div>
             </div>
 
-            {/* News Section */}
-            <div className="flex flex-col">
-              <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
-                <NewsCard
-                  image="/fuckup.png"
-                  title="News Article 1"
-                  date="January 5, 2025"
-                />
-                <NewsCard
-                  image="/fuckup.png"
-                  title="News Article 2"
-                  date="February 10, 2025"
-                />
-                <NewsCard
-                  image="/fuckup.png"
-                  title="News Article 3"
-                  date="March 15, 2025"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   );
+
+  // {/* News Section */}
+  // <div className="flex flex-col">
+  //   <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
+  //   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+  //     <NewsCard
+  //       image="/fuckup.png"
+  //       title="News Article 1"
+  //       date="January 5, 2025"
+  //     />
+  //     <NewsCard
+  //       image="/fuckup.png"
+  //       title="News Article 2"
+  //       date="February 10, 2025"
+  //     />
+  //     <NewsCard
+  //       image="/fuckup.png"
+  //       title="News Article 3"
+  //       date="March 15, 2025"
+  //     />
+  //   </div>
+  // </div>
 }
+
+
+

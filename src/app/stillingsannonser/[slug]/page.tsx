@@ -16,16 +16,16 @@ interface JobPosting {
 }
 
 const jobs: JobPosting[] = [
-  {
-    id: 2,
-    company: "KnowIt",
-    image: "/knowit.png",
-    location: "Bergen",
-    type: "Fulltid",
-    title: "Nyutdannede utviklere i Bergen 2025",
-    description:
-      "I Knowit lager vi løsninger som skaper de gode opplevelsene mellom kunde og merkevare. Vi jobber med kunder som Fjordkraft, Fjord Maritime, Storebrand og mange andre.\n\n Vi er Bergens største fagmiljø innen utvikling, men setter tverrfaglighet og samarbeid enda høyere. Hos oss får du jobbe sammen med eksperter innen UX, merkevare, tekst, QA, ledelse, animasjon og en rekke andre fagfelt.\n\n Hvert år ansetter vi over 40 nyutdannede til Bergen eller Oslo. Vi vet hvordan vi skal ta i mot deg, og bygge deg opp som del av et trygt og inkluderende, men samtidig utfordrende miljø.\n Hva forventer vi fra deg?\n\n Du er ferdig med bachelor eller master i løpet av 2025\n Du har en god plattform fra studier, men er først og fremst motivert for å lære og utvikle deg.\nDu ønsker å jobbe i tverrfaglige team\n Du er komfortabel med minst ett programmeringsspråk, men vil gjerne lære flere Alle søknader behandles og besvares. Husk å ta med lenke til karakterer på Vitnemålsportalen.\n Oppstart 18. august 2025.\n Interessert? Send gjerne en søknad allerede i dag.",
-  },
+  // {
+  //   id: 2,
+  //   company: "KnowIt",
+  //   image: "/knowit.png",
+  //   location: "Bergen",
+  //   type: "Fulltid",
+  //   title: "Nyutdannede utviklere i Bergen 2025",
+  //   description:
+  //     "I Knowit lager vi løsninger som skaper de gode opplevelsene mellom kunde og merkevare. Vi jobber med kunder som Fjordkraft, Fjord Maritime, Storebrand og mange andre.\n\n Vi er Bergens største fagmiljø innen utvikling, men setter tverrfaglighet og samarbeid enda høyere. Hos oss får du jobbe sammen med eksperter innen UX, merkevare, tekst, QA, ledelse, animasjon og en rekke andre fagfelt.\n\n Hvert år ansetter vi over 40 nyutdannede til Bergen eller Oslo. Vi vet hvordan vi skal ta i mot deg, og bygge deg opp som del av et trygt og inkluderende, men samtidig utfordrende miljø.\n Hva forventer vi fra deg?\n\n Du er ferdig med bachelor eller master i løpet av 2025\n Du har en god plattform fra studier, men er først og fremst motivert for å lære og utvikle deg.\nDu ønsker å jobbe i tverrfaglige team\n Du er komfortabel med minst ett programmeringsspråk, men vil gjerne lære flere Alle søknader behandles og besvares. Husk å ta med lenke til karakterer på Vitnemålsportalen.\n Oppstart 18. august 2025.\n Interessert? Send gjerne en søknad allerede i dag.",
+  // },
 ];
 
 const Page = () => {
@@ -33,7 +33,9 @@ const Page = () => {
   const job = jobs.find((job) => job.id === id);
 
   if (!job) {
-    return <div>nei</div>;
+    return <div>
+      Stillingsannonser er ikke klar enda. Kom tilbake senere:)
+    </div>;
   }
   return (
     <div className="flex flex-col md:flex-row">
@@ -90,7 +92,7 @@ const Page = () => {
               navigator
                 .share({
                   title: `Ta en titt på denne stillingsannonsen til ${job.company} på ITxBERGEN sin nettside.`,
-                  url: `https://ixb.no/stillingsannonser/${job.id}`,
+                  url: `https://www.itxbergen.no/karrieredag/404`,
                 })
                 .then(() => console.log("Successful share"))
                 .catch((error) => console.log("Error sharing", error));
