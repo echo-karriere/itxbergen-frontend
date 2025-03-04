@@ -5,6 +5,7 @@ interface StyremedlemProps {
   name: string;
   title: string;
   mail?: string;
+  linkedin?: string;
 }
 
 const Styremedlem = ({
@@ -12,6 +13,7 @@ const Styremedlem = ({
   name,
   title,
   mail = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
+  linkedin,
 }: StyremedlemProps) => {
   return (
     <>
@@ -32,7 +34,16 @@ const Styremedlem = ({
           <p className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline">
             {mail}
           </p>
-          <i className="ri-linkedin-fill"></i>
+          {linkedin && (
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-2"
+            >
+              <i className="ri-linkedin-fill text-2xl"></i>
+            </a>
+            )}
         </div>
       </div>
     </>
