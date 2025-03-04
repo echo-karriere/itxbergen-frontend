@@ -61,26 +61,20 @@ export default function Nettverking() {
             </p>
             {/* Links */}
             <a
-              href="#"
+              href="#nettverking"
               className="flex items-center font-semibold hover:underline"
             >
               Studentorganisasjoner og linjeforeninger
               <ChevronRight className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="/#bottom"
               className="flex items-center font-semibold hover:underline"
             >
               Arrangementer
               <ChevronRight className="w-5 h-5" />
             </a>
-            <a
-              href="#"
-              className="flex items-center font-semibold hover:underline"
-            >
-              Nyheter
-              <ChevronRight className="w-5 h-5" />
-            </a>
+
           </div>
 
           {/* Image */}
@@ -112,7 +106,7 @@ export default function Nettverking() {
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black h-auto p-3 flex items-start justify-center relative shadow-lg mb-3">
         {/* Content Wrapper */}
-        <div className="maxwidth relative flex flex-col text-start items-start w-full px-6 md:px-32 pt-8">
+        <div id="nettverking" className="maxwidth relative flex flex-col text-start items-start w-full px-6 md:px-32 pt-8">
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10 mx-6 md:mx-0">
             <div className="space-y-4">

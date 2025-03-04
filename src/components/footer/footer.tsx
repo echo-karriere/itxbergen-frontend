@@ -4,7 +4,7 @@ import Partners from "./partners";
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-IXBbg text-white">
+      <footer id="bottom" className="relative bg-IXBbg text-white">
         {/* Footer Content Container */}
         <div className="relative container mx-auto py-4">
           {/* Logo */}
