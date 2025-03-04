@@ -31,6 +31,7 @@ const Styremedlem = ({
           <p className="font-sourceSans text-[#7E57C2] text-sm md:text-sm/8">
             {title}
           </p>
+          <div className="flex flex-col">
           <a 
             href={`mailto:${mail}`}
             className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline"
@@ -47,6 +48,7 @@ const Styremedlem = ({
               <i className="ri-linkedin-fill text-lg"></i>
             </a>
             )}
+            </div>
         </div>
       </div>
     </>
