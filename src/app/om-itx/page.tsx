@@ -16,7 +16,7 @@ export default function AboutUS() {
             {/* Breadcrumb */}
             <Breadcrumbs customLast="Om ITxBergen" />
             <h1 className="text-3xl md:text-4xl font-bold mb-9">
-              <span>Om ItxBergen</span>
+              <span>Om ITxBergen</span>
             </h1>
             <p className="text-base">
               ITxBergen arrangerer karrieredager for IT-studenter i
