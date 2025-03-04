@@ -23,7 +23,7 @@ export default function AboutUS() {
               bergensområdet, og er tidligere kjent som echo karriere.
               Arrangementet ble holdt for første gang i 2019, noe som ble en
               stor suksess med stort oppmøte fra IT-studenter fra hele Bergen.
-              Eneklte ganger holder vi også andre karrierefremmende
+              Enkelte ganger holder vi også andre karrierefremmende
               arrangementer. <br /> <br />
               Vi er en frivillig studentorganisasjon som samarbeider med andre
               linjeforeninger innenfor IT i Bergen, for å skape en felles årlig
