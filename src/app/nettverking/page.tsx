@@ -128,6 +128,7 @@ export default function Nettverking() {
                 "Universitetet i Bergen",
                 "Høgskulen på Vestlandet",
                 "Høyskolen Kristiania",
+                "Annet",
               ].map((location) => (
                 <Button
                   key={location}
