@@ -41,7 +41,7 @@ const Styremedlem = ({
               rel="noopener noreferrer"
               className="inline-block mt-2"
             >
-              <i className="ri-linkedin-fill text-2xl"></i>
+              <i className="ri-linkedin-fill text-lg"></i>
             </a>
             )}
         </div>
