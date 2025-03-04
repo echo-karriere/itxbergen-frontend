@@ -31,9 +31,12 @@ const Styremedlem = ({
           <p className="font-sourceSans text-[#7E57C2] text-sm md:text-sm/8">
             {title}
           </p>
-          <p className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline">
-            {mail}
-          </p>
+          <a 
+            href={`mailto:${mail}`}
+            className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline"
+            >
+             {mail}
+          </a>
           {linkedin && (
             <a
               href={linkedin}
