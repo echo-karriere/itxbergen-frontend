@@ -26,7 +26,7 @@ const BoardMembers = [
     name: "Hasan Al-Ajeel",
     title: "Økonomiassistent",
     mail: "hasan.alajeel@itxbergen.no",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/",
   },
   {
     image: "/styremedlemmer/isak.jpg",
