@@ -1,4 +1,10 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ITxBergen - Personvernerklæring",
+  description: "Personvernerklæring for ITxBergen",
+};
 
 export default function PrivacyPolicy() {
   return (
