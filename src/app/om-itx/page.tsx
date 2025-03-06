@@ -3,6 +3,12 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Styremedlemgrid from "@/components/utils/styremedlemgrid";
 import Otherthings from "@/components/utils/otherthings";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Om ITxBergen | ITxBergen",
+  description: "Informasjon om ITxBergen",
+};
 
 export default function AboutUS() {
   return (
