@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Page from "./stillingsannonser";
 
 export const metadata: Metadata = {
-  title: "ITxBergen - Stillingsannonser",
+  title: "Stillingsannonser | ITxBergen",
   description: "Stillingsannonser",
 }
 

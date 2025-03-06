@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ForStudenter from "./karrieredag_for_studenter";
 
 export const metadata: Metadata = {
-  title: "ITxBergen - Karrieredag Studenter",
+  title: "Karrieredag for Studenter | ITxBergen",
   description: "Informasjon for studenter som deltar på Karrieredagen",
 }
 

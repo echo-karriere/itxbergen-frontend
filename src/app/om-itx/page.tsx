@@ -6,7 +6,7 @@ import Otherthings from "@/components/utils/otherthings";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ITxBergen - Om ITxBergen",
+  title: "Om ITxBergen | ITxBergen",
   description: "Informasjon om ITxBergen",
 };
 

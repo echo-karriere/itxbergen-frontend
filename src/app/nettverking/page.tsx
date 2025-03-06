@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Nettverking from "./nettverking";
 
 export const metadata: Metadata = {
-  title: "ITxBergen - Nettverking",
+  title: "Nettverking | ITxBergen",
   description: "Nettverking for IT-studenter i Bergen",
 }
 
