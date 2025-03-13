@@ -65,13 +65,16 @@ const Page = () => {
               <p>
                 Har du spørsmål? Ved generelle hendvendelser ta kontakt med
                 styret på{" "}
-                <a href="mailto:kontakt@itxbergen.no" className="text-blue-400">
+                <a
+                  href="mailto:kontakt@itxbergen.no"
+                  className="text-blue-400 hover:underline"
+                >
                   kontakt@itxbergen.no
                 </a>
                 , ved andre henvendelser til leder på{" "}
                 <a
                   href="mailto:fredric.hegland@itxbergen.no"
-                  className="text-blue-400"
+                  className="text-blue-400 hover:underline"
                 >
                   fredric.hegland@itxbergen.no
                 </a>
@@ -81,7 +84,7 @@ const Page = () => {
             </div>
 
             <a href="https://airtable.com/app8IBcRX0mrtDtcF/pagnoEQgjFYyVPNB9/form">
-              <div className="bg-white shadow-md w-36 h-8 rounded text-sm flex items-center justify-center my-3">
+              <div className="bg-IXBbg1 shadow-md w-36 h-8 rounded text-sm flex items-center justify-center my-3">
                 Gå til søknad <i className="ri-external-link-fill ml-2" />
               </div>
             </a>
