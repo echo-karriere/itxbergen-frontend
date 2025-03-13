@@ -84,7 +84,7 @@ const Page = () => {
             </div>
 
             <a href="https://airtable.com/app8IBcRX0mrtDtcF/pagnoEQgjFYyVPNB9/form">
-              <div className="bg-IXBbg1 shadow-md w-36 h-8 rounded text-sm flex items-center justify-center my-3">
+              <div className="bg-IXBbg1 shadow-md w-40 h-14 rounded text-sm flex items-center justify-center my-3">
                 Gå til søknad <i className="ri-external-link-fill ml-2" />
               </div>
             </a>
