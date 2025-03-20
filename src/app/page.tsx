@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import ButtonIXB from "@/components/utils/button-ixb";
 import EventCard from "@/components/utils/event-card";
 import NewsCard from "@/components/utils/news-card";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -26,7 +27,8 @@ export default function Home() {
             <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-12">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
-                <span className="text-IXBPurple"> nettverking</span> <br /> for IT-studenter i Bergen!
+                <span className="text-IXBPurple"> nettverking</span> <br /> for
+                IT-studenter i Bergen!
               </h1>
               <div className="flex flex-col space-y-2">
                 <ButtonIXB
@@ -43,7 +45,10 @@ export default function Home() {
               <p className="text-base md:text-lg">
                 Ikke karrieredag enda? <br />
                 Sjekk ut mulighetene for{" "}
-                <a href="/nettverking" className="font-bold underline">nettverking</a>!
+                <a href="/nettverking" className="font-bold underline">
+                  nettverking
+                </a>
+                !
               </p>
             </div>
 
@@ -134,17 +139,28 @@ export default function Home() {
           <div className="w-full flex flex-col space-y-16">
             {/* Events Section */}
             <div className="flex flex-col">
-              <h2 className="text-2xl font-bold mb-6">
-                Kommende arrangementer
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
-                <EventCard
-                  title="Github Workshop med SPV"
-                  date="10. Mars 08:30"
-                  address="Jonsvollsgaten 2"
-                  redirectTo="https://pameldinger.no/e/nkflrn"
-                />
+              <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
+              <div className="grid grid-cols-1 mb-3 md:grid-cols-3 gap-6 place-items-center">
+                <Link href={"/nettverking/styremedlem/"}>
+                  <NewsCard
+                    image={"/logo.png"}
+                    title={"Vi søker nye styremedlemmer!"}
+                    date={"13. Mars"}
+                    height="14rem"
+                  />
+                </Link>
               </div>
+              {/* <h2 className="text-2xl font-bold mb-6"> */}
+              {/*   Kommende arrangementer */}
+              {/* </h2> */}
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center"> */}
+              {/*   <EventCard */}
+              {/*     title="Github Workshop med SPV" */}
+              {/*     date="10. Mars 08:30" */}
+              {/*     address="Jonsvollsgaten 2" */}
+              {/*     redirectTo="https://pameldinger.no/e/nkflrn" */}
+              {/*   /> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
