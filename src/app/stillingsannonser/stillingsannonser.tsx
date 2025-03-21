@@ -6,8 +6,9 @@ import Stillingsannonser from "@/components/utils/stillingsannonser";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import DropdownSearch from "@/components/utils/dropdown-search";
 import ButtonIXB from "@/components/utils/button-ixb";
+import type { SanityDocument } from "@sanity/client";
 
-const Page = () => {
+const Page = ({ data }: { data: string }) => {
   const [companySearchTerm, setCompanySearchTerm] = useState("");
   const [locationSearchTerm, setLocationSearchTerm] = useState("");
   const [typeSearchTerm, setTypeSearchTerm] = useState("");

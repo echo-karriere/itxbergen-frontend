@@ -2583,7 +2583,7 @@
     semver "^7.3.5"
     validate-npm-package-name "^3.0.0"
 
-"@sanity/client@^6.22.4", "@sanity/client@^6.24.1", "@sanity/client@^6.28.1", "@sanity/client@^6.28.2", "@sanity/client@^6.28.3":
+"@sanity/client@^5.0.0 || ^6.0.0", "@sanity/client@^6.22.4", "@sanity/client@^6.24.1", "@sanity/client@^6.28.1", "@sanity/client@^6.28.2", "@sanity/client@^6.28.3":
   version "6.28.3"
   resolved "https://registry.npmjs.org/@sanity/client/-/client-6.28.3.tgz"
   integrity sha512-/W/w0pl0wx1vn6RKUaOTNHVcBDvBcjZk6agpl4vwTCxvNQhh74nY9xk+/heap3KriSHp95ilChv/qVYMz2/l3w==
@@ -2680,7 +2680,7 @@
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-3.0.0.tgz"
   integrity sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==
 
-"@sanity/icons@^3.6.0", "@sanity/icons@^3.7.0":
+"@sanity/icons@^3.7.0":
   version "3.7.0"
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-3.7.0.tgz"
   integrity sha512-MVh5C55X8Vn2oIsraSPVx4MkHvkqUimkmv7yP++IfJBCLgb38/7G2CM+GB95GTpLPRdF2m3QEwwXcaeljjqKOQ==
@@ -2717,15 +2717,15 @@
     tar-fs "^2.1.1"
     tinyglobby "^0.2.9"
 
-"@sanity/insert-menu@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/@sanity/insert-menu/-/insert-menu-1.1.4.tgz"
-  integrity sha512-16mzLUw+BHRB8T2LGEVSyGXaF83IkQGKbSC0mJL1AxSxasL7SgJBc3RQ7FmunAZukiYz3bZCYcWwvqRhDLEYeg==
+"@sanity/insert-menu@^1.1.4", "@sanity/insert-menu@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/@sanity/insert-menu/-/insert-menu-1.1.6.tgz"
+  integrity sha512-a35Bp/hicQQeEF5/bmD//r0p6usjiSocBg/yohoZS45SiZpqqkBM1n0bAHqcYCT57spaHFz/HJVoclDhm049Fw==
   dependencies:
-    "@sanity/icons" "^3.6.0"
-    "@sanity/ui" "^2.14.3"
+    "@sanity/icons" "^3.7.0"
+    "@sanity/ui" "^2.15.6"
     lodash "^4.17.21"
-    react-compiler-runtime "19.0.0-beta-40c6c23-20250301"
+    react-compiler-runtime "19.0.0-beta-3229e95-20250315"
 
 "@sanity/logos@^2.1.13":
   version "2.1.13"
@@ -2785,14 +2785,14 @@
     debug "^4.3.4"
     lodash "^4.17.21"
 
-"@sanity/next-loader@1.3.4":
-  version "1.3.4"
-  resolved "https://registry.npmjs.org/@sanity/next-loader/-/next-loader-1.3.4.tgz"
-  integrity sha512-eQl/nNnhtioze8qvyLwfre/3taCsJHXPGvWNpWs0WcJw+nywk561kgHLjr04jX6zidjYchVMT5+4Id+4KYU/UA==
+"@sanity/next-loader@^1.3.7":
+  version "1.3.7"
+  resolved "https://registry.npmjs.org/@sanity/next-loader/-/next-loader-1.3.7.tgz"
+  integrity sha512-nGnDK/bmLmUpk9jG0LUQOiDuuf2YXDocb+gPZ4dAo8rLhDaoFpOZ263M3sRUt/KiGqbnWYzgOVR9oYZFpdpfAw==
   dependencies:
-    "@sanity/client" "^6.28.1"
+    "@sanity/client" "^6.28.3"
     "@sanity/comlink" "^3.0.1"
-    "@sanity/presentation-comlink" "^1.0.9"
+    "@sanity/presentation-comlink" "^1.0.12"
     use-effect-event "^1.0.2"
 
 "@sanity/pkg-utils@^6.12.2":
@@ -2842,26 +2842,26 @@
     zod "3.24.1"
     zod-validation-error "3.4.0"
 
-"@sanity/presentation-comlink@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/@sanity/presentation-comlink/-/presentation-comlink-1.0.9.tgz"
-  integrity sha512-iW0QAevldybltyM2pl4FT7Qc6iuVVS12+yK82nPj/GHrG2W/eofnlPzLxZf4Gt5KndfFsORyfMB5UsNhjjKTbQ==
+"@sanity/presentation-comlink@^1.0.12", "@sanity/presentation-comlink@^1.0.9":
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/@sanity/presentation-comlink/-/presentation-comlink-1.0.12.tgz"
+  integrity sha512-gXwNjL+95E2nxTkT1CBcyvxXOo9C1m59h3J685Xsa0Q8MD4kSmQkWe/ehBcfVaoaIv29Il69MKgG2xH9akkscA==
   dependencies:
     "@sanity/comlink" "^3.0.1"
-    "@sanity/visual-editing-types" "^1.0.9"
+    "@sanity/visual-editing-types" "^1.0.11"
 
-"@sanity/preview-kit@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/@sanity/preview-kit/-/preview-kit-6.0.0.tgz"
-  integrity sha512-78jykUNBdCKKs3/cGHXOBiPHKcI06lX0N00kVP+uP1Lv7HoHmewVLX5qZRbbiyEGxgb903USXVtylkQqqBmxLA==
+"@sanity/preview-kit@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.npmjs.org/@sanity/preview-kit/-/preview-kit-6.0.3.tgz"
+  integrity sha512-y633+NXVXR+6MamYQEbwAx7ti6qzr6Mn/S7vg2VrOHy+IPVhhsm7PHUm5ZXb37aCdhwMHK1qnoPAmFLAbfcvrg==
   dependencies:
     "@sanity/comlink" "^3.0.1"
-    "@sanity/presentation-comlink" "^1.0.9"
+    "@sanity/presentation-comlink" "^1.0.12"
 
-"@sanity/preview-url-secret@^2.1.5", "@sanity/preview-url-secret@2.1.5":
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/@sanity/preview-url-secret/-/preview-url-secret-2.1.5.tgz"
-  integrity sha512-G/jq1O4o/fyQtSL+ThW227zfsGu6BAE/qbEZ5MFiarLVJedM0P8eRFfwZpH3NLL2NA9vqRRK+nc/qjcttuT2dg==
+"@sanity/preview-url-secret@^2.1.5", "@sanity/preview-url-secret@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/preview-url-secret/-/preview-url-secret-2.1.6.tgz"
+  integrity sha512-cvPUREWZo34NGR8sAFaQji6wv8iYiGDIGp9n8W85iKfvrJuQhsvfVvtbDiYrCyPb9GK2e514RE/5dHh/c0UQHA==
   dependencies:
     "@sanity/uuid" "3.0.2"
 
@@ -2910,7 +2910,7 @@
     "@sanity/pkg-utils" "^6.12.2"
     yaml "^2.6.1"
 
-"@sanity/types@*", "@sanity/types@^3.78.0", "@sanity/types@3.79.0":
+"@sanity/types@*", "@sanity/types@^3.78.0", "@sanity/types@^3.79.0", "@sanity/types@3.79.0":
   version "3.79.0"
   resolved "https://registry.npmjs.org/@sanity/types/-/types-3.79.0.tgz"
   integrity sha512-b3DkhaO11fo7OL8yulImstIu5QmGC166ENYJG8dtYBUkEbmRGgPtTnhPrfsNi57UWJ5bDef1ieDMUjB/heugsg==
@@ -2924,18 +2924,18 @@
   dependencies:
     "@sanity/client" "^6.24.1"
 
-"@sanity/ui@^2.14.3", "@sanity/ui@^2.15.2":
-  version "2.15.5"
-  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-2.15.5.tgz"
-  integrity sha512-i49QFT2koHsiGKukybOYPhOSLdb4F/WPkdwYsUMpTsQoM5Psa9WNqRynANieHcu0a2+uRM+8yvlnoV9MT82FzA==
+"@sanity/ui@^2.15.2", "@sanity/ui@^2.15.6", "@sanity/ui@^2.15.7":
+  version "2.15.7"
+  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-2.15.7.tgz"
+  integrity sha512-xQbUJgaynZ5j04LidjR0yaQEtgsR6NcyTCZtbbhbHSwTm/Asvdm+5LtrGz5xSiKcxAm1QpFSPeVvBfOq6Lf2Og==
   dependencies:
     "@floating-ui/react-dom" "^2.1.2"
     "@juggle/resize-observer" "^3.4.0"
     "@sanity/color" "^3.0.6"
     "@sanity/icons" "^3.7.0"
     csstype "^3.1.3"
-    framer-motion "^12.4.10"
-    react-compiler-runtime "19.0.0-beta-e1e972c-20250221"
+    framer-motion "^12.5.0"
+    react-compiler-runtime "19.0.0-beta-3229e95-20250315"
     react-refractor "^2.2.0"
     use-effect-event "^1.0.2"
 
@@ -2969,36 +2969,36 @@
     "@types/uuid" "^8.0.0"
     uuid "^8.0.0"
 
-"@sanity/visual-editing-csm@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.npmjs.org/@sanity/visual-editing-csm/-/visual-editing-csm-2.0.7.tgz"
-  integrity sha512-tZvPqix0Zu/sy+s4GpuIhc5aEo0eUEk1ZfPwI4XNuVCm39jj/k029fWAqHoH4n6GYFKmjE1Q5HIIRCYt46p9AQ==
+"@sanity/visual-editing-csm@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/@sanity/visual-editing-csm/-/visual-editing-csm-2.0.9.tgz"
+  integrity sha512-6plsEyHly95JS7voJv4lbhmXpzpMhDY1rXtsVexIziheSl806k6tMTeXraOStYbD65y/cL3OoHJcyC34DLtiVw==
   dependencies:
-    "@sanity/visual-editing-types" "^1.0.9"
+    "@sanity/visual-editing-types" "^1.0.11"
     valibot "0.31.1"
 
-"@sanity/visual-editing-types@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/@sanity/visual-editing-types/-/visual-editing-types-1.0.9.tgz"
-  integrity sha512-vQ+gdGxyivVBX1SP1J87DSwI8P7wAZL6Qydjgk7g7ww1Svw9oIJxOATkstL3XHwbsxX4+DmvdYRTpBKLCYOgNw==
+"@sanity/visual-editing-types@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.npmjs.org/@sanity/visual-editing-types/-/visual-editing-types-1.0.11.tgz"
+  integrity sha512-EkN9fnhcEDADuksXWg5Q23RakGY59nBvQj6UyYm5qb1ITTERnXWkHEGPK25vg8P54d/pfX9rzhu7j3EFf3eAzw==
 
-"@sanity/visual-editing@2.13.7":
-  version "2.13.7"
-  resolved "https://registry.npmjs.org/@sanity/visual-editing/-/visual-editing-2.13.7.tgz"
-  integrity sha512-nfgtm9aVjAlSeyNgvvLKRfqVOlw9f81luF65S6BnSbWtnPm5bqlAIzhA4hU9zxWQbLZnqWgv2em1Tj4XqaFzSA==
+"@sanity/visual-editing@^2.13.12":
+  version "2.13.12"
+  resolved "https://registry.npmjs.org/@sanity/visual-editing/-/visual-editing-2.13.12.tgz"
+  integrity sha512-dKyu8kCigOzuPhhqRaqtrVBw6n/AHKXxAAV+O609SzNlbsR1+L8WLoX3Y1KMntXRaI9JbuNLNVF2qSFU9LI1yQ==
   dependencies:
     "@sanity/comlink" "^3.0.1"
-    "@sanity/icons" "^3.6.0"
-    "@sanity/insert-menu" "^1.1.4"
+    "@sanity/icons" "^3.7.0"
+    "@sanity/insert-menu" "^1.1.6"
     "@sanity/mutate" "0.11.0-canary.4"
-    "@sanity/presentation-comlink" "^1.0.9"
-    "@sanity/preview-url-secret" "^2.1.5"
-    "@sanity/ui" "^2.14.3"
-    "@sanity/visual-editing-csm" "^2.0.7"
+    "@sanity/presentation-comlink" "^1.0.12"
+    "@sanity/preview-url-secret" "^2.1.6"
+    "@sanity/ui" "^2.15.6"
+    "@sanity/visual-editing-csm" "^2.0.9"
     "@vercel/stega" "0.1.2"
     get-random-values-esm "^1.0.2"
-    react-compiler-runtime "19.0.0-beta-40c6c23-20250301"
-    rxjs "^7.8.1"
+    react-compiler-runtime "19.0.0-beta-3229e95-20250315"
+    rxjs "^7.8.2"
     scroll-into-view-if-needed "^3.1.0"
     use-effect-event "^1.0.2"
     valibot "0.31.1"
@@ -5718,7 +5718,7 @@ formdata-polyfill@^4.0.10:
   dependencies:
     fetch-blob "^3.1.2"
 
-framer-motion@^12.0.0, framer-motion@^12.4.10:
+framer-motion@^12.0.0, framer-motion@^12.5.0:
   version "12.5.0"
   resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.5.0.tgz"
   integrity sha512-buPlioFbH9/W7rDzYh1C09AuZHAk2D1xTA1BlounJ2Rb9aRg84OXexP0GLd+R83v0khURdMX7b5MKnGTaSg5iA==
@@ -6098,7 +6098,7 @@ groq-js@^1.16.1:
   dependencies:
     debug "^4.3.4"
 
-groq@^3.78.0, groq@3.79.0:
+groq@^3.79.0, groq@3.79.0:
   version "3.79.0"
   resolved "https://registry.npmjs.org/groq/-/groq-3.79.0.tgz"
   integrity sha512-e5z7LuqWYUsGjztgsilcSVGAmBNa35Nw4qOzSlKD3oPNqMM9y891Qj8w+HKc/3LWXaCTd5vc4gBcnwaTIib1BQ==
@@ -7717,18 +7717,25 @@ natural-compare@^1.4.0:
 negotiator@^1.0.0:
   version "1.0.0"
 
-next-sanity@^9.9.0:
-  version "9.9.0"
-  resolved "https://registry.npmjs.org/next-sanity/-/next-sanity-9.9.0.tgz"
-  integrity sha512-ZbxYF1EcH8kn/RKtrpZJdz+iJXU4mGlOvA5Dt3MHAqQjuL448oCHShFBy3bhHdsi7Hx38igo6HA3UYMSQ8gWNg==
+next-sanity-image@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.npmjs.org/next-sanity-image/-/next-sanity-image-6.1.1.tgz"
+  integrity sha512-mLRiatJW3TZoD3VlUCci4lOxW9lKOl0bxDsYtk/JRqKZo25QJqPXNV7aoD+lmjEFf6RO2eW7uJ57QeI20mPhOA==
+  dependencies:
+    "@sanity/image-url" "^1.0.2"
+
+next-sanity@^9.9.5:
+  version "9.9.5"
+  resolved "https://registry.npmjs.org/next-sanity/-/next-sanity-9.9.5.tgz"
+  integrity sha512-1ro/RN34L0upoByO1c/mTb3AxuXreXPxpl6MsmO+9AojRsfahEGrdQA06cKDFXCFaNQ/H+QWX8KTDwyBDfMTSQ==
   dependencies:
     "@portabletext/react" "^3.2.1"
     "@sanity/client" "^6.28.3"
-    "@sanity/next-loader" "1.3.4"
-    "@sanity/preview-kit" "6.0.0"
-    "@sanity/preview-url-secret" "2.1.5"
-    "@sanity/visual-editing" "2.13.7"
-    groq "^3.78.0"
+    "@sanity/next-loader" "^1.3.7"
+    "@sanity/preview-kit" "^6.0.3"
+    "@sanity/preview-url-secret" "^2.1.6"
+    "@sanity/visual-editing" "^2.13.12"
+    groq "^3.79.0"
     history "^5.3.0"
 
 next-themes@^0.3.0:
@@ -7736,7 +7743,7 @@ next-themes@^0.3.0:
   resolved "https://registry.npmjs.org/next-themes/-/next-themes-0.3.0.tgz"
   integrity sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==
 
-"next@^14.1 || ^15.0.0-0", "next@^14.2 || ^15.0.0-0", "next@>= 13 || >=14.3.0-canary.0 <14.3.0 || >=15.0.0-rc", next@14.2.3:
+"next@^13.0.0 || ^14.0.0", "next@^14.1 || ^15.0.0-0", "next@^14.2 || ^15.0.0-0", "next@>= 13 || >=14.3.0-canary.0 <14.3.0 || >=15.0.0-rc", next@14.2.3:
   version "14.2.3"
   resolved "https://registry.npmjs.org/next/-/next-14.2.3.tgz"
   integrity sha512-dowFkFTR8v79NPJO4QsBUtxv0g9BrS/phluVpMAt2ku7H+cbcBJlopXjkWlwxrk/xGqMemr7JkGPGemPrLLX7A==
@@ -8839,6 +8846,11 @@ react-clientside-effect@^1.2.7:
   dependencies:
     "@babel/runtime" "^7.12.13"
 
+react-compiler-runtime@19.0.0-beta-3229e95-20250315:
+  version "19.0.0-beta-3229e95-20250315"
+  resolved "https://registry.npmjs.org/react-compiler-runtime/-/react-compiler-runtime-19.0.0-beta-3229e95-20250315.tgz"
+  integrity sha512-Xid04KQ0GxRVl0TsUPNalVefjrC6YqG/zclXPS9vbl8jmU6OwCiQBO4BpPTC9yw7sEroOdPdDKZ/1AYOH3BaaQ==
+
 react-compiler-runtime@19.0.0-beta-40c6c23-20250301:
   version "19.0.0-beta-40c6c23-20250301"
   resolved "https://registry.npmjs.org/react-compiler-runtime/-/react-compiler-runtime-19.0.0-beta-40c6c23-20250301.tgz"
@@ -9485,7 +9497,7 @@ safe-regex-test@^1.0.3:
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sanity@^3.78.0:
+sanity@^3.79.0:
   version "3.79.0"
   resolved "https://registry.npmjs.org/sanity/-/sanity-3.79.0.tgz"
   integrity sha512-xUcBUVPp58a3CmF4AwNUm8IVg5HEgsdDmRj3IB+nrHTa3YNP7cJVyod1H2RiJOZJLYpXhVCXcBCG0Akt+EGScg==

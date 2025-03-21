@@ -1,0 +1,70 @@
+{
+  "name": "@rexxars/react-json-inspector",
+  "version": "9.0.1",
+  "description": "React JSON inspector component",
+  "keywords": [
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Lapple/react-json-inspector.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aziz Yuldoshev",
+    "email": "yuldoshev.aziz@gmail.com",
+    "url": "http://lapple.me"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./json-inspector.css": "./src/JsonInspector.css",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run pkg:build npm run pkg:check",
+    "dev": "vite",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict",
+    "pkg:watch": "pkg watch --strict",
+    "test": "vitest"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "dependencies": {
+    "debounce": "^1.0.0",
+    "md5-o-matic": "^0.1.1"
+  },
+  "devDependencies": {
+    "@sanity/pkg-utils": "^6.12.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^14.3.1",
+    "@types/debounce": "^1.2.4",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "happy-dom": "^15.11.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-packagejson": "^2.5.6",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  }
+}

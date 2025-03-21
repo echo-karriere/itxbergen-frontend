@@ -1,0 +1,1 @@
+{"version":3,"file":"version.js","sources":["../../src/core/version.ts"],"sourcesContent":["import {version} from '../../package.json'\n/**\n * This version is provided by `@sanity/pkg-utils` at build time\n * @hidden\n * @beta\n */\nexport const SANITY_VERSION = process.env.PKG_VERSION || `${version}-development`\n"],"names":["SANITY_VERSION"],"mappings":";AAMO,MAAMA,iBAAiB;;"}

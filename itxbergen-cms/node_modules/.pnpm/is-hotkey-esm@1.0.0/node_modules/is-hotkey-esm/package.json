@@ -1,0 +1,50 @@
+{
+  "name": "is-hotkey-esm",
+  "description": "Check whether a browser event matches a hotkey.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/sanity-io-esm/is-hotkey-esm",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && pkg-utils build --strict",
+    "clean": "rimraf dist",
+    "prepublish": "npm run build",
+    "test": "pkg-utils --strict"
+  },
+  "devDependencies": {
+    "@sanity/pkg-utils": "^5.1.9",
+    "typescript": "5.4.2"
+  },
+  "keywords": [
+    "code",
+    "combo",
+    "event",
+    "hotkey",
+    "key",
+    "keycode",
+    "keycodes",
+    "keycombo",
+    "keydown",
+    "keyup",
+    "mousetrap",
+    "shortcut",
+    "which"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "nano-pubsub",
+  "version": "3.0.0",
+  "description": "Zero dependency, tiny (<0.5 kb) publish/subscribe",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && pkg-utils build --strict",
+    "clean": "rimraf dist",
+    "prepublish": "npm run build",
+    "test": "tap run && pkg-utils --strict",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pubsub",
+    "events",
+    "publish",
+    "subscribe"
+  ],
+  "author": "Bjørge Næss",
+  "license": "MIT",
+  "devDependencies": {
+    "@sanity/pkg-utils": "^5.1.9",
+    "@tapjs/typescript": "^1.4.2",
+    "rimraf": "^5.0.5",
+    "tap": "^18.7.2",
+    "typescript": "^5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjoerge/nano-pubsub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjoerge/nano-pubsub/issues"
+  },
+  "homepage": "https://github.com/bjoerge/nano-pubsub#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}

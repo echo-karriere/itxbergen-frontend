@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`removeMissingReferences > removes references to missing docs, deeply 1`] = `
+{
+  "_createdAt": "",
+  "_id": "foo",
+  "_rev": "foo",
+  "_type": "test",
+  "_updatedAt": "",
+  "arrayOfObjects": [
+    {
+      "_type": "foo",
+      "prop": "yes",
+    },
+    {
+      "_type": "foo",
+      "prop": "no",
+    },
+  ],
+  "arrayOfStrings": [
+    "a",
+    "b",
+    "c",
+  ],
+  "bool": true,
+  "number": 123,
+  "string": "value",
+  "subObject": {
+    "_type": "sub",
+    "nested": {
+      "array": [
+        "contents",
+        {
+          "_ref": "abc123",
+          "_type": "reference",
+        },
+        {
+          "_type": "nonref",
+          "someProp": "yes-it-exists",
+        },
+      ],
+      "prop": true,
+    },
+  },
+}
+`;

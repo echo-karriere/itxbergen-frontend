@@ -1,0 +1,5 @@
+export {defaultComponents} from './components/defaults'
+export {mergeComponents} from './components/merge'
+export {escapeHTML, uriLooksSafe} from './escape'
+export {toHTML} from './to-html'
+export * from './types'

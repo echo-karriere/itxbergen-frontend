@@ -1,0 +1,90 @@
+{
+  "name": "@sanity/diff-patch",
+  "version": "5.0.0",
+  "description": "Generates a set of Sanity patches needed to change an item (usually a document) from one shape to another",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=18.2"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "author": "Sanity.io <hello@sanity.io>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "!dist/stats.html",
+    "src"
+  ],
+  "keywords": [
+    "sanity",
+    "patch",
+    "diff",
+    "mutation",
+    "compare"
+  ],
+  "scripts": {
+    "clean": "rimraf dist coverage",
+    "coverage": "vitest --coverage",
+    "build": "pkg-utils build && pkg-utils --strict",
+    "prebuild": "npm run clean",
+    "lint": "eslint . && tsc --noEmit",
+    "test": "vitest --reporter=verbose",
+    "posttest": "npm run lint",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@sanity/diff-match-patch": "^3.2.0"
+  },
+  "devDependencies": {
+    "@sanity/client": "^6.27.2",
+    "@sanity/pkg-utils": "^6.13.4",
+    "@sanity/semantic-release-preset": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitest/coverage-v8": "2.1.3",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-sanity": "^6.0.0",
+    "p-queue": "^8.1.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "semantic-release": "^24.2.1",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14",
+    "vitest": "^2.1.9"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true
+      }
+    },
+    "extends": [
+      "sanity",
+      "sanity/typescript",
+      "prettier"
+    ]
+  },
+  "packageManager": "pnpm@9.12.1"
+}
