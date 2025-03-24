@@ -10,5 +10,23 @@ export const metadata: Metadata = {
 export default async function StillingsannonserPage() {
   const data = await Data();
   console.log(data);
-  return <Page data={""} />;
+  interface Job {
+    title: string;
+    company: string;
+    location: string[];
+    deadline: string;
+    currentSlug: string;
+    image: string;
+    type: string;
+  }
+  const allJobs = data.map((job: Job) => ({
+    title: job.title,
+    company: job.company,
+    location: job.location,
+    deadline: job.deadline,
+    slug: job.currentSlug,
+    image: "/logo.png",
+    type: job.type,
+  }));
+  return <Page allJobs={allJobs} />;
 }

@@ -8,41 +8,51 @@ import DropdownSearch from "@/components/utils/dropdown-search";
 import ButtonIXB from "@/components/utils/button-ixb";
 import type { SanityDocument } from "@sanity/client";
 
-const Page = ({ data }: { data: string }) => {
+interface Job {
+  title: string;
+  company: string;
+  location: string[];
+  deadline: string;
+  currentSlug: string;
+  image: string;
+  type: string;
+}
+
+const Page = ({ allJobs }: { allJobs: Job[] }) => {
   const [companySearchTerm, setCompanySearchTerm] = useState("");
   const [locationSearchTerm, setLocationSearchTerm] = useState("");
   const [typeSearchTerm, setTypeSearchTerm] = useState("");
 
-  const allJobs = [
-    {
-      image: "/statensvegvesen.png",
-      title: "Fra sommerjobb til samfunnsnyttig rolle!",
-      company: "Statens vegvesen",
-      location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      type: "Sommerjobb",
-      date: "10. Januar 2025",
-    },
-    {
-      image: "/statensvegvesen.png",
-      title: "Fra sommerjobb til samfunnsnyttig rolle!",
-      company: "Statens vegvesen",
-      location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      type: "Sommerjobb",
-      date: "10. Januar 2025",
-    },
-    {
-      image: "/knowit.png",
-      title: "Nyutdannede utviklere i Bergen 2025",
-      company: "Knowit",
-      location: "Bergen",
-      type: "Fulltid",
-    },
-  ];
+  // const allJobs = [
+  //   {
+  //     image: "/statensvegvesen.png",
+  //     title: "Fra sommerjobb til samfunnsnyttig rolle!",
+  //     company: "Statens vegvesen",
+  //     location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
+  //     type: "Sommerjobb",
+  //     date: "10. Januar 2025",
+  //   },
+  //   {
+  //     image: "/statensvegvesen.png",
+  //     title: "Fra sommerjobb til samfunnsnyttig rolle!",
+  //     company: "Statens vegvesen",
+  //     location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
+  //     type: "Sommerjobb",
+  //     date: "10. Januar 2025",
+  //   },
+  //   {
+  //     image: "/knowit.png",
+  //     title: "Nyutdannede utviklere i Bergen 2025",
+  //     company: "Knowit",
+  //     location: "Bergen",
+  //     type: "Fulltid",
+  //   },
+  // ];
 
   const filteredJobs = allJobs.filter(
     (job) =>
       job.company.toLowerCase().includes(companySearchTerm.toLowerCase()) &&
-      job.location.toLowerCase().includes(locationSearchTerm.toLowerCase()) &&
+      // job.location.toLowerCase().includes(locationSearchTerm.toLowerCase()) &&
       job.type.toLowerCase().includes(typeSearchTerm.toLowerCase()),
   );
 
