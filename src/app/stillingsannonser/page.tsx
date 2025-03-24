@@ -24,7 +24,7 @@ export default async function StillingsannonserPage() {
     company: job.company,
     location: job.location,
     deadline: job.deadline,
-    slug: job.currentSlug,
+    currentSlug: job.currentSlug,
     image: "/logo.png",
     type: job.type,
   }));
