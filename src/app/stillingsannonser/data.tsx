@@ -4,7 +4,7 @@ import type { SanityDocument } from "next-sanity";
 const Data = async () => {
   const query = `*[_type == 'joblisting'] {
     title,
-    logo,
+    "image": logo.asset->url,
     company,
     location,
     type,

@@ -25,6 +25,7 @@ export default function Stillingsannonse({
           <Image
             src={image}
             alt={company}
+            unoptimized
             height={400}
             width={400}
             className="h-26 w-26 rounded-sm object-contain"
