@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 
 export default async function StillingsannonserPage() {
   const data = await Data();
-  console.log(data);
   interface Job {
     title: string;
     company: string;

@@ -1,5 +1,4 @@
 import { client } from "../lib/sanity";
-import type { SanityDocument } from "next-sanity";
 
 const Data = async () => {
   const query = `*[_type == 'joblisting'] {
@@ -14,7 +13,6 @@ const Data = async () => {
 
   const data = client.fetch(query);
 
-  console.log(data);
   return data;
 };
 
