@@ -33,9 +33,9 @@ export default function ForBedrifter() {
         "60 minutter workshop med studenter. Det vil være enkel snacks og drikke  tilgjengelig, uten ekstra kostnader. Vi lager påmeldingsside for  presentasjonen. Dersom det er ledige plasser ved start slipper vi inn de som ønsker, så lenge det er ledig plass. Dere er selv ansvarlige for å  promotere deres workshop, men dere vil få mulighet til å benytte dere av våre kanaler dersom dere ønsker.",
     },
     {
-      title: "Bankett",
+      title: "ITxBergen Galla",
       content:
-        "Det er mulig å delta på bankett som avholdes etter karrieredagene.  Dere får muligheten til å dele ut ti gullbilletter helt fritt til de  studentene dere ønsker.",
+        "Det er mulig å delta på etterfesten som avholdes etter karrieredagene.  Dere får muligheten til å dele ut ti gullbilletter helt fritt til de  studentene dere ønsker.",
     },
     {
       title: "Frakt",

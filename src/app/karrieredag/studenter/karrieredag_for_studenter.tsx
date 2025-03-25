@@ -36,9 +36,9 @@ export default function ForStudenter() {
         "Det vil være ulike workshops som du kan delta på. Her vil du få  muligheten til å lære mer om ulike temaer som er relevante for deg som student.",
     },
     {
-      title: "Bankett",
+      title: "ITxBergen Galla",
       content:
-        "Studenter som gir et positivt inntrykk av seg selv på karrieredagene  kan kanskje være heldige i å få tak i en gullbillett til banketen. Mer  informasjon gis til de heldige som får gullbillett.",
+        "Studenter som gir et positivt inntrykk av seg selv på karrieredagene  kan kanskje være heldige i å få tak i en gullbillett til etterfesten. Mer  informasjon gis til de heldige som får gullbillett.",
     },
   ];
 
@@ -113,7 +113,7 @@ export default function ForStudenter() {
             </h2>
             <p className="text-base">
               Karrieredagen er en spennende dag! Hvert år jobber vi for å skape
-              den beste karrieredagen hittil! 
+              den beste karrieredagen hittil!
               <br /> <br />
               Har dere noen tips? Send det gjerne på mail til oss på{" "}
               <a href="mailto:example@example.com" className="font-bold">
