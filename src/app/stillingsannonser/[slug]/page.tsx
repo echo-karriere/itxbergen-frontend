@@ -1,8 +1,5 @@
-import { Description } from "@radix-ui/react-dialog";
 import Image from "next/image";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
-import { usePathname } from "next/navigation";
-// import { useEffect, useState } from "react";
 import { client } from "../../lib/sanity";
 import { headers } from "next/headers";
 import { PortableText } from "@portabletext/react"; // Add Portable Text renderer
@@ -61,8 +58,8 @@ const Page = async () => {
       );
     }
     return (
-      <div className="flex flex-col md:flex-row md:ml-40 md:m-8 md:mt-28 w-[90%] ml-[1.6rem]">
-        <div className="md:w-[50%] flex flex-col items-center md:items-start text-center md:text-start">
+      <div className="flex flex-col md:flex-row md:ml-40 md:m-8 md:mt-12 w-[90%] ml-[1.6rem]">
+        <div className="md:w-[50%] flex flex-col items-center md:items-start text-start">
           <Breadcrumbs customLast={`${company}`} />
           <h1 className="text-3xl md:text-4xl font-bold mb-9 mt-4">{title}</h1>
           <div className="md:w-[90%]">

@@ -2,7 +2,7 @@
 
 const Sharebutton = ({ company }: { company: string }) => {
   return (
-    <div>
+    <div className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 w-[60%] md:w-full font-semibold py-2 px-4 flex justify-center items-center rounded focus:outline-none focus:ring-4 focus:ring-yellow-400">
       <button
         onClick={() => {
           // open the share dialog
@@ -42,7 +42,6 @@ const Sharebutton = ({ company }: { company: string }) => {
             }, 3000);
           }
         }}
-        className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 w-[60%] md:w-full font-semibold py-2 px-4 flex justify-center items-center rounded focus:outline-none focus:ring-4 focus:ring-yellow-400"
       >
         <span id="shareButton" className="text-center ">
           Del stillingen
