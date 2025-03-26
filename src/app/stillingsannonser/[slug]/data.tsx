@@ -16,10 +16,8 @@ const Data = async ({ slug }: { slug: string }) => {
     description
   }`;
 
-  const params: SanityParams = { slug }; // Explicitly typed params
-
   try {
-    const data = await client.fetch(query, params);
+    const data = await client.fetch(query, { slug });
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
