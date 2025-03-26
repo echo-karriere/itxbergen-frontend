@@ -7,17 +7,6 @@ import { client } from "../../lib/sanity";
 import { headers } from "next/headers";
 import { PortableText } from "@portabletext/react"; // Add Portable Text renderer
 
-interface JobPosting {
-  id: number;
-  image: string;
-  company: string;
-  location: string;
-  type: string;
-  title: string;
-  description: string;
-  deadline?: string;
-}
-
 const Data = async (id: string) => {
   const query = `*[_type == "joblisting" && slug.current == $id][0] {
       title,
@@ -33,19 +22,6 @@ const Data = async (id: string) => {
 
   return data;
 };
-
-const jobs: JobPosting[] = [
-  // {
-  //   id: 2,
-  //   company: "KnowIt",
-  //   image: "/knowit.png",
-  //   location: "Bergen",
-  //   type: "Fulltid",
-  //   title: "Nyutdannede utviklere i Bergen 2025",
-  //   description:
-  //     "I Knowit lager vi løsninger som skaper de gode opplevelsene mellom kunde og merkevare. Vi jobber med kunder som Fjordkraft, Fjord Maritime, Storebrand og mange andre.\n\n Vi er Bergens største fagmiljø innen utvikling, men setter tverrfaglighet og samarbeid enda høyere. Hos oss får du jobbe sammen med eksperter innen UX, merkevare, tekst, QA, ledelse, animasjon og en rekke andre fagfelt.\n\n Hvert år ansetter vi over 40 nyutdannede til Bergen eller Oslo. Vi vet hvordan vi skal ta i mot deg, og bygge deg opp som del av et trygt og inkluderende, men samtidig utfordrende miljø.\n Hva forventer vi fra deg?\n\n Du er ferdig med bachelor eller master i løpet av 2025\n Du har en god plattform fra studier, men er først og fremst motivert for å lære og utvikle deg.\nDu ønsker å jobbe i tverrfaglige team\n Du er komfortabel med minst ett programmeringsspråk, men vil gjerne lære flere Alle søknader behandles og besvares. Husk å ta med lenke til karakterer på Vitnemålsportalen.\n Oppstart 18. august 2025.\n Interessert? Send gjerne en søknad allerede i dag.",
-  // },
-];
 
 const Page = async () => {
   const headerList = headers();
@@ -63,15 +39,15 @@ const Page = async () => {
       );
     }
     return (
-      <div className="flex flex-col md:flex-row">
-        <div className="md:ml-40 md:m-8 md:mt-28 w-[90%] ml-[1.6rem] md:w-[50%] flex flex-col items-center md:items-start text-center md:text-start">
+      <div className="flex flex-col md:flex-row md:ml-40 md:m-8 md:mt-28 w-[90%] ml-[1.6rem]">
+        <div className="md:w-[50%] flex flex-col items-center md:items-start text-center md:text-start">
           <Breadcrumbs customLast={`${company}`} />
           <h1 className="text-3xl md:text-4xl font-bold mb-9 mt-4">{title}</h1>
           <div className="md:w-[90%]">
             <PortableText value={description} />
           </div>
         </div>
-        <div className="mt-[-3rem] mb-10 md:w-[20%] flex flex-col items-center md:items-start justify-center">
+        <div className="mb-10 md:w-[20%] flex flex-col items-center md:items-start justify-start">
           <Image
             src={image}
             alt={company + " image"}
@@ -83,20 +59,20 @@ const Page = async () => {
 
           <div className="text-left md:flex md:flex-col md:justify-between mb-3">
             <p className="text-gray-600 text-xs md:text-sm/6 my-1 md:m-0 font-bold">
-              <i className="ri-building-3-line mr-1 md:mr-3"></i>
+              <i className="ri-building-3-line mr-1"></i>
               {company}
             </p>
             <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 md:m-0">
-              <i className="ri-map-pin-line mr-1 md:mr-3"></i>
-              {location}
+              <i className="ri-map-pin-line mr-1"></i>
+              {location.join(", ")}
             </p>
             <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 md:m-0">
-              <i className="ri-suitcase-line mr-1 md:mr-3"></i>
+              <i className="ri-suitcase-line mr-1"></i>
               {type}
             </p>
             {deadline && (
               <p className="text-gray-600 text-xs md:text-sm/6 mt-1 mb-1 md:m-0">
-                <i className="ri-calendar-line mr-1 md:mr-3"></i>
+                <i className="ri-calendar-line mr-1"></i>
                 {deadline}
               </p>
             )}
