@@ -6,6 +6,19 @@ import { usePathname } from "next/navigation";
 import { client } from "../../lib/sanity";
 import { headers } from "next/headers";
 import { PortableText } from "@portabletext/react"; // Add Portable Text renderer
+import Sharebutton from "./sharebutton";
+import { PortableTextBlock } from "@portabletext/react";
+
+interface jobPosting {
+  title: string;
+  image: string;
+  company: string;
+  location: string[];
+  type: string;
+  deadline: string;
+  description: PortableTextBlock;
+  link: string;
+}
 
 const Data = async (id: string) => {
   const query = `*[_type == "joblisting" && slug.current == $id][0] {
@@ -15,10 +28,11 @@ const Data = async (id: string) => {
       location,
       type,
       deadline,
-      description
+      description,
+      link
     }`;
 
-  const data = await client.fetch(query, { id });
+  const data = await client.fetch<jobPosting>(query, { id });
 
   return data;
 };
@@ -30,8 +44,16 @@ const Page = async () => {
   if (id) {
     const data = await Data(id);
 
-    const { title, company, image, type, location, description, deadline } =
-      data;
+    const {
+      title,
+      company,
+      image,
+      type,
+      location,
+      description,
+      deadline,
+      link,
+    } = data;
 
     if (!data) {
       return (
@@ -79,7 +101,7 @@ const Page = async () => {
           </div>
 
           <a
-            href="https://www.google.com"
+            href={link}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Trykk her for å gå til søknaden for stillingen - ${title}, Ekstern lenke.`}
@@ -88,51 +110,7 @@ const Page = async () => {
             <span className="text-center md:w-full w-[60%]">Gå til søknad</span>
             <i className="ri-external-link-fill ml-2" />
           </a>
-          {/* <button */}
-          {/*   onClick={() => { */}
-          {/*     // open the share dialog */}
-          {/*     if (navigator.share) { */}
-          {/*       navigator */}
-          {/*         .share({ */}
-          {/*           title: `Ta en titt på denne stillingsannonsen til ${company} på ITxBERGEN sin nettside.`, */}
-          {/*           url: `https://www.itxbergen.no/karrieredag/404`, */}
-          {/*         }) */}
-          {/*         .then(() => console.log("Successful share")) */}
-          {/*         .catch((error) => console.log("Error sharing", error)); */}
-          {/**/}
-          {/*       document.getElementById("shareButton")!.innerHTML = */}
-          {/*         "Velg hvordan du vil dele stillingen"; */}
-          {/**/}
-          {/*       setTimeout(() => { */}
-          {/*         document.getElementById("shareButton")!.innerHTML = */}
-          {/*           "Del stillingen på nytt"; */}
-          {/*       }, 3000); */}
-          {/*     } else { */}
-          {/*       // fallback to copy to clipboard */}
-          {/*       const url = window.location.href; */}
-          {/*       const el = document.createElement("textarea"); */}
-          {/*       el.value = url; */}
-          {/*       document.body.appendChild(el); */}
-          {/*       el.select(); */}
-          {/*       document.execCommand("copy"); */}
-          {/*       document.body.removeChild(el); */}
-          {/**/}
-          {/*       // change id to "shareButton" to show the text for 3 seconds */}
-          {/*       document.getElementById("shareButton")!.innerHTML = */}
-          {/*         "Lenke kopiert til utklippstavlen"; */}
-          {/**/}
-          {/*       setTimeout(() => { */}
-          {/*         document.getElementById("shareButton")!.innerHTML = */}
-          {/*           "Del stillingen på nytt"; */}
-          {/*       }, 3000); */}
-          {/*     } */}
-          {/*   }} */}
-          {/*   className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 w-[60%] md:w-full font-semibold py-2 px-4 flex justify-center items-center rounded focus:outline-none focus:ring-4 focus:ring-yellow-400" */}
-          {/* > */}
-          {/*   <span id="shareButton" className="text-center "> */}
-          {/*     Del stillingen */}
-          {/*   </span> */}
-          {/* </button> */}
+          <Sharebutton company={company} />
         </div>
       </div>
     );
