@@ -1,49 +1,15 @@
-"use client";
-
-import Page from "./jobpage";
 import Data from "./data";
-import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { headers } from "next/headers";
 
-const CurrentPage = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const id = usePathname().split("/").pop();
-
-  useEffect(() => {
-    if (!id) {
-      setLoading(false);
-      return;
-    }
-
-    const fetchData = async () => {
-      try {
-        const dat = await Data({ slug: id });
-        setData(dat);
-      } catch (err) {
-        setError(err.message || "Failed to fetch data");
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchData();
-  }, [id]);
-
-  if (loading) {
-    return <div>loading...</div>;
+const Page = async () => {
+  const headerList = headers();
+  const id = headerList.get("x-current-path")?.split("/").pop();
+  if (id) {
+    const data = await Data(id);
+    console.log(data);
   }
 
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
-  if (!data) {
-    return <div>No data found</div>;
-  }
-
-  return <Page />;
+  return <div>pge</div>;
 };
 
-export default CurrentPage;
+export default Page;

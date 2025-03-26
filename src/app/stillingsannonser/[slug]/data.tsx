@@ -1,28 +1,19 @@
 import { client } from "../../lib/sanity";
 
-interface SanityParams {
-  slug: string;
-  // Add other parameters here if needed
-}
+const Data = async (id: string) => {
+  const query = `*[_type == "joblisting" && slug.current == $id][0] {
+      title,
+      "image": logo.asset->url,
+      company,
+      location,
+      type,
+      deadline,
+      description
+    }`;
 
-const Data = async ({ slug }: { slug: string }) => {
-  const query = `*[_type == "job" && slug.current == $slug][0] {
-    title,
-    "image": logo.asset->url,
-    company,
-    location,
-    type,
-    deadline,
-    description
-  }`;
+  const data = await client.fetch(query, { id });
 
-  try {
-    const data = await client.fetch(query, { slug });
-    return data;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return null;
-  }
+  return data;
 };
 
 export default Data;

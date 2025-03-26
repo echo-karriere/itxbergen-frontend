@@ -4,6 +4,9 @@ import { Description } from "@radix-ui/react-dialog";
 import Image from "next/image";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { client } from "../../lib/sanity";
+import Data from "./data";
 
 interface JobPosting {
   id: number;
@@ -30,7 +33,26 @@ const jobs: JobPosting[] = [
 ];
 
 const Page = () => {
-  const id = Number(usePathname().split("/").pop());
+  const id = usePathname().split("/").pop();
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    if (!id) {
+      return;
+    }
+    const fetchData = async () => {
+      try {
+        const result = await Data({ id });
+        setData(result);
+      } catch (err) {
+        console.error("Error fetching data: ", err);
+      }
+    };
+
+    fetchData();
+  }, [id]);
+  console.log(data);
+
   const job = jobs.find((job) => job.id === id);
 
   if (!job) {
