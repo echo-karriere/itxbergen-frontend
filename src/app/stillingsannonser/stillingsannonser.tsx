@@ -79,11 +79,17 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
               {/* CTA Buttons */}
               <div className="mt-6">
                 {/* Primary Button */}
-                <ButtonIXB
-                  label={"Publiser stillingsannonse"}
-                  variant="primary"
-                  className="w-[95%]"
-                />
+                <a
+                  href={
+                    "https://airtable.com/appa8dZYt9s6GSS8K/shrEXkOYcPiAG7cDP"
+                  }
+                >
+                  <ButtonIXB
+                    label={"Publiser stillingsannonse"}
+                    variant="primary"
+                    className="w-[95%]"
+                  />
+                </a>
                 {/* Secondary Button */}
                 <div className="mt-3 text-center">
                   <a

@@ -18,7 +18,7 @@ const NewsCard = ({
   return (
     <div
       // style={{ width: width, height: height }}
-      className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-[#EEEFFF]"
+      className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-[#EEEFFF] w-80 h-80"
     >
       {/* Purple bar */}
       <div className="h-[3px] w-full bg-[#9747FF] rounded-t-lg"></div>
