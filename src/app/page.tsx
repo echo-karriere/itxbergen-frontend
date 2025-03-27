@@ -1,21 +1,35 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 import ButtonIXB from "@/components/utils/button-ixb";
 import EventCard from "@/components/utils/event-card";
 import NewsCard from "@/components/utils/news-card";
 import Link from "next/link";
+import { client } from "./lib/sanity";
 
-export default function Home() {
-  const router = useRouter();
+interface news {
+  image: string;
+  title: string;
+  currentSlug: string;
+}
 
-  const handleButtonClick = () => {
-    router.push("/karrieredag");
-  };
+const Data = async () => {
+  const query = `*[_type == 'news']{
+    "image": newsimage.asset->url,
+    title,
+    "currentSlug": slug.current,
+    
+}`;
 
+  const data = await client.fetch<news[]>(query);
+
+  console.log(data);
+
+  return data;
+};
+
+export default async function Home() {
+  const data = await Data();
   return (
     <div>
       <div>
@@ -31,16 +45,20 @@ export default function Home() {
                 IT-studenter i Bergen!
               </h1>
               <div className="flex flex-col space-y-2">
-                <ButtonIXB
-                  label="Sjekk ut karrieredagen vår"
-                  onClick={handleButtonClick}
-                  variant="primary"
-                />
-                <ButtonIXB
-                  label="Til Påmeldingsskjema"
-                  onClick={() => window.open("https://delta.itxbergen.no/")}
-                  variant="primary"
-                />
+                <Link href={"/karrieredag"}>
+                  <ButtonIXB
+                    label="Sjekk ut karrieredagen vår"
+                    variant="primary"
+                    className="w-[21rem]"
+                  />
+                </Link>
+                <a href="https://delta.itxbergen.no/" target="_blank">
+                  <ButtonIXB
+                    label="Til Påmeldingsskjema"
+                    variant="primary"
+                    className="w-[21rem]"
+                  />
+                </a>
               </div>
               <p className="text-base md:text-lg">
                 Ikke karrieredag enda? <br />
@@ -149,6 +167,11 @@ export default function Home() {
                     height="14rem"
                   />
                 </Link>
+                {data.map((job, index) => (
+                  <Link key={index} href={job.currentSlug}>
+                    <NewsCard title={job.title} image={job.image} />
+                  </Link>
+                ))}
               </div>
               {/* <h2 className="text-2xl font-bold mb-6"> */}
               {/*   Kommende arrangementer */}
