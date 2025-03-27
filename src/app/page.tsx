@@ -11,6 +11,7 @@ interface news {
   image: string;
   title: string;
   currentSlug: string;
+  _createdAt: string;
 }
 
 const Data = async () => {
@@ -18,6 +19,7 @@ const Data = async () => {
     "image": newsimage.asset->url,
     title,
     "currentSlug": slug.current,
+    _createdAt,
     
 }`;
 
@@ -169,7 +171,11 @@ export default async function Home() {
                 </Link>
                 {data.map((job, index) => (
                   <Link key={index} href={job.currentSlug}>
-                    <NewsCard title={job.title} image={job.image} />
+                    <NewsCard
+                      title={job.title}
+                      image={job.image}
+                      date={job._createdAt}
+                    />
                   </Link>
                 ))}
               </div>

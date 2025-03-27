@@ -45,13 +45,14 @@ const Page = async () => {
     const data = await Data(id);
     try {
       const { title, image, _createdAt, _updatedAt, content } = data;
+
       return (
         <>
           <div className="justify-center">
-            <div className="maxwidth md:pt-[4.5rem] pt-4 px-[1.8rem] md:px-32">
+            <div className="maxwidth md:pt-[3rem] pt-4 px-[1.8rem] md:px-32">
               <Breadcrumbs />
 
-              <div className="flex flex-col pb-14 items-center justify-center">
+              <div className="flex flex-col pb-14">
                 <h1 className="text-3xl md:text-4xl font-bold pb-8 pt-4">
                   <span>{title}</span>
                 </h1>
@@ -67,7 +68,9 @@ const Page = async () => {
                     />
                   )}
 
-                  <p className="text-sm text-gray-500">
+                  <p
+                    className={`text-sm text-gray-500 mt-4 ${_createdAt !== _updatedAt ? "mb-1" : "mb-7"}`}
+                  >
                     Publisert:{" "}
                     {new Date(_createdAt).toLocaleDateString("no-NO", {
                       year: "numeric",
@@ -79,8 +82,8 @@ const Page = async () => {
                     })}
                   </p>
 
-                  {data._createdAt !== data._updatedAt ? (
-                    <p className="text-sm text-gray-500">
+                  {_createdAt !== _updatedAt ? (
+                    <p className="text-sm text-gray-500 mb-7">
                       Oppdatert:{" "}
                       {new Date(_updatedAt).toLocaleDateString("no-NO", {
                         year: "numeric",
@@ -93,7 +96,9 @@ const Page = async () => {
                     </p>
                   ) : null}
 
-                  <PortableText value={content} />
+                  <div className="text-base/8 portable-text pt-4">
+                    <PortableText value={content} />
+                  </div>
                 </div>
               </div>
             </div>

@@ -53,4 +53,8 @@
   .maxwidth {
     @apply w-full max-w-7xl mx-auto;
   }
+
+  .portable-text p {
+    margin-bottom: 1rem;
+  }
 }
