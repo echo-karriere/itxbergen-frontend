@@ -23,14 +23,24 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
   const [locationSearchTerm, setLocationSearchTerm] = useState("");
   const [typeSearchTerm, setTypeSearchTerm] = useState("");
 
-  const filteredJobs = allJobs.filter(
-    (job) =>
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const filteredJobs = allJobs.filter((job) => {
+    const matchesSearch =
       job.company.toLowerCase().includes(companySearchTerm.toLowerCase()) &&
       job.location.some((loc) =>
         loc.toLowerCase().includes(locationSearchTerm.toLowerCase()),
       ) &&
-      job.type.toLowerCase().includes(typeSearchTerm.toLowerCase()),
-  );
+      job.type.toLowerCase().includes(typeSearchTerm.toLowerCase());
+
+    if (!job.deadline) {
+      return matchesSearch;
+    }
+    const jobDeadline = new Date(job.deadline);
+
+    return matchesSearch && jobDeadline >= today;
+  });
 
   return (
     <>

@@ -60,17 +60,17 @@ const Page = async () => {
         );
       }
       return (
-        <div className="flex flex-col md:flex-row md:ml-40 md:m-8 md:mt-12 w-[90%] ml-[1.6rem]">
+        <div className="flex flex-col md:flex-row md:ml-40 md:m-8 mt-12 w-[90%] ml-[1.6rem]">
           <div className="md:w-[50%] flex flex-col items-center md:items-start text-start">
             <Breadcrumbs customLast={`${company}`} />
             <h1 className="text-3xl md:text-4xl font-bold mb-9 mt-4">
               {title}
             </h1>
-            <div className="md:w-[90%] portable-text mt-4">
+            <div className="md:w-[90%] portable-text">
               <PortableText value={description} />
             </div>
           </div>
-          <div className="mb-10 md:w-[20%] flex flex-col items-center md:items-start justify-start">
+          <div className="md:mt-12 md:ml-6 mb-10 md:w-[20%] flex flex-col items-center md:items-start justify-start">
             <Image
               src={image}
               alt={company + " image"}
