@@ -60,7 +60,7 @@ const Page = async () => {
         );
       }
       return (
-        <div className="md:ml-40 md:m-8 mt-12 w-[90%] ml-[1.6rem]">
+        <div className="md:ml-12 md:mt-12 mt-12 w-[90%] ml-[1.6rem]">
           <div className="flex flex-col maxwidth md:flex-row">
             <div className="maxwidth md:w-[50%] flex flex-col items-center md:items-start text-start">
               <Breadcrumbs customLast={`${company}`} />
