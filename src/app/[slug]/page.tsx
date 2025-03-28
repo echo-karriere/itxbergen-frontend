@@ -57,16 +57,14 @@ const Page = async () => {
                   <span>{title}</span>
                 </h1>
                 <div className="md:mr-3 w-[80%]">
-                  {image && (
-                    <Image
-                      className="w-[40rem] h-auto"
-                      src={image}
-                      unoptimized
-                      alt={""}
-                      width={500}
-                      height={500}
-                    />
-                  )}
+                  <Image
+                    className="w-[40rem] h-auto"
+                    src={`${image ? image : "/Nettside_filler.png"}`}
+                    unoptimized
+                    alt={""}
+                    width={500}
+                    height={500}
+                  />
 
                   <p
                     className={`text-sm text-gray-500 mt-4 ${_createdAt !== _updatedAt ? "mb-1" : "mb-7"}`}
