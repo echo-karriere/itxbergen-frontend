@@ -25,8 +25,6 @@ const Data = async () => {
 
   const data = await client.fetch<news[]>(query);
 
-  console.log(data);
-
   return data;
 };
 

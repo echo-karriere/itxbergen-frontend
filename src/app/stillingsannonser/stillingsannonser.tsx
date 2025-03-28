@@ -102,13 +102,13 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
                 </a>
                 {/* Secondary Button */}
                 <div className="mt-3 text-center">
-                  <a
-                    href="#"
-                    className="text-gray-700 font-medium hover:underline flex items-center justify-center"
-                  >
-                    Rediger stillingsannonse
-                    <span className="ml-2">➝</span>
-                  </a>
+                  {/* <a */}
+                  {/*   href="#" */}
+                  {/*   className="text-gray-700 font-medium hover:underline flex items-center justify-center" */}
+                  {/* > */}
+                  {/*   Rediger stillingsannonse */}
+                  {/*   <span className="ml-2">➝</span> */}
+                  {/* </a> */}
                 </div>
               </div>
             </div>
