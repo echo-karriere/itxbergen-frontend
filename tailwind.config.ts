@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        energiskTurkis: "energiskTurkis",
         IXBRed: "#5c0418",
         IXBRed2: "#480413",
         IXBGold: "#d0b46c",

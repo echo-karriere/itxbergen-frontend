@@ -18,12 +18,14 @@ export default function Navbar() {
       <div
         className={`w-full${
           isOpen ? "h-72" : "h-20"
-        } bg-IXBbg top-0 flex items-center transition-all duration-300`}>
+        } bg-IXBbg top-0 flex items-center transition-all duration-300`}
+      >
         <div className="container mx-auto px-4 h-full">
           <div
             className={`flex ${
               isOpen ? "flex-col" : ""
-            } items-center justify-between h-full`}>
+            } items-center justify-between h-full`}
+          >
             {/* Logo Container */}
             <div className="pl-6">
               <Logo />
@@ -34,7 +36,8 @@ export default function Navbar() {
               <ul
                 className={`${
                   isOpen ? "flex justify-between text-lg mt-2" : "hidden"
-                } lg:flex-row flex-col lg:flex lg:gap-x-20 text-white items-center text-sm`}>
+                } lg:flex-row flex-col lg:flex lg:gap-x-20 text-white items-center text-sm`}
+              >
                 <Link onClick={handleClick} href="/karrieredag">
                   Karrieredag{" "}
                 </Link>

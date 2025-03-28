@@ -45,12 +45,14 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
   return (
     <>
       <div className="mt-12 mx-8 md:ml-40 flex flex-col items-center md:items-start">
-        <Breadcrumbs current={"Stillingsannonser"} />
-        <h1 className="text-3xl md:text-4xl font-bold mb-9 md:mt-4">
+        <div className="maxwidth">
+          <Breadcrumbs current={"Stillingsannonser"} />
+        </div>
+        <h1 className="maxwidth text-3xl md:text-4xl font-bold mb-9 md:mt-4">
           <span>Stillingsannonser</span>
         </h1>
-        <div className="flex flex-col md:flex-row">
-          <div>
+        <div className="maxwidth flex flex-col md:flex-row">
+          <div className="md:w-[35%] md:pr-2">
             <DropdownSearch
               filterFrom={"bedrift"}
               onSearch={setCompanySearchTerm}
