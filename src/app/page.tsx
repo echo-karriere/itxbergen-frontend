@@ -30,6 +30,7 @@ const Data = async () => {
 
 export default async function Home() {
   const data = await Data();
+  console.log(data);
   return (
     <div>
       <div>
@@ -161,7 +162,7 @@ export default async function Home() {
               <div className="grid grid-cols-1 mb-3 md:grid-cols-3 gap-6 place-items-center">
                 <Link href={"/nettverking/styremedlem/"}>
                   <NewsCard
-                    image={"/logo.png"}
+                    image={"/Nettside_filler.png"}
                     title={"Vi søker nye styremedlemmer!"}
                     date={"13. Mars"}
                     height="14rem"

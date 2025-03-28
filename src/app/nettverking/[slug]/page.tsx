@@ -1,9 +1,8 @@
-"use client";
-
+import { client } from "@/app/lib/sanity";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Otherthings from "@/components/utils/otherthings";
+import { headers } from "next/headers";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 interface event {
   id: number;
@@ -21,9 +20,23 @@ const events: event[] = [
   },
 ];
 
-const Page = () => {
-  const id = Number(usePathname().split("/").pop());
+const Data = async () => {
+  const query = `*[_type == 'event']`;
+
+  const data = await client.fetch(query);
+
+  return data;
+};
+
+const Page = async () => {
+  const headerList = headers();
+  const id = Number(headerList.get("x-current-path")?.split("/").pop());
+  const data = await Data();
+
+  console.log(data);
+
   const event = events.find((job) => job.id === id);
+
   if (!event) {
     return <div>nei</div>;
   }
