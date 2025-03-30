@@ -1,24 +1,15 @@
-> This is the new ITxBergen homepage currently under development. Current version [ixb-web](https://github.com/echo-karriere/ixb-web)
+> This is the new ITxBergen homepage.
 
-## Using Docker
+itxbergen.no
 
-1. [Install Docker](https://docs.docker.com/get-docker/) on your machine, and make sure Docker is running.
-1. Run this command: `docker-compose up`
+Designed by Emilie Tryggan (@tryggan)
 
-You can view your images created with `docker images`.
+Authored by:
+- @lockels (Idris Elmi)
+- @isak79 (Isak Hansen)
+- @helges1 (Sebastian Helgesen)
+- @hvnguyyen (Hoang Vinh Nguyen)
 
-## Getting Started
+<img width="1502" alt="Screenshot 2025-03-31 at 00 36 47" src="https://github.com/user-attachments/assets/4e3f93a0-a7c7-4792-a8fc-b95faa6bc05a" />
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run this locally for development, you can clone the repository and launch a docker image use ``docker compose up``
