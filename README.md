@@ -1,15 +1,31 @@
-> This is the new ITxBergen homepage.
+# ITxBergen Homepage
 
-itxbergen.no
+Welcome to the new ITxBergen website after our rebranding!
 
-Designed by Emilie Tryggan (@tryggan)
+🌍 [Visit ITxBergen](https://itxbergen.no)
 
-Authored by:
-- @lockels (Idris Elmi)
-- @isak79 (Isak Hansen)
-- @helges1 (Sebastian Helgesen)
-- @hvnguyyen (Hoang Vinh Nguyen)
+## Designed by
+🎨 Emilie Tryggan - [@tryggan](https://github.com/tryggan)
 
-<img width="1502" alt="Screenshot 2025-03-31 at 00 36 47" src="https://github.com/user-attachments/assets/4e3f93a0-a7c7-4792-a8fc-b95faa6bc05a" />
+## Authored by
+- 🛠️ Idris Elmi - [@lockels](https://github.com/lockels)
+- 🛠️ Isak Hansen - [@isak79](https://github.com/isak79)
+- 🛠️ Sebastian Helgesen - [@helges1](https://github.com/helges1)
+- 🛠️ Hoang Vinh Nguyen - [@hvnguyyen](https://github.com/hvnguyyen)
 
-To run this locally for development, you can clone the repository and launch a docker image use ``docker compose up``
+---
+
+![Screenshot](https://github.com/user-attachments/assets/4e3f93a0-a7c7-4792-a8fc-b95faa6bc05a)
+
+## Development Setup
+To run this project locally for development:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repository.git
+   cd your-repository
+   ```
+2. Start the development environment using Docker:
+   ```sh
+   docker compose up
+   ```
