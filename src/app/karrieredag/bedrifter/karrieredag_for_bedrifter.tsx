@@ -199,7 +199,7 @@ export default function ForBedrifter() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center items-center flex-grow mt-24 md:mt-24">
             {/* Company box */}
-            <div className="w-full md:w-[75%] h-[450px] bg-IXBbg text-white rounded-t-3xl rounded-tr-[150px] shadow-2xl flex flex-col items-center justify-center text-left space-y-4 p-6">
+            <div className="w-full md:w-[85%] h-[450px] bg-IXBbg text-white rounded-t-3xl rounded-tr-[150px] shadow-2xl flex flex-col items-center justify-center text-left space-y-4 p-6">
               <p className="text-lg font-bold">
                 Har bedriften deres en stillingsannonse dere ønsker å legge ut?
               </p>
@@ -213,7 +213,16 @@ export default function ForBedrifter() {
                 Klikk på knappen under for å publisere deres stillingsannonse.
               </p>
 
-              <ButtonIXB label="Legg ut stillingsannonse" variant="ghost" />
+              <a
+                href={
+                  "https://airtable.com/appa8dZYt9s6GSS8K/shrEXkOYcPiAG7cDP"
+                }
+              >
+                <ButtonIXB
+                  label={"Publiser stillingsannonse"}
+                  variant="ghost"
+                />
+              </a>
 
               <Link href="." className="text-sm underline">
                 Rediger stillingsannonse
