@@ -2,7 +2,7 @@
 
 Welcome to the new ITxBergen website after our rebranding!
 
-🌍 [Visit ITxBergen](https://itxbergen.no)
+🌍 [itxbergen.no](https://itxbergen.no)
 
 ## Designed by
 🎨 Emilie Tryggan - [@tryggan](https://github.com/tryggan)
