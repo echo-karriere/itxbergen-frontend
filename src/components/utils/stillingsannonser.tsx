@@ -12,12 +12,30 @@ interface StillingsannonserProps {
   }[];
 }
 
-export default function Stillingsannonser({ jobs }: StillingsannonserProps) {
+interface Job {
+  jobs: {
+    title: string;
+    company: string;
+    location: string[];
+    deadline: string;
+    currentSlug: string;
+    image: string;
+    type: string;
+  }[];
+}
+
+export default function Stillingsannonser({ jobs }: Job) {
   return (
     <div className="">
       {jobs.map((job, index) => (
-        <Link key={index} href={`/stillingsannonser/${index}`}>
-          <Stillingsannonse {...job} />
+        <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
+          <Stillingsannonse
+            image={job.image}
+            title={job.title}
+            company={job.company}
+            location={job.location.join(", ")}
+            type={job.type}
+          />
         </Link>
       ))}
     </div>

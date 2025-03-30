@@ -1,0 +1,68 @@
+{
+  "name": "@sanity/types",
+  "version": "3.68.3",
+  "description": "Type definitions for common Sanity data structures",
+  "keywords": [
+    "sanity",
+    "cms",
+    "headless",
+    "realtime",
+    "content",
+    "types",
+    "typescript"
+  ],
+  "homepage": "https://www.sanity.io/",
+  "bugs": {
+    "url": "https://github.com/sanity-io/sanity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanity-io/sanity.git",
+    "directory": "packages/@sanity/types"
+  },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.esm.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "pkg-utils build --strict --check --clean",
+    "check:types": "tsc --project tsconfig.lib.json",
+    "clean": "rimraf lib",
+    "prepublishOnly": "turbo run build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "watch": "pkg-utils watch"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.24.1"
+  },
+  "devDependencies": {
+    "@repo/package.config": "3.68.3",
+    "@repo/test-config": "3.68.3",
+    "@sanity/insert-menu": "1.0.16",
+    "@types/react": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "rimraf": "^5.0.10",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "@types/react": "18 || 19"
+  },
+  "gitHead": "ddf9201ac85f2de9e1a17b496ca0299ce423e50b"
+}

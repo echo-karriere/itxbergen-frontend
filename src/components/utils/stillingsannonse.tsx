@@ -18,13 +18,14 @@ export default function Stillingsannonse({
   date,
 }: StillingsannonseProps) {
   return (
-    <div className="md:w-[550px] border border-[#E5E7EB] m-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm p-3 shadow-md shadow-gray hover:bg-IXBbg1">
+    <div className="md:w-[44rem] border border-[#E5E7EB] m-5 rounded-tl-2xl rounded-br-2xl rounded-tr-sm rounded-bl-sm p-3 shadow-md shadow-gray hover:bg-IXBbg1">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
         {/* Image container */}
         <div className="h-28 w-28 flex justify-center items-center align-middl m-5 md:mx-4 flex-shrink-0">
           <Image
             src={image}
             alt={company}
+            unoptimized
             height={400}
             width={400}
             className="h-26 w-26 rounded-sm object-contain"

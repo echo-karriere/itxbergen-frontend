@@ -6,54 +6,53 @@ import Stillingsannonser from "@/components/utils/stillingsannonser";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import DropdownSearch from "@/components/utils/dropdown-search";
 import ButtonIXB from "@/components/utils/button-ixb";
+import type { SanityDocument } from "@sanity/client";
 
-const Page = () => {
+interface Job {
+  title: string;
+  company: string;
+  location: string[];
+  deadline: string;
+  currentSlug: string;
+  image: string;
+  type: string;
+}
+
+const Page = ({ allJobs }: { allJobs: Job[] }) => {
   const [companySearchTerm, setCompanySearchTerm] = useState("");
   const [locationSearchTerm, setLocationSearchTerm] = useState("");
   const [typeSearchTerm, setTypeSearchTerm] = useState("");
 
-  const allJobs = [
-    {
-      image: "/statensvegvesen.png",
-      title: "Fra sommerjobb til samfunnsnyttig rolle!",
-      company: "Statens vegvesen",
-      location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      type: "Sommerjobb",
-      date: "10. Januar 2025",
-    },
-    {
-      image: "/statensvegvesen.png",
-      title: "Fra sommerjobb til samfunnsnyttig rolle!",
-      company: "Statens vegvesen",
-      location: "Bergen, Oslo, Trondheim, Drammen, Skien, Moss",
-      type: "Sommerjobb",
-      date: "10. Januar 2025",
-    },
-    {
-      image: "/knowit.png",
-      title: "Nyutdannede utviklere i Bergen 2025",
-      company: "Knowit",
-      location: "Bergen",
-      type: "Fulltid",
-    },
-  ];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
-  const filteredJobs = allJobs.filter(
-    (job) =>
+  const filteredJobs = allJobs.filter((job) => {
+    const matchesSearch =
       job.company.toLowerCase().includes(companySearchTerm.toLowerCase()) &&
-      job.location.toLowerCase().includes(locationSearchTerm.toLowerCase()) &&
-      job.type.toLowerCase().includes(typeSearchTerm.toLowerCase()),
-  );
+      job.location.some((loc) =>
+        loc.toLowerCase().includes(locationSearchTerm.toLowerCase()),
+      ) &&
+      job.type.toLowerCase().includes(typeSearchTerm.toLowerCase());
+
+    if (!job.deadline) {
+      return matchesSearch;
+    }
+    const jobDeadline = new Date(job.deadline);
+
+    return matchesSearch && jobDeadline >= today;
+  });
 
   return (
     <>
       <div className="mt-12 mx-8 md:ml-40 flex flex-col items-center md:items-start">
-        <Breadcrumbs current={"Stillingsannonser"} />
-        <h1 className="text-3xl md:text-4xl font-bold mb-9 md:mt-4">
+        <div className="maxwidth">
+          <Breadcrumbs current={"Stillingsannonser"} />
+        </div>
+        <h1 className="maxwidth text-3xl md:text-4xl font-bold mb-9 md:mt-4">
           <span>Stillingsannonser</span>
         </h1>
-        <div className="flex flex-col md:flex-row">
-          <div>
+        <div className="maxwidth flex flex-col md:flex-row">
+          <div className="md:w-[35%] md:pr-2">
             <DropdownSearch
               filterFrom={"bedrift"}
               onSearch={setCompanySearchTerm}
@@ -92,20 +91,26 @@ const Page = () => {
               {/* CTA Buttons */}
               <div className="mt-6">
                 {/* Primary Button */}
-                <ButtonIXB
-                  label={"Publiser stillingsannonse"}
-                  variant="primary"
-                  className="w-[95%]"
-                />
+                <a
+                  href={
+                    "https://airtable.com/appa8dZYt9s6GSS8K/shrEXkOYcPiAG7cDP"
+                  }
+                >
+                  <ButtonIXB
+                    label={"Publiser stillingsannonse"}
+                    variant="primary"
+                    className="w-[95%]"
+                  />
+                </a>
                 {/* Secondary Button */}
                 <div className="mt-3 text-center">
-                  <a
-                    href="#"
-                    className="text-gray-700 font-medium hover:underline flex items-center justify-center"
-                  >
-                    Rediger stillingsannonse
-                    <span className="ml-2">➝</span>
-                  </a>
+                  {/* <a */}
+                  {/*   href="#" */}
+                  {/*   className="text-gray-700 font-medium hover:underline flex items-center justify-center" */}
+                  {/* > */}
+                  {/*   Rediger stillingsannonse */}
+                  {/*   <span className="ml-2">➝</span> */}
+                  {/* </a> */}
                 </div>
               </div>
             </div>

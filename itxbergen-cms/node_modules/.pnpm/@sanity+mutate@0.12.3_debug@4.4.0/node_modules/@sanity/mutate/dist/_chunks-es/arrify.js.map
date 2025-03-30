@@ -1,0 +1,1 @@
+{"version":3,"file":"arrify.js","sources":["../../src/utils/arrify.ts"],"sourcesContent":["export type Arrify<T> = (T extends (infer E)[] ? E : T)[]\n\nexport function arrify<T>(val: T): Arrify<T> {\n  return Array.isArray(val) ? val : ([val] as any)\n}\n"],"names":[],"mappings":"AAEO,SAAS,OAAU,KAAmB;AAC3C,SAAO,MAAM,QAAQ,GAAG,IAAI,MAAO,CAAC,GAAG;AACzC;"}

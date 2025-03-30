@@ -1,0 +1,23 @@
+"use strict";
+function parse(path) {
+  return path.split(/[[.\]]/g).filter(Boolean).map((seg) => seg.includes("==") ? parseSegment(seg) : coerce(seg));
+}
+const IS_NUMERIC = /^-?\d+$/;
+function unquote(str) {
+  return str.replace(/^['"]/, "").replace(/['"]$/, "");
+}
+function parseSegment(segment) {
+  const [key, value] = segment.split("==");
+  if (key !== "_key")
+    throw new Error(
+      `Currently only "_key" is supported as path segment. Found ${key}`
+    );
+  if (typeof value > "u")
+    throw new Error('Invalid path segment, expected `key=="value"`');
+  return { _key: unquote(value) };
+}
+function coerce(segment) {
+  return IS_NUMERIC.test(segment) ? Number(segment) : segment;
+}
+exports.parse = parse;
+//# sourceMappingURL=parse.cjs.map

@@ -1,0 +1,51 @@
+{
+  "name": "use-hot-module-reload",
+  "version": "2.0.0",
+  "description": "React hook that triggers a callback after hot-module reloading has been performed (for any module, not just the one it was used in)",
+  "keywords": [
+    "hmr",
+    "hot-module-reload",
+    "webpack-vite"
+  ],
+  "homepage": "https://github.com/rexxars/use-hot-module-reload#readme",
+  "bugs": {
+    "url": "https://github.com/rexxars/use-hot-module-reload/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rexxars/use-hot-module-reload.git"
+  },
+  "license": "MIT",
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/use-hot-module-reload.cjs",
+      "default": "./dist/use-hot-module-reload.js"
+    }
+  },
+  "main": "./dist/use-hot-module-reload.cjs",
+  "module": "./dist/use-hot-module-reload.js",
+  "types": "dist/use-hot-module-reload.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "concurrently \"tsup --config tsup.cjs.ts\" \"tsup --config tsup.mjs.ts\"",
+    "clean": "rimraf dist",
+    "prepublishOnly": "cp ../README.md . && npm run build",
+    "test": "jest",
+    "watch": "concurrently --kill-others \"tsup --watch --config tsup.cjs.ts\" \"tsup --watch --config tsup.mjs.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.0",
+    "@types/react": "^18.2.67",
+    "concurrently": "^7.3.0",
+    "react": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  }
+}
