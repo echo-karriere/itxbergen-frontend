@@ -61,35 +61,35 @@ export default function Navbar() {
                 <Link
                   onClick={handleClick}
                   href="/karrieredag"
-                  className={`${currentSelected === "karrieredag" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : ""}`}
+                  className={`${currentSelected === "karrieredag" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : "hover:text-energiskTurkis hover:md:border-b-2 hover:md:border-energiskTurkis hover:md:pb-1 hover:md:inline-block hover:md:-mx-5 hover:md:px-5"}`}
                 >
                   Karrieredag{" "}
                 </Link>
                 <Link
                   onClick={handleClick}
                   href="/nettverking"
-                  className={`${currentSelected === "nettverking" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : ""}`}
+                  className={`${currentSelected === "nettverking" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : "hover:text-energiskTurkis hover:md:border-b-2 hover:md:border-energiskTurkis hover:md:pb-1 hover:md:inline-block hover:md:-mx-5 hover:md:px-5"}`}
                 >
                   Nettverking{" "}
                 </Link>
                 <Link
                   onClick={handleClick}
                   href="/stillingsannonser"
-                  className={`${currentSelected === "stillingsannonser" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : ""}`}
+                  className={`${currentSelected === "stillingsannonser" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : "hover:text-energiskTurkis hover:md:border-b-2 hover:md:border-energiskTurkis hover:md:pb-1 hover:md:inline-block hover:md:-mx-5 hover:md:px-5"}`}
                 >
                   Stillingsannonser{" "}
                 </Link>
                 <Link
                   onClick={handleClick}
                   href="/om-itx"
-                  className={`${currentSelected === "om-itx" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : ""}`}
+                  className={`${currentSelected === "om-itx" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : "hover:text-energiskTurkis hover:md:border-b-2 hover:md:border-energiskTurkis hover:md:pb-1 hover:md:inline-block hover:md:-mx-5 hover:md:px-5"}`}
                 >
                   Om ITxBergen{" "}
                 </Link>
                 <Link
                   onClick={handleClick}
                   href="/kontakt"
-                  className={`${currentSelected === "kontakt" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : ""}`}
+                  className={`${currentSelected === "kontakt" ? "text-energiskTurkis md:border-b-2 md:border-energiskTurkis md:pb-1 md:inline-block md:-mx-5 md:px-5" : "hover:text-energiskTurkis hover:md:border-b-2 hover:md:border-energiskTurkis hover:md:pb-1 hover:md:inline-block hover:md:-mx-5 hover:md:px-5"}`}
                 >
                   Kontakt oss
                 </Link>
