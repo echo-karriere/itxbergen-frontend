@@ -1,4 +1,4 @@
-# ITxBergen Homepage
+# ITxBergen
 
 Welcome to the new ITxBergen website after our rebranding!
 
