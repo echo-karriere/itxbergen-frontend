@@ -76,7 +76,7 @@ export default function ForStudenter() {
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/coding_amico.png"
+              src="/coding_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}
