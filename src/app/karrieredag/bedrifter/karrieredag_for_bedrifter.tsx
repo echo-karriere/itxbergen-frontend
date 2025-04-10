@@ -89,7 +89,7 @@ export default function ForBedrifter() {
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/testing_amico.png"
+              src="/testing_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}

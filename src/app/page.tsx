@@ -73,7 +73,7 @@ export default async function Home() {
             {/* Image */}
             <div className="flex justify-center items-center w-full md:w-2/5">
               <Image
-                src="/tech-company-amico.png"
+                src="/tech-company-amico.svg"
                 alt="ItxBergen"
                 height={500}
                 width={500}
