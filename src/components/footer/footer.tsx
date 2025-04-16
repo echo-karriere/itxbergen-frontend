@@ -20,16 +20,29 @@ export default function Footer() {
                 <h3 className="font-bold mb-4">Informasjon</h3>
                 <ul>
                   <li className="mb-4">
-                    <a href="/karrieredag" className="hover:underline">Karrieredag</a>
+                    <a href="/karrieredag" className="hover:underline">
+                      Karrieredag
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="/#bottom" className="hover:underline">Arrangementer</a>
+                    <a href="/#bottom" className="hover:underline">
+                      Arrangementer
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="/stillingsannonser" className="hover:underline">Stillingsannonser</a>
+                    <a href="/stillingsannonser" className="hover:underline">
+                      Stillingsannonser
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="/om-itx" className="hover:underline">Om ITxBergen</a>
+                    <a href="/karakterkalkulator" className="hover:underline">
+                      KarakterKalkulator
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/om-itx" className="hover:underline">
+                      Om ITxBergen
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -39,7 +52,9 @@ export default function Footer() {
                 <h3 className="font-bold mb-4">Kontakt oss</h3>
                 <ul>
                   <li className="mb-4">
-                    <a href="/kontakt" className="hover:underline">Kontakt Oss</a>
+                    <a href="/kontakt" className="hover:underline">
+                      Kontakt Oss
+                    </a>
                   </li>
                   <li className="mb-4">Presse</li>
                   <li className="mb-4">Opplevd noe ugreit?</li>
@@ -51,7 +66,9 @@ export default function Footer() {
                 <h3 className="font-bold mb-4">Om nettstedet</h3>
                 <ul>
                   <li className="mb-4">
-                    <a href="/personvern" className="hover:underline">Personvernserklæring</a>
+                    <a href="/personvern" className="hover:underline">
+                      Personvernserklæring
+                    </a>
                   </li>
                   <li className="mb-4">Salgs- og påmeldingsvilkår</li>
                   <li className="mb-4">Tilgjengelighet</li>
@@ -64,16 +81,36 @@ export default function Footer() {
                 <h3 className="font-bold mb-4">Sosiale medier</h3>
                 <ul>
                   <li className="mb-4">
-                    <a href="https://no.linkedin.com/company/itxbergen?trk=public_post_follow-view-profile" className="hover:underline">Linkedin</a>
+                    <a
+                      href="https://no.linkedin.com/company/itxbergen?trk=public_post_follow-view-profile"
+                      className="hover:underline"
+                    >
+                      Linkedin
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="https://www.instagram.com/itxbergen/" className="hover:underline">Instagram</a>
+                    <a
+                      href="https://www.instagram.com/itxbergen/"
+                      className="hover:underline"
+                    >
+                      Instagram
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="https://www.facebook.com/itxbergen" className="hover:underline">Facebook</a>
+                    <a
+                      href="https://www.facebook.com/itxbergen"
+                      className="hover:underline"
+                    >
+                      Facebook
+                    </a>
                   </li>
                   <li className="mb-4">
-                    <a href="https://github.com/echo-karriere" className="hover:underline">GitHub</a>
+                    <a
+                      href="https://github.com/echo-karriere"
+                      className="hover:underline"
+                    >
+                      GitHub
+                    </a>
                   </li>
                 </ul>
               </div>

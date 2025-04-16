@@ -80,7 +80,7 @@ export default function Nettverking() {
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/pair_programming_amico.png"
+              src="/pair_programming_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}

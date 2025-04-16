@@ -154,6 +154,19 @@ export const organisations = [
     epost: "post@fribyte.no",
     address: "Ingen adresse",
   },
+  {
+    name: "E-tjenesten",
+    location: "Annet",
+    boxHeader: "E-tjenesten er IT-gruppen på Det Akademiske Kvarter.",
+    boxp1: "E-tjenesten har ansvar for drift og utvikling av digitale løsninger. Gruppen møtes jevnlig både for arbeid og sosiale aktiviteter. Det er lav terskel for å bli med, og man trenger ingen forkunnskaper. Som medlem får man tilgang til interne fordeler og blir del av et sosialt og faglig miljø.",
+    website: "https://kvarteret.no/e-tjenesten-info/",
+    instagram: "https://www.instagram.com/kvarteretbergen/",
+    facebook: "https://www.facebook.com/@Kvarteret/?locale=nb_NO",
+    linkedin: "https://no.linkedin.com/company/det-akademiske-kvarter",
+    participants: "Alle studenter som er nysgjerrige på IT og har lyst til å lære mer, kan bli med i E-tjenesten. Du trenger ingen forkunnskaper – bare interesse og motivasjon! ",
+    epost: "it.leder@kvarteret.no",
+    address: "Olav Kyrres gate 49, 5015 Bergen",
+  },
 ];
 
 export const companyLogos = [
