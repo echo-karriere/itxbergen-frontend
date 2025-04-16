@@ -29,7 +29,7 @@ const Otherthings = () => {
             href="karakterkalkulator"
             className="flex items-center hover:underline"
           >
-            Karakter Kalkulator
+            KarakterKalkulator
             <ChevronRight className="w-5 h-5" />
           </a>
           <a href="om-itx" className="flex items-center hover:underline">

@@ -36,7 +36,7 @@ export default function Footer() {
                   </li>
                   <li className="mb-4">
                     <a href="/karakterkalkulator" className="hover:underline">
-                      Karakter Kalkulator
+                      KarakterKalkulator
                     </a>
                   </li>
                   <li className="mb-4">
