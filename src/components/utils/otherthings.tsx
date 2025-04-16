@@ -18,8 +18,18 @@ const Otherthings = () => {
             Karrieredagen
             <ChevronRight className="w-5 h-5" />
           </a>
-          <a href="/stillingsannonser" className="flex items-center hover:underline">
+          <a
+            href="/stillingsannonser"
+            className="flex items-center hover:underline"
+          >
             Stillingsannonser
+            <ChevronRight className="w-5 h-5" />
+          </a>
+          <a
+            href="karakterkalkulator"
+            className="flex items-center hover:underline"
+          >
+            Karakter Kalkulator
             <ChevronRight className="w-5 h-5" />
           </a>
           <a href="om-itx" className="flex items-center hover:underline">
