@@ -53,67 +53,72 @@ export default function KarakterKalkulator() {
   };
 
   return (
-    <div className="min-h-auto bg-IXBbg1 p-6 flex flex-row gap-8 justify-center bg-ix">
-      <div className="w-full max-w-2xl">
-        <h1 className="text-3xl font-bold mb-6">Karakter Kalkulator</h1>
-        <Card className="w-full shadow-lg rounded-2xl p-6 bg-IXBbg2">
-          <CardContent className="flex flex-col gap-4">
-            {courses.map((course, index) => (
-              <div key={index} className="grid grid-cols-2 gap-4">
-                <div>
-                  <Label>Emne {index + 1}</Label>
-                  <Input
-                    value={course.code}
-                    placeholder="F.eks. INF101"
-                    onChange={(e) =>
-                      handleCourseChange(index, "code", e.target.value)
-                    }
-                  />
+    <div className="h-auto bg-IXBbg1 p-6">
+      <div className="flex flex-col md:flex-row gap-8 justify-center">
+        {/* Information Box - appears first on mobile, right side on desktop */}
+        <div className="order-1 md:order-2 w-full md:w-auto md:max-w-md h-[350px] bg-IXBbg rounded-2xl p-6 shadow-md text-white md:mt-10">
+          <h2 className="text-xl font-bold mb-4">Informasjon</h2>
+          <p className="text-base">
+            Her kan du fylle inn fag og karakterer for å beregne et gjennomsnitt.
+            Hver karakter har en tallverdi:
+          </p>
+          <ul className="list-disc list-inside mt-2">
+            <li>A = 5</li>
+            <li>B = 4</li>
+            <li>C = 3</li>
+            <li>D = 2</li>
+            <li>E = 1</li>
+          </ul>
+          <p className="mt-4">
+            Resultatet vises etter du trykker på Beregn Gjennomsnitt.
+          </p>
+        </div>
+
+        {/* Calculator Box - appears second on mobile, left side on desktop */}
+        <div className="order-2 md:order-1 w-full max-w-2xl">
+          <h1 className="text-3xl font-bold mb-6">Karakter Kalkulator</h1>
+          <Card className="w-full shadow-lg rounded-2xl p-6 bg-IXBbg2">
+            <CardContent className="flex flex-col gap-4">
+              {courses.map((course, index) => (
+                <div key={index} className="grid grid-cols-2 gap-4">
+                  <div>
+                    <Label>Emne {index + 1}</Label>
+                    <Input
+                      value={course.code}
+                      placeholder="F.eks. INF101"
+                      onChange={(e) =>
+                        handleCourseChange(index, "code", e.target.value)
+                      }
+                    />
+                  </div>
+                  <div>
+                    <Label>Karakter {index + 1}</Label>
+                    <Input
+                      value={course.grade}
+                      maxLength={1}
+                      placeholder="A-E"
+                      className="uppercase"
+                      onChange={(e) =>
+                        handleCourseChange(index, "grade", e.target.value)
+                      }
+                    />
+                  </div>
                 </div>
-                <div>
-                  <Label>Karakter {index + 1}</Label>
-                  <Input
-                    value={course.grade}
-                    maxLength={1}
-                    placeholder="A-E"
-                    className="uppercase"
-                    onChange={(e) =>
-                      handleCourseChange(index, "grade", e.target.value)
-                    }
-                  />
+              ))}
+              <div className="flex gap-4 mt-4">
+                <Button variant="outline" onClick={addCourse}>
+                  Legg til Fag
+                </Button>
+                <Button onClick={calculateAverage}>Beregn Gjennomsnitt</Button>
+              </div>
+              {average !== null && (
+                <div className="text-center mt-4 text-lg font-semibold">
+                  Gjennomsnitt: {average.toFixed(2)}
                 </div>
-              </div>
-            ))}
-            <div className="flex gap-4 mt-4">
-              <Button variant="outline" onClick={addCourse}>
-                Legg til Fag
-              </Button>
-              <Button onClick={calculateAverage}>Beregn Gjennomsnitt</Button>
-            </div>
-            {average !== null && (
-              <div className="text-center mt-4 text-lg font-semibold">
-                Gjennomsnitt: {average.toFixed(2)}
-              </div>
-            )}
-          </CardContent>
-        </Card>
-      </div>
-      <div className="w-full h-auto max-w-md bg-IXBbg rounded-2xl p-6 shadow-md text-white">
-        <h2 className="text-xl font-bold mb-4">Informasjon</h2>
-        <p className="text-base">
-          Her kan du fylle inn fag og karakterer for å beregne et gjennomsnitt.
-          Hver karakter har en tallverdi:
-        </p>
-        <ul className="list-disc list-inside mt-2">
-          <li>A = 5</li>
-          <li>B = 4</li>
-          <li>C = 3</li>
-          <li>D = 2</li>
-          <li>E = 1</li>
-        </ul>
-        <p className="mt-4">
-          Resultatet vises etter du trykker på Beregn Gjennomsnitt.
-        </p>
+              )}
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );
