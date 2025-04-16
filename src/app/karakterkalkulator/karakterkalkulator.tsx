@@ -113,7 +113,7 @@ export default function Karakterkalkulator() {
                     <Label>Emne {index + 1}</Label>
                     <Input
                       value={course.code}
-                      placeholder="F.eks. INF101"
+                      // placeholder="F.eks. INF101"
                       onChange={(e) =>
                         handleCourseChange(index, "code", e.target.value)
                       }
@@ -123,7 +123,7 @@ export default function Karakterkalkulator() {
                     <Label>Poeng</Label>
                     <Input
                       value={course.points}
-                      placeholder="F.eks. 10"
+                      // placeholder="F.eks. 10"
                       onChange={(e) =>
                         handleCourseChange(index, "points", e.target.value)
                       }
