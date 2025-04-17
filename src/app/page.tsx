@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import ButtonIXB from "@/components/utils/button-ixb";
+import { Metadata } from "next";
 import EventCard from "@/components/utils/event-card";
 import NewsCard from "@/components/utils/news-card";
 import Link from "next/link";
@@ -13,6 +14,11 @@ interface news {
   currentSlug: string;
   _createdAt: string;
 }
+
+export const metadata: Metadata = {
+  title: "ITxBergen",
+  description: "Karrieredag for IT-studenter i Bergen",
+};
 
 const Data = async () => {
   const query = `*[_type == 'news']{
