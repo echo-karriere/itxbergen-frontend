@@ -95,7 +95,6 @@ export default function Nettverking() {
         <Image
           src="/wave_top_light.svg"
           alt="Wave Top"
-          layout="intrinsic"
           width={1920}
           height={1080}
           className="hidden md:flex bg-white w-full"

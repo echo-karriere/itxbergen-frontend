@@ -64,7 +64,6 @@ export default function Karrieredag() {
         <Image
           src="/wave_top_dark.svg"
           alt="Wave Top"
-          layout="intrinsic"
           width={1920}
           height={1080}
           className="bg-IXBbg2 w-full hidden md:flex"
@@ -101,7 +100,6 @@ export default function Karrieredag() {
         <Image
           src="/wave_bottom_dark.svg"
           alt="Wave Top"
-          layout="intrinsic"
           className="w-full hidden md:flex"
           width={1920}
           height={1080}

@@ -104,7 +104,6 @@ export default function ForBedrifter() {
         <Image
           src="/wave_top_light.svg"
           alt="Wave Top"
-          layout="intrinsic"
           width={1920}
           height={1080}
           className="w-full h-auto object-contain hidden md:flex"
