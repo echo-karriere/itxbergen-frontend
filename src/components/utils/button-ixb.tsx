@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 
 interface buttonProps {
   label: string;
+  subLabel?: string;
   onClick?: () => void;
   variant?: "primary" | "secondary" | "ghost";
   disabled?: boolean;
@@ -11,6 +12,7 @@ interface buttonProps {
 
 export default function ButtonIXB({
   label,
+  subLabel,
   onClick,
   variant,
   disabled,
@@ -35,9 +37,18 @@ export default function ButtonIXB({
         borderBottomLeftRadius: "5px",
         padding: "30px 60px",
         fontSize: "16px",
+        textAlign: "center",
       }}
     >
-      {label}
+      <div>
+        {label}
+        {subLabel && (
+          <>
+            <br />
+            <span className="text-xs text-white block mt-1">{subLabel}</span>
+          </>
+        )}
+      </div>
     </Button>
   );
 }
