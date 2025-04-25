@@ -80,6 +80,7 @@ export default function ForBedrifter() {
             <div className="pt-8">
               <ButtonIXB
                 label="Til Påmeldingsskjema"
+                subLabel="18. September, 2025"
                 variant="primary"
                 onClick={() => window.open("https://delta.itxbergen.no/")}
               />
