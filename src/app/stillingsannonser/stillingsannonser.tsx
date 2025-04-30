@@ -93,7 +93,7 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
                 {/* Primary Button */}
                 <a
                   href={
-                    "https://airtable.com/appa8dZYt9s6GSS8K/shrEXkOYcPiAG7cDP"
+                    "https://airtable.com/appa8dZYt9s6GSS8K/pagB4QgYtYsqqqUFi/form"
                   }
                 >
                   <ButtonIXB
