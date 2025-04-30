@@ -30,6 +30,9 @@ export default function Karrieredag() {
               september i Grieghallen. Vi har allerede startet planleggingen av
               karrieredagen 2025!
             </p>
+            <strong className="text-base">
+              Karrieredagen 2025 vil bli avholdt den 18. september i Grieghallen.
+            </strong>
             <p className="text-base">
               På denne siden vil du finne ressurser til neste karrieredag, som:
             </p>
