@@ -83,9 +83,10 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
                 Vi tilbyr gratis annonsering av stillingsannonser på våre
                 nettsider. Klikk på knappen under for å publisere deres
                 stillingsannonse på denne siden. Vi går gjennom alle
-                stillingsannonser før de publiseres. Her er det også mulighet å
+                stillingsannonser før de publiseres.
+                {/* Her er det også mulighet å
                 redigere stillingsannonser, eller fjerne den dersom dere
-                allerede har publisert en stillingsannonse.
+                allerede har publisert en stillingsannonse. */}
               </p>
 
               {/* CTA Buttons */}
