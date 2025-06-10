@@ -165,22 +165,26 @@ export default async function Home() {
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
               <div className="grid grid-cols-1 mb-3 md:grid-cols-3 gap-6 place-items-center">
                 <Link href={"/nettverking/styremedlem/"}>
-                  <NewsCard
-                    image={"/Nettside_filler.png"}
-                    title={"Vi søker nye styremedlemmer!"}
-                    date={"13. Mars"}
-                    height="14rem"
-                  />
+                  {/* <NewsCard */}
+                  {/*   image={"/Nettside_filler.png"} */}
+                  {/*   title={"Vi søker nye styremedlemmer!"} */}
+                  {/*   date={"13. Mars 2025"} */}
+                  {/*   height="14rem" */}
+                  {/* /> */}
                 </Link>
-                {data.map((job, index) => (
-                  <Link key={index} href={job.currentSlug}>
-                    <NewsCard
-                      title={job.title}
-                      image={job.image}
-                      date={job._createdAt}
-                    />
-                  </Link>
-                ))}
+                {data
+                  .sort(
+                    (a, b) => new Date(b._createdAt) - new Date(a._createdAt),
+                  )
+                  .map((job, index) => (
+                    <Link key={index} href={job.currentSlug}>
+                      <NewsCard
+                        title={job.title}
+                        image={job.image}
+                        date={job._createdAt}
+                      />
+                    </Link>
+                  ))}
               </div>
               {/* <h2 className="text-2xl font-bold mb-6"> */}
               {/*   Kommende arrangementer */}

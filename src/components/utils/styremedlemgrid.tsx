@@ -1,4 +1,5 @@
 import Styremedlem from "./styremedlem";
+import { client } from "../../app/lib/sanity";
 
 const BoardMembers = [
   {
@@ -96,7 +97,29 @@ const BoardMembers = [
   },
 ];
 
-const StyremedlemGrid = () => {
+interface styremedlem {
+  image: string;
+  name: string;
+  title: string;
+  mail: string;
+  linkedin: string;
+}
+
+const Data = async () => {
+  const query = `*[_type == 'committeeMember'] {
+  "image": profilePicture.asset->url,
+  name,
+  role,
+  email,
+  linkedin
+  }`;
+
+  const data = await client<styremedlem[]>.fetch(query);
+  return data;
+};
+
+const StyremedlemGrid = async () => {
+  const boardMembers = await Data();
   return (
     <div className="w-[80%] mx-auto">
       <div>
@@ -109,21 +132,21 @@ const StyremedlemGrid = () => {
         </p>
       </div>
       {Array.from(
-        { length: Math.ceil(BoardMembers.length / 2) },
+        { length: Math.ceil(boardMembers.length / 2) },
         (_, rowIndex) => (
           <ol
             key={rowIndex}
             className="w-full md:flex md:justify-between md:pt-5"
           >
-            {BoardMembers.slice(rowIndex * 2, rowIndex * 2 + 2).map(
-              (member, index) => (
+            {boardMembers
+              .slice(rowIndex * 2, rowIndex * 2 + 2)
+              .map((member, index) => (
                 <li key={index} className="w-full md:w-[48%] mb-5 mt-5">
                   {" "}
                   {/* Adjust width to avoid spacing issues */}
                   <Styremedlem {...member} />
                 </li>
-              ),
-            )}
+              ))}
           </ol>
         ),
       )}

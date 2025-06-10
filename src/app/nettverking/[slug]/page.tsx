@@ -33,8 +33,6 @@ const Page = async () => {
   const id = Number(headerList.get("x-current-path")?.split("/").pop());
   const data = await Data();
 
-  console.log(data);
-
   const event = events.find((job) => job.id === id);
 
   if (!event) {

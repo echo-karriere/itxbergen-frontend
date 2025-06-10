@@ -4,7 +4,7 @@ interface StyremedlemProps {
   image?: string;
   name: string;
   title: string;
-  mail?: string;
+  email?: string;
   linkedin?: string;
 }
 
@@ -12,7 +12,7 @@ const Styremedlem = ({
   image = "/styremedlemmer/logo_undefined.png",
   name,
   title,
-  mail = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
+  email = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
   linkedin,
 }: StyremedlemProps) => {
   return (
@@ -21,6 +21,7 @@ const Styremedlem = ({
         <Image
           src={image}
           alt={name}
+          unoptimized
           width={200}
           height={200}
           className="h-[6rem] w-[6rem] md:h-[9rem] md:w-[9rem] rounded-tl-[25px] rounded-tr-[0.3rem] rounded-br-[1.5rem] rounded-bl-[0.4rem] shadow-md object-cover"
@@ -32,23 +33,23 @@ const Styremedlem = ({
             {title}
           </p>
           <div className="flex flex-col">
-          <a 
-            href={`mailto:${mail}`}
-            className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline"
-            >
-             {mail}
-          </a>
-          {linkedin && (
             <a
-              href={linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2"
+              href={`mailto:${email}`}
+              className="font-sourceSans text-sm md:text-sm/8 hover:text-[#7E57C2] hover:underline"
             >
-              <i className="ri-linkedin-fill text-lg"></i>
+              {email}
             </a>
+            {linkedin && (
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2"
+              >
+                <i className="ri-linkedin-fill text-lg"></i>
+              </a>
             )}
-            </div>
+          </div>
         </div>
       </div>
     </>
