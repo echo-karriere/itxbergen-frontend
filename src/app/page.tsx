@@ -105,7 +105,7 @@ export default async function Home() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white flex items-center justify-center">
+      <div className="bg-IXBbg text-white flex items-center justify-center pb-10 md:pb-0">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full md:px-32">
           {/* Text Content */}
@@ -131,7 +131,7 @@ export default async function Home() {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-2/5 flex items-center justify-center">
+          <div className="w-full md:w-2/5 items-center justify-center hidden md:flex">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
@@ -164,23 +164,29 @@ export default async function Home() {
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
               <div className="grid grid-cols-1 mb-3 md:grid-cols-3 gap-6 place-items-center">
-                <Link href={"/nettverking/styremedlem/"}>
-                  <NewsCard
-                    image={"/Nettside_filler.png"}
-                    title={"Vi søker nye styremedlemmer!"}
-                    date={"13. Mars"}
-                    height="14rem"
-                  />
-                </Link>
-                {data.map((job, index) => (
-                  <Link key={index} href={job.currentSlug}>
-                    <NewsCard
-                      title={job.title}
-                      image={job.image}
-                      date={job._createdAt}
-                    />
-                  </Link>
-                ))}
+                {/* <Link href={"/nettverking/styremedlem/"}> */}
+                {/*   <NewsCard */}
+                {/*     image={"/Nettside_filler.png"} */}
+                {/*     title={"Vi søker nye styremedlemmer!"} */}
+                {/*     date={"13. Mars 2025"} */}
+                {/*     height="14rem" */}
+                {/*   /> */}
+                {/* </Link> */}
+                {data
+                  .sort(
+                    (a, b) =>
+                      new Date(b._createdAt).getTime() -
+                      new Date(a._createdAt).getTime(),
+                  )
+                  .map((job, index) => (
+                    <Link key={index} href={job.currentSlug}>
+                      <NewsCard
+                        title={job.title}
+                        image={job.image}
+                        date={job._createdAt}
+                      />
+                    </Link>
+                  ))}
               </div>
               {/* <h2 className="text-2xl font-bold mb-6"> */}
               {/*   Kommende arrangementer */}
