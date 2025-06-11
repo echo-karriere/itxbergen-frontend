@@ -114,7 +114,7 @@ const Data = async () => {
   linkedin
   }`;
 
-  const data = await client<styremedlem[]>.fetch(query);
+  const data = await client.fetch<styremedlem[]>(query);
   return data;
 };
 
