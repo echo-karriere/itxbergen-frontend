@@ -105,7 +105,7 @@ export default async function Home() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-IXBbg text-white flex items-center justify-center">
+      <div className="bg-IXBbg text-white flex items-center justify-center pb-10 md:pb-0">
         {/* Content Wrapper */}
         <div className="maxwidth flex flex-col md:flex-row items-center w-full md:px-32">
           {/* Text Content */}
@@ -131,7 +131,7 @@ export default async function Home() {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-2/5 flex items-center justify-center">
+          <div className="w-full md:w-2/5 items-center justify-center hidden md:flex">
             <Image
               src="/Logopakke/PNG/submark_darkBG.png"
               alt="ITxBergen"
@@ -174,7 +174,9 @@ export default async function Home() {
                 {/* </Link> */}
                 {data
                   .sort(
-                    (a, b) => new Date(b._createdAt) - new Date(a._createdAt),
+                    (a, b) =>
+                      new Date(b._createdAt).getTime() -
+                      new Date(a._createdAt).getTime(),
                   )
                   .map((job, index) => (
                     <Link key={index} href={job.currentSlug}>
