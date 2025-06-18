@@ -3,7 +3,7 @@ import Image from "next/image";
 interface StyremedlemProps {
   image?: string;
   name: string;
-  title: string;
+  role: string;
   email?: string;
   linkedin?: string;
 }
@@ -11,7 +11,7 @@ interface StyremedlemProps {
 const Styremedlem = ({
   image = "/styremedlemmer/logo_undefined.png",
   name,
-  title,
+  role,
   email = "xxxxxxxx.xxxxxxxxxx@itxbergen.no",
   linkedin,
 }: StyremedlemProps) => {
@@ -30,7 +30,7 @@ const Styremedlem = ({
         <div className="pl-3">
           <h3 className="font-montSerrat font-bold md:text-2xl/8">{name}</h3>
           <p className="font-sourceSans text-[#7E57C2] text-sm md:text-sm/8">
-            {title}
+            {role}
           </p>
           <div className="flex flex-col">
             <a
