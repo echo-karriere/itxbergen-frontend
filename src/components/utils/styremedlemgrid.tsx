@@ -100,7 +100,7 @@ const BoardMembers = [
 interface styremedlem {
   image: string;
   name: string;
-  title: string;
+  role: string;
   mail: string;
   linkedin: string;
 }
