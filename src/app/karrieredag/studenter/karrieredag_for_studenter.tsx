@@ -66,7 +66,7 @@ export default function ForStudenter() {
               driver med IT. Alt fra offentlige etater, konsulentselskap til
               produktselskaper kommer til Bergen for å møte studenter. <br />{" "}
               <br />
-              Du er invitert til å delta på ITxBergen sine karrieredager, og vi
+              Du er invitert til å delta på ITxBergen sin karrieredag, og vi
               håper du tar turen. Alle som studerer IT samt alle som er
               interessert er velkommen, uansett studieprogram og studiested. Det
               er gratis å delta på karrieredagene.
