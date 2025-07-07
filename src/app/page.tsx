@@ -44,12 +44,18 @@ export default async function Home() {
           {/* Content Wrapper */}
           <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
             {/* Text Content */}
-            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-12">
+            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-8">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
                 <span className="text-IXBPurple"> nettverking</span> <br /> for
                 IT-studenter i Bergen!
               </h1>
+              <p className="text-base font-bold md:text-4xl">
+                Vi ses 18. September <br /> i Grieghallen, Bergen!
+             </p>
+             <p className="font-bold">
+               Timeplan kommer i august.
+             </p>
               <div className="flex flex-col space-y-2">
                 <Link href={"/karrieredag"}>
                   <ButtonIXB
@@ -58,23 +64,7 @@ export default async function Home() {
                     className="w-[21rem]"
                   />
                 </Link>
-                <a href="https://delta.itxbergen.no/" target="_blank">
-                  <ButtonIXB
-                    label="Til Påmeldingsskjema"
-                    subLabel="18. September, 2025"
-                    variant="primary"
-                    className="w-[21rem]"
-                  />
-                </a>
               </div>
-              <p className="text-base md:text-lg">
-                Ikke karrieredag enda? <br />
-                Sjekk ut mulighetene for{" "}
-                <a href="/nettverking" className="font-bold underline">
-                  nettverking
-                </a>
-                !
-              </p>
             </div>
 
             {/* Image */}
