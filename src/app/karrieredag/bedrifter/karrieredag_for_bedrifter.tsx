@@ -77,14 +77,14 @@ export default function ForBedrifter() {
             </p>
 
             {/* PåmeldingSkjema */}
-            {/* <div className="pt-8">
+            <div className="pt-8">
               <ButtonIXB
                 label="Til Påmeldingsskjema"
                 subLabel="18. September, 2025"
                 variant="primary"
                 onClick={() => window.open("https://delta.itxbergen.no/")}
               />
-            </div> */}
+            </div>
           </div>
 
           {/* Image */}
