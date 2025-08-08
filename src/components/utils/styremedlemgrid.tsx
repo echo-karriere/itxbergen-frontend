@@ -44,6 +44,16 @@ const StyremedlemGrid = async () => {
             className="w-full md:flex md:justify-between md:pt-5"
           >
             {boardMembers
+              .sort((a, b) => {
+                if (a.role === "Leder") return -1;
+                if (b.role === "Leder") return 1;
+
+                if (a.role === "Nestleder") return -1;
+                if (b.role === "Nestleder") return 1;
+
+                return 0
+
+              })
               .slice(rowIndex * 2, rowIndex * 2 + 2)
               .map((member, index) => (
                 <li key={index} className="w-full md:w-[48%] mb-5 mt-5">
