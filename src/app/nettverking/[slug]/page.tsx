@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Otherthings from "@/components/utils/otherthings";
 import { headers } from "next/headers";
 import Link from "next/link";
+import Custom404 from "@/app/404";
 
 interface event {
   id: number;
@@ -36,7 +37,7 @@ const Page = async () => {
   const event = events.find((job) => job.id === id);
 
   if (!event) {
-    return <div>nei</div>;
+    return <Custom404 />;
   }
   return (
     <>
