@@ -62,14 +62,14 @@ export default async function Home() {
                     className="w-[21rem]"
                   />
                 </Link>
-                <a href="https://delta.itxbergen.no/" target="_blank">
-                  <ButtonIXB
-                    label="Til Påmeldingsskjema"
-                    subLabel="18. September, 2025"
-                    variant="primary"
-                    className="w-[21rem]"
-                  />
-                </a>
+                {/* <a href="https://delta.itxbergen.no/" target="_blank"> */}
+                {/*   <ButtonIXB */}
+                {/*     label="Til Påmeldingsskjema" */}
+                {/*     subLabel="18. September, 2025" */}
+                {/*     variant="primary" */}
+                {/*     className="w-[21rem]" */}
+                {/*   /> */}
+                {/* </a> */}
               </div>
             </div>
 
@@ -184,19 +184,14 @@ export default async function Home() {
                     </Link>
                   ))}
               </div>
-              {/* <h2 className="text-2xl font-bold mb-6"> */}
-              {/*   Kommende arrangementer */}
-              {/* </h2> */}
-              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center"> */}
-              {/*   <EventCard */}
-              {/*     title="Github Workshop med SPV" */}
-              {/*     date="10. Mars 08:30" */}
-              {/*     address="Jonsvollsgaten 2" */}
-              {/*     redirectTo="https://pameldinger.no/e/nkflrn" */}
-              {/*   /> */}
-              {/* </div> */}
             </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="maxwidth flex flex-col items-center justify-center">
+          <p className="font-bold p-5 pt-8 text-lg">Takk til vår støttespiller</p>
+          <Image className="w-64 p-5 pb-20" src="/SPN-main-logo.png" alt="" width={800} height={1200} />
         </div>
       </div>
     </div>
