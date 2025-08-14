@@ -44,7 +44,7 @@ export default async function Home() {
           {/* Content Wrapper */}
           <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
             {/* Text Content */}
-            <div className="flex flex-col justify-center mx-6 md:mx-0 md:items-start md:w-3/5 items-center text-left space-y-8 md:space-y-8">
+            <div className="flex flex-col justify-center mx-6 md:mx-0 items-start md:w-3/5 text-left space-y-8 md:space-y-8">
               <h1 className="text-3xl md:text-4xl font-bold">
                 <span className="text-IXBPurple">Karrieredag</span> og
                 <span className="text-IXBPurple"> nettverking</span> <br /> for
