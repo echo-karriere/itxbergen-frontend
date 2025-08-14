@@ -62,14 +62,6 @@ export default async function Home() {
                     className="w-[21rem]"
                   />
                 </Link>
-                {/* <a href="https://delta.itxbergen.no/" target="_blank"> */}
-                {/*   <ButtonIXB */}
-                {/*     label="Til Påmeldingsskjema" */}
-                {/*     subLabel="18. September, 2025" */}
-                {/*     variant="primary" */}
-                {/*     className="w-[21rem]" */}
-                {/*   /> */}
-                {/* </a> */}
               </div>
             </div>
 
