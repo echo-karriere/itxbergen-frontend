@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Otherthings from "@/components/utils/otherthings";
 import { headers } from "next/headers";
 import Link from "next/link";
+import Custom404 from "@/app/404";
 
 interface event {
   id: number;
@@ -11,19 +12,19 @@ interface event {
   details: string;
 }
 
-const events: event[] = [
-  {
-    id: 0,
-    address: "Jonsvollgaten 2",
-    details: "Detaljer",
-    title: "F*ck up night!",
-  },
-];
+// const events: event[] = [
+//   {
+//     id: 0,
+//     address: "Jonsvollgaten 2",
+//     details: "Detaljer",
+//     title: "F*ck up night!",
+//   },
+// ];
 
 const Data = async () => {
   const query = `*[_type == 'event']`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch<event[]>(query);
 
   return data;
 };
@@ -31,12 +32,12 @@ const Data = async () => {
 const Page = async () => {
   const headerList = headers();
   const id = Number(headerList.get("x-current-path")?.split("/").pop());
-  const data = await Data();
+  const events = await Data();
 
   const event = events.find((job) => job.id === id);
 
   if (!event) {
-    return <div>nei</div>;
+    return <Custom404 />;
   }
   return (
     <>
