@@ -152,14 +152,14 @@ export default async function Home() {
             <div className="flex flex-col">
               <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
               <div className="grid grid-cols-1 mb-3 md:grid-cols-3 gap-6 place-items-center">
-                {/* <Link href={"/nettverking/styremedlem/"}> */}
-                {/*   <NewsCard */}
-                {/*     image={"/Nettside_filler.png"} */}
-                {/*     title={"Vi søker nye styremedlemmer!"} */}
-                {/*     date={"13. Mars 2025"} */}
-                {/*     height="14rem" */}
-                {/*   /> */}
-                {/* </Link> */}
+                <Link href={"/nettverking/styremedlem/"}>
+                  <NewsCard
+                    image={"/Nettside_filler.png"}
+                    title={"Vi søker nye styremedlemmer!"}
+                    date={"19. August 2025"}
+                    height="14rem"
+                  />
+                </Link>
                 {data
                   .sort(
                     (a, b) =>
