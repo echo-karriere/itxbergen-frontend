@@ -23,12 +23,6 @@ const Page = () => {
                 av byens utdanningsinstitusjoner – og nå ser vi etter nye
                 medlemmer til styret!
               </p>
-              <p>
-                Akkurat nå søker vi spesielt etter medlemmer til{" "}
-                <strong>bedriftsgruppen</strong> samt en{" "}
-                <strong>UX-designer/grafiker</strong>, men vi er også åpne for
-                andre interesserte.
-              </p>
               <h2 className="text-2xl font-bold pt-8 pb-4">
                 Hvorfor bør du søke?
               </h2>
