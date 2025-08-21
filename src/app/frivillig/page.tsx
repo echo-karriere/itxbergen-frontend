@@ -14,7 +14,7 @@ const Page = () => {
             <div className="md:w-[60%] md:mr-3 w-[80%]">
               Vi søker frivillige!
               <br /><br />
-              Som frivillig får du anledning til å hilse på alle de hyggelige styrmedlemene av ITx, og å finne ut om å søke som styremedlem selv er noe for deg. I tillegg er det en god mulighet til å treffe representanter fra ulike bedrifter, og du får vist at du er en som gir litt ekstra innsats.
+              Som frivillig får du en unik mulighet til å møte de hyggelige medlemmene i ITxBergen og å finne ut om en rolle som styremedlem kunne være noe for deg. Arrangementet er også en fin anledning til å nettverke med representanter fra ulike bedrifter og til å vise frem din engasjement og vilje til å yte en ekstra innsats.
               <br /><br />
               Ulike arbeidsoppgaver kan være å ta imot studentene, bistå bedrifter med diverse spørsmal, veilede studenter og bedrifter dit de skal og andre mindre oppgaver. Frivillige får også billett til gallaen.
               <br /><br />
