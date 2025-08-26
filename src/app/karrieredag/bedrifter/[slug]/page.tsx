@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import Custom404 from "@/app/404";
+import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 
 
 const info = [
@@ -423,7 +424,25 @@ const Page = () => {
     })
     console.log(id)
     if (organization) {
-      return <div>{organization.Bedrift}</div>
+      return (
+        <div className="justify-center">
+          <div className="maxwidth md:pt-[4.5rem] pt-4 px-[1.8rem] md:px-32">
+            <Breadcrumbs customLast={`${organization.Bedrift}`} />
+            <h1 className="text-3xl md:text-4xl font-bold pb-8 pt-4">{organization.Bedrift} er påmeldt karrieredagen!</h1>
+
+            <div className="flex flex-col md:flex-row pb-14">
+              <div className="md:w-[60%] md:mr-3 w-[80%]">
+                <h2 className="text-2xl pb-4 font-bold">Valgte tilleggstjenester:</h2>
+                <ul>
+                  <li>Lynpresentasjon: {organization.Lynpresentasjon == "TRUE" ? "JA" : "NEI"}</li>
+                  <li>ITxGalla: {organization.ITxGalla == "TRUE" ? "JA" : "NEI"}</li>
+                  <li>Workshop: {organization.Workshop == "TRUE" ? "JA" : "NEI"}</li>
+                  <li>Leveranse: {organization.Leveranse == "TRUE" ? "JA" : "NEI"}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>)
     } else {
       return <div>Vi fant dessverre ikke organisasjonen din i listen våres over påmeldte bedrifter:(</div>
     }
