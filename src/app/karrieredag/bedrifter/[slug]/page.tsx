@@ -13,7 +13,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "BERGEN NÆRINGSRÅD",
@@ -24,7 +25,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "BKK AS",
@@ -35,7 +37,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "BOUVET NORGE AS",
@@ -46,7 +49,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "CAPGEMINI NORGE AS",
@@ -57,7 +61,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "COMPUTAS AS",
@@ -68,7 +73,7 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "", "Betalt": "TRUE"
   },
   {
     "Bedrift": "DIGITALISERINGSDIREKTORATET",
@@ -79,7 +84,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "DNB BANK ASA",
@@ -90,7 +96,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "DNV AS",
@@ -101,7 +108,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "EQUINOR ASA",
@@ -112,7 +120,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "ERNST & YOUNG AS",
@@ -123,7 +132,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "Frende Forsikring",
@@ -134,7 +144,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "INTILITY AS",
@@ -145,7 +156,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "JetBrains",
@@ -156,7 +168,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "KANTEGA AS",
@@ -167,7 +180,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "KNOWIT EXPERIENCE BERGEN AS",
@@ -178,7 +192,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "KS Digital",
@@ -189,7 +204,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "LERØY SEAFOOD GROUP ASA",
@@ -200,7 +216,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "NETCOMPANY NORWAY AS",
@@ -211,7 +228,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "NORDEA LIV FORSIKRING AS",
@@ -222,7 +240,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "NORGES BANK",
@@ -233,7 +252,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "NORGESGRUPPEN DATA AS",
@@ -244,7 +264,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "NORKART AS",
@@ -255,7 +276,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "TRUE",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "SIKT - KUNNSKAPSSEKTORENS TJENESTELEVERANDØR",
@@ -266,7 +288,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "SKATTEETATEN",
@@ -277,7 +300,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "SOPRA STERIA AS",
@@ -288,7 +312,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "SPAREBANK 1 UTVIKLING DA",
@@ -299,7 +324,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "STACC AS",
@@ -310,7 +336,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "STARTUPLAB VESTLAND AS",
@@ -321,7 +348,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "STATENS VEGVESEN",
@@ -332,7 +360,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "STATNETT SF",
@@ -343,7 +372,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "TRUE",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "STATSFORVALTERENS FELLESTJENESTER",
@@ -354,7 +384,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "TRUE",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "TIETOEVRY NORWAY AS",
@@ -365,7 +396,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "TV 2 AS",
@@ -376,7 +408,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   },
   {
     "Bedrift": "TWODAY AS",
@@ -387,7 +420,8 @@ const info = [
     "ITxGalla": "TRUE",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "UNI MICRO AS",
@@ -398,7 +432,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": "TRUE"
   },
   {
     "Bedrift": "ZRCH AS",
@@ -409,7 +444,8 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": ""
+    "Faktura sendt?": "",
+    "Betalt": ""
   }
 ]
 
@@ -439,6 +475,7 @@ const Page = () => {
                   <li>Workshop: {organization.Workshop == "TRUE" ? "JA" : "NEI"}</li>
                   <li>Leveranse: {organization.Leveranse == "TRUE" ? "JA" : "NEI"}</li>
                 </ul>
+                <div className="pt-5 font-bold">Betalt: {organization.Betalt == "TRUE" ? "JA" : "NEI"}</div>
               </div>
             </div>
           </div>
