@@ -73,8 +73,7 @@ const info = [
     "ITxGalla": "",
     "Leveranse": "",
     "Policy": "TRUE",
-    "Faktura sendt?": "",
-    "Betalt": "TRUE"
+    "Faktura sendt?": "", "Betalt": "TRUE"
   },
   {
     "Bedrift": "DIGITALISERINGSDIREKTORATET",
@@ -476,6 +475,7 @@ const Page = () => {
                   <li>Workshop: {organization.Workshop == "TRUE" ? "JA" : "NEI"}</li>
                   <li>Leveranse: {organization.Leveranse == "TRUE" ? "JA" : "NEI"}</li>
                 </ul>
+                <div className="pt-5 font-bold">Betalt: {organization.Betalt == "TRUE" ? "JA" : "NEI"}</div>
               </div>
             </div>
           </div>
