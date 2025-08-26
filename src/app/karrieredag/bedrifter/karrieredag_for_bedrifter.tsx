@@ -51,7 +51,9 @@ export default function ForBedrifter() {
   ];
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setOrgNumber(event.target.value)
+    const value = event.target.value
+    const numericValue = value.replace(/[^0-9]/g, '');
+    setOrgNumber(numericValue)
   }
 
 
@@ -98,6 +100,8 @@ export default function ForBedrifter() {
               </label>
               <input
                 type="search"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 className="w-full px-4 mt-1 py-1 border border-black rounded-md text-gray-600"
                 placeholder="Organisasjonsnummer"
                 value={orgNumber}
