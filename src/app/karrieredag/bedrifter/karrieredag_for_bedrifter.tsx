@@ -104,7 +104,7 @@ export default function ForBedrifter() {
                 onChange={handleChange}
               />
               <Link href={`/karrieredag/bedrifter/${orgNumber}/`}>
-                <div className="w-16 bg-IXBbg text-IXBfg border border-r-IXBfg p-1 text-center justify-center">
+                <div className="w-16 bg-IXBbg text-IXBfg border border-r-IXBfg rounded-tr-sm rounded-tl-xl rounded-br-xl rounded-bl-sm p-1 ml-0 m-2 text-center justify-center">
                   Søk
                 </div>
               </Link>
