@@ -11,6 +11,7 @@ import Link from "next/link";
 
 export default function ForBedrifter() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [orgNumber, setOrgNumber] = useState<string>("")
 
   const toggleDropdown = (index: number): void => {
     setOpenIndex(openIndex === index ? null : index);
@@ -49,6 +50,13 @@ export default function ForBedrifter() {
     },
   ];
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value
+    const numericValue = value.replace(/[^0-9]/g, '');
+    setOrgNumber(numericValue)
+  }
+
+
   return (
     <div>
       {/* Section 1 */}
@@ -85,6 +93,26 @@ export default function ForBedrifter() {
             {/*     onClick={() => window.open("https://delta.itxbergen.no/")} */}
             {/*   /> */}
             {/* </div> */}
+
+            <div className="my-4">
+              <label className="font-bold text-sm">
+                Sjekk status for din bedrift
+              </label>
+              <input
+                type="search"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                className="w-full px-4 mt-1 py-1 border border-black rounded-md text-gray-600"
+                placeholder="Organisasjonsnummer"
+                value={orgNumber}
+                onChange={handleChange}
+              />
+              <Link href={`/karrieredag/bedrifter/${orgNumber}/`}>
+                <div className="w-16 bg-IXBbg text-IXBfg border border-r-IXBfg rounded-tr-sm rounded-tl-xl rounded-br-xl rounded-bl-sm p-1 ml-0 m-2 text-center justify-center">
+                  Søk
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Image */}
@@ -230,6 +258,6 @@ export default function ForBedrifter() {
 
       {/* Section 3 */}
       <Otherthings />
-    </div>
+    </div >
   );
 }
