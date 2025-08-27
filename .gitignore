@@ -6,7 +6,6 @@
 .pnp.js
 .yarn/install-state.gz
 
-
 .env
 # testing
 /coverage
@@ -21,6 +20,7 @@
 # misc
 .DS_Store
 *.pem
+.swp
 
 # debug
 npm-debug.log*
@@ -29,7 +29,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
 .env
 
 # vercel
@@ -38,3 +37,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor
+.vscode/
+.idea/
+*.sw?
