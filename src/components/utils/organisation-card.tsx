@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/shadcn-ui/button";
 
 interface OrganisationCardProps {
   name: string;
@@ -15,7 +15,7 @@ export default function OrganisationCard({
   width = "320px",
   height = "90px",
   selected,
-  onSelect
+  onSelect,
 }: OrganisationCardProps) {
   return (
     <Button
@@ -23,7 +23,7 @@ export default function OrganisationCard({
       style={{ width, height }}
       variant="ghost"
       className={`border border-gray-200 rounded-lg text-left flex flex-col items-start p-0 transition-all overflow-hidden
-        ${selected ? 'bg-[#EEEFFF] shadow-2xl' : 'bg-white hover:bg-[#EEEFFF] hover:shadow-md'}
+        ${selected ? "bg-[#EEEFFF] shadow-2xl" : "bg-white hover:bg-[#EEEFFF] hover:shadow-md"}
       `}
     >
       {/* Card Wrapper */}

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+import { Input } from "@/components/shadcn-ui/input";
+import { Card, CardContent } from "@/components/shadcn-ui/card";
+import { Button } from "@/components/shadcn-ui/button";
+import { Label } from "@/components/shadcn-ui/label";
 
 const gradeValues: Record<string, number> = {
   A: 5,

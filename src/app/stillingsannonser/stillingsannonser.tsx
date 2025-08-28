@@ -5,7 +5,7 @@ import Otherthings from "@/components/utils/otherthings";
 import Stillingsannonser from "@/components/utils/stillingsannonser";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import DropdownSearch from "@/components/utils/dropdown-search";
-import ButtonIXB from "@/components/utils/button-ixb";
+import ITxButton from "@/components/utils/itx-button";
 import type { SanityDocument } from "@sanity/client";
 
 interface Job {
@@ -92,17 +92,12 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
               {/* CTA Buttons */}
               <div className="mt-6">
                 {/* Primary Button */}
-                <a
-                  href={
-                    "https://airtable.com/appa8dZYt9s6GSS8K/pagB4QgYtYsqqqUFi/form"
-                  }
-                >
-                  <ButtonIXB
-                    label={"Publiser stillingsannonse"}
-                    variant="primary"
-                    className="w-[95%]"
-                  />
-                </a>
+                <ITxButton
+                  label={"Publiser stillingsannonse"}
+                  variant="primary"
+                  className="w-[95%]"
+                  href="https://airtable.com/appa8dZYt9s6GSS8K/pagB4QgYtYsqqqUFi/form"
+                />
                 {/* Secondary Button */}
                 <div className="mt-3 text-center">
                   {/* <a */}

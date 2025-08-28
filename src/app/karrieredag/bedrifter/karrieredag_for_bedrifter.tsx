@@ -1,17 +1,17 @@
 "use client";
 
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
-import ButtonIXB from "@/components/utils/button-ixb";
+import ITxButton from "@/components/utils/itx-button";
 import Otherthings from "@/components/utils/otherthings";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/shadcn-ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
 export default function ForBedrifter() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [orgNumber, setOrgNumber] = useState<string>("")
+  const [orgNumber, setOrgNumber] = useState<string>("");
 
   const toggleDropdown = (index: number): void => {
     setOpenIndex(openIndex === index ? null : index);
@@ -51,11 +51,10 @@ export default function ForBedrifter() {
   ];
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value
-    const numericValue = value.replace(/[^0-9]/g, '');
-    setOrgNumber(numericValue)
-  }
-
+    const value = event.target.value;
+    const numericValue = value.replace(/[^0-9]/g, "");
+    setOrgNumber(numericValue);
+  };
 
   return (
     <div>
@@ -84,16 +83,6 @@ export default function ForBedrifter() {
               interesserte.
             </p>
 
-            {/* PåmeldingSkjema */}
-            {/* <div className="pt-8"> */}
-            {/*   <ButtonIXB */}
-            {/*     label="Til Påmeldingsskjema" */}
-            {/*     subLabel="18. September, 2025" */}
-            {/*     variant="primary" */}
-            {/*     onClick={() => window.open("https://delta.itxbergen.no/")} */}
-            {/*   /> */}
-            {/* </div> */}
-
             <div className="my-4">
               <label className="font-bold text-sm">
                 Sjekk status for din bedrift
@@ -118,7 +107,7 @@ export default function ForBedrifter() {
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/testing_amico.svg"
+              src="/hero/testing_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}
@@ -241,16 +230,12 @@ export default function ForBedrifter() {
                 Klikk på knappen under for å publisere deres stillingsannonse.
               </p>
 
-              <a
-                href={
-                  "https://airtable.com/appa8dZYt9s6GSS8K/shrEXkOYcPiAG7cDP"
-                }
-              >
-                <ButtonIXB
-                  label={"Publiser stillingsannonse"}
-                  variant="ghost"
-                />
-              </a>
+              <ITxButton
+                label={"Publiser stillingsannonse"}
+                variant="ghost"
+                className="w-[95%]"
+                href="https://airtable.com/appa8dZYt9s6GSS8K/pagB4QgYtYsqqqUFi/form"
+              />
             </div>
           </div>
         </div>
@@ -258,6 +243,6 @@ export default function ForBedrifter() {
 
       {/* Section 3 */}
       <Otherthings />
-    </div >
+    </div>
   );
 }

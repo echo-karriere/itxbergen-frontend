@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/shadcn-ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
-  DropdownMenuItem
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuItem,
+} from "@/components/shadcn-ui/dropdown-menu";
 import { InfoIcon, ChevronDownIcon } from "lucide-react";
 import Link from "next/link";
 

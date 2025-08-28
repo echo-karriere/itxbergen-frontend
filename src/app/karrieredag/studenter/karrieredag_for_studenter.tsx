@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/shadcn-ui/button";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Otherthings from "@/components/utils/otherthings";
 import { ChevronDown } from "lucide-react";
@@ -76,7 +76,7 @@ export default function ForStudenter() {
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/coding_amico.svg"
+              src="/hero/coding_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}

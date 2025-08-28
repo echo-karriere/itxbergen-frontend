@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/shadcn-ui/button";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
 import { useState } from "react";
@@ -31,13 +31,14 @@ export default function Nettverking() {
   const [selectedOrganisation, setSelectedOrganisation] =
     useState<Organisation | null>(null);
 
-  const socialLinks: { name: string; key: keyof Organisation; icon: string }[] = [
-    { name: "Website", key: "website", icon: "/icons/website.png" },
-    { name: "Facebook", key: "facebook", icon: "/icons/facebook.svg" },
-    { name: "Instagram", key: "instagram", icon: "/icons/instagram.svg" },
-    { name: "LinkedIn", key: "linkedin", icon: "/icons/linkedin.svg" },
-    { name: "GitHub", key: "github", icon: "/icons/github.svg" },
-  ];
+  const socialLinks: { name: string; key: keyof Organisation; icon: string }[] =
+    [
+      { name: "Website", key: "website", icon: "/icons/website.png" },
+      { name: "Facebook", key: "facebook", icon: "/icons/facebook.svg" },
+      { name: "Instagram", key: "instagram", icon: "/icons/instagram.svg" },
+      { name: "LinkedIn", key: "linkedin", icon: "/icons/linkedin.svg" },
+      { name: "GitHub", key: "github", icon: "/icons/github.svg" },
+    ];
 
   return (
     <div>
@@ -74,13 +75,12 @@ export default function Nettverking() {
               Arrangementer
               <ChevronRight className="w-5 h-5" />
             </a>
-
           </div>
 
           {/* Image */}
           <div className="flex justify-center items-center w-full md:w-2/5">
             <Image
-              src="/pair_programming_amico.svg"
+              src="/hero/pair_programming_amico.svg"
               alt="ItxBergen"
               height={500}
               width={500}
@@ -105,7 +105,10 @@ export default function Nettverking() {
       {/* Section 2 */}
       <div className="bg-IXBbg2 text-black h-auto p-3 flex items-start justify-center relative shadow-lg mb-3">
         {/* Content Wrapper */}
-        <div id="nettverking" className="maxwidth relative flex flex-col text-start items-start w-full px-6 md:px-32 pt-8">
+        <div
+          id="nettverking"
+          className="maxwidth relative flex flex-col text-start items-start w-full px-6 md:px-32 pt-8"
+        >
           {/* Text Section */}
           <div className="relative flex flex-col items-start pt-10 mx-6 md:mx-0">
             <div className="space-y-4">
@@ -159,7 +162,9 @@ export default function Nettverking() {
               {/* First Box Content */}
               <div>
                 <h3 className="text-2xl font-bold text-black mb-4">
-                  {selectedOrganisation ? selectedOrganisation.name : "Velg en organisasjon"}
+                  {selectedOrganisation
+                    ? selectedOrganisation.name
+                    : "Velg en organisasjon"}
                 </h3>
                 <h2 className="font-bold text-black mb-4">
                   {selectedOrganisation ? selectedOrganisation.boxHeader : ""}
@@ -193,7 +198,12 @@ export default function Nettverking() {
                     <div className="flex justify-center gap-4 mt-8">
                       {socialLinks.map(({ name, key, icon }) =>
                         selectedOrganisation[key] ? (
-                          <Link key={key} href={selectedOrganisation[key] as string} target="_blank" rel="noopener noreferrer">
+                          <Link
+                            key={key}
+                            href={selectedOrganisation[key] as string}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Image
                               src={icon}
                               alt={name}
@@ -202,7 +212,7 @@ export default function Nettverking() {
                               className="hover:opacity-80 transition-opacity"
                             />
                           </Link>
-                        ) : null
+                        ) : null,
                       )}
                     </div>
                   )}
@@ -223,7 +233,9 @@ export default function Nettverking() {
                   </a>
                 </p>
               ) : (
-                <p className="text-sm text-gray-500">E-post ikke tilgjengelig</p>
+                <p className="text-sm text-gray-500">
+                  E-post ikke tilgjengelig
+                </p>
               )}
               <p className="font-bold text-sm">Besøksadresse</p>
               <p className="text-sm">{selectedOrganisation?.address}</p>
