@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import { Providers } from "./providers";
-import { headers } from "next/headers";
 
 import "./globals.css";
 
