@@ -1,17 +1,23 @@
-import HeroImage from "@/components/hero-image";
 import NavLinks from "@/components/nav-links";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
+import InfoCard from "@/components/info-card";
 
 export default function PageHeader() {
   const links = [
-    { label: "Timeplan", href: "#" },
+    { label: "Timeplan", href: "#timeplan" },
     { label: "Standkart og bedrifter som deltar", href: "#" },
-    { label: "Workshops", href: "#" },
+    { label: "Workshops", href: "#workshops" },
     { label: "Ekstra informasjon", href: "#" },
   ];
 
+  const eventInfo = [
+    { label: "Hvor", value: "Grieghallen, Bergen" },
+    { label: "Dato", value: "18. september 2025" },
+    { label: "Klokkeslett", value: "10:00 - 16:00" },
+  ];
+
   return (
-    <div className="white text-black flex items-center justify-center relative pt-12">
+    <div className="bg-white text-black flex items-center justify-center relative pt-12">
       <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
         {/* Text Content */}
         <div className="flex flex-col justify-center items-start mx-6 md:mx-0 md:w-3/5 text-left space-y-4 md:space-y-4">
@@ -44,10 +50,14 @@ export default function PageHeader() {
           <NavLinks items={links} />
         </div>
 
-        <HeroImage
-          src="/hero/public_speaker_amico.svg"
-          alt="Illustration of a public speaker"
-        />
+        <InfoCard bgColor="bg-IXBbg1">
+          {eventInfo.map((item) => (
+            <div key={item.label}>
+              <p className="text-sm">{item.label}:</p>
+              <h2 className="text-lg font-bold">{item.value}</h2>
+            </div>
+          ))}
+        </InfoCard>
       </div>
     </div>
   );

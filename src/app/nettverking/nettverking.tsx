@@ -2,12 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/shadcn-ui/button";
-import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import OrganisationCardList from "@/components/utils/organisation-card-list";
 import { useState } from "react";
 import Otherthings from "@/components/utils/otherthings";
+import PageHeader from "./page-header";
 
 interface Organisation {
   name: string;
@@ -42,55 +41,7 @@ export default function Nettverking() {
 
   return (
     <div>
-      {/* Section 1 */}
-      <div className="bg-white text-black flex justify-center relative md:pt-5">
-        {/* Content Wrapper */}
-        <div className="maxwidth flex flex-col md:flex-row w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20">
-          {/* Text Content */}
-          <div className="flex flex-col justify-center mx-6 md:mx-0 items-start md:w-3/5 text-left space-y-4 md:space-y-4">
-            {/* Breadcrumb */}
-            <Breadcrumbs />
-            <h1 className="text-3xl md:text-4xl font-bold mb-9">
-              <span>Nettverking</span>
-            </h1>
-            <p className="text-base">
-              ITxBergen er opptatt av at studentene skal finne rikelig med
-              informasjon som kan fremme deres karriere innen IT.
-            </p>
-            <p className="text-base">
-              På denne siden vil du finne ressurser for IT-studenter, som:
-            </p>
-            {/* Links */}
-            <a
-              href="#nettverking"
-              className="flex items-center font-semibold hover:underline"
-            >
-              Studentorganisasjoner og linjeforeninger
-              <ChevronRight className="w-5 h-5" />
-            </a>
-            <a
-              href="/#bottom"
-              className="flex items-center font-semibold hover:underline"
-            >
-              Arrangementer
-              <ChevronRight className="w-5 h-5" />
-            </a>
-          </div>
-
-          {/* Image */}
-          <div className="flex justify-center items-center w-full md:w-2/5">
-            <Image
-              src="/hero/pair_programming_amico.svg"
-              alt="ItxBergen"
-              height={500}
-              width={500}
-              className="object-contain md:transform md:scale-110"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </div>
-
+      <PageHeader />
       <div>
         <Image
           src="/wave_top_light.svg"
