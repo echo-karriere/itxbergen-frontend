@@ -22,7 +22,7 @@ export default function SectionNews({ data }: SectionNewsProps) {
       <div className="maxwidth flex flex-col w-full px-6 md:px-32 space-y-16 mt-8">
         <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full place-items-center">
           {/* Static news cards */}
           <NewsCard
             image="/Nettside_filler.png"
