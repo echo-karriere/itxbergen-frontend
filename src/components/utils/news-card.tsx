@@ -11,15 +11,15 @@ interface NewsCardProps {
 export default function NewsCard({ image, title, date, href }: NewsCardProps) {
   const formattedDate = date
     ? new Date(date).toLocaleDateString("no-NO", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        timeZone: "Europe/Oslo",
-      })
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "Europe/Oslo",
+    })
     : null;
 
   const cardContent = (
-    <article className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-[#EEEFFF] cursor-pointer flex flex-col overflow-hidden">
+    <article className="bg-white border border-gray-200 rounded-lg hover:shadow-md hover:bg-[#EEEFFF] cursor-pointer flex flex-col overflow-hidden w-80 h-80">
       {/* Purple bar */}
       <div className="h-1 w-full bg-[#9747FF]" />
 
