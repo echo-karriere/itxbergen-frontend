@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { companyLogos } from "@/lib/organisations";
+import { companyLogos } from "@/lib/company-logos";
 
 export default function SectionCompanies() {
   return (

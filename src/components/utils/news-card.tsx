@@ -11,11 +11,11 @@ interface NewsCardProps {
 export default function NewsCard({ image, title, date, href }: NewsCardProps) {
   const formattedDate = date
     ? new Date(date).toLocaleDateString("no-NO", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      timeZone: "Europe/Oslo",
-    })
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "Europe/Oslo",
+      })
     : null;
 
   const cardContent = (
