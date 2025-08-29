@@ -34,6 +34,7 @@ export default function SectionAbout() {
           <HeroImage
             src="/Logopakke/PNG/submark_darkBG.png"
             alt="ITxBergen Logo"
+            className="md:flex hidden"
           />
         </div>
       </div>
