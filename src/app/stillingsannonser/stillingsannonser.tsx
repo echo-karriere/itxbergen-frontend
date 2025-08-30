@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import Stillingsannonser from "@/components/utils/stillingsannonser";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
 import DropdownSearch from "@/components/utils/dropdown-search";
@@ -113,7 +113,7 @@ const Page = ({ allJobs }: { allJobs: Job[] }) => {
           </div>
           <Stillingsannonser jobs={filteredJobs} />
         </div>
-        <Otherthings />
+        <OtherThings />
       </div>
     </>
   );

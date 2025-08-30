@@ -6,14 +6,13 @@ export default function SectionCTA() {
     <>
       <Wave position="top" theme="dark" bgColor="bg-IXBbg1" />
 
-      <div className="bg-IXBbg text-white flex items-center justify-center relative">
-        <div className="maxwidth flex flex-col items-center mx-6 md:text-center z-20 py-10">
-          {/* Header */}
-          <h2 className="text-3xl font-bold text-IXBfg px-6">
+      <div className="bg-IXBbg text-white py-12">
+        <div className="maxwidth flex flex-col space-y-12 relative items-center justify-center text-center z-20">
+          <h2 className="text-3xl font-bold text-IXBfg">
             Ønsker du mer informasjon om Karrieredagen?
           </h2>
 
-          <div className="flex space-y-5 md:space-y-0 md:space-x-20 mt-12 flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-20">
             <ITxButton
               label="For Studenter"
               variant="ghost"

@@ -1,6 +1,6 @@
 import { client } from "@/app/lib/sanity";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import { headers } from "next/headers";
 import Link from "next/link";
 import Custom404 from "@/app/404";
@@ -102,7 +102,7 @@ const Page = async () => {
           </div>
         </div>
       </div>
-      <Otherthings />
+      <OtherThings />
     </>
   );
 };

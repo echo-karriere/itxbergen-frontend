@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import Styremedlemgrid from "@/components/utils/styremedlemgrid";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -68,7 +68,7 @@ export default function AboutUS() {
           <Styremedlemgrid />
         </div>
       </div>
-      <Otherthings />
+      <OtherThings />
     </div>
   );
 }

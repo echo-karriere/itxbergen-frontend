@@ -6,13 +6,11 @@ export default function SectionAbout() {
     <>
       <Wave position="top" theme="dark" bgColor="bg-IXBbg2" />
 
-      <div className="bg-IXBbg text-white flex items-center justify-center pb-10 md:pb-0">
-        <div className="maxwidth flex flex-col md:flex-row items-center w-full md:px-32">
+      <div className="w-full bg-IXBbg py-12 md:py-0">
+        <div className="maxwidth text-white flex flex-col md:flex-row px-6 md:px-32">
           {/* Text Content */}
-          <div className="mx-6 md:mx-0 md:w-3/5 flex flex-col space-y-8 text-left">
-            <h1 className="text-IXBfg text-3xl font-bold mb-4 mt-10 md:mt-0">
-              Hva er ITxBergen?
-            </h1>
+          <div className="md:w-3/5 flex flex-col space-y-12">
+            <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
 
             <p className="text-lg">
               ITxBergen arrangerer karrieredager for IT-studenter i

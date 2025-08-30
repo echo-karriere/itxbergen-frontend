@@ -11,22 +11,25 @@ interface TimelineCardProps {
 function TimelineCard({ title, time, description, isLeft }: TimelineCardProps) {
   return (
     <div
-      className={`mb-4 flex flex-col md:flex-row items-center ${
+      className={`mb-4 md:mb-0 flex flex-col md:flex-row items-center relative ${
         isLeft ? "md:justify-start" : "md:justify-end"
-      } relative`}
+      }`}
     >
-      <div className="absolute md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-IXBPurple rounded-full z-10"></div>
+      {/* Dot in the center */}
+      <div className="hidden md:block absolute md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-IXBPurple rounded-full z-10"></div>
 
       <div
         className={`bg-white text-black rounded-xl p-4 max-w-sm md:max-w-xs w-full md:w-1/2 ${
-          isLeft ? "md:mr-6 md:text-left" : "md:ml-6 md:text-right"
+          isLeft ? "md:mr-6" : "md:ml-6"
         }`}
       >
-        <h3 className="font-bold text-lg">{title}</h3>
-        <div className="w-full h-1 bg-IXBPurple rounded-full my-2"></div>
+        <div className="text-left">
+          <h3 className="font-bold text-lg">{title}</h3>
+          <div className="w-full h-1 bg-IXBPurple rounded-full my-2"></div>
 
-        <p className="text-sm italic">{time}</p>
-        <p className="text-sm mt-1">{description}</p>
+          <p className="text-sm font-bold italic">{time}</p>
+          <p className="text-sm mt-1">{description}</p>
+        </div>
       </div>
     </div>
   );

@@ -17,13 +17,13 @@ export default function PageHeader() {
   ];
 
   return (
-    <div className="bg-white text-black flex items-center justify-center relative pt-12">
-      <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
+    <div className="w-full bg-white pt-12 pb-12">
+      <div className="maxwidth text-black flex flex-col md:flex-row space-y-12 md:space-x-20 px-6 md:px-32">
         {/* Text Content */}
-        <div className="flex flex-col justify-center items-start mx-6 md:mx-0 md:w-3/5 text-left space-y-4 md:space-y-4">
+        <div className="flex flex-col md:w-3/5 space-y-4">
           <Breadcrumbs current="Karrieredag" />
 
-          <h1 className="text-3xl md:text-4xl font-bold mb-9">
+          <h1 className="text-3xl md:text-4xl font-bold">
             <span>Karrieredag 2025!</span>
           </h1>
 

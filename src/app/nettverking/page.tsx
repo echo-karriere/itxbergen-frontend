@@ -1,4 +1,4 @@
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import PageHeader from "./page-header";
 import SectionStudentOrganisations from "./section-student-organisations";
 import { Metadata } from "next";
@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function Nettverking() {
   return (
-    <div>
+    <>
       <PageHeader />
       <SectionStudentOrganisations />
-      <Otherthings />
-    </div>
+      <OtherThings />
+    </>
   );
 }

@@ -18,12 +18,9 @@ export default function SectionNews({ data }: SectionNewsProps) {
   );
 
   return (
-    <div
-      className="bg-IXBbg1 text-black h-auto flex flex-col items-center justify-center relative pb-12"
-      id="nyheter"
-    >
-      <div className="maxwidth flex flex-col w-full px-6 md:px-32 space-y-16 mt-8">
-        <h2 className="text-2xl font-bold mb-6">Nyheter</h2>
+    <div className="w-full bg-IXBbg1 py-12" id="nyheter">
+      <div className="maxwidth flex flex-col w-full px-6 md:px-32 space-y-12">
+        <h2 className="text-2xl font-bold">Nyheter fra ITxBergen</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full place-items-center">
           {/* Static news cards */}

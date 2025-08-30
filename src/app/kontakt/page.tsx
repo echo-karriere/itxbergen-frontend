@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -32,14 +32,16 @@ export default function ContactUs() {
             felles kontakt e-post:
             <a
               href="mailto:kontakt@itxbergen.no"
-              className="text-IXBPurple hover:underline">
+              className="text-IXBPurple hover:underline"
+            >
               kontakt@itxbergen.no
             </a>
             <h2 className="text-2xl font-bold mt-6">Promotering</h2>
             Ved spørsmål angående promotering, kan du kontakte oss på:
             <a
               href="mailto:promotering@itxbergen.no"
-              className="text-IXBPurple hover:underline">
+              className="text-IXBPurple hover:underline"
+            >
               promotering@itxbergen.no
             </a>
             <h2 className="text-2xl font-bold mt-6">
@@ -61,7 +63,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <Otherthings />
+      <OtherThings />
     </div>
   );
 }

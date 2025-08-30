@@ -27,11 +27,12 @@ const EventCard = ({
           {title}
         </h5>
 
-        <p className="font-sourceSans text-gray-500 text-[10px]">
-          <i className="ri-calendar-line mr-1"></i>Dato: {date}
+        <p className="font-sourceSans text-gray-500 text-[10px] font-bold">
+          <i className="ri-calendar-line mr-1"></i>
+          {date}
         </p>
 
-        <p className="font-sourceSans text-gray-500 text-[10px]">
+        <p className="font-sourceSans text-gray-500 text-[10px] font-bold">
           <i className="ri-map-pin-line mr-1"></i>
           {address}
         </p>
