@@ -17,13 +17,11 @@ export default function PageHeader() {
             Vi ses 18. September <br /> i Grieghallen, Bergen!
           </p>
 
-          <p className="font-bold">Timeplan kommer i August.</p>
-
           <ITxButton
-            label="Sjekk ut karrieredagen vår"
+            label="Se timeplanen for karrieredag!"
             variant="primary"
-            className="w-[21rem]"
-            href="/karrieredag"
+            className="w-80"
+            href="/karrieredag#timeplan"
           />
         </div>
 

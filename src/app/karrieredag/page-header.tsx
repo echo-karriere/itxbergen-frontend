@@ -5,9 +5,9 @@ import InfoCard from "@/components/info-card";
 export default function PageHeader() {
   const links = [
     { label: "Timeplan", href: "#timeplan" },
-    { label: "Standkart og bedrifter som deltar", href: "#" },
+    { label: "Standkart og bedrifter som deltar", href: "#standkart" },
     { label: "Workshops", href: "#workshops" },
-    { label: "Ekstra informasjon", href: "#" },
+    { label: "Ekstra informasjon", href: "#extra" },
   ];
 
   const eventInfo = [
@@ -17,9 +17,8 @@ export default function PageHeader() {
   ];
 
   return (
-    <div className="w-full bg-white pt-12 pb-12">
-      <div className="maxwidth text-black flex flex-col md:flex-row space-y-12 md:space-x-20 px-6 md:px-32">
-        {/* Text Content */}
+    <div className="w-full bg-white py-12">
+      <div className="maxwidth text-black flex flex-col md:flex-row space-y-12 md:space-x-20 px-6 md:px-32 justify-center items-center">
         <div className="flex flex-col md:w-3/5 space-y-4">
           <Breadcrumbs current="Karrieredag" />
 

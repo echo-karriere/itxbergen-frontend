@@ -26,7 +26,7 @@ export default function SectionWorkshops() {
   ];
 
   return (
-    <div className="w-full bg-IXBbg1 py-12" id="nettverking">
+    <div className="w-full bg-IXBbg1 py-12" id="workshops">
       <div className="maxwidth text-black flex flex-col relative px-6 md:px-32 space-y-8">
         <h2 className="text-2xl font-bold text-start">Workshops</h2>
 

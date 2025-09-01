@@ -1,14 +1,25 @@
 import React from "react";
 import NavLinks from "../nav-links";
 
-export default function OtherThings() {
-  const links = [
-    { label: "Karrieredagen", href: "/karrieredag" },
-    { label: "Stillingsannonser", href: "/stillingsannonser" },
-    { label: "Karakterkalkulator", href: "/karakterkalkulator" },
-    { label: "Om ITxBergen", href: "/om-itx" },
-  ];
+interface Link {
+  label: string;
+  href: string;
+}
 
+interface OtherThingsProps {
+  links?: Link[];
+}
+
+const defaultLinks: Link[] = [
+  { label: "Karrieredagen", href: "/karrieredag" },
+  { label: "Stillingsannonser", href: "/stillingsannonser" },
+  { label: "Karakterkalkulator", href: "/karakterkalkulator" },
+  { label: "Om ITxBergen", href: "/om-itx" },
+];
+
+export default function OtherThings({
+  links = defaultLinks,
+}: OtherThingsProps) {
   return (
     <div className="w-full bg-white py-12 px-6">
       <div className="maxwidth w-[90%] bg-IXBbg1 flex flex-col rounded-3xl shadow-2xl p-6 space-y-8">

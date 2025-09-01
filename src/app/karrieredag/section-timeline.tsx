@@ -35,16 +35,16 @@ function TimelineCard({ title, time, description, isLeft }: TimelineCardProps) {
   );
 }
 
-export default function SectionTimeLine() {
+export default function SectionTimeline() {
   return (
     <>
       <Wave position="top" theme="light" bgColor="white" />
 
       <div
-        className="bg-IXBbg2 text-black flex justify-center relative"
+        className="bg-IXBbg2 text-black flex justify-center relative py-12"
         id="timeplan"
       >
-        <div className="maxwidth flex flex-col items-center mx-6 md:mx-0 z-20 py-16">
+        <div className="maxwidth flex flex-col items-center px-6 md:mx-0 z-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Timeplan for Karrieredagen 2025
           </h2>

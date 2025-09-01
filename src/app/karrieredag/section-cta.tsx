@@ -4,7 +4,7 @@ import Wave from "@/components/wave";
 export default function SectionCTA() {
   return (
     <>
-      <Wave position="top" theme="dark" bgColor="bg-IXBbg1" />
+      <Wave position="top" theme="dark" bgColor="white" />
 
       <div className="bg-IXBbg text-white py-12">
         <div className="maxwidth flex flex-col space-y-12 relative items-center justify-center text-center z-20">

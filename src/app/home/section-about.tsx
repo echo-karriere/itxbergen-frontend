@@ -9,7 +9,7 @@ export default function SectionAbout() {
       <div className="w-full bg-IXBbg py-12 md:py-0">
         <div className="maxwidth text-white flex flex-col md:flex-row px-6 md:px-32">
           {/* Text Content */}
-          <div className="md:w-3/5 flex flex-col space-y-12">
+          <div className="md:w-3/5 flex flex-col space-y-8">
             <h1 className="text-IXBfg text-3xl font-bold">Hva er ITxBergen?</h1>
 
             <p className="text-lg">
