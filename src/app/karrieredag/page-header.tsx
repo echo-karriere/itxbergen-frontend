@@ -6,8 +6,8 @@ export default function PageHeader() {
   const links = [
     { label: "Timeplan", href: "#timeplan" },
     { label: "Standkart og bedrifter som deltar", href: "#standkart" },
-    { label: "Workshops", href: "#workshops" },
-    { label: "Ekstra informasjon", href: "#extra" },
+    // { label: "Workshops", href: "#workshops" },
+    // { label: "Ekstra informasjon", href: "#extra" },
   ];
 
   const eventInfo = [
