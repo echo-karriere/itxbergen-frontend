@@ -1,21 +1,25 @@
 import { useState } from "react";
-import OrganisationCard from "./organisation-card";
-import { organisations } from "@/lib/organisations"; // Ensure this file includes boxHeader, boxp1, boxp2
+import StudentOrganisationCard from "./student-organisation-card";
+import { studentOrganisations } from "@/lib/student-organisations";
+import { StudentOrganisation } from "@/types/student-organisation";
 
-interface OrganisationCardListProps {
+interface StudentOrganisationCardListProps {
   selectedLocation: string;
-  onSelectOrganisation: (organisation: any | null) => void;
+  onSelectOrganisation: (organisation: StudentOrganisation | null) => void;
 }
 
-export default function OrganisationCardList({
+export default function StudentOrganisationCardList({
   selectedLocation,
   onSelectOrganisation,
-}: OrganisationCardListProps) {
+}: StudentOrganisationCardListProps) {
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
     null,
   );
 
-  const handleSelectCard = (index: number, organisation: any) => {
+  const handleSelectCard = (
+    index: number,
+    organisation: StudentOrganisation,
+  ) => {
     if (selectedCardIndex === index) {
       setSelectedCardIndex(null);
       onSelectOrganisation(null);
@@ -25,15 +29,15 @@ export default function OrganisationCardList({
     }
   };
 
-  const filteredOrganisations =
+  const filteredOrganisations: StudentOrganisation[] =
     selectedLocation === "Vis alle"
-      ? organisations
-      : organisations.filter((org) => org.location === selectedLocation);
+      ? studentOrganisations
+      : studentOrganisations.filter((org) => org.location === selectedLocation);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center md:place-items-start">
       {filteredOrganisations.map((organisation, index) => (
-        <OrganisationCard
+        <StudentOrganisationCard
           key={organisation.name}
           name={organisation.name}
           location={organisation.location}

@@ -2,7 +2,7 @@
 
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
 import ITxButton from "@/components/utils/itx-button";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import Image from "next/image";
 import { Button } from "@/components/shadcn-ui/button";
 import { ChevronDown } from "lucide-react";
@@ -242,7 +242,7 @@ export default function ForBedrifter() {
       </div>
 
       {/* Section 3 */}
-      <Otherthings />
+      <OtherThings />
     </div>
   );
 }

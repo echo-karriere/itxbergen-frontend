@@ -1,6 +1,6 @@
 import { Button } from "@/components/shadcn-ui/button";
 
-interface OrganisationCardProps {
+interface StudentOrganisationCardProps {
   name: string;
   location: string;
   width?: string;
@@ -9,14 +9,14 @@ interface OrganisationCardProps {
   onSelect: () => void;
 }
 
-export default function OrganisationCard({
+export default function StudentOrganisationCard({
   name,
   location,
   width = "320px",
   height = "90px",
   selected,
   onSelect,
-}: OrganisationCardProps) {
+}: StudentOrganisationCardProps) {
   return (
     <Button
       onClick={onSelect}

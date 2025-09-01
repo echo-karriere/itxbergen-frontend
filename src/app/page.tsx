@@ -35,6 +35,7 @@ const Data = async () => {
 
 export default async function Home() {
   const sanityData = await Data();
+
   return (
     <main>
       <PageHeader />

@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/shadcn-ui/button";
 import Breadcrumbs from "@/components/utils/automatic-breacrumbs";
-import Otherthings from "@/components/utils/otherthings";
+import OtherThings from "@/components/utils/otherthings";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -149,7 +149,7 @@ export default function ForStudenter() {
       </div>
 
       {/* Section 3 */}
-      <Otherthings />
+      <OtherThings />
     </div>
   );
 }

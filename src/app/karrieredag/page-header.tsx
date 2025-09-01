@@ -1,56 +1,62 @@
-import HeroImage from "@/components/hero-image";
+import NavLinks from "@/components/nav-links";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
-
-const BulletItem = ({ children }: { children: React.ReactNode }) => (
-  <li className="flex items-center">
-    <span className="mr-2">•</span> {children}
-  </li>
-);
+import InfoCard from "@/components/info-card";
 
 export default function PageHeader() {
-  const bulletPoints = [
-    "Timeplan",
-    "Standkart og bedrifter som deltar",
-    "Workshops",
-    "Ekstra informasjon",
+  const links = [
+    { label: "Timeplan", href: "#timeplan" },
+    { label: "Standkart og bedrifter som deltar", href: "#standkart" },
+    { label: "Workshops", href: "#workshops" },
+    { label: "Ekstra informasjon", href: "#extra" },
+  ];
+
+  const eventInfo = [
+    { label: "Hvor", value: "Grieghallen, Bergen" },
+    { label: "Dato", value: "18. september 2025" },
+    { label: "Klokkeslett", value: "10:00 - 16:00" },
   ];
 
   return (
-    <div className="bg-IXBbg2 text-black flex items-center justify-center relative pt-12">
-      <div className="maxwidth flex flex-col md:flex-row items-center w-full px-6 md:px-32 space-y-12 md:space-y-0 md:space-x-20 mb-12">
-        {/* Text Content */}
-        <div className="flex flex-col justify-center items-start mx-6 md:mx-0 md:w-3/5 text-left space-y-4 md:space-y-4">
+    <div className="w-full bg-white py-12">
+      <div className="maxwidth text-black flex flex-col md:flex-row space-y-12 md:space-x-20 px-6 md:px-32 justify-center items-center">
+        <div className="flex flex-col md:w-3/5 space-y-4">
           <Breadcrumbs current="Karrieredag" />
 
-          <h1 className="text-3xl md:text-4xl font-bold mb-9">
-            <span>Karrieredag</span>
+          <h1 className="text-3xl md:text-4xl font-bold">
+            <span>Karrieredag 2025!</span>
           </h1>
 
           <p className="text-base">
-            Karrieredagen i 2024 ble en suksess! Den ble avholdt den 19.
-            september i Grieghallen. Vi har allerede startet planleggingen av
-            karrieredagen 2025!
+            Lyst til å bli bedre kjent med dine jobbmuligheter etter studiene?
+             Eller kanskje du er på utkikk etter en sommerjobb?
           </p>
 
           <strong className="text-base">
-            Karrieredagen 2025 vil bli avholdt den 18. september i Grieghallen.
+            Da er ITxBergen sin karrieredag noe for deg!
           </strong>
 
           <p className="text-base">
-            På denne siden vil du finne ressurser til neste karrieredag, som:
+            Du er invitert til å delta på ITxBergen sine karrieredager, og vi
+            håper du tar turen. Alle som studerer IT samt alle som er
+            interessert er velkommen, uansett studieprogram og studiested. Det
+            er gratis å delta på karrieredagene!
           </p>
 
-          <ul className="text-base space-y-2 md:pl-8">
-            {bulletPoints.map((item, index) => (
-              <BulletItem key={index}>{item}</BulletItem>
-            ))}
-          </ul>
+          <h2 className="text-2xl font-bold">
+            Oversikt over karrieredagen 2025
+          </h2>
+
+          <NavLinks items={links} />
         </div>
 
-        <HeroImage
-          src="/hero/public_speaker_amico.svg"
-          alt="Illustration of a public speaker"
-        />
+        <InfoCard bgColor="bg-IXBbg1">
+          {eventInfo.map((item) => (
+            <div key={item.label}>
+              <p className="text-sm">{item.label}:</p>
+              <h2 className="text-lg font-bold">{item.value}</h2>
+            </div>
+          ))}
+        </InfoCard>
       </div>
     </div>
   );
