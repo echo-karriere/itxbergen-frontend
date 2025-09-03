@@ -10,19 +10,19 @@ interface Workshop {
 export default function SectionWorkshops() {
   const workshops: Workshop[] = [
     {
-      title: "Software Bill of Materials",
+      title: "Software Bill of Materials - Tietoevry",
       time: "12:30 - 13:30",
       company: "Tietoevry Norway AS",
       href: "https://pameldinger.no/e/gszhkv",
     },
     {
-      title: "Hvordan skrive en god CV?",
+      title: "Hvordan skrive en god CV? - Kantega",
       time: "13:45 - 14:45",
       company: "Kantega AS",
       href: "https://pameldinger.no/e/vninkx",
     },
     {
-      title: "F# workshop - Påmelding kommer senere!",
+      title: "F# workshop - Frende Forsikring -  Påmelding kommer senere!",
       time: "15:00 - 16:00",
       company: "Frende Forsikring",
       href: "#workshops",
