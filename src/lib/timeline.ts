@@ -37,18 +37,18 @@ export const karrieredagTimeline: TimelineItem[] = [
     overlap: true,
   },
   {
-    title: "Workshop 1",
+    title: "Workshop 1 - Software Bill of Materials",
     time: "12:30 - 13:30",
     description: "Workshop med Tietoevry Norway AS",
   },
   {
-    title: "Workshop 2",
-    time: "13:30 - 14:30",
+    title: "Workshop 2 - Hvordan skrive en god CV?",
+    time: "13:45 - 14:45",
     description: "Workshop med Kantega AS",
   },
   {
-    title: "Workshop 3",
-    time: "14:30 - 15:30",
+    title: "Workshop 3 - F#-workshop",
+    time: "15:00 - 16:00",
     description: "Workshop med Frende Forsikring",
   },
 ];

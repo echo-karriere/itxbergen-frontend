@@ -18,7 +18,7 @@ export default function Karrieredag() {
       <PageHeader />
       <SectionTimeline />
       <SectionCompanies />
-      {/* <SectionWorkshops /> */}
+      <SectionWorkshops />
       {/* <SectionExtraInformation /> */}
       <SectionCTA />
       <SectionGallery />

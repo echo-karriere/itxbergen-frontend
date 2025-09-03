@@ -1,43 +1,47 @@
+import Link from "next/link";
+
 interface EventCardProps {
   title: string;
   date: string;
-  address: string;
+  company: string;
   width?: string;
-  height?: string;
   redirectTo: string;
 }
 
 const EventCard = ({
   title,
   date,
-  address,
+  company,
   width = "300px",
-  height = "100px",
+  redirectTo,
 }: EventCardProps) => {
   return (
-    <div
-      style={{ width: width, height: height }}
-      className="w-60 h-[100px] bg-white border border-gray-200 rounded-[5px] hover:shadow-md hover:bg-[#EEEFFF] cursor-pointer"
+    <Link
+      href={redirectTo}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ width }}
+      className="flex flex-col bg-white border border-gray-200 rounded-[5px] hover:shadow-md hover:bg-[#EEEFFF] cursor-pointer"
     >
       {/* Purple bar */}
       <div className="h-[3px] w-full bg-IXBPurple rounded-t-lg"></div>
 
-      <div className="p-4">
-        <h5 className="text-md font-montSerrat font-bold text-black mb-2 leading-7">
+      <div className="flex flex-col flex-1 p-4">
+        <h5 className="text-md font-montSerrat font-bold text-black mb-2 leading-7 break-words">
           {title}
         </h5>
 
-        <p className="font-sourceSans text-gray-500 text-[10px] font-bold">
+        <p className="font-sourceSans text-gray-500 text-[10px] font-bold mt-auto">
           <i className="ri-calendar-line mr-1"></i>
           {date}
         </p>
 
         <p className="font-sourceSans text-gray-500 text-[10px] font-bold">
-          <i className="ri-map-pin-line mr-1"></i>
-          {address}
+          <i className="mr-1"></i>
+          {company}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

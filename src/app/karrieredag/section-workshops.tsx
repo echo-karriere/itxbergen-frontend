@@ -1,27 +1,31 @@
 import EventCard from "@/components/utils/event-card";
 
 interface Workshop {
-  comapny: string;
+  title: string;
   time: string;
-  location: string;
+  company: string;
+  href: string;
 }
 
 export default function SectionWorkshops() {
   const workshops: Workshop[] = [
     {
-      comapny: "Tietoevry Norway AS",
+      title: "Software Bill of Materials",
       time: "12:30 - 13:30",
-      location: "Troldtog",
+      company: "Tietoevry Norway AS",
+      href: "https://pameldinger.no/e/gszhkv",
     },
     {
-      comapny: "Kantega AS",
-      time: "13:30 - 14:30",
-      location: "Troldtog",
+      title: "Hvordan skrive en god CV?",
+      time: "13:45 - 14:45",
+      company: "Kantega AS",
+      href: "https://pameldinger.no/e/vninkx",
     },
     {
-      comapny: "Frende Forsikring",
-      time: "14:30 - 15:30",
-      location: "Troldtog",
+      title: "F# workshop - Påmelding kommer senere!",
+      time: "15:00 - 16:00",
+      company: "Frende Forsikring",
+      href: "#workshops",
     },
   ];
 
@@ -30,7 +34,7 @@ export default function SectionWorkshops() {
       <div className="maxwidth text-black flex flex-col relative px-6 md:px-32 space-y-8">
         <h2 className="text-2xl font-bold text-start">Workshops</h2>
 
-        <p>
+        <p className="md:w-4/5">
           Under karrieredagene har du mulighet til å delta på flere spennende
           workshops. Her vil du få muligheten til å lære mer om ulike temaer
           innenfor IT som avholdes av ulike bedrifter. Workshopsene varer i 60
@@ -38,14 +42,18 @@ export default function SectionWorkshops() {
           de ulike workshopsene under, og meld deg på de du ønsker å delta på.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 w-full justify-center items-center">
+        <p className="font-bold">
+          Alle workshops vil avholdes på Troldtog i Grieghallen
+        </p>
+
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-center md:items-stretch">
           {workshops.map((workshop, index) => (
             <EventCard
               key={index}
-              title={workshop.comapny}
+              title={workshop.title}
               date={workshop.time}
-              address={workshop.location}
-              redirectTo="#"
+              company={workshop.company}
+              redirectTo={workshop.href}
             />
           ))}
         </div>

@@ -36,10 +36,15 @@ export const participatingCompanies = [
   "dnv",
   "bekk",
   "sparebanken_norge",
-  "startup_lab",
-  "startup_lab",
-  "startup_lab",
-  "startup_lab",
+];
+
+export const participatingStartups = [
+  "Cognosic",
+  "7a",
+  "Skyra",
+  "Dynamon",
+  "Chargitect",
+  "Sensa",
 ];
 
 // export const companyLogos = [
