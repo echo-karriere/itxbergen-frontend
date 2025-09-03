@@ -38,9 +38,12 @@ export default function Partners() {
     <div
       className="bg-white p-2 shadow-md flex items-center justify-center space-x-4"
       style={{
-        borderTopLeftRadius: '30px', borderBottomRightRadius: '30px',
-        borderTopRightRadius: '5px', borderBottomLeftRadius: '5px',
-      }}>
+        borderTopLeftRadius: "30px",
+        borderBottomRightRadius: "30px",
+        borderTopRightRadius: "5px",
+        borderBottomLeftRadius: "5px",
+      }}
+    >
       <Vercel />
       <Sanity />
     </div>
