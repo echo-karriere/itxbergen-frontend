@@ -5,7 +5,7 @@ import SectionCompanies from "./section-companies";
 import { Metadata } from "next";
 import SectionTimeline from "./section-timeline";
 import SectionWorkshops from "./section-workshops";
-import SectionExtraInformation from "./section-extra-information";
+import SectionAfterparty from "./section-afterparty";
 
 export const metadata: Metadata = {
   title: "Karrieredag | ITxBergen",
@@ -17,6 +17,7 @@ export default function Karrieredag() {
     <>
       <PageHeader />
       <SectionTimeline />
+      <SectionAfterparty />
       <SectionCompanies />
       <SectionWorkshops />
       {/* <SectionExtraInformation /> */}
