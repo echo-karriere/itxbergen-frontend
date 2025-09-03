@@ -6,7 +6,7 @@ export default function SectionAfterparty() {
     <>
       <Wave position="top" theme="dark" bgColor="bg-IXBbg1" />
 
-      <div className="bg-IXBbg text-white py-12">
+      <div className="bg-IXBbg text-white py-12" id="afterParty">
         <div className="maxwidth flex flex-col space-y-12 relative items-center justify-center text-center z-20">
           <h2 className="text-3xl font-bold text-IXBfg">
             Påmelding til ITxAfterParty 🎉

@@ -7,6 +7,7 @@ export default function PageHeader() {
     { label: "Timeplan", href: "#timeplan" },
     { label: "Standkart og bedrifter som deltar", href: "#standkart" },
     { label: "Workshops", href: "#workshops" },
+    { label: "ITxAfterParty", href: "#afterParty" },
     // { label: "Ekstra informasjon", href: "#extra" },
   ];
 
