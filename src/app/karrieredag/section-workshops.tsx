@@ -22,10 +22,10 @@ export default function SectionWorkshops() {
       href: "https://pameldinger.no/e/vninkx",
     },
     {
-      title: "F# workshop - Frende Forsikring -  Påmelding kommer senere!",
+      title: "Skriv sikrere kode med F# - Frende Forsikring",
       time: "15:00 - 16:00",
       company: "Frende Forsikring",
-      href: "#workshops",
+      href: "https://pameldinger.no/e/gslnbb",
     },
   ];
 
