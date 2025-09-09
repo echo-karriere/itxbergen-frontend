@@ -31,6 +31,12 @@ export default function PageHeader() {
               href="/karrieredag#workshops"
             />
             <ITxButton
+              label="Meld deg på Paneldebatt!"
+              variant="primary"
+              className="w-80"
+              href="https://pameldinger.no/e/ldqlsx"
+            />
+            <ITxButton
               label="Meld deg på ITxAfterparty!"
               variant="primary"
               className="w-80"
