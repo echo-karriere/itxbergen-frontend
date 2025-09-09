@@ -17,7 +17,7 @@ export default function PageHeader() {
             Vi ses 18. September <br /> i Grieghallen, Bergen!
           </p>
 
-          <div className="space-y-2">
+          <div className="space-y-2 pl-3 md:pl-0">
             <ITxButton
               label="Se timeplanen for karrieredag!"
               variant="primary"
@@ -29,6 +29,12 @@ export default function PageHeader() {
               variant="primary"
               className="w-80"
               href="/karrieredag#workshops"
+            />
+            <ITxButton
+              label="Meld deg på Paneldebatt!"
+              variant="primary"
+              className="w-80"
+              href="https://pameldinger.no/e/ldqlsx"
             />
             <ITxButton
               label="Meld deg på ITxAfterparty!"
