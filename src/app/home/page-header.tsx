@@ -17,7 +17,7 @@ export default function PageHeader() {
             Vi ses 18. September <br /> i Grieghallen, Bergen!
           </p>
 
-          <div className="space-y-2">
+          <div className="space-y-2 pl-3 md:pl-0">
             <ITxButton
               label="Se timeplanen for karrieredag!"
               variant="primary"
