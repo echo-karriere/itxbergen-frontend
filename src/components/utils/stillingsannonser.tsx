@@ -27,17 +27,23 @@ interface Job {
 export default function Stillingsannonser({ jobs }: Job) {
   return (
     <div className="">
-      {jobs.map((job, index) => (
-        <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
-          <Stillingsannonse
-            image={job.image}
-            title={job.title}
-            company={job.company}
-            location={job.location.join(", ")}
-            type={job.type}
-          />
-        </Link>
-      ))}
+      {jobs
+        .sort(
+          (a, b) =>
+            new Date(b.deadline).getTime() - new Date(a.deadline).getTime(),
+        )
+        .map((job, index) => (
+          <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
+            <Stillingsannonse
+              image={job.image}
+              title={job.title}
+              company={job.company}
+              location={job.location.join(", ")}
+              type={job.type}
+              date={job.deadline}
+            />
+          </Link>
+        ))}
     </div>
   );
 }
