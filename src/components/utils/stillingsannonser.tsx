@@ -27,17 +27,38 @@ interface Job {
 export default function Stillingsannonser({ jobs }: Job) {
   return (
     <div className="">
-      {jobs.map((job, index) => (
-        <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
-          <Stillingsannonse
-            image={job.image}
-            title={job.title}
-            company={job.company}
-            location={job.location.join(", ")}
-            type={job.type}
-          />
-        </Link>
-      ))}
+      {jobs
+        .sort(
+          (a, b) => {
+            const aHasDeadline = a.deadline && new Date(a.deadline).getTime();
+            const bHasDeadline = b.deadline && new Date(b.deadline).getTime();
+
+            if (aHasDeadline && bHasDeadline) {
+              return new Date(a.deadline).getTime() - new Date(b.deadline).getTime();
+            }
+
+            if (aHasDeadline) {
+              return -1
+            }
+            if (bHasDeadline) {
+              return 1;
+            }
+            return 0
+
+          }
+        )
+        .map((job, index) => (
+          <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
+            <Stillingsannonse
+              image={job.image}
+              title={job.title}
+              company={job.company}
+              location={job.location.join(", ")}
+              type={job.type}
+              date={job.deadline}
+            />
+          </Link>
+        ))}
     </div>
   );
 }
