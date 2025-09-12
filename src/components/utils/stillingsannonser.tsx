@@ -29,8 +29,23 @@ export default function Stillingsannonser({ jobs }: Job) {
     <div className="">
       {jobs
         .sort(
-          (a, b) =>
-            new Date(b.deadline).getTime() - new Date(a.deadline).getTime(),
+          (a, b) => {
+            const aHasDeadline = a.deadline && new Date(a.deadline).getTime();
+            const bHasDeadline = b.deadline && new Date(b.deadline).getTime();
+
+            if (aHasDeadline && bHasDeadline) {
+              return new Date(a.deadline).getTime() - new Date(b.deadline).getTime();
+            }
+
+            if (aHasDeadline) {
+              return -1
+            }
+            if (bHasDeadline) {
+              return 1;
+            }
+            return 0
+
+          }
         )
         .map((job, index) => (
           <Link key={index} href={`/stillingsannonser/${job.currentSlug}`}>
