@@ -25,7 +25,8 @@ export const karrieredagTimeline: TimelineItem[] = [
   {
     title: "Paneldebatt",
     time: "11:30 - 12:15",
-    description: "",
+    description:
+      "Hør fra profiler som representerer ulike retninger innenfor IT. Her blir det presenteret ulike erfaringer og arbeidsoppgaver. Paneldebatt ledes av Thomas Teige, og vil bli avholdt på Klokkeklang",
   },
   {
     title: "Besøk bedriftene på stand",
