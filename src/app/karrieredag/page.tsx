@@ -22,7 +22,6 @@ export default function Karrieredag() {
       <SectionCompanies />
       <SectionWorkshops />
       <SectionPaneldebatt />
-      {/* <SectionExtraInformation /> */}
       <SectionCTA />
       <SectionGallery />
     </>

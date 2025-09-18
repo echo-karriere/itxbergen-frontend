@@ -8,7 +8,6 @@ export default function PageHeader() {
     { label: "Standkart og bedrifter som deltar", href: "#standkart" },
     { label: "Workshops", href: "#workshops" },
     { label: "ITxAfterParty", href: "#afterparty" },
-    // { label: "Ekstra informasjon", href: "#extra" },
   ];
 
   const eventInfo = [
