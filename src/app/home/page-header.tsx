@@ -14,7 +14,7 @@ export default function PageHeader() {
           </h1>
 
           <p className="text-base font-bold md:text-4xl">
-            Vi ses 18. September <br /> i Grieghallen, Bergen!
+            Vi ses 18. September <br /> i Grieghallen, Bergen! <br /><br />ITxGalla vil bli avholdt i Galleri Nygaten!
           </p>
 
           <div className="space-y-2 pl-3 md:pl-0">

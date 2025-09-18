@@ -55,11 +55,11 @@ export const gallaAfterPartyTimeline: TimelineItem[] = [
   {
     title: "ITxGalla",
     time: "19:00 - 22:00",
-    description: "",
+    description: "Adresse: Nygaten 7, 5017 Bergen",
   },
   {
     title: "ITxAfterParty",
     time: "22:00 - 1:30",
-    description: "",
+    description: "Adresse: Nygaten 7, 5017 Bergen"
   },
 ];
