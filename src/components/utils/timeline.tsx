@@ -8,6 +8,7 @@ const TimelineCard = ({
   title,
   time,
   description,
+  address,
   isLeft,
 }: TimelineCardProps) => {
   return (
@@ -30,6 +31,7 @@ const TimelineCard = ({
 
           <p className="text-sm font-bold italic">{time}</p>
           <p className="text-sm mt-1">{description}</p>
+          <p className="text-sm font-bold mt-1">{address}</p>
         </div>
       </div>
     </div>
@@ -52,6 +54,7 @@ export default function TimeLine({ timelineEvents }: TimeLineProps) {
           title={item.title}
           time={item.time}
           description={item.description}
+          address={item.address}
           isLeft={index % 2 === 0}
         />
       ))}
