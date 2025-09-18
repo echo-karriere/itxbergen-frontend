@@ -24,18 +24,6 @@ export default function SectionNews({ data }: SectionNewsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full place-items-center">
           {/* Static news cards */}
-          <NewsCard
-            image="/Nettside_filler.png"
-            title="Vi søker nye styremedlemmer!"
-            date="19. August 2025"
-            href="/styremedlem"
-          />
-          <NewsCard
-            image="/Nettside_filler.png"
-            title="Vi søker frivillige til karrieredag"
-            date="20. August 2025"
-            href="/frivillig"
-          />
 
           {/* Dynamic news from sanity */}
           {sortedNews.map((item) => (
