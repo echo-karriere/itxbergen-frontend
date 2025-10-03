@@ -65,6 +65,9 @@ const StyremedlemGrid = async () => {
           </ol>
         ),
       )}
+      <li className="w-full md:w-[48%] my-5">
+        <Styremedlem name={"Stefan"} role={"Webassistent"} email="stefan@itxbergen.no" image="./styremedlemmer/stefan.webp" />
+      </li>
     </div>
   );
 };
