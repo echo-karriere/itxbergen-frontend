@@ -12,7 +12,7 @@ export default function PageHeader() {
 
   const eventInfo = [
     { label: "Hvor", value: "Grieghallen, Bergen" },
-    { label: "Dato", value: "18. september 2025" },
+    { label: "Dato", value: "17. september 2026" },
     { label: "Klokkeslett", value: "10:00 - 16:00" },
   ];
 
@@ -23,7 +23,7 @@ export default function PageHeader() {
           <Breadcrumbs current="Karrieredag" />
 
           <h1 className="text-3xl md:text-4xl font-bold">
-            <span>Karrieredag 2025!</span>
+            <span>Karrieredag 2026!</span>
           </h1>
 
           <p className="text-base">
@@ -43,7 +43,7 @@ export default function PageHeader() {
           </p>
 
           <h2 className="text-2xl font-bold">
-            Oversikt over karrieredagen 2025
+            Oversikt over karrieredagen 2026
           </h2>
 
           <NavLinks items={links} />

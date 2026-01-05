@@ -25,11 +25,11 @@ export default function SectionCompanies() {
 
         <h2 className="text-2xl font-bold text-left">Bedrifter som deltar</h2>
 
-        <CompanyGrid companies={participatingCompanies} />
+        <CompanyGrid companies={participatingCompanies}/>
 
         <h2 className="text-2xl font-bold text-left">Startups som deltar</h2>
 
-        <CompanyGrid companies={participatingStartups} />
+        <CompanyGrid companies={participatingStartups}/>
       </div>
     </div>
   );
