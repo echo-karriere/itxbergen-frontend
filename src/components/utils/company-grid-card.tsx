@@ -20,9 +20,6 @@ const CompanyCard = ({ companyLogo, href, label }: CompanyCardProps) => {
       flex items-center justify-center overflow-hidden
       transition-transform duration-200 ease-in-out
       hover:scale-[1.03] hover:shadow-lg">
-    <div className="absolute top-1 left-1 bg-IXBPurple text-white text-xs font-bold px-2 py-1 rounded-md shadow">
-          {label}
-        </div>
 
       {!imageError ? (
         <Image

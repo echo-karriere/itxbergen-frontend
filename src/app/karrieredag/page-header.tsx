@@ -3,12 +3,6 @@ import Breadcrumbs from "@/components/utils/breadcrumbs";
 import InfoCard from "@/components/info-card";
 
 export default function PageHeader() {
-  const links = [
-    { label: "Timeplan", href: "#timeplan" },
-    { label: "Standkart og bedrifter som deltar", href: "#standkart" },
-    { label: "Workshops", href: "#workshops" },
-    { label: "ITxAfterParty", href: "#afterparty" },
-  ];
 
   const eventInfo = [
     { label: "Hvor", value: "Grieghallen, Bergen" },
@@ -23,30 +17,25 @@ export default function PageHeader() {
           <Breadcrumbs current="Karrieredag" />
 
           <h1 className="text-3xl md:text-4xl font-bold">
-            <span>Karrieredag 2026!</span>
+            <span>Karrieredag</span>
           </h1>
 
-          <p className="text-base">
-            Lyst til å bli bedre kjent med dine jobbmuligheter etter studiene?
-             Eller kanskje du er på utkikk etter en sommerjobb?
+          <p className="text-xl">
+					Neste karrieredag er satt <br></br> <span className="text-IXBPurple font-bold">17.september 2026 i Grieghallen!</span>
           </p>
 
-          <strong className="text-base">
-            Da er ITxBergen sin karrieredag noe for deg!
-          </strong>
-
           <p className="text-base">
-            Du er invitert til å delta på ITxBergen sine karrieredager, og vi
-            håper du tar turen. Alle som studerer IT samt alle som er
-            interessert er velkommen, uansett studieprogram og studiested. Det
-            er gratis å delta på karrieredagene!
+						Karrieredagen i 2025 ble en suksess! Den ble avholdt den 18. september i Grieghallen. Vi har allerede startet planleggingen av karrieredagen 2026!
           </p>
 
-          <h2 className="text-2xl font-bold">
-            Oversikt over karrieredagen 2026
-          </h2>
-
-          <NavLinks items={links} />
+					<ul className="list-disc">
+					På denne siden vil du finne ressurser til neste karrieredag, som:
+						<div className="pl-5 space-y-2 pt-3"><li>Timeplan</li>
+						<li>Standkart og bedrifter som deltar</li>
+						<li>Workshops</li>
+						<li>Konseptpresentasjoner</li>
+						<li>Ekstra informasjon</li></div>
+					</ul>
         </div>
 
         <InfoCard bgColor="bg-IXBbg1">
