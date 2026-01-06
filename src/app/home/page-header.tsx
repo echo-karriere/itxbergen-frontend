@@ -13,16 +13,22 @@ export default function PageHeader() {
             IT-studenter i Bergen!
           </h1>
 
-          <p className="text-base font-bold md:text-4xl">
-            Vi ses 18. September <br /> i Grieghallen, Bergen!
+          <p className="text-xl md:text-xl">
+            Neste karrieredag er satt <br></br> <span className="font-bold">17. September 2026 i Grieghallen!</span>
           </p>
 
           <div className="space-y-2 pl-3 md:pl-0">
             <ITxButton
-              label="Se timeplanen for karrieredag!"
+              label="Sjekk ut karrieredagen vår"
               variant="primary"
               className="w-80"
-              href="/karrieredag#timeplan"
+              href="/karrieredag"
+            />
+            <ITxButton
+              label="Sjekk ut nettverking"
+              variant="primary"
+              className="w-80"
+              href="/nettverking"
             />
           </div>
         </div>
