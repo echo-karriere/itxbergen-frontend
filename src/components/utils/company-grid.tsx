@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import CompanyGridCard from "./company-grid-card";
+import { Homepages } from "@/lib/company-homepages";
 
 interface CompanyGridProps {
   companies: string[];
@@ -29,6 +30,8 @@ export default function CompanyGrid({ companies }: CompanyGridProps) {
             key={index}
             companyLogo={company.companyLogo}
             label={company.label}
+            href={Homepages[company.companyLogo]}
+            external
           />
         ))}
       </div>
