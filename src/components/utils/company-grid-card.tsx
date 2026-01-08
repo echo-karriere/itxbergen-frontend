@@ -1,26 +1,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Homepages } from "@/lib/company-homepages";
 
 interface CompanyCardProps {
   companyLogo: string;
   label: string;
-  href: string,
-  external: boolean, 
+  href: string;
+  external: boolean;
 }
 
 const CompanyCard = ({ companyLogo, href, label }: CompanyCardProps) => {
   const [imageError, setImageError] = useState(false);
+  const isExternal = href.startsWith("http");
 
-  
   const Card = (
-  <div className="
+    <div
+      className="
       group relative w-full h-20 bg-gray-100 rounded-lg shadow-md
       flex items-center justify-center overflow-hidden
       transition-transform duration-200 ease-in-out
-      hover:scale-[1.03] hover:shadow-lg">
-
+      hover:scale-[1.03] hover:shadow-lg"
+    >
       {!imageError ? (
         <Image
           src={`/karrieredag_participants/${companyLogo}.png`}
@@ -28,10 +28,10 @@ const CompanyCard = ({ companyLogo, href, label }: CompanyCardProps) => {
           width={120}
           height={80}
           className="
-          max-w-full max-h-full 
-          object-contain 
-          transition-transform 
-          duration-200 
+          max-w-full max-h-full
+          object-contain
+          transition-transform
+          duration-200
           ease-in-out
           group-hover:scale-110"
           draggable={false}
@@ -45,15 +45,15 @@ const CompanyCard = ({ companyLogo, href, label }: CompanyCardProps) => {
     </div>
   );
   return (
-  <Link
-    href={href}
-    className="block cursor-pointer"
-    target={external ? "_blank" : undefined}
-    rel={external ? "noreferrer noopener" : undefined}>
-  
-  {Card}
-  </Link>
-  )
+    <Link
+      href={href}
+      className="block cursor-pointer"
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noreferrer noopener" : undefined}
+    >
+      {Card}
+    </Link>
+  );
 };
 
 export default CompanyCard;

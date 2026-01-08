@@ -1,11 +1,7 @@
-import NavLinks from "@/components/nav-links";
 import Breadcrumbs from "@/components/utils/breadcrumbs";
-import InfoCard from "@/components/info-card";
 import Image from "next/image";
-import Wave from "@/components/wave";
 
 export default function PageHeader() {
-
   const eventInfo = [
     { label: "Hvor", value: "Grieghallen, Bergen" },
     { label: "Dato", value: "17. september 2026" },
@@ -23,26 +19,38 @@ export default function PageHeader() {
           </h1>
 
           <p className="text-xl">
-					Neste karrieredag er satt <br></br> <span className="text-IXBPurple font-bold">17.september 2026 i Grieghallen!</span>
+            Neste karrieredag er satt <br></br>{" "}
+            <span className="text-IXBPurple font-bold">
+              17.september 2026 i Grieghallen!
+            </span>
           </p>
 
           <p className="text-base">
-						Karrieredagen i 2025 ble en suksess! Den ble avholdt den 18. september i Grieghallen. Vi har allerede startet planleggingen av karrieredagen 2026!
+            Karrieredagen i 2025 ble en suksess! Den ble avholdt den 18.
+            september i Grieghallen. Vi har allerede startet planleggingen av
+            karrieredagen 2026!
           </p>
 
-					<ul className="list-disc">
-					På denne siden vil du finne ressurser til neste karrieredag, som:
-						<div className="pl-5 space-y-2 pt-3"><li>Timeplan</li>
-						<li>Standkart og bedrifter som deltar</li>
-						<li>Workshops</li>
-						<li>Konseptpresentasjoner</li>
-						<li>Ekstra informasjon</li></div>
-					</ul>
+          <ul className="list-disc">
+            På denne siden vil du finne ressurser til neste karrieredag, som:
+            <div className="pl-5 space-y-2 pt-3">
+              <li>Timeplan</li>
+              <li>Standkart og bedrifter som deltar</li>
+              <li>Workshops</li>
+              <li>Konseptpresentasjoner</li>
+              <li>Ekstra informasjon</li>
+            </div>
+          </ul>
         </div>
 
-				<Image className="w-full md:w-[60%] h-auto rounded-tl-2xl rounded-br-2xl shadow-2xl space-y-8" src="/kdimg.jpg" alt="Karrieredag bilde" width={500} height={500}/>
+        <Image
+          className="w-full md:w-[60%] h-auto rounded-tl-2xl rounded-br-2xl shadow-2xl space-y-8"
+          src="/kdimg.jpg"
+          alt="Karrieredag bilde"
+          width={500}
+          height={500}
+        />
       </div>
-
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import FilterButtonRow from "@/components/utils/filter-button-row";
 import ImageGrid from "@/components/utils/karrieredag-image-grid";
 
-type PageKey = "2025" | "2023" | "2022" 
+type PageKey = "2025" | "2023" | "2022";
 
 const PAGES: Record<PageKey, { src: string; alt: string }[]> = {
   "2025": Array.from({ length: 9 }, (_, i) => ({
