@@ -83,25 +83,12 @@ export default function ForBedrifter() {
               interesserte.
             </p>
 
-            <div className="my-4">
-              <label className="font-bold text-sm">
-                Sjekk status for din bedrift
-              </label>
-              <input
-                type="search"
-                inputMode="numeric"
-                pattern="[0-9]*"
-                className="w-full px-4 mt-1 py-1 border border-black rounded-md text-gray-600"
-                placeholder="Organisasjonsnummer"
-                value={orgNumber}
-                onChange={handleChange}
-              />
-              <Link href={`/karrieredag/bedrifter/${orgNumber}/`}>
-                <div className="w-16 bg-IXBbg text-IXBfg border border-r-IXBfg rounded-tr-sm rounded-tl-xl rounded-br-xl rounded-bl-sm p-1 ml-0 m-2 text-center justify-center">
-                  Søk
-                </div>
-              </Link>
-            </div>
+            <ITxButton
+              label="Interesseskjema"
+              variant="primary"
+              className="w-80"
+              href="https://airtable.com/app2T3ovyLMqBXddk/pagZocqzv1nxZ3VBq/form"
+            />
           </div>
 
           {/* Image */}
