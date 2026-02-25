@@ -7,8 +7,11 @@ export default function Page() {
 					<h1 className="text-2xl font-bold">
 						Avtale- og påmeldingsvilkår for karrieredagen til ITxBERGEN 2026
 					</h1>
-					Gjelder fra: 23.02.2026 kl. 00:00
-					Gjelder til: Inntil videre
+
+					<p className="pt-2">
+						Gjelder fra: 23.02.2026 kl. 00:00
+						Gjelder til: Inntil videre
+					</p>
 
 					<span className="text-2xl text-[#21465F] pt-6">I. Avtalen</span>
 					<p className="mb-4 text-md">
