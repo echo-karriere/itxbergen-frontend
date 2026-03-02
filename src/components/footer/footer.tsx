@@ -70,7 +70,11 @@ export default function Footer() {
                       Personvernserklæring
                     </a>
                   </li>
-                  <li className="mb-4">Salgs- og påmeldingsvilkår</li>
+                  <li className="mb-4">
+                    <a href="/vilkar" className="hover:underline">
+                      Salgs- og påmeldingsvilkår
+                    </a>
+                  </li>
                   <li className="mb-4">Tilgjengelighet</li>
                   <li className="mb-4">Informasjonskapsler</li>
                 </ul>
