@@ -57,7 +57,6 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="mb-4">Presse</li>
-                  <li className="mb-4">Opplevd noe ugreit?</li>
                 </ul>
               </div>
 
