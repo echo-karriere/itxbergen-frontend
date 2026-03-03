@@ -84,10 +84,10 @@ export default function ForBedrifter() {
             </p>
 
             <ITxButton
-              label="Interesseskjema"
+              label="Påmelding"
               variant="primary"
               className="w-80"
-              href="https://airtable.com/app2T3ovyLMqBXddk/pagZocqzv1nxZ3VBq/form"
+              href="https://airtable.com/appRf6DZsLJxbRubS/pagRen26SJBP1PKQt/form"
             />
           </div>
 
