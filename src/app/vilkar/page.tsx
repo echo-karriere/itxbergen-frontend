@@ -25,14 +25,14 @@ export default function Page() {
 						Kjøper/Deltaker er den part som foretar påmeldingen, og betegnes i det følgende som deltaker/deltakeren.
 					</p>
 					<span className="text-2xl text-[#21465F] mt-2">III. Pris</span>
-					Alle priser er oppgitt med eksklusiv merverdiavgift. Ytterligere kostnader som deltaker før avtaleinngåelse ikke har blitt informert om via nettsiden https://prisliste.ixb.no, skal deltaker ikke bære.
-					Hvis deltaker får oppført feil prisinformasjon i bestillingsløsningen skal prisene som står oppført på nettsiden https://prisliste.ixb.no overveie.
+					Alle priser er oppgitt med eksklusiv merverdiavgift. Ytterligere kostnader som deltaker før avtaleinngåelse ikke har blitt informert om, skal deltaker ikke bære.
+					Hvis deltaker får oppført feil prisinformasjon i bestillingsløsningen skal prisene som står oppført overveie.
 					<span className="text-2xl text-[#21465F] mt-2">III.a. Rabatt til startup bedrifter</span>
 					Selskaper som faller under alle disse kriteriene, vil få rabatt på grunnpakken:
 					<ol className="list-[upper-roman] list-inside ml-10 pb-2">
 						<li>Etablert etter 17. september 2020</li>
 						<li>25(tjuefem) eller færre ansatte</li>
-						<li>Driftsinntekter i 2023(totusenogtjuetre) på under 35(trettifem) MNOK</li>
+						<li>Driftsinntekter i 2024(totusenogtjuefire) på under 35(trettifem) MNOK</li>
 					</ol>
 					Om disse kriteriene ikke stemmer, vil arrangør kunne endre prisen til fullpris, og avtalen er fortsatt bindende. Om deltaker er usikker på om de kvalifiserer til rabatt, så skal deltaker ta kontakt med arrangør før avtaleinngåelse. Arrangør vil sjekke om kravene er oppfylt opp mot offentlig informasjon fra Brønnøysundregistrene.
 
@@ -49,7 +49,7 @@ export default function Page() {
 					<p className="mb-4">Om en av disse kriteriene ikke stemmer, vil arrangør kunne endre prisen til fullpris, og avtalen er fortsatt bindende. Om deltaker er usikker på om de kvalifiserer til rabatt, så skal deltaker ta kontakt med arrangør før avtaleinngåelse. Arrangør vil sjekke om kravene er oppfylt opp mot offentlig tilgjengelig informasjon.</p>
 					<p className="pt-2">Selskaper som faller under minst en av disse kriteriene vil ikke kvalifisere til rabatt:</p>
 					<ol className="list-[upper-roman] list-inside ml-10 pb-2">
-						<li>Statlige selskaper uansett eierskap andel under kategori 12</li>
+						<li>Statlige selskaper uansett eierskap andel under kategori 1<sup>2</sup></li>
 						<li>Fylkeskommunale og eller kommunale selskaper uansett eierskap andel som har mål om høyest mulig avkastning over tid, og opererer primært i konkurranse med andre selskaper.</li>
 						<li>Strøm og nettselskap.</li>
 					</ol>
