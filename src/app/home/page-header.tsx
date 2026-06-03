@@ -30,6 +30,12 @@ export default function PageHeader() {
               className="w-80"
               href="/nettverking"
             />
+            <ITxButton
+              label="Se priser for karrieredagen"
+              variant="primary"
+              className="w-80"
+              href="/karrieredag/priser"
+            />
           </div>
         </div>
 
