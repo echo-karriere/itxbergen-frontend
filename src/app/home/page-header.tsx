@@ -23,19 +23,19 @@ export default function PageHeader() {
               variant="primary"
               className="w-80"
               href="https://airtable.com/appRf6DZsLJxbRubS/pagRen26SJBP1PKQt/form"
-            />
+            /> 
             <ITxButton
               label="Sjekk ut nettverking"
               variant="primary"
               className="w-80"
               href="/nettverking"
             />
-            <ITxButton
+            {/* <ITxButton
               label="Se priser for karrieredagen"
               variant="primary"
               className="w-80"
               href="/karrieredag/priser"
-            />
+            /> */}
           </div>
         </div>
 
