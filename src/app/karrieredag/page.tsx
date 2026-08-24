@@ -3,6 +3,7 @@ import SectionGallery from "./section-gallery";
 import SectionCompanies from "./section-companies";
 import { Metadata } from "next";
 import SectionButtons from "./section-buttons";
+import LagTimeplan from "./timeplan";
 
 export const metadata: Metadata = {
   title: "Karrieredag | ITxBergen",
@@ -14,6 +15,7 @@ export default function Karrieredag() {
     <>
       <PageHeader />
 			<SectionButtons />
+      <LagTimeplan />
       <SectionCompanies />
       <SectionGallery />
     </>

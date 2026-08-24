@@ -36,12 +36,6 @@ export default function PageHeader() {
               className="w-80"
               href="/karrieredag/priser"
             /> */}
-            <ITxButton
-              label="Søk verv"
-              variant="primary"
-              className="w-80"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSczp5pGYrgVw4Qev7VgnU093qFAxKl9OmCO0tmFedGzRhG4cw/viewform"
-            />
           </div>
         </div>
 
