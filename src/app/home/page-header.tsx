@@ -19,10 +19,10 @@ export default function PageHeader() {
 
           <div className="space-y-2 pl-3 md:pl-0">
             <ITxButton
-              label="Meld bedriften din på karrieredag!"
+              label="Timeplan"
               variant="primary"
               className="w-80"
-              href="https://airtable.com/appRf6DZsLJxbRubS/pagRen26SJBP1PKQt/form"
+              href="/karrieredag#Timeplan"
             /> 
             <ITxButton
               label="Sjekk ut nettverking"

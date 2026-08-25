@@ -59,7 +59,7 @@ const hendelser_KD: Timeplan[] = [
 
 const hendelser_Galla: Timeplan[] = [
   {
-    navn: "Galla og Afterparty",
+    navn: "Galla",
     tid: "19:00",
     sted: "Zander Kaaes gate 6 ",
     beskrivelse: "Galla og afterparty med bedriftene",
@@ -88,6 +88,7 @@ function TimeplanKort({ item }: { item: Timeplan }) {
 
 export default function LagTimeplan() {
   return (
+    <section id="Timeplan">
     <main className="maxwidth px-6 py-12 md:px-32">
       <h1 className="mb-8 text-3xl font-bold">Timeplan for karrieredagen</h1>
 
@@ -97,12 +98,13 @@ export default function LagTimeplan() {
         ))}
       </section>
 
-      <h1 className="mb-8 mt-16 text-3xl font-bold">Galla og Afterparty</h1>
+      <h1 className="mb-8 mt-16 text-3xl font-bold">Galla</h1>
       <section className="space-y-4">
         {hendelser_Galla.map((item) => (
           <TimeplanKort key={`${item.tid}-${item.navn}`} item={item} />
         ))}
       </section>
     </main>
+    </section>
   );
 }
