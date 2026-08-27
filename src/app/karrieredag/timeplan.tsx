@@ -62,7 +62,7 @@ const hendelser_Galla: Timeplan[] = [
     navn: "Galla",
     tid: "19:00",
     sted: "Zander Kaaes gate 6 ",
-    beskrivelse: "Galla og afterparty med bedriftene",
+    beskrivelse: "Få muligheten til å være med en bedrift på gallaen, dersom du er heldig og kaprer deg en billett!",
   },
 ];
 
