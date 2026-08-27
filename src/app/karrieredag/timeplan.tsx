@@ -69,8 +69,8 @@ const hendelser_Galla: Timeplan[] = [
 function TimeplanKort({ item }: { item: Timeplan }) {
   return (
     <article className="rounded-lg border border-gray-200 border-l-4 border-l-IXBPurple bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
-        <p className="w-fit rounded-full bg-IXBbg2 px-4 py-2 text-sm font-bold text-IXBPurple md:w-36 md:text-center">
+      <div className="grid gap-4 md:grid-cols-[9rem_1fr] md:items-center md:gap-8">
+        <p className="w-fit rounded-full bg-IXBbg2 px-4 py-2 text-sm font-bold text-IXBPurple md:w-full md:text-center">
           {item.tid}
         </p>
 
