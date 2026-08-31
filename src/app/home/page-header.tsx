@@ -32,6 +32,12 @@ export default function PageHeader() {
               className="w-80"
               href="/nettverking"
             />
+            <ITxButton
+              label="Meld deg på arrangementer!"
+              variant="primary"
+              className="w-80"
+              href="/arrangementer"
+            />
             {/* <ITxButton
               label="Meld deg på Workshop!"
               variant="primary"
