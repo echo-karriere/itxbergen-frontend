@@ -18,8 +18,7 @@ export default function PageHeader() {
             <span>Karrieredag</span>
           </h1>
 
-          <p className="text-xl">
-            Neste karrieredag er satt <br></br>{" "}
+          <p>{" "}
             <span className="text-IXBPurple font-bold">
               17.september 2026 i Grieghallen!
             </span>
