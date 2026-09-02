@@ -9,7 +9,7 @@ type Arrangement = {
 const arrangementer: Arrangement[] = [
   {
     navn: "CV-Workshop med Kantega",
-    tidspunkt: "12:30 - 13:30",
+    tidspunkt: "15:00 - 16:00",
     sted: "Troldtog",
     beskrivelse:
       "Få konkrete tips til hvordan du kan gjøre CV-en din tydeligere og mer relevant for arbeidsgivere.",
@@ -17,7 +17,7 @@ const arrangementer: Arrangement[] = [
   },
   {
     navn: "Bruk AI som en CEO! Med Alf Gunnar Andersen og Erik Bohne",
-    tidspunkt: "11:30 - 12:15",
+    tidspunkt: "14:15 - 15:00",
     sted: "Klokkeklang/småtroll",
     beskrivelse:
       "Se hvordan AI kan brukes strategisk og praktisk for å jobbe smartere i hverdagen.",
