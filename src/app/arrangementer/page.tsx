@@ -23,6 +23,13 @@ const arrangementer: Arrangement[] = [
       "Se hvordan AI kan brukes strategisk og praktisk for å jobbe smartere i hverdagen.",
     pameldingUrl: "https://luma.com/5guztu5r",
   },
+  {
+    navn: "Workshop med Norges bank",
+    tidspunkt: "12:30 - 13:30",
+    sted: "Troldtung",
+    beskrivelse: "Kom på workshop med Norges bank!",
+    pameldingUrl: "https://luma.com/hjmdzy85",
+  }
 ];
 
 export default function Arrangementer() {
