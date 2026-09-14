@@ -34,7 +34,7 @@ const hendelser_KD: Timeplan[] = [
   },
   {
     navn: "Workshop med Norges Bank",
-    tid: "13:45 - 14:45",
+    tid: "12:30 - 13:30",
     sted: "Troldtog",
     beskrivelse: "Workshop med Norges Bank.",
     link: "https://luma.com/hjmdzy85"
