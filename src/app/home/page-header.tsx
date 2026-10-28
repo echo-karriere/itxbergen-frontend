@@ -26,6 +26,7 @@ export default function PageHeader() {
               variant="primary"
               className="w-80"
               href="https://airtable.com/appTyNyHkiFpsACNa/pagqzB6hMXMCbsq5d/form"
+            
             />
             {/* <ITxButton
               label="Meld deg på Workshop!"
