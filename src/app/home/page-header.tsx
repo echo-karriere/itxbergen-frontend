@@ -13,19 +13,8 @@ export default function PageHeader() {
             IT-studenter i Bergen!
           </h1>
 
-          <p className="-mt-3 text-lg md:text-xl">
-            <span className="font-bold text-IXBPurple">
-              17. September 2026 i Grieghallen!
-            </span>
-          </p>
-
           <div className="space-y-3 pl-3 md:pl-0">
-            <ITxButton
-              label="Timeplan"
-              variant="primary"
-              className="w-80"
-              href="/karrieredag#Timeplan"
-            /> 
+          
             <ITxButton
               label="Sjekk ut nettverking"
               variant="primary"
@@ -33,10 +22,10 @@ export default function PageHeader() {
               href="/nettverking"
             />
             <ITxButton
-              label="Meld deg på arrangementer!"
+              label="Meld interesse for KD27!"
               variant="primary"
               className="w-80"
-              href="/arrangementer"
+              href="https://airtable.com/appTyNyHkiFpsACNa/pagqzB6hMXMCbsq5d/form"
             />
             {/* <ITxButton
               label="Meld deg på Workshop!"
